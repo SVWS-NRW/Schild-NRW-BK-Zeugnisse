@@ -1,0 +1,641 @@
+object Report: TppReport
+  OnFileDeviceCreate = ReportFileDeviceCreate
+  AutoStop = False
+  DataPipeline = dmPipelines.Schueler
+  OnStartFirstPass = ReportStartFirstPass
+  PassSetting = psTwoPass
+  PrinterSetup.BinName = 'Default'
+  PrinterSetup.DocumentName = 'Teilleistungen pro Sch'#252'ler.rtm'
+  PrinterSetup.PaperName = 'A4'
+  PrinterSetup.PrinterName = 'Default'
+  PrinterSetup.SaveDeviceSettings = False
+  PrinterSetup.mmMarginBottom = 5000
+  PrinterSetup.mmMarginLeft = 20000
+  PrinterSetup.mmMarginRight = 5000
+  PrinterSetup.mmMarginTop = 20000
+  PrinterSetup.mmPaperHeight = 297000
+  PrinterSetup.mmPaperWidth = 210000
+  PrinterSetup.PaperSize = 9
+  SaveAsTemplate = True
+  Template.FileName = 
+    'S:\Schild-NRW\Schild-Reports\Standard\Schnellzugriff\Teilleistun' +
+    'gen pro Sch'#252'ler.rtm'
+  Template.Format = ftASCII
+  Units = utMillimeters
+  AllowPrintToArchive = True
+  AllowPrintToFile = True
+  ArchiveFileName = '($MyDocuments)\ReportArchive.raf'
+  BeforeOpenDataPipelines = ReportBeforeOpenDataPipelines
+  BeforePrint = ReportBeforePrint
+  BeforeEmail = ReportBeforeEmail
+  DeviceType = 'Screen'
+  DefaultFileDeviceType = 'PDF'
+  EmailSettings.ReportFormat = 'PDF'
+  EmailSettings.Enabled = True
+  EmailSettings.ShowEmailDialog = True
+  EmailSettings.Subject = 'Schild-NRW-Formularversand'
+  LanguageID = 'Default'
+  OnInitializeParameters = ReportInitializeParameters
+  OnPreviewFormCreate = ReportPreviewFormCreate
+  OpenFile = False
+  OutlineSettings.CreateNode = True
+  OutlineSettings.CreatePageNodes = True
+  OutlineSettings.Enabled = False
+  OutlineSettings.Visible = False
+  ThumbnailSettings.Enabled = False
+  ThumbnailSettings.Visible = False
+  ThumbnailSettings.DeadSpace = 30
+  PDFSettings.EmbedFontOptions = []
+  PDFSettings.EncryptSettings.AllowCopy = True
+  PDFSettings.EncryptSettings.AllowInteract = True
+  PDFSettings.EncryptSettings.AllowModify = True
+  PDFSettings.EncryptSettings.AllowPrint = True
+  PDFSettings.EncryptSettings.Enabled = False
+  PDFSettings.EncryptSettings.KeyLength = kl40Bit
+  PDFSettings.FontEncoding = feAnsi
+  PDFSettings.ImageCompressionLevel = 25
+  PreviewFormSettings.ZoomSetting = zs100Percent
+  PreviewFormSettings.SinglePageOnly = True
+  RTFSettings.DefaultFont.Charset = DEFAULT_CHARSET
+  RTFSettings.DefaultFont.Color = clWindowText
+  RTFSettings.DefaultFont.Height = -13
+  RTFSettings.DefaultFont.Name = 'Arial'
+  RTFSettings.DefaultFont.Style = []
+  TextFileName = '($MyDocuments)\Report.pdf'
+  TextSearchSettings.DefaultString = '<Suchtext>'
+  TextSearchSettings.Enabled = False
+  XLSSettings.AppName = 'ReportBuilder'
+  XLSSettings.Author = 'ReportBuilder'
+  XLSSettings.Subject = 'Report'
+  XLSSettings.Title = 'Report'
+  Left = 128
+  Top = 8
+  Version = '15.05'
+  mmColumnWidth = 365000
+  DataPipelineName = 'Schueler'
+  object ppHeaderBand1: TppHeaderBand
+    Visible = False
+    Background.Brush.Style = bsClear
+    mmBottomOffset = 0
+    mmHeight = 2646
+    mmPrintPosition = 0
+  end
+  object ppDetailBand1: TppDetailBand
+    Background1.Brush.Style = bsClear
+    Background2.Brush.Style = bsClear
+    PrintHeight = phDynamic
+    mmBottomOffset = 0
+    mmHeight = 5556
+    mmPrintPosition = 0
+    object ppSubReport1: TppSubReport
+      UserName = 'SubReport1'
+      ExpandAll = False
+      NewPrintJob = False
+      OutlineSettings.CreateNode = True
+      TraverseAllData = False
+      DataPipelineName = 'plLernabschnitte'
+      mmHeight = 5027
+      mmLeft = 0
+      mmTop = 0
+      mmWidth = 185000
+      BandType = 4
+      LayerName = Foreground
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+      object ppChildReport1: TppChildReport
+        AutoStop = False
+        DataPipeline = dmPipelines.plLernabschnitte
+        PrinterSetup.BinName = 'Default'
+        PrinterSetup.DocumentName = 'Teilleistungen pro Sch'#252'ler.rtm'
+        PrinterSetup.PaperName = 'A4'
+        PrinterSetup.PrinterName = 'Default'
+        PrinterSetup.SaveDeviceSettings = False
+        PrinterSetup.mmMarginBottom = 5000
+        PrinterSetup.mmMarginLeft = 20000
+        PrinterSetup.mmMarginRight = 5000
+        PrinterSetup.mmMarginTop = 20000
+        PrinterSetup.mmPaperHeight = 297000
+        PrinterSetup.mmPaperWidth = 210000
+        PrinterSetup.PaperSize = 9
+        Template.Format = ftASCII
+        Units = utMillimeters
+        Version = '15.05'
+        mmColumnWidth = 0
+        DataPipelineName = 'plLernabschnitte'
+        object ppDetailBand2: TppDetailBand
+          Background1.Brush.Style = bsClear
+          Background2.Brush.Style = bsClear
+          PrintHeight = phDynamic
+          mmBottomOffset = 0
+          mmHeight = 10000
+          mmPrintPosition = 0
+          object ppSubReport2: TppSubReport
+            UserName = 'SubReport2'
+            ExpandAll = False
+            NewPrintJob = False
+            OutlineSettings.CreateNode = True
+            TraverseAllData = False
+            DataPipelineName = 'SchuelerLeistungen'
+            mmHeight = 5027
+            mmLeft = 0
+            mmTop = 265
+            mmWidth = 185000
+            BandType = 4
+            LayerName = Foreground1
+            mmBottomOffset = 0
+            mmOverFlowOffset = 0
+            mmStopPosition = 0
+            mmMinHeight = 0
+            object ppChildReport2: TppChildReport
+              AutoStop = False
+              DataPipeline = dmPipelines.SchuelerLeistungen
+              PrinterSetup.BinName = 'Default'
+              PrinterSetup.DocumentName = 'Teilleistungen pro Sch'#252'ler.rtm'
+              PrinterSetup.PaperName = 'A4'
+              PrinterSetup.PrinterName = 'Default'
+              PrinterSetup.SaveDeviceSettings = False
+              PrinterSetup.mmMarginBottom = 5000
+              PrinterSetup.mmMarginLeft = 20000
+              PrinterSetup.mmMarginRight = 5000
+              PrinterSetup.mmMarginTop = 20000
+              PrinterSetup.mmPaperHeight = 297000
+              PrinterSetup.mmPaperWidth = 210000
+              PrinterSetup.PaperSize = 9
+              Template.Format = ftASCII
+              Units = utMillimeters
+              Version = '15.05'
+              mmColumnWidth = 0
+              DataPipelineName = 'SchuelerLeistungen'
+              object ppDetailBand3: TppDetailBand
+                Background1.Brush.Style = bsClear
+                Background2.Brush.Style = bsClear
+                PrintHeight = phDynamic
+                mmBottomOffset = 0
+                mmHeight = 10000
+                mmPrintPosition = 0
+                object ppDBText5: TppDBText
+                  UserName = 'DBText5'
+                  DataField = 'FachKrz'
+                  DataPipeline = dmPipelines.SchuelerLeistungen
+                  Font.Charset = ANSI_CHARSET
+                  Font.Color = clBlack
+                  Font.Name = 'Lucida Sans'
+                  Font.Size = 12
+                  Font.Style = []
+                  Transparent = True
+                  VerticalAlignment = avCenter
+                  DataPipelineName = 'SchuelerLeistungen'
+                  mmHeight = 9260
+                  mmLeft = 10054
+                  mmTop = 529
+                  mmWidth = 19579
+                  BandType = 4
+                  LayerName = Foreground2
+                end
+                object ppSubReport3: TppSubReport
+                  UserName = 'SubReport3'
+                  ExpandAll = False
+                  NewPrintJob = False
+                  OutlineSettings.CreateNode = True
+                  ParentWidth = False
+                  TraverseAllData = False
+                  DataPipelineName = 'ppSchuelerEinzelleistungen'
+                  mmHeight = 10054
+                  mmLeft = 29898
+                  mmTop = 0
+                  mmWidth = 115359
+                  BandType = 4
+                  LayerName = Foreground2
+                  mmBottomOffset = 0
+                  mmOverFlowOffset = 0
+                  mmStopPosition = 0
+                  mmMinHeight = 0
+                  object ppChildReport3: TppChildReport
+                    AutoStop = False
+                    Columns = 6
+                    ColumnPositions.Strings = (
+                      '0'
+                      '20000'
+                      '40000'
+                      '60000'
+                      '80000'
+                      '100000')
+                    DataPipeline = dmPipelines.ppSchuelerEinzelleistungen
+                    PrinterSetup.BinName = 'Default'
+                    PrinterSetup.DocumentName = 'Teilleistungen pro Sch'#252'ler.rtm'
+                    PrinterSetup.PaperName = 'A4'
+                    PrinterSetup.PrinterName = 'Default'
+                    PrinterSetup.SaveDeviceSettings = False
+                    PrinterSetup.mmMarginBottom = 5000
+                    PrinterSetup.mmMarginLeft = 20000
+                    PrinterSetup.mmMarginRight = 5000
+                    PrinterSetup.mmMarginTop = 20000
+                    PrinterSetup.mmPaperHeight = 297000
+                    PrinterSetup.mmPaperWidth = 210000
+                    PrinterSetup.PaperSize = 9
+                    Template.Format = ftASCII
+                    Units = utMillimeters
+                    Version = '15.05'
+                    mmColumnWidth = 20000
+                    DataPipelineName = 'ppSchuelerEinzelleistungen'
+                    object ppColumnHeaderBand1: TppColumnHeaderBand
+                      Background.Brush.Style = bsClear
+                      mmBottomOffset = 0
+                      mmHeight = 0
+                      mmPrintPosition = 0
+                    end
+                    object ppDetailBand4: TppDetailBand
+                      Background1.Brush.Style = bsClear
+                      Background2.Brush.Style = bsClear
+                      ColumnTraversal = ctLeftToRight
+                      mmBottomOffset = 0
+                      mmHeight = 11000
+                      mmPrintPosition = 0
+                      object ppDBText6: TppDBText
+                        UserName = 'DBText6'
+                        DataField = 'Art'
+                        DataPipeline = dmPipelines.ppSchuelerEinzelleistungen
+                        Font.Charset = ANSI_CHARSET
+                        Font.Color = clBlack
+                        Font.Name = 'Lucida Sans'
+                        Font.Size = 8
+                        Font.Style = []
+                        Transparent = True
+                        DataPipelineName = 'ppSchuelerEinzelleistungen'
+                        mmHeight = 3367
+                        mmLeft = 726
+                        mmTop = 0
+                        mmWidth = 20205
+                        BandType = 4
+                        LayerName = Foreground3
+                      end
+                      object ppDBText7: TppDBText
+                        UserName = 'DBText7'
+                        DataField = 'Datum'
+                        DataPipeline = dmPipelines.ppSchuelerEinzelleistungen
+                        Font.Charset = ANSI_CHARSET
+                        Font.Color = clBlack
+                        Font.Name = 'Lucida Sans'
+                        Font.Size = 8
+                        Font.Style = []
+                        Transparent = True
+                        DataPipelineName = 'ppSchuelerEinzelleistungen'
+                        mmHeight = 3608
+                        mmLeft = 726
+                        mmTop = 6492
+                        mmWidth = 20108
+                        BandType = 4
+                        LayerName = Foreground3
+                      end
+                      object ppDBText8: TppDBText
+                        UserName = 'DBText8'
+                        DataField = 'NotenKrz'
+                        DataPipeline = dmPipelines.ppSchuelerEinzelleistungen
+                        Font.Charset = ANSI_CHARSET
+                        Font.Color = clBlack
+                        Font.Name = 'Lucida Sans'
+                        Font.Size = 10
+                        Font.Style = []
+                        TextAlignment = taRightJustified
+                        Transparent = True
+                        DataPipelineName = 'ppSchuelerEinzelleistungen'
+                        mmHeight = 3969
+                        mmLeft = 4089
+                        mmTop = 2910
+                        mmWidth = 14432
+                        BandType = 4
+                        LayerName = Foreground3
+                      end
+                      object ppLine3: TppLine
+                        UserName = 'Line3'
+                        ParentHeight = True
+                        Position = lpRight
+                        StretchWithParent = True
+                        Weight = 0.750000000000000000
+                        mmHeight = 11000
+                        mmLeft = 12748
+                        mmTop = 0
+                        mmWidth = 7456
+                        BandType = 4
+                        LayerName = Foreground3
+                      end
+                    end
+                    object ppColumnFooterBand1: TppColumnFooterBand
+                      Background.Brush.Style = bsClear
+                      mmBottomOffset = 0
+                      mmHeight = 0
+                      mmPrintPosition = 0
+                    end
+                    object ppDesignLayers4: TppDesignLayers
+                      object ppDesignLayer4: TppDesignLayer
+                        UserName = 'Foreground3'
+                        LayerType = ltBanded
+                        Index = 0
+                      end
+                    end
+                  end
+                end
+                object ppLine4: TppLine
+                  UserName = 'Line4'
+                  ParentWidth = True
+                  Weight = 0.750000000000000000
+                  mmHeight = 3969
+                  mmLeft = 0
+                  mmTop = 0
+                  mmWidth = 185000
+                  BandType = 4
+                  LayerName = Foreground2
+                end
+                object ppDBText9: TppDBText
+                  UserName = 'DBText9'
+                  DataField = 'NotenKrz'
+                  DataPipeline = dmPipelines.SchuelerLeistungen
+                  Font.Charset = ANSI_CHARSET
+                  Font.Color = clBlack
+                  Font.Name = 'Lucida Sans'
+                  Font.Size = 12
+                  Font.Style = []
+                  TextAlignment = taCentered
+                  Transparent = True
+                  VerticalAlignment = avCenter
+                  DataPipelineName = 'SchuelerLeistungen'
+                  mmHeight = 10054
+                  mmLeft = 146579
+                  mmTop = 529
+                  mmWidth = 17198
+                  BandType = 4
+                  LayerName = Foreground2
+                end
+              end
+              object raCodeModule2: TraCodeModule
+                ProgramStream = {00}
+              end
+              object ppDesignLayers3: TppDesignLayers
+                object ppDesignLayer3: TppDesignLayer
+                  UserName = 'Foreground2'
+                  LayerType = ltBanded
+                  Index = 0
+                end
+              end
+            end
+          end
+          object ppLine7: TppLine
+            UserName = 'Line7'
+            ParentHeight = True
+            Position = lpRight
+            StretchWithParent = True
+            Weight = 0.750000000000000000
+            mmHeight = 10000
+            mmLeft = 24342
+            mmTop = 0
+            mmWidth = 5556
+            BandType = 4
+            LayerName = Foreground1
+          end
+          object ppLine8: TppLine
+            UserName = 'Line8'
+            ParentHeight = True
+            Position = lpRight
+            StretchWithParent = True
+            Weight = 0.750000000000000000
+            mmHeight = 10000
+            mmLeft = 144728
+            mmTop = 0
+            mmWidth = 5556
+            BandType = 4
+            LayerName = Foreground1
+          end
+        end
+        object raCodeModule3: TraCodeModule
+          ProgramStream = {00}
+        end
+        object ppDesignLayers2: TppDesignLayers
+          object ppDesignLayer2: TppDesignLayer
+            UserName = 'Foreground1'
+            LayerType = ltBanded
+            Index = 0
+          end
+        end
+      end
+    end
+  end
+  object ppGroup1: TppGroup
+    BreakName = 'ID'
+    DataPipeline = dmPipelines.Schueler
+    GroupFileSettings.NewFile = False
+    GroupFileSettings.EmailFile = False
+    OutlineSettings.CreateNode = True
+    NewPage = True
+    StartOnOddPage = False
+    UserName = 'Group1'
+    mmNewColumnThreshold = 0
+    mmNewPageThreshold = 0
+    DataPipelineName = 'Schueler'
+    NewFile = False
+    object ppGroupHeaderBand1: TppGroupHeaderBand
+      Background.Brush.Style = bsClear
+      mmBottomOffset = 0
+      mmHeight = 24342
+      mmPrintPosition = 0
+      object ppDBText1: TppDBText
+        UserName = 'DBText1'
+        AutoSize = True
+        DataField = 'NameVorname'
+        DataPipeline = dmPipelines.Schueler
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'Lucida Sans'
+        Font.Size = 14
+        Font.Style = [fsBold]
+        Transparent = True
+        DataPipelineName = 'Schueler'
+        mmHeight = 5821
+        mmLeft = 103452
+        mmTop = 0
+        mmWidth = 38894
+        BandType = 3
+        GroupNo = 0
+        LayerName = Foreground
+      end
+      object ppLabel1: TppLabel
+        UserName = 'Label1'
+        Caption = #220'bersicht '#252'ber die Teilleistungen f'#252'r'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'Lucida Sans'
+        Font.Size = 14
+        Font.Style = []
+        Transparent = True
+        mmHeight = 5821
+        mmLeft = 9260
+        mmTop = 0
+        mmWidth = 90752
+        BandType = 3
+        GroupNo = 0
+        LayerName = Foreground
+      end
+      object ppDBText2: TppDBText
+        UserName = 'DBText2'
+        AutoSize = True
+        DataField = 'Klasse'
+        DataPipeline = dmPipelines.plLernabschnitte
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'Lucida Sans'
+        Font.Size = 14
+        Font.Style = [fsBold]
+        ParentDataPipeline = False
+        Transparent = True
+        DataPipelineName = 'plLernabschnitte'
+        mmHeight = 5821
+        mmLeft = 9260
+        mmTop = 7144
+        mmWidth = 16933
+        BandType = 3
+        GroupNo = 0
+        LayerName = Foreground
+      end
+      object ppDBText4: TppDBText
+        UserName = 'DBText4'
+        AutoSize = True
+        DataField = 'KLNachname'
+        DataPipeline = dmPipelines.plLernabschnitte
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'Lucida Sans'
+        Font.Size = 14
+        Font.Style = []
+        ParentDataPipeline = False
+        TextAlignment = taCentered
+        Transparent = True
+        DataPipelineName = 'plLernabschnitte'
+        mmHeight = 5821
+        mmLeft = 110331
+        mmTop = 7144
+        mmWidth = 31485
+        BandType = 3
+        GroupNo = 0
+        LayerName = Foreground
+      end
+      object ppLabel2: TppLabel
+        UserName = 'Label2'
+        AutoSize = False
+        Caption = 'Fach'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'Lucida Sans'
+        Font.Size = 12
+        Font.Style = []
+        TextAlignment = taCentered
+        Transparent = True
+        mmHeight = 4763
+        mmLeft = 9260
+        mmTop = 18256
+        mmWidth = 20638
+        BandType = 3
+        GroupNo = 0
+        LayerName = Foreground
+      end
+      object ppLabel3: TppLabel
+        UserName = 'Label3'
+        AutoSize = False
+        Caption = 'Teilleistungen'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'Lucida Sans'
+        Font.Size = 12
+        Font.Style = []
+        Transparent = True
+        mmHeight = 4763
+        mmLeft = 30427
+        mmTop = 18256
+        mmWidth = 105834
+        BandType = 3
+        GroupNo = 0
+        LayerName = Foreground
+      end
+      object ppLine1: TppLine
+        UserName = 'Line1'
+        Position = lpRight
+        Weight = 0.750000000000000000
+        mmHeight = 7144
+        mmLeft = 22754
+        mmTop = 17465
+        mmWidth = 7144
+        BandType = 3
+        GroupNo = 0
+        LayerName = Foreground
+      end
+      object ppLine5: TppLine
+        UserName = 'Line5'
+        Position = lpRight
+        Weight = 0.750000000000000000
+        mmHeight = 7144
+        mmLeft = 140494
+        mmTop = 17463
+        mmWidth = 9790
+        BandType = 3
+        GroupNo = 0
+        LayerName = Foreground
+      end
+      object ppLabel4: TppLabel
+        UserName = 'Label4'
+        Caption = 'Zeugnis'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'Lucida Sans'
+        Font.Size = 12
+        Font.Style = []
+        Transparent = True
+        mmHeight = 4763
+        mmLeft = 155046
+        mmTop = 18256
+        mmWidth = 15875
+        BandType = 3
+        GroupNo = 0
+        LayerName = Foreground
+      end
+    end
+    object ppGroupFooterBand1: TppGroupFooterBand
+      Background.Brush.Style = bsClear
+      HideWhenOneDetail = False
+      mmBottomOffset = 0
+      mmHeight = 0
+      mmPrintPosition = 0
+    end
+  end
+  object raCodeModule1: TraCodeModule
+    ProgramStream = {
+      01060F5472614576656E7448616E646C65720B50726F6772616D4E616D650610
+      444254657874344F6E476574546578740B50726F6772616D54797065070B7474
+      50726F63656475726506536F75726365069470726F6365647572652044425465
+      7874344F6E476574546578742876617220546578743A20537472696E67293B0D
+      0A626567696E0D0A0D0A202054657874203A3D20204C65726E61627363686E69
+      7474655B274B6C617373656E6C65687265724D57275D2B273A20272B4C65726E
+      61627363686E697474655B274B6C617373656E4C6568726572275D3B0D0A0D0A
+      656E643B0D0A0D436F6D706F6E656E744E616D65060744425465787434094576
+      656E744E616D6506094F6E47657454657874074576656E744944023508436172
+      6574506F730102530204000000}
+  end
+  object ppDesignLayers1: TppDesignLayers
+    object ppDesignLayer1: TppDesignLayer
+      UserName = 'Foreground'
+      LayerType = ltBanded
+      Index = 0
+    end
+  end
+  object ppParameterList2: TppParameterList
+    object ppArchivierung: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = 'Schildvorgabe'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'Schildvorgabe'
+      UserName = 'Archivierung'
+    end
+  end
+end

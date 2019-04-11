@@ -1,0 +1,372 @@
+object Report: TppReport
+  OnFileDeviceCreate = ReportFileDeviceCreate
+  AutoStop = False
+  DataPipeline = dmPipelines.Schueler
+  OnStartFirstPass = ReportStartFirstPass
+  PrinterSetup.BinName = 'Default'
+  PrinterSetup.DocumentName = 'Bescheinigung kl Latinum (Anl D43).rtm'
+  PrinterSetup.PaperName = 'A4 210 x 297 mm'
+  PrinterSetup.PrinterName = 'Screen'
+  PrinterSetup.SaveDeviceSettings = False
+  PrinterSetup.mmMarginBottom = 10000
+  PrinterSetup.mmMarginLeft = 20000
+  PrinterSetup.mmMarginRight = 10000
+  PrinterSetup.mmMarginTop = 10000
+  PrinterSetup.mmPaperHeight = 297000
+  PrinterSetup.mmPaperWidth = 210000
+  PrinterSetup.PaperSize = 9
+  SaveAsTemplate = True
+  Template.FileName = 
+    'D:\SchILD-NRW\SchILD-Reports\Zeugnisse 2016 Lucida\Anlage D\Besc' +
+    'heinigung kl Latinum (Anl D43).rtm'
+  Template.Format = ftASCII
+  Units = utMillimeters
+  AllowPrintToArchive = True
+  AllowPrintToFile = True
+  ArchiveFileName = '($MyDocuments)\ReportArchive.raf'
+  BeforeOpenDataPipelines = ReportBeforeOpenDataPipelines
+  BeforePrint = ReportBeforePrint
+  BeforeEmail = ReportBeforeEmail
+  DeviceType = 'Screen'
+  DefaultFileDeviceType = 'PDF'
+  EmailSettings.ReportFormat = 'PDF'
+  EmailSettings.DeleteFile = False
+  EmailSettings.Enabled = True
+  EmailSettings.PreviewInEmailClient = False
+  EmailSettings.ShowEmailDialog = True
+  Icon.Data = {
+    0000010001002020100000000000E80200001600000028000000200000004000
+    0000010004000000000080020000000000000000000000000000000000000000
+    000000008000008000000080800080000000800080008080000080808000C0C0
+    C0000000FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    00000000C00000CC00000000000000000000000C0C000C00C000000000000000
+    0000000C00CCC00000000000000000000000000C000000000000000000000000
+    00007777C7770000000000000000000000007BBBCBB7000F0000000000000000
+    00007BCCBBB700FFF00000000000000000007BBBBBB700FFF000000000000000
+    00007BBBBBB700FF770000000000000000007333BBB7000F7B00000000000000
+    000070003BB70007B7700000000000000000999903B700007B70000000000000
+    0001999990770000B7B700000000000000019999900000000B77000000000000
+    0001999990000000000010000000000000011999900000000071700000000000
+    0000111100000000001710000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    000000000000000000000000000000000000000000000000000000000000FFFF
+    FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF7
+    CFFFFFEBB7FFFFEC3FFFFFEF9FFFFF008FFFFF0087FFFF0083FFFF0083FFFF00
+    81FFFF00C1FFFF00C0FFFE00E0FFFC00E07FFC03F07FFC03F03FFC03F83FFE07
+    F83FFF0FFC7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
+  LanguageID = 'Default'
+  OnInitializeParameters = ReportInitializeParameters
+  OnPreviewFormCreate = ReportPreviewFormCreate
+  OpenFile = False
+  OutlineSettings.CreateNode = True
+  OutlineSettings.CreatePageNodes = True
+  OutlineSettings.Enabled = True
+  OutlineSettings.Visible = True
+  ThumbnailSettings.Enabled = True
+  ThumbnailSettings.Visible = True
+  ThumbnailSettings.DeadSpace = 30
+  PDFSettings.Author = 'Schild-NRW'
+  PDFSettings.EmbedFontOptions = []
+  PDFSettings.EncryptSettings.AllowCopy = True
+  PDFSettings.EncryptSettings.AllowInteract = True
+  PDFSettings.EncryptSettings.AllowModify = True
+  PDFSettings.EncryptSettings.AllowPrint = True
+  PDFSettings.EncryptSettings.Enabled = False
+  PDFSettings.EncryptSettings.KeyLength = kl40Bit
+  PDFSettings.FontEncoding = feAnsi
+  PDFSettings.ImageCompressionLevel = 25
+  PreviewFormSettings.ZoomSetting = zs100Percent
+  PreviewFormSettings.SinglePageOnly = True
+  RTFSettings.DefaultFont.Charset = DEFAULT_CHARSET
+  RTFSettings.DefaultFont.Color = clWindowText
+  RTFSettings.DefaultFont.Height = -15
+  RTFSettings.DefaultFont.Name = 'Arial'
+  RTFSettings.DefaultFont.Style = []
+  TextFileName = '($MyDocuments)\Report.pdf'
+  TextSearchSettings.DefaultString = '<Suchtext>'
+  TextSearchSettings.Enabled = True
+  XLSSettings.AppName = 'ReportBuilder'
+  XLSSettings.Author = 'ReportBuilder'
+  XLSSettings.Subject = 'Report'
+  XLSSettings.Title = 'Report'
+  Left = 128
+  Top = 8
+  Version = '15.05'
+  mmColumnWidth = 180000
+  DataPipelineName = 'Schueler'
+  object ppDetailBand1: TppDetailBand
+    Background1.Brush.Style = bsClear
+    Background2.Brush.Style = bsClear
+    PrintHeight = phDynamic
+    mmBottomOffset = 0
+    mmHeight = 265378
+    mmPrintPosition = 0
+    object ppRichText1: TppRichText
+      UserName = 'RichText1'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Lucida Sans'
+      Font.Size = 12
+      Font.Style = []
+      Caption = 'RichText1'
+      MailMerge = True
+      RichText = 
+        '{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcha' +
+        'rset0 Lucida Sans;}{\f1\fnil Lucida Sans;}}'#13#10'{\colortbl ;\red0\g' +
+        'reen0\blue0;}'#13#10'\viewkind4\uc1\pard\sl-320\slmult0\qc\tx3240\b\f0' +
+        '\fs28 Bescheinigung \b0\fs24\par'#13#10'\pard\sl-320\slmult0\qr\tx3240' +
+        '\par'#13#10'\pard\sl360\slmult1\tx3240 <dbtext>Anrede</dbtext> \b <dbt' +
+        'ext>VornameName</dbtext>\par'#13#10'\pard\sl360\slmult1\qj\tx3240\b0 g' +
+        'eb. am \b <dbtext>Geburtsdatum</dbtext>\b0  in \b <dbtext>Geburt' +
+        'sort</dbtext>\par'#13#10'\b0\par'#13#10'\pard hat von $Anfang$ bis $Ende$ am' +
+        ' Lateinunterricht teilgenommen.\par'#13#10'\par'#13#10'\pard\qj Gem\'#39'e4\'#39'df ' +
+        'den Bestimmungen der Anlage D 43 APO-BK (BASS 13-33 Nr. 1.2) hat' +
+        ' <dbtext>ErSieKlein</dbtext> Lateinkenntnisse im Umfang des\par'#13 +
+        #10'\pard\tab\tab\tab\tab\tab\tab\par'#13#10'\tab\tab\tab\tab\tab\b Klein' +
+        'en Latinums\par'#13#10'\b0\par'#13#10'nachgewiesen.\cf1\f1\par'#13#10'}'#13#10#0
+      RemoveEmptyLines = False
+      Transparent = True
+      mmHeight = 102129
+      mmLeft = 9790
+      mmTop = 71438
+      mmWidth = 159544
+      BandType = 4
+      LayerName = Foreground
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+    end
+    object myDynamicLoadingSubReport1: TmyDynamicLoadingSubReport
+      UserName = 'DynamicLoadingSubReport1'
+      ExpandAll = False
+      NewPrintJob = False
+      OutlineSettings.CreateNode = True
+      TraverseAllData = False
+      Filename = 'Zeugnis_Kopf.rtm'
+      mmHeight = 5027
+      mmLeft = 0
+      mmTop = 2910
+      mmWidth = 180000
+      BandType = 4
+      LayerName = Foreground
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+      object ppChildReport1: TppChildReport
+        PrinterSetup.BinName = 'Default'
+        PrinterSetup.DocumentName = 'Bescheinigung kl Latinum (Anl D43).rtm'
+        PrinterSetup.PaperName = 'A4 210 x 297 mm'
+        PrinterSetup.PrinterName = 'Screen'
+        PrinterSetup.SaveDeviceSettings = False
+        PrinterSetup.mmMarginBottom = 10000
+        PrinterSetup.mmMarginLeft = 20000
+        PrinterSetup.mmMarginRight = 10000
+        PrinterSetup.mmMarginTop = 10000
+        PrinterSetup.mmPaperHeight = 297000
+        PrinterSetup.mmPaperWidth = 210000
+        PrinterSetup.PaperSize = 9
+        Units = utMillimeters
+        Version = '15.05'
+        mmColumnWidth = 0
+        object ppDesignLayers2: TppDesignLayers
+          object ppDesignLayer2: TppDesignLayer
+            UserName = 'Foreground1'
+            LayerType = ltBanded
+            Index = 0
+          end
+        end
+      end
+    end
+    object ppDBText1: TppDBText
+      UserName = 'DBText1'
+      AutoSize = True
+      DataField = 'Ort'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Lucida Sans'
+      Font.Size = 12
+      Font.Style = []
+      ParentDataPipeline = False
+      Transparent = True
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 4763
+      mmLeft = 9790
+      mmTop = 203465
+      mmWidth = 20373
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppLine2: TppLine
+      UserName = 'Line2'
+      Position = lpBottom
+      Weight = 0.750000000000000000
+      mmHeight = 3969
+      mmLeft = 100013
+      mmTop = 204259
+      mmWidth = 69321
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppDBText2: TppDBText
+      UserName = 'DBText2'
+      AutoSize = True
+      DataField = 'SchulleiterName'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Lucida Sans'
+      Font.Size = 10
+      Font.Style = []
+      ParentDataPipeline = False
+      TextAlignment = taRightJustified
+      Transparent = True
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 3969
+      mmLeft = 142611
+      mmTop = 209286
+      mmWidth = 26723
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppLabel1: TppLabel
+      UserName = 'Label1'
+      Caption = '(Siegel)'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Lucida Sans'
+      Font.Size = 8
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 83873
+      mmTop = 204259
+      mmWidth = 10583
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppLine6: TppLine
+      UserName = 'Line6'
+      Position = lpBottom
+      Weight = 0.750000000000000000
+      mmHeight = 3969
+      mmLeft = 9790
+      mmTop = 204259
+      mmWidth = 71702
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppLabel15: TppLabel
+      UserName = 'Label15'
+      Caption = 'Ort, Datum'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Lucida Sans'
+      Font.Size = 10
+      Font.Style = []
+      Transparent = True
+      mmHeight = 3969
+      mmLeft = 9790
+      mmTop = 208227
+      mmWidth = 17992
+      BandType = 4
+      LayerName = Foreground
+    end
+  end
+  object ppGroup1: TppGroup
+    BreakName = 'ID'
+    DataPipeline = dmPipelines.Schueler
+    GroupFileSettings.NewFile = False
+    GroupFileSettings.EmailFile = False
+    OutlineSettings.CreateNode = True
+    NewPage = True
+    StartOnOddPage = False
+    UserName = 'Group1'
+    mmNewColumnThreshold = 0
+    mmNewPageThreshold = 0
+    DataPipelineName = 'Schueler'
+    NewFile = False
+    object ppGroupHeaderBand1: TppGroupHeaderBand
+      Background.Brush.Style = bsClear
+      mmBottomOffset = 0
+      mmHeight = 0
+      mmPrintPosition = 0
+    end
+    object ppGroupFooterBand1: TppGroupFooterBand
+      Background.Brush.Style = bsClear
+      HideWhenOneDetail = False
+      mmBottomOffset = 0
+      mmHeight = 0
+      mmPrintPosition = 0
+    end
+  end
+  object raCodeModule1: TraCodeModule
+    ProgramStream = {
+      01060F5472614576656E7448616E646C65720B50726F6772616D4E616D650611
+      44657461696C4265666F72655072696E740B50726F6772616D54797065070B74
+      7450726F63656475726506536F757263650C7701000070726F63656475726520
+      44657461696C4265666F72655072696E743B0D0A76617220616E66616E672C20
+      656E6465203A20537472696E673B0D0A626567696E0D0A20202020616E66616E
+      673A3D537472696E67496E7075742827426567696E6E204C61746569756E7465
+      72726963687420272C274A61687267616E677373747566652031312E3127293B
+      0D0A20202020656E64653A3D20537472696E67496E7075742827456E6465204C
+      61746569756E746572726963687420272C274A61687267616E67737374756665
+      2031322E3127293B0D0A202020205269636854657874312E5269636874657874
+      203A3D205265706C61636554657874285269636874657874312E526963687465
+      78742C202724416E66616E6724272C20616E66616E67293B0D0A202020205269
+      636854657874312E5269636874657874203A3D205265706C6163655465787428
+      5269636874657874312E52696368746578742C202724456E646524272C656E64
+      65293B0D0A0D0A656E643B0D0A0D436F6D706F6E656E744E616D650606446574
+      61696C094576656E744E616D65060B4265666F72655072696E74074576656E74
+      49440218084361726574506F730102480207000001060F5472614576656E7448
+      616E646C65720B50726F6772616D4E616D650610444254657874314F6E476574
+      546578740B50726F6772616D54797065070B747450726F63656475726506536F
+      75726365067A70726F63656475726520444254657874314F6E47657454657874
+      2876617220546578743A20537472696E67293B0D0A626567696E0D0A0D0A2020
+      54657874203A3D2020202054657874202B20272C20272B4C65726E6162736368
+      6E697474655B275A6575676E6973446174756D275D3B0D0A0D0A656E643B0D0A
+      0D436F6D706F6E656E744E616D65060744425465787431094576656E744E616D
+      6506094F6E47657454657874074576656E7449440235084361726574506F7301
+      023D0204000001060F5472614576656E7448616E646C65720B50726F6772616D
+      4E616D650610444254657874324F6E476574546578740B50726F6772616D5479
+      7065070B747450726F63656475726506536F7572636506A270726F6365647572
+      6520444254657874324F6E476574546578742876617220546578743A20537472
+      696E67293B0D0A626567696E0D0A0D0A202054657874203A3D2054657874202B
+      20272C20272B20456967656E65536368756C655B27536368756C6C6569746572
+      416D747362657A275D2B2027202D20272B20456967656E65536368756C655B27
+      536368756C6C65697465724D57275D3B0D0A0D0A656E643B0D0A0D436F6D706F
+      6E656E744E616D65060744425465787432094576656E744E616D6506094F6E47
+      657454657874074576656E7449440235084361726574506F7301026102040000
+      00}
+  end
+  object ppDesignLayers1: TppDesignLayers
+    object ppDesignLayer1: TppDesignLayer
+      UserName = 'Foreground'
+      LayerType = ltBanded
+      Index = 0
+    end
+  end
+  object ppParameterList1: TppParameterList
+    object ppArchivierung: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      DataType = dtString
+      LookupList.Strings = (
+        'immer'
+        'nie'
+        'Schildvorgabe')
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = ''
+      UserName = 'Archivierung'
+    end
+  end
+end

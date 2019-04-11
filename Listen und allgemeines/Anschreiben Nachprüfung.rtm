@@ -1,0 +1,515 @@
+object Report: TppReport
+  OnFileDeviceCreate = ReportFileDeviceCreate
+  AutoStop = False
+  DataPipeline = dmPipelines.Schueler
+  OnStartFirstPass = ReportStartFirstPass
+  PrinterSetup.BinName = 'Default'
+  PrinterSetup.DocumentName = 'Anschreiben Nachpr'#252'fung.rtm'
+  PrinterSetup.PaperName = 'A4 210 x 297 mm'
+  PrinterSetup.PrinterName = 'Screen'
+  PrinterSetup.SaveDeviceSettings = False
+  PrinterSetup.mmMarginBottom = 10000
+  PrinterSetup.mmMarginLeft = 20000
+  PrinterSetup.mmMarginRight = 10000
+  PrinterSetup.mmMarginTop = 10000
+  PrinterSetup.mmPaperHeight = 297000
+  PrinterSetup.mmPaperWidth = 210000
+  PrinterSetup.PaperSize = 9
+  SaveAsTemplate = True
+  Template.FileName = 
+    'D:\SchILD-NRW\SchILD-Reports\Zeugnisse 2016 Lucida\Listen und al' +
+    'lgemeines\Anschreiben Nachpr'#252'fung.rtm'
+  Template.Format = ftASCII
+  Units = utMillimeters
+  AllowPrintToArchive = True
+  AllowPrintToFile = True
+  ArchiveFileName = '($MyDocuments)\ReportArchive.raf'
+  BeforeOpenDataPipelines = ReportBeforeOpenDataPipelines
+  BeforePrint = ReportBeforePrint
+  BeforeEmail = ReportBeforeEmail
+  DeviceType = 'Screen'
+  DefaultFileDeviceType = 'PDF'
+  EmailSettings.ReportFormat = 'PDF'
+  EmailSettings.DeleteFile = False
+  EmailSettings.Enabled = True
+  EmailSettings.PreviewInEmailClient = False
+  EmailSettings.ShowEmailDialog = True
+  Icon.Data = {
+    0000010001002020100000000000E80200001600000028000000200000004000
+    0000010004000000000080020000000000000000000000000000000000000000
+    000000008000008000000080800080000000800080008080000080808000C0C0
+    C0000000FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    00000000C00000CC00000000000000000000000C0C000C00C000000000000000
+    0000000C00CCC00000000000000000000000000C000000000000000000000000
+    00007777C7770000000000000000000000007BBBCBB7000F0000000000000000
+    00007BCCBBB700FFF00000000000000000007BBBBBB700FFF000000000000000
+    00007BBBBBB700FF770000000000000000007333BBB7000F7B00000000000000
+    000070003BB70007B7700000000000000000999903B700007B70000000000000
+    0001999990770000B7B700000000000000019999900000000B77000000000000
+    0001999990000000000010000000000000011999900000000071700000000000
+    0000111100000000001710000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    000000000000000000000000000000000000000000000000000000000000FFFF
+    FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF7
+    CFFFFFEBB7FFFFEC3FFFFFEF9FFFFF008FFFFF0087FFFF0083FFFF0083FFFF00
+    81FFFF00C1FFFF00C0FFFE00E0FFFC00E07FFC03F07FFC03F03FFC03F83FFE07
+    F83FFF0FFC7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
+  LanguageID = 'Default'
+  OnInitializeParameters = ReportInitializeParameters
+  OnPreviewFormCreate = ReportPreviewFormCreate
+  OpenFile = False
+  OutlineSettings.CreateNode = True
+  OutlineSettings.CreatePageNodes = True
+  OutlineSettings.Enabled = True
+  OutlineSettings.Visible = True
+  ThumbnailSettings.Enabled = True
+  ThumbnailSettings.Visible = True
+  ThumbnailSettings.DeadSpace = 30
+  PDFSettings.Author = 'Schild-NRW'
+  PDFSettings.EmbedFontOptions = []
+  PDFSettings.EncryptSettings.AllowCopy = True
+  PDFSettings.EncryptSettings.AllowInteract = True
+  PDFSettings.EncryptSettings.AllowModify = True
+  PDFSettings.EncryptSettings.AllowPrint = True
+  PDFSettings.EncryptSettings.Enabled = False
+  PDFSettings.EncryptSettings.KeyLength = kl40Bit
+  PDFSettings.FontEncoding = feAnsi
+  PDFSettings.ImageCompressionLevel = 25
+  PreviewFormSettings.ZoomSetting = zs100Percent
+  PreviewFormSettings.SinglePageOnly = True
+  RTFSettings.DefaultFont.Charset = DEFAULT_CHARSET
+  RTFSettings.DefaultFont.Color = clWindowText
+  RTFSettings.DefaultFont.Height = -15
+  RTFSettings.DefaultFont.Name = 'Arial'
+  RTFSettings.DefaultFont.Style = []
+  TextFileName = '($MyDocuments)\Report.pdf'
+  TextSearchSettings.DefaultString = '<Suchtext>'
+  TextSearchSettings.Enabled = True
+  XLSSettings.AppName = 'ReportBuilder'
+  XLSSettings.Author = 'ReportBuilder'
+  XLSSettings.Subject = 'Report'
+  XLSSettings.Title = 'Report'
+  Left = 128
+  Top = 8
+  Version = '15.05'
+  mmColumnWidth = 0
+  DataPipelineName = 'Schueler'
+  object ppDetailBand1: TppDetailBand
+    Background1.Brush.Style = bsClear
+    Background2.Brush.Style = bsClear
+    PrintHeight = phDynamic
+    mmBottomOffset = 0
+    mmHeight = 472018
+    mmPrintPosition = 0
+    object ppDBText1: TppDBText
+      UserName = 'DBText1'
+      AutoSize = True
+      DataField = 'FormaleAnrede'
+      DataPipeline = dmPipelines.Erzieher
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Lucida Sans'
+      Font.Size = 12
+      Font.Style = []
+      ParentDataPipeline = False
+      Transparent = True
+      DataPipelineName = 'Erzieher'
+      mmHeight = 4763
+      mmLeft = 10054
+      mmTop = 87313
+      mmWidth = 30163
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppLabel9: TppLabel
+      UserName = 'Label9'
+      AutoSize = False
+      Caption = 'Label9'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Lucida Sans'
+      Font.Size = 12
+      Font.Style = []
+      Transparent = True
+      WordWrap = True
+      mmHeight = 21960
+      mmLeft = 10054
+      mmTop = 146844
+      mmWidth = 160073
+      BandType = 4
+      LayerName = Foreground
+    end
+    object myDynamicLoadingSubReport1: TmyDynamicLoadingSubReport
+      UserName = 'DynamicLoadingSubReport1'
+      ExpandAll = False
+      NewPrintJob = False
+      OutlineSettings.CreateNode = True
+      TraverseAllData = False
+      Filename = 'Brief_Kopfbogen ausf'#252'hrlich.rtm'
+      mmHeight = 5027
+      mmLeft = 0
+      mmTop = 794
+      mmWidth = 180000
+      BandType = 4
+      LayerName = Foreground
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+      object ppChildReport2: TppChildReport
+        PrinterSetup.BinName = 'Default'
+        PrinterSetup.DocumentName = 'Anschreiben Nachpr'#252'fung.rtm'
+        PrinterSetup.PaperName = 'A4 210 x 297 mm'
+        PrinterSetup.PrinterName = 'Screen'
+        PrinterSetup.SaveDeviceSettings = False
+        PrinterSetup.mmMarginBottom = 10000
+        PrinterSetup.mmMarginLeft = 20000
+        PrinterSetup.mmMarginRight = 10000
+        PrinterSetup.mmMarginTop = 10000
+        PrinterSetup.mmPaperHeight = 297000
+        PrinterSetup.mmPaperWidth = 210000
+        PrinterSetup.PaperSize = 9
+        Units = utMillimeters
+        Version = '15.05'
+        mmColumnWidth = 0
+        object ppDesignLayers3: TppDesignLayers
+          object ppDesignLayer3: TppDesignLayer
+            UserName = 'Foreground2'
+            LayerType = ltBanded
+            Index = 0
+          end
+        end
+      end
+    end
+    object ppLabel13: TppLabel
+      UserName = 'Label101'
+      AutoSize = False
+      Caption = 'Nachpr'#252'fung bei Nichtversetzung oder verfehltem Abschluss    '
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Lucida Sans'
+      Font.Size = 12
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 5027
+      mmLeft = 10054
+      mmTop = 79111
+      mmWidth = 146050
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppRichText3: TppRichText
+      UserName = 'RichText3'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Lucida Sans'
+      Font.Size = 12
+      Font.Style = []
+      Caption = 'RichText3'
+      MailMerge = True
+      RichText = 
+        '{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcha' +
+        'rset0 Arial;}{\f1\fnil Lucida Sans;}}'#13#10'{\colortbl ;\red0\green0\' +
+        'blue0;}'#13#10'\viewkind4\uc1\pard\cf1\fs24 Die Versetzungskonferenz h' +
+        'at am <dbtext datapipeline='#39'plLernabschnitte'#39'>Konferenzdatum</db' +
+        'text> festgestellt, dass $SIE$\par'#13#10'\par'#13#10'\b <dbtext>NameVorname' +
+        '</dbtext>\b0 , Klasse: \b <dbtext datapipeline='#39'plLernabschnitte' +
+        #39'>Klasse</dbtext>\b0 , <dbtext datapipeline='#39'plLernabschnitte'#39'>K' +
+        'lassenlehrerMW</dbtext>: <dbtext datapipeline='#39'plLernabschnitte'#39 +
+        '>KLNachname</dbtext>\par'#13#10'\par'#13#10'durch Ablegen einer Pr\'#39'fcfung i' +
+        'n\par'#13#10'\par'#13#10'\pard\qc\b $FAECHER$\f1\par'#13#10'}'#13#10#0
+      RemoveEmptyLines = False
+      Stretch = True
+      Transparent = True
+      mmHeight = 43777
+      mmLeft = 10054
+      mmTop = 101360
+      mmWidth = 160073
+      BandType = 4
+      LayerName = Foreground
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+    end
+    object ppRichText1: TppRichText
+      UserName = 'RichText1'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Lucida Sans'
+      Font.Size = 12
+      Font.Style = []
+      Caption = 'RichText1'
+      RichText = 
+        '{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcha' +
+        'rset0 Lucida Sans;}}'#13#10'{\colortbl ;\red0\green0\blue0;}'#13#10'\viewkin' +
+        'd4\uc1\pard\cf1\f0\fs24 Die \b schriftlichen Pr\'#39'fcfungen\b0  be' +
+        'ginnen am \b Montag, den 22.08.2016\b0  um \b 8.15 Uhr\b0  in R5' +
+        '19.\par'#13#10'Die \b m\'#39'fcndlichen Pr\'#39'fcfungen\b0  finden am \b Dien' +
+        'stag, den 23.08.2016\b0  ab 8.15 Uhr statt. \par'#13#10'Die genauen Uh' +
+        'rzeiten und die Pr\'#39'fcfungsr\'#39'e4ume werden am Nachmittag des 22.' +
+        '08.2016 bekannt gegeben.\par'#13#10'\par'#13#10'Falls Sie w\'#39'fcmschen, dass ' +
+        '$SOHN$, reichen Sie bitte die Meldung zur Pr\'#39'fcfung unter Angab' +
+        'e des Pr\'#39'fcfungsfaches, sp\'#39'e4testens bis zum \b 01.08.2016\b0 ' +
+        ' per Einschreiben oder pers\'#39'f6nlich (Sekretariat) bei mir ein.\' +
+        'par'#13#10'Das Sekretariat ist von Montag, 11.07.2016 bis einschlie\'#39'd' +
+        'flich Freitag, 15.08.2016 nicht besetzt.\par'#13#10'\par'#13#10'Mit freundli' +
+        'chen Gr\'#39'fc\'#39'dfen\par'#13#10'\par'#13#10'gez. G. Kempken, Oberstudiendirekto' +
+        'rin\b\par'#13#10'}'#13#10#0
+      RemoveEmptyLines = False
+      Stretch = True
+      Transparent = True
+      mmHeight = 76248
+      mmLeft = 10054
+      mmTop = 171186
+      mmWidth = 160073
+      BandType = 4
+      LayerName = Foreground
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+    end
+    object ppDBMemo1: TppDBMemo
+      UserName = 'DBMemo1'
+      CharWrap = False
+      DataField = 'BriefAdresse'
+      DataPipeline = dmPipelines.Erzieher
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Lucida Sans'
+      Font.Size = 12
+      Font.Style = []
+      ParentDataPipeline = False
+      RemoveEmptyLines = False
+      Stretch = True
+      Transparent = True
+      DataPipelineName = 'Erzieher'
+      mmHeight = 21648
+      mmLeft = 10054
+      mmTop = 45076
+      mmWidth = 75936
+      BandType = 4
+      LayerName = Foreground
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+      mmLeading = 0
+    end
+    object ppRichText2: TppRichText
+      UserName = 'RichText2'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Lucida Sans'
+      Font.Size = 12
+      Font.Style = []
+      Caption = 'RichText2'
+      MailMerge = True
+      RichText = 
+        '{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcha' +
+        'rset0 Lucida Sans;}}'#13#10'{\colortbl ;\red0\green0\blue0;}'#13#10'\viewkin' +
+        'd4\uc1\pard\fi-2220\li2220\cf1\ul\b\f0\fs24 R\'#39'fcckantwort\ulnon' +
+        'e\b0  \tab (per Einschreiben einsenden oder pers\'#39'f6nlich im Sek' +
+        'retariat bis sp\'#39'e4testens 01. August 2016 abgeben; das Sekretar' +
+        'iat ist vom 11.07. bis einschlie\'#39'dflich 15.08.2016 nicht besetz' +
+        't)\par'#13#10'\par'#13#10'\par'#13#10'\par'#13#10'Name des/der Erziehungsberechtigten: _' +
+        '___________________________________\par'#13#10'\par'#13#10'\par'#13#10'Name &der S' +
+        'ch\'#39'fclerin%des Sch\'#39'fclers&: \b <dbtext>VornameName</dbtext>\pa' +
+        'r'#13#10'\b0\par'#13#10'\par'#13#10'Klasse: \b <dbtext datapipeline='#39'plLernabschni' +
+        'tte'#39'>Klasse</dbtext> \b0   <dbtext datapipeline='#39'plLernabschnitt' +
+        'e'#39'>KlassenlehrerMW</dbtext>: \b <dbtext datapipeline='#39'plLernabsc' +
+        'hnitte'#39'>KLNachname</dbtext>\par'#13#10'\par'#13#10'\b0 Ich melde $MICH$ zur ' +
+        'Nachpr\'#39'fcfung an.\par'#13#10'\par'#13#10'\par'#13#10'Als Pr\'#39'fcfungsfach w\'#39'e4hle' +
+        ' ich: ______________________________________________\par'#13#10'\par'#13#10 +
+        '\par'#13#10'bei der Fachlehrerin / dem Fachlehrer: ___________________' +
+        '__________________\par'#13#10'\par'#13#10'\par'#13#10'\par'#13#10'_____________________\' +
+        'tab\tab _______________\tab ________________________\par'#13#10'Ort\ta' +
+        'b\tab\tab Datum\tab\tab\tab Unterschrift\b\par'#13#10'}'#13#10#0
+      RemoveEmptyLines = False
+      Stretch = True
+      Transparent = True
+      mmHeight = 150284
+      mmLeft = 10054
+      mmTop = 288926
+      mmWidth = 160602
+      BandType = 4
+      LayerName = Foreground
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+    end
+  end
+  object ppGroup1: TppGroup
+    BreakName = 'ID'
+    DataPipeline = dmPipelines.Schueler
+    GroupFileSettings.NewFile = False
+    GroupFileSettings.EmailFile = False
+    OutlineSettings.CreateNode = True
+    NewPage = True
+    StartOnOddPage = False
+    UserName = 'Group1'
+    mmNewColumnThreshold = 0
+    mmNewPageThreshold = 0
+    DataPipelineName = 'Schueler'
+    NewFile = False
+    object ppGroupHeaderBand1: TppGroupHeaderBand
+      Background.Brush.Style = bsClear
+      mmBottomOffset = 0
+      mmHeight = 0
+      mmPrintPosition = 0
+    end
+    object ppGroupFooterBand1: TppGroupFooterBand
+      Background.Brush.Style = bsClear
+      HideWhenOneDetail = False
+      mmBottomOffset = 0
+      mmHeight = 0
+      mmPrintPosition = 0
+    end
+  end
+  object raCodeModule1: TraCodeModule
+    ProgramStream = {
+      01060D54726156617250726F6772616D094368696C645479706502110B50726F
+      6772616D4E616D6506095661726961626C65730B50726F6772616D5479706507
+      0B747450726F63656475726506536F7572636506D670726F6365647572652056
+      61726961626C65733B0D0A7661720D0A20206D696E6465726C65697374756E67
+      2C2066616368626572656963682C2073636877657270756E6B74202C20776965
+      646572686F6C756E673A20535452494E473B200D0A2020736176657465787420
+      3A20535452494E473B0D0A20206E6163687072756566756E67203A2053545249
+      4E473B0D0A20666165636865722C207369654E2C207369652C20686162656E2C
+      2065727369652C206E6F65746967203A20535452494E473B0D0A0D0A62656769
+      6E0D0A0D0A656E643B0D0A084361726574506F730102090205000001060F5472
+      614576656E7448616E646C65720B50726F6772616D4E616D6506114465746169
+      6C4265666F72655072696E740B50726F6772616D54797065070B747450726F63
+      656475726506536F7572636514F203000070726F636564757265204465746169
+      6C4265666F72655072696E743B0D0A626567696E0D0A20202077696564657268
+      6F6C756E67203A3D27273B0D0A202020666165636865723A3D27273B0D0A2020
+      20776965646572686F6C756E673A3D53656C65637446726F6D4C697374282756
+      65727365747A756E67206F6465722041627363686C7573733F272C2027566572
+      7365747A756E672C41627363686C757373272C20275665727365747A756E6727
+      293B0D0A202020666165636865723A3D537472696E67496E7075742853636875
+      656C65725B27566F726E616D654E616D65275D2B272046C3A4636865723A272C
+      4C65726E61627363686E697474655B274D6F65676C4E5046616563686572275D
+      293B202020202020202020202020202020202020202020202020202020202020
+      20202020202020202020202020202020200D0A2020200D0A2020204946205363
+      6875656C65725B27566F6C6C6A616568726967275D3D272B27207468656E2062
+      6567696E0D0A202020202020736965203A3D2027536965273B0D0A2020202020
+      20686162656E203A3D27536965207369636820646965736572205072C3BC6675
+      6E6720756E7465727A696568656E273B0D0A0D0A202020656E640D0A20202065
+      6C736520626567696E0D0A202020204946202053636875656C65725B27476573
+      63686C65636874275D3D33207468656E20626567696E0D0A2020202020202020
+      7369653A3D202749687220536F686E273B0D0A2020202020202020686162656E
+      203A3D2749687220536F686E207369636820646965736572205072C3BC66756E
+      6720756E7465727A69656874273B0D0A20202020202020200D0A202020202020
+      2020656E640D0A202020202020656C736520626567696E0D0A20202020202020
+      202020736965203A3D20274968726520546F6368746572273B0D0A2020202020
+      2020202020686162656E203A3D274968726520546F6368746572207369636820
+      646965736572205072C3BC66756E6720756E7465727A69656874273B0D0A200D
+      0A20202020202020202020656E643B0D0A202020202020656E643B0D0A202020
+      5269636854657874312E5269636854657874203A3D205265706C616365546578
+      74285269636854657874312E52696368546578742C2724534F484E24272C6861
+      62656E293B0D0A2020205269636854657874332E5269636854657874203A3D20
+      5265706C61636554657874285269636854657874332E52696368546578742C27
+      244641454348455224272C66616563686572293B0D0A20202052696368546578
+      74332E5269636854657874203A3D205265706C61636554657874285269636854
+      657874332E52696368546578742C272453494524272C736965293B0D0A656E64
+      3B0D0A0D436F6D706F6E656E744E616D65060644657461696C094576656E744E
+      616D65060B4265666F72655072696E74074576656E7449440218084361726574
+      506F7301024B021B000001060F5472614576656E7448616E646C65720B50726F
+      6772616D4E616D65060F4C6162656C394F6E476574546578740B50726F677261
+      6D54797065070B747450726F63656475726506536F7572636514300500007072
+      6F636564757265204C6162656C394F6E47657454657874287661722054657874
+      3A20537472696E67293B0D0A626567696E0D0A20200D0A202049462077696564
+      6572686F6C756E67203D275665727365747A756E6727207468656E2062656769
+      6E0D0A2020202020204946202053636875656C65725B27566F6C6C6A61656872
+      6967275D3D272B27207468656E2054657874203A3D20276E6163682042415353
+      2031332D3333204E722E20312E3120C2A7313220646965206E6163687472C3A4
+      676C69636865205665727365747A756E672065727265696368656E206BC3B66E
+      6E656E2E20446965205072C3BC66756E67206265737465687420617573206569
+      6E656D20736368726966746C696368656E20736F7769652065696E656D206DC3
+      BC6E646C696368656E205465696C20756E642067696C7420616C732062657374
+      616E64656E2C2077656E6E20696E73676573616D74206D696E64657374656E73
+      206175737265696368656E6465204C65697374756E67656E20696E2064656D20
+      676577C3A4686C74656E20466163682065726272616368742077657264656E2E
+      270D0A202020202020656C73652054657874203A3D20276E6163682042415353
+      2031332D3333204E722E20312E3120C2A7313220646965206E6163687472C3A4
+      676C69636865205665727365747A756E672065727265696368656E206B616E6E
+      2E20446965205072C3BC66756E672062657374656874206175732065696E656D
+      20736368726966746C696368656E20736F7769652065696E656D206DC3BC6E64
+      6C696368656E205465696C20756E642067696C7420616C732062657374616E64
+      656E2C2077656E6E20696E73676573616D74206D696E64657374656E73206175
+      737265696368656E6465204C65697374756E67656E20696E2064656D20676577
+      C3A4686C74656E20466163682065726272616368742077657264656E2E273B0D
+      0A2020202020656E643B0D0A2020494620776965646572686F6C756E67203D27
+      41627363686C75737327207468656E20626567696E20200D0A20204946202053
+      636875656C65725B27566F6C6C6A616568726967275D3D272B27207468656E20
+      54657874203A3D20276E61636820424153532031332D3333204E722E20312E31
+      20C2A73132206E6163687472C3A4676C6963682064656E2041627363686C7573
+      732065727265696368656E206BC3B66E6E656E2E20446965205072C3BC66756E
+      672062657374656874206175732065696E656D20736368726966746C69636865
+      6E20736F776965206DC3BC6E646C696368656E205465696C2E20446572204162
+      7363686C75737320776972642064757263682064696520566572626573736572
+      756E6720756D2065696E65204E6F74656E737475666520696E2064656D206765
+      77C3A4686C74656E20466163682065726C616E67742E270D0A20202020202065
+      6C73652054657874203A3D20276E61636820424153532031332D3333204E722E
+      20312E3120C2A73132206E6163687472C3A4676C6963682064656E2041627363
+      686C7573732065727265696368656E206B616E6E2E20446965205072C3BC6675
+      6E672062657374656874206175732065696E656D20736368726966746C696368
+      656E20736F776965206DC3BC6E646C696368656E205465696C2E204465722041
+      627363686C757373207769726420647572636820646965205665726265737365
+      72756E6720756D2065696E65204E6F74656E737475666520696E2064656D2067
+      6577C3A4686C74656E20466163682065726C616E67742E27203B0D0A20202020
+      2020656E643B0D0A656E643B0D0A0D436F6D706F6E656E744E616D6506064C61
+      62656C39094576656E744E616D6506094F6E47657454657874074576656E7449
+      440235084361726574506F730102410206000001060F5472614576656E744861
+      6E646C65720B50726F6772616D4E616D6506115265706F72744265666F726550
+      72696E740B50726F6772616D54797065070B747450726F63656475726506536F
+      75726365064F70726F636564757265205265706F72744265666F72655072696E
+      743B0D0A626567696E0D0A2020207361766574657874203A3D20526963685465
+      7874312E52696368546578743B0D0A656E643B0D0A0D436F6D706F6E656E744E
+      616D6506065265706F7274094576656E744E616D65060B4265666F7265507269
+      6E74074576656E7449440201084361726574506F730102010201000001060F54
+      72614576656E7448616E646C65720B50726F6772616D4E616D65061044657461
+      696C41667465725072696E740B50726F6772616D54797065070B747450726F63
+      656475726506536F757263650C0A01000070726F636564757265204465746169
+      6C41667465725072696E743B0D0A626567696E0D0A2020205269636854657874
+      312E5269636854657874203A3D205265706C6163655465787428526963685465
+      7874312E52696368546578742C686162656E2C2724534F484E2427293B0D0A20
+      20205269636854657874332E5269636854657874203A3D205265706C61636554
+      657874285269636854657874332E52696368546578742C666165636865722C27
+      24464145434845522427293B0D0A2020205269636854657874332E5269636854
+      657874203A3D205265706C61636554657874285269636854657874332E526963
+      68546578742C7369652C27245349452427293B0D0A656E643B0D0A0D436F6D70
+      6F6E656E744E616D65060644657461696C094576656E744E616D65060A416674
+      65725072696E74074576656E7449440217084361726574506F73010238020500
+      0000}
+  end
+  object ppDesignLayers1: TppDesignLayers
+    object ppDesignLayer1: TppDesignLayer
+      UserName = 'Foreground'
+      LayerType = ltBanded
+      Index = 0
+    end
+  end
+  object ppParameterList2: TppParameterList
+    object ppArchivierung: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      DataType = dtString
+      LookupList.Strings = (
+        'immer'
+        'nie'
+        'Schildvorgabe')
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = ''
+      UserName = 'Archivierung'
+    end
+  end
+end

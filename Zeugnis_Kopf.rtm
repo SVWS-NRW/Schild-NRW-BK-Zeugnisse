@@ -1,0 +1,151 @@
+object Report: TppReport
+  OnFileDeviceCreate = ReportFileDeviceCreate
+  AutoStop = False
+  DataPipeline = dmPipelines.EigeneSchule
+  OnStartFirstPass = ReportStartFirstPass
+  PrinterSetup.BinName = 'Default'
+  PrinterSetup.DocumentName = 'Zeugnis_Kopf.rtm'
+  PrinterSetup.Duplex = dpVertical
+  PrinterSetup.PaperName = 'A4'
+  PrinterSetup.PrinterName = 'Default'
+  PrinterSetup.SaveDeviceSettings = False
+  PrinterSetup.mmMarginBottom = 6350
+  PrinterSetup.mmMarginLeft = 0
+  PrinterSetup.mmMarginRight = 30000
+  PrinterSetup.mmMarginTop = 6350
+  PrinterSetup.mmPaperHeight = 297000
+  PrinterSetup.mmPaperWidth = 210000
+  PrinterSetup.PaperSize = 9
+  Template.FileName = 'D:\SchILD-NRW\SchILD-Reports\Subreports\Zeugnis_Kopf.rtm'
+  Template.Format = ftASCII
+  Units = utMillimeters
+  ArchiveFileName = '($MyDocuments)\ReportArchive.raf'
+  BeforeOpenDataPipelines = ReportBeforeOpenDataPipelines
+  BeforePrint = ReportBeforePrint
+  BeforeEmail = ReportBeforeEmail
+  DeviceType = 'Screen'
+  DefaultFileDeviceType = 'PDF'
+  EmailSettings.ReportFormat = 'PDF'
+  EmailSettings.Enabled = True
+  LanguageID = 'Default'
+  OnInitializeParameters = ReportInitializeParameters
+  OnPreviewFormCreate = ReportPreviewFormCreate
+  OpenFile = False
+  OutlineSettings.CreateNode = True
+  OutlineSettings.CreatePageNodes = True
+  OutlineSettings.Enabled = False
+  OutlineSettings.Visible = False
+  ThumbnailSettings.Enabled = True
+  ThumbnailSettings.Visible = True
+  ThumbnailSettings.DeadSpace = 30
+  PDFSettings.EmbedFontOptions = []
+  PDFSettings.EncryptSettings.AllowCopy = True
+  PDFSettings.EncryptSettings.AllowInteract = True
+  PDFSettings.EncryptSettings.AllowModify = True
+  PDFSettings.EncryptSettings.AllowPrint = True
+  PDFSettings.EncryptSettings.Enabled = False
+  PDFSettings.EncryptSettings.KeyLength = kl40Bit
+  PDFSettings.FontEncoding = feAnsi
+  PDFSettings.ImageCompressionLevel = 25
+  PreviewFormSettings.SinglePageOnly = True
+  RTFSettings.DefaultFont.Charset = DEFAULT_CHARSET
+  RTFSettings.DefaultFont.Color = clWindowText
+  RTFSettings.DefaultFont.Height = -13
+  RTFSettings.DefaultFont.Name = 'Arial'
+  RTFSettings.DefaultFont.Style = []
+  TextFileName = '($MyDocuments)\Report.pdf'
+  TextSearchSettings.DefaultString = '<Suchtext>'
+  TextSearchSettings.Enabled = True
+  XLSSettings.AppName = 'ReportBuilder'
+  XLSSettings.Author = 'ReportBuilder'
+  XLSSettings.Subject = 'Report'
+  XLSSettings.Title = 'Report'
+  Left = 128
+  Top = 8
+  Version = '15.05'
+  mmColumnWidth = 0
+  DataPipelineName = 'EigeneSchule'
+  object ppDetailBand3: TppDetailBand
+    Background1.Brush.Style = bsClear
+    Background2.Brush.Style = bsClear
+    PrintHeight = phDynamic
+    mmBottomOffset = 0
+    mmHeight = 46831
+    mmPrintPosition = 0
+    object ppDBText1: TppDBText
+      UserName = 'DBText1'
+      DataField = 'Bezeichnung1'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Lucida Sans'
+      Font.Size = 14
+      Font.Style = [fsBold]
+      TextAlignment = taCentered
+      Transparent = True
+      WordWrap = True
+      VerticalAlignment = avCenter
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 27180
+      mmLeft = 9260
+      mmTop = 1323
+      mmWidth = 118798
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppDBImage1: TppDBImage
+      UserName = 'DBImage1'
+      AlignHorizontal = ahCenter
+      AlignVertical = avCenter
+      MaintainAspectRatio = True
+      Stretch = True
+      DataField = 'SchulLogo'
+      DataPipeline = dmPipelines.EigeneSchule
+      GraphicType = 'AutoDetect'
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 26988
+      mmLeft = 127529
+      mmTop = 1323
+      mmWidth = 42598
+      BandType = 4
+      LayerName = Foreground
+    end
+  end
+  object raCodeModule1: TraCodeModule
+    ProgramStream = {
+      01060D54726156617250726F6772616D094368696C645479706502110B50726F
+      6772616D4E616D6506095661726961626C65730B50726F6772616D5479706507
+      0B747450726F63656475726506536F75726365065B70726F6365647572652056
+      61726961626C65733B0D0A7661720D0A2020202020204B6F706674657874203A
+      20537472696E673B0D0A202020202020546578743A20537472696E673B0D0A0D
+      0A626567696E0D0A0D0A656E643B0D0A084361726574506F7301020002000000
+      01060F5472614576656E7448616E646C65720B50726F6772616D4E616D650610
+      444254657874314F6E476574546578740B50726F6772616D54797065070B7474
+      50726F63656475726506536F75726365067770726F6365647572652044425465
+      7874314F6E476574546578742876617220546578743A20537472696E67293B0D
+      0A626567696E0D0A0D0A202054657874203A3D2054657874202B202720272B20
+      2020456967656E65536368756C655B2742657A656963686E756E6732275D3B0D
+      0A0D0A656E643B0D0A0D436F6D706F6E656E744E616D65060744425465787431
+      094576656E744E616D6506094F6E47657454657874074576656E744944023508
+      4361726574506F730102000200000000}
+  end
+  object ppDesignLayers1: TppDesignLayers
+    object ppDesignLayer1: TppDesignLayer
+      UserName = 'Foreground'
+      LayerType = ltBanded
+      Index = 0
+    end
+  end
+  object ppParameterList2: TppParameterList
+    object ppArchivierung: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = 'Schildvorgabe'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'Schildvorgabe'
+      UserName = 'Archivierung'
+    end
+  end
+end
