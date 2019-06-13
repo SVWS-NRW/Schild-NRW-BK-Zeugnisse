@@ -508,17 +508,17 @@ object Report: TppReport
               '{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcha' +
               'rset0 Lucida Sans;}{\f1\fnil Lucida Sans;}}'#13#10'{\colortbl ;\red0\g' +
               'reen0\blue0;}'#13#10'\viewkind4\uc1\pard\qj\cf1\b\f0\fs20 Rechtsbehelf' +
-              'sbelehrung\b0 : \par'#13#10'Gegen dieses Zeugnis kann innerhalb eines ' +
-              'Monats nach Bekanntgabe des Zeugnisses Widerspruch erhoben werde' +
-              'n. Der Widerspruch ist schriftlich oder zur Niederschrift beim <' +
-              'dbtext datapipeline='#39'EigeneSchule'#39'>Bezeichnung1</dbtext>, <dbtex' +
-              't datapipeline='#39'EigeneSchule'#39'>Strasse</dbtext>, <dbtext datapipe' +
-              'line='#39'EigeneSchule'#39'>PlzOrt</dbtext> zu erheben. \par'#13#10'Falls die ' +
-              'Frist durch das Verschulden einer/eines Bevollm\'#39'e4chtigten vers' +
-              '\'#39'e4umt wird, so wird dieses Verschulden der Widerspruchsf\'#39'fchr' +
-              'erin/dem Widerspruchsf\'#39'fchrer zugerechnet. \f1\tab\tab\tab\tab\' +
-              'par'#13#10'\pard\qr Schulnummer: <dbtext datapipeline='#39'EigeneSchule'#39'>S' +
-              'chulNr</dbtext>\fs16\par'#13#10'}'#13#10#0
+              'sbelehrung\b0 : \par'#13#10'Gegen diese Bescheinigung kann innerhalb e' +
+              'ines Monats nach Bekanntgabe der Bescheinigung Widerspruch erhob' +
+              'en werden. Der Widerspruch ist schriftlich oder zur Niederschrif' +
+              't beim <dbtext datapipeline='#39'EigeneSchule'#39'>Bezeichnung1</dbtext>' +
+              ', <dbtext datapipeline='#39'EigeneSchule'#39'>Strasse</dbtext>, <dbtext ' +
+              'datapipeline='#39'EigeneSchule'#39'>PlzOrt</dbtext> zu erheben. \par'#13#10'Fa' +
+              'lls die Frist durch das Verschulden einer/eines Bevollm\'#39'e4chtig' +
+              'ten vers\'#39'e4umt wird, so wird dieses Verschulden der Widerspruch' +
+              'sf\'#39'fchrerin/dem Widerspruchsf\'#39'fchrer zugerechnet. \f1\tab\tab\' +
+              'tab\tab\par'#13#10'\pard\qr Schulnummer: <dbtext datapipeline='#39'EigeneS' +
+              'chule'#39'>SchulNr</dbtext>\fs16\par'#13#10'}'#13#10#0
             RemoveEmptyLines = False
             Stretch = True
             Transparent = True
@@ -2177,97 +2177,6 @@ object Report: TppReport
                 mmBottomOffset = 0
                 mmHeight = 1
                 mmPrintPosition = 0
-                object ppSubReport10: TppSubReport
-                  UserName = 'SubReport4'
-                  ExpandAll = False
-                  NewPrintJob = False
-                  OutlineSettings.CreateNode = True
-                  TraverseAllData = False
-                  DataPipelineName = 'SchuelerLeistungen'
-                  mmHeight = 5027
-                  mmLeft = 0
-                  mmTop = 0
-                  mmWidth = 419895
-                  BandType = 4
-                  LayerName = Foreground4
-                  mmBottomOffset = 0
-                  mmOverFlowOffset = 0
-                  mmStopPosition = 0
-                  mmMinHeight = 0
-                  object ppChildReport11: TppChildReport
-                    AutoStop = False
-                    DataPipeline = dmPipelines.SchuelerLeistungen
-                    PrinterSetup.BinName = 'Default'
-                    PrinterSetup.DocumentName = 'LAB-2018-AnlD-Laufbahnbesch (Anl D33a) ohne BAB neu.rtm'
-                    PrinterSetup.Orientation = poLandscape
-                    PrinterSetup.PaperName = 'A3 297 x 420 mm'
-                    PrinterSetup.PrinterName = 'EPSON WF-2630 Series'
-                    PrinterSetup.SaveDeviceSettings = False
-                    PrinterSetup.mmMarginBottom = 0
-                    PrinterSetup.mmMarginLeft = 0
-                    PrinterSetup.mmMarginRight = 0
-                    PrinterSetup.mmMarginTop = 0
-                    PrinterSetup.mmPaperHeight = 297128
-                    PrinterSetup.mmPaperWidth = 419895
-                    PrinterSetup.PaperSize = 8
-                    Template.Format = ftASCII
-                    Units = utMillimeters
-                    Version = '15.05'
-                    mmColumnWidth = 0
-                    DataPipelineName = 'SchuelerLeistungen'
-                    object ppDetailBand11: TppDetailBand
-                      Background1.Brush.Style = bsClear
-                      Background2.Brush.Style = bsClear
-                      mmBottomOffset = 0
-                      mmHeight = 1
-                      mmPrintPosition = 0
-                      object ppDBText6: TppDBText
-                        UserName = 'DBText6'
-                        DataField = 'NotenPunkte'
-                        DataPipeline = dmPipelines.SchuelerLeistungen
-                        Font.Charset = DEFAULT_CHARSET
-                        Font.Color = clBlack
-                        Font.Name = 'Arial'
-                        Font.Size = 12
-                        Font.Style = []
-                        Transparent = True
-                        Visible = False
-                        DataPipelineName = 'SchuelerLeistungen'
-                        mmHeight = 4763
-                        mmLeft = 11906
-                        mmTop = 0
-                        mmWidth = 10583
-                        BandType = 4
-                        LayerName = Foreground5
-                      end
-                    end
-                    object raCodeModule8: TraCodeModule
-                      ProgramStream = {
-                        01060F5472614576656E7448616E646C65720B50726F6772616D4E616D650611
-                        44657461696C4265666F72655072696E740B50726F6772616D54797065070B74
-                        7450726F63656475726506536F757263650C2701000070726F63656475726520
-                        44657461696C4265666F72655072696E743B0D0A626567696E0D0A2020202049
-                        4620202853636875656C65724C65697374756E67656E5B274E6F74656E50756E
-                        6B7465275D3D2730342729206F72202853636875656C65724C65697374756E67
-                        656E5B274E6F74656E50756E6B7465275D3D2730332729206F72202853636875
-                        656C65724C65697374756E67656E5B274E6F74656E50756E6B7465275D3D2730
-                        3227290D0A202020206F72202853636875656C65724C65697374756E67656E5B
-                        274E6F74656E50756E6B7465275D3D2730312729206F72202853636875656C65
-                        724C65697374756E67656E5B274E6F74656E50756E6B7465275D3D2730302729
-                        207468656E204265726174756E673A3D545255453B0D0A656E643B0D0A0D436F
-                        6D706F6E656E744E616D65060644657461696C094576656E744E616D65060B42
-                        65666F72655072696E74074576656E7449440218084361726574506F73010201
-                        0202000000}
-                    end
-                    object ppDesignLayers6: TppDesignLayers
-                      object ppDesignLayer6: TppDesignLayer
-                        UserName = 'Foreground5'
-                        LayerType = ltBanded
-                        Index = 0
-                      end
-                    end
-                  end
-                end
               end
               object ppSummaryBand1: TppSummaryBand
                 Background.Brush.Style = bsClear
@@ -2793,12 +2702,17 @@ object Report: TppReport
             76656E744E616D6506094F6E47657454657874074576656E7449440235084361
             726574506F7301023D0204000001060F5472614576656E7448616E646C65720B
             50726F6772616D4E616D6506115265706F72744F6E5374617274506167650B50
-            726F6772616D54797065070B747450726F63656475726506536F757263650642
+            726F6772616D54797065070B747450726F63656475726506536F7572636506E1
             70726F636564757265205265706F72744F6E5374617274506167653B0D0A6265
-            67696E0D0A202020204265726174756E67203A3D46414C53453B0D0A656E643B
-            0D0A0D436F6D706F6E656E744E616D6506065265706F7274094576656E744E61
-            6D65060B4F6E537461727450616765074576656E744944021508436172657450
-            6F730102160203000000}
+            67696E0D0A202020204265726174756E67203A3D46414C53453B0D0A20202020
+            200D0A202020200D0A20204946204C6F61645665726D65726B65566F6E426973
+            28274265726174756E67737665726D65726B272C2720272C4C65726E61627363
+            686E697474655B274B6F6E666572656E7A646174756D275D2C4C65726E616273
+            63686E697474655B274B6F6E666572656E7A646174756D275D2C46414C534529
+            3C3E2727207468656E204265726174756E673A3D545255453B0D0A656E643B0D
+            0A0D436F6D706F6E656E744E616D6506065265706F7274094576656E744E616D
+            65060B4F6E537461727450616765074576656E7449440215084361726574506F
+            730102160203000000}
         end
         object ppDesignLayers4: TppDesignLayers
           object ppDesignLayer4: TppDesignLayer
@@ -2840,6 +2754,7 @@ object Report: TppReport
         PrinterSetup.mmPaperHeight = 297128
         PrinterSetup.mmPaperWidth = 419895
         PrinterSetup.PaperSize = 8
+        Template.Offset = 284
         Template.Format = ftASCII
         Units = utMillimeters
         Version = '15.05'
@@ -2879,12 +2794,13 @@ object Report: TppReport
             RichText = 
               '{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil Luci' +
               'da Sans;}{\f1\fnil\fcharset0 Lucida Sans;}}'#13#10'{\colortbl ;\red0\g' +
-              'reen0\blue0;}'#13#10'\viewkind4\uc1\pard\cf1\f0\fs24 Dem Zeugnis liegt' +
-              ' zugrunde:\par'#13#10'\pard\fi-140\li140\par'#13#10'\pard\qj\f1 Die Verordnu' +
-              'ng \'#39'fcber die Ausbildung und Pr\'#39'fcfung in den Bildungsg\'#39'e4nge' +
-              'n des Berufskollegs  (Ausbildungs- und Pr\'#39'fcfungsordnung Berufs' +
-              'kolleg - APO-BK) vom 26.Mai 1999. (SVG.NRW.223/BASS 13-33 Nr.1.1' +
-              '.)\f0\par'#13#10'\pard\fi-140\li140\fs16\par'#13#10'}'#13#10#0
+              'reen0\blue0;}'#13#10'\viewkind4\uc1\pard\cf1\f0\fs24 De\f1 r\f0  \f1 B' +
+              'escheinigung\f0  liegt zugrunde:\par'#13#10'\pard\fi-140\li140\par'#13#10'\p' +
+              'ard\qj\f1 Die Verordnung \'#39'fcber die Ausbildung und Pr\'#39'fcfung i' +
+              'n den Bildungsg\'#39'e4ngen des Berufskollegs  (Ausbildungs- und Pr\' +
+              #39'fcfungsordnung Berufskolleg - APO-BK) vom 26.Mai 1999. (SVG.NRW' +
+              '.223/BASS 13-33 Nr.1.1.)\f0\par'#13#10'\pard\fi-140\li140\fs16\par'#13#10'}'#13 +
+              #10#0
             RemoveEmptyLines = False
             Stretch = True
             mmHeight = 25400

@@ -772,8 +772,9 @@ object Report: TppReport
                   BandType = 4
                   LayerName = Foreground6
                 end
-                object ppDBText10: TppDBText
-                  UserName = 'DBText10'
+                object ppDBMemo3: TppDBMemo
+                  UserName = 'DBMemo3'
+                  CharWrap = True
                   DataField = 'LELS'
                   DataPipeline = dmPipelines.ppAbschlussarbeit
                   Font.Charset = ANSI_CHARSET
@@ -781,14 +782,21 @@ object Report: TppReport
                   Font.Name = 'Lucida Sans'
                   Font.Size = 12
                   Font.Style = []
+                  RemoveEmptyLines = False
+                  Stretch = True
                   Transparent = True
                   DataPipelineName = 'ppAbschlussarbeit'
-                  mmHeight = 4498
+                  mmHeight = 4763
                   mmLeft = 0
                   mmTop = 0
-                  mmWidth = 115936
+                  mmWidth = 114036
                   BandType = 4
                   LayerName = Foreground6
+                  mmBottomOffset = 0
+                  mmOverFlowOffset = 0
+                  mmStopPosition = 0
+                  mmMinHeight = 0
+                  mmLeading = 0
                 end
               end
               object ppSummaryBand1: TppSummaryBand
