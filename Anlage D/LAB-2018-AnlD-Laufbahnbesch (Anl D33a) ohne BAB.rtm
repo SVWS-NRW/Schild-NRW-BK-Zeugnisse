@@ -27,6 +27,7 @@ object Report: TppReport
   DeviceType = 'Screen'
   DefaultFileDeviceType = 'PDF'
   EmailSettings.ReportFormat = 'PDF'
+  EmailSettings.DeleteFile = False
   EmailSettings.Enabled = True
   LanguageID = 'Default'
   OpenFile = False
@@ -2254,12 +2255,11 @@ object Report: TppReport
               OutlineSettings.CreateNode = True
               ParentPrinterSetup = False
               ParentWidth = False
-              ShiftRelativeTo = ppRegion1
               TraverseAllData = False
               DataPipelineName = 'plAbifaecher'
               mmHeight = 5027
               mmLeft = 224103
-              mmTop = 56885
+              mmTop = 56621
               mmWidth = 67998
               BandType = 4
               LayerName = Foreground3
@@ -2421,12 +2421,11 @@ object Report: TppReport
               OutlineSettings.CreateNode = True
               ParentPrinterSetup = False
               ParentWidth = False
-              ShiftRelativeTo = ppRegion1
               TraverseAllData = False
               DataPipelineName = 'plAbifaecher'
               mmHeight = 5027
               mmLeft = 300038
-              mmTop = 56885
+              mmTop = 56886
               mmWidth = 67998
               BandType = 4
               LayerName = Foreground3

@@ -152,20 +152,19 @@ object Report: TppReport
             RichText = 
               '{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcha' +
               'rset0 Lucida Sans;}{\f1\fnil Lucida Sans;}}'#13#10'{\colortbl ;\red0\g' +
-              'reen0\blue0;}'#13#10'\viewkind4\uc1\pard\qj\cf1\f0\fs22 Der Sch\'#39'fcler' +
-              ' hat nach \'#39'a7 13a Abs. 1 Anlage D APO-BK mit der Versetzung in ' +
-              'die Jahrgangsstufe 12 die Voraussetzungen f\'#39'fcr die Zuerkennung' +
-              ' des schulischen Teils der Fachhochschulreife erf\'#39'fcllt.\f1\par' +
-              #13#10'\f0 Dieses Zeugnis gilt in Verbindung mit dem Nachweis einer m' +
-              'indestens zweij\'#39'e4hrigen Berufsausbildung nach Bundes- oder Lan' +
-              'desrecht als Nachweis der Fachhochschulreife. Dieses Zeugnis ber' +
-              'echtigt in den L\'#39'e4ndern  Nordrhein-Westfalen, Hamburg, Mecklen' +
-              'burg-Vorpommern, Niedersachsen und Saarland zum Studium an Fachh' +
-              'ochschulen und entsprechenden Studieng\'#39'e4ngen an Universit\'#39'e4t' +
-              'en. Der Abschluss ist im Deutschen und Europ\'#39'e4ischen Qualifika' +
-              'tionsrahmen dem Niveau 4 zugeordnet.\f1\par'#13#10'\pard\par'#13#10'\par'#13#10'\f' +
-              '0 Durchschnittsnote \b <dbtext datapipeline='#39'Schueler'#39'>Durchschn' +
-              'ittsnoteFHR</dbtext>\b0  in Worten \b $Wortnote$\b0\f1\par'#13#10'}'#13#10#0
+              'reen0\blue0;}'#13#10'\viewkind4\uc1\pard\qj\cf1\f0\fs22 Nach \'#39'a7 13a ' +
+              'Abs. 1 Anlage D APO-BK sind mit der Versetzung in die Jahrgangss' +
+              'tufe 12 die Voraussetzungen f\'#39'fcr die Zuerkennung des schulisch' +
+              'en Teils der Fachhochschulreife erf\'#39'fcllt.\f1\par'#13#10'\f0 Dieses Z' +
+              'eugnis gilt in Verbindung mit dem Nachweis einer mindestens zwei' +
+              'j\'#39'e4hrigen Berufsausbildung nach Bundes- oder Landesrecht als N' +
+              'achweis der Fachhochschulreife. Es berechtigt in den L\'#39'e4ndern ' +
+              ' Nordrhein-Westfalen, Niedersachsen und Schleswig-Holstein zum S' +
+              'tudium an Fachhochschulen. \fs24 Der Abschluss ist im Deutschen ' +
+              'und Europ\'#39'e4ischen Qualifikationsrahmen dem Niveau 4 zugeordnet' +
+              '.\f1\fs22\par'#13#10'\pard\par'#13#10'\par'#13#10'\f0 Durchschnittsnote \b <dbtext' +
+              ' datapipeline='#39'Schueler'#39'>DurchschnittsnoteFHR</dbtext>\b0  in Wo' +
+              'rten \b $Wortnote$\b0\f1\par'#13#10'}'#13#10#0
             RemoveEmptyLines = False
             Stretch = True
             Visible = False

@@ -151,6 +151,7 @@ object Report: TppReport
               PrinterSetup.mmPaperWidth = 210000
               PrinterSetup.PaperSize = 9
               Template.DatabaseSettings.Name = 'Sub_AbiA4_Seite4'
+              Template.Offset = 284
               Template.Format = ftASCII
               Units = utMillimeters
               Version = '15.05'
@@ -1809,6 +1810,7 @@ object Report: TppReport
               PrinterSetup.mmPaperWidth = 210000
               PrinterSetup.PaperSize = 9
               Template.DatabaseSettings.Name = 'Sub_AbiA4_Seite2_neu'
+              Template.Offset = 284
               Template.Format = ftASCII
               Units = utMillimeters
               Version = '15.05'
@@ -2518,11 +2520,11 @@ object Report: TppReport
                       '{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fswiss\fp' +
                       'rq2\fcharset0 Lucida Sans;}{\f1\fnil\fcharset0 Lucida Sans;}{\f2' +
                       '\fnil Lucida Sans;}}'#13#10'{\colortbl ;\red0\green0\blue0;}'#13#10'\viewkin' +
-                      'd4\uc1\pard\super\f0\fs18 1  \cf1\nosupersub\f1\fs16 Leistungsf\' +
-                      #39'e4cher werden mit dem Klammerzusatz "eA" (erh\'#39'f6htes Anforderu' +
-                      'ngsniveau) gekennzeichnet. \f2\line\pard\fi-180\li180\qj\f1 Grun' +
-                      'dkurse bleiben ohne besondere Kennzeichnung. \cf0\super\f0\fs18\' +
-                      'par'#13#10'\cf1\nosupersub\f2\fs16\par'#13#10'}'#13#10#0
+                      'd4\uc1\pard\super\f0\fs18 1  \cf1\nosupersub\f1\fs16 Leistungsku' +
+                      'rsf\'#39'e4cher werden mit dem Klammerzusatz "eA" (erh\'#39'f6htes Anfor' +
+                      'derungsniveau) gekennzeichnet. \f2\line\pard\fi-180\li180\qj\f1 ' +
+                      'Grundkurse bleiben ohne besondere Kennzeichnung. \cf0\super\f0\f' +
+                      's18\par'#13#10'\cf1\nosupersub\f2\fs16\par'#13#10'}'#13#10#0
                     RemoveEmptyLines = False
                     Stretch = True
                     mmHeight = 7144

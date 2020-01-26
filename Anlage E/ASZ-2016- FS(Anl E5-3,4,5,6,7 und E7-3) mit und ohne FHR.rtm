@@ -1,8 +1,6 @@
 object Report: TppReport
-  OnFileDeviceCreate = ReportFileDeviceCreate
   AutoStop = False
   DataPipeline = dmPipelines.Schueler
-  OnStartFirstPass = ReportStartFirstPass
   PrinterSetup.BinName = 'Default'
   PrinterSetup.DocumentName = 'ASZ-2016- FS(Anl E5-3,4,5,6,7 und E7-3) mit und ohne FHR.rtm'
   PrinterSetup.Duplex = dpHorizontal
@@ -26,9 +24,6 @@ object Report: TppReport
   AllowPrintToArchive = True
   AllowPrintToFile = True
   ArchiveFileName = '($MyDocuments)\ReportArchive.raf'
-  BeforeOpenDataPipelines = ReportBeforeOpenDataPipelines
-  BeforePrint = ReportBeforePrint
-  BeforeEmail = ReportBeforeEmail
   DeviceType = 'Screen'
   DefaultFileDeviceType = 'PDF'
   EmailSettings.ReportFormat = 'PDF'
@@ -62,8 +57,6 @@ object Report: TppReport
     81FFFF00C1FFFF00C0FFFE00E0FFFC00E07FFC03F07FFC03F03FFC03F83FFE07
     F83FFF0FFC7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
   LanguageID = 'Default'
-  OnInitializeParameters = ReportInitializeParameters
-  OnPreviewFormCreate = ReportPreviewFormCreate
   OpenFile = False
   OutlineSettings.CreateNode = True
   OutlineSettings.CreatePageNodes = True
@@ -2757,29 +2750,10 @@ object Report: TppReport
               object ppDetailBand10: TppDetailBand
                 Background1.Brush.Style = bsClear
                 Background2.Brush.Style = bsClear
+                PrintHeight = phDynamic
                 mmBottomOffset = 0
-                mmHeight = 14023
+                mmHeight = 16140
                 mmPrintPosition = 0
-                object ppDBText2: TppDBText
-                  UserName = 'DBText8'
-                  DataField = 'ZeugnisBezeichnung'
-                  DataPipeline = dmPipelines.ppAbschlussarbeit
-                  Font.Charset = ANSI_CHARSET
-                  Font.Color = clBlack
-                  Font.Name = 'Lucida Sans'
-                  Font.Size = 12
-                  Font.Style = []
-                  ParentDataPipeline = False
-                  Transparent = True
-                  WordWrap = True
-                  DataPipelineName = 'ppAbschlussarbeit'
-                  mmHeight = 13758
-                  mmLeft = 0
-                  mmTop = 265
-                  mmWidth = 128323
-                  BandType = 4
-                  LayerName = PageLayer4
-                end
                 object ppDBText3: TppDBText
                   UserName = 'DBText9'
                   Color = clSilver
@@ -2800,27 +2774,54 @@ object Report: TppReport
                   BandType = 4
                   LayerName = PageLayer4
                 end
+                object ppDBMemo4: TppDBMemo
+                  UserName = 'DBMemo4'
+                  CharWrap = False
+                  DataField = 'Zeugnisbezeichnung'
+                  DataPipeline = dmPipelines.ppAbschlussarbeit
+                  Font.Charset = ANSI_CHARSET
+                  Font.Color = clBlack
+                  Font.Name = 'Lucida Sans'
+                  Font.Size = 12
+                  Font.Style = []
+                  RemoveEmptyLines = False
+                  Stretch = True
+                  Transparent = True
+                  DataPipelineName = 'ppAbschlussarbeit'
+                  mmHeight = 15610
+                  mmLeft = 1058
+                  mmTop = 265
+                  mmWidth = 127794
+                  BandType = 4
+                  LayerName = PageLayer4
+                  mmBottomOffset = 0
+                  mmOverFlowOffset = 0
+                  mmStopPosition = 0
+                  mmMinHeight = 0
+                  mmLeading = 0
+                end
               end
               object raCodeModule10: TraCodeModule
                 ProgramStream = {
                   01060F5472614576656E7448616E646C65720B50726F6772616D4E616D650610
-                  444254657874384F6E476574546578740B50726F6772616D54797065070B7474
-                  50726F63656475726506536F75726365066D70726F6365647572652044425465
-                  7874384F6E476574546578742876617220546578743A20537472696E67293B0D
-                  0A626567696E0D0A200D0A20546578743A3D2054657874202B202720272B4162
-                  7363686C7573736172626569745B274C454C53275D3B0D0A20656E643B0D0A0D
-                  436F6D706F6E656E744E616D65060744425465787438094576656E744E616D65
-                  06094F6E47657454657874074576656E7449440235084361726574506F730102
-                  0F0205000001060F5472614576656E7448616E646C65720B50726F6772616D4E
-                  616D650610444254657874394F6E476574546578740B50726F6772616D547970
-                  65070B747450726F63656475726506536F75726365068A70726F636564757265
-                  20444254657874394F6E476574546578742876617220546578743A2053747269
-                  6E67293B0D0A626567696E0D0A202020494620546578743D2727207468656E20
-                  546578743A3D205A656E737572546F5374722841627363686C75737361726265
-                  69745B274E6F746541627363686C7573734241275D293B0D0A0D0A656E643B0D
-                  0A0D436F6D706F6E656E744E616D65060744425465787439094576656E744E61
-                  6D6506094F6E47657454657874074576656E7449440235084361726574506F73
-                  0102010204000000}
+                  444254657874394F6E476574546578740B50726F6772616D54797065070B7474
+                  50726F63656475726506536F75726365068A70726F6365647572652044425465
+                  7874394F6E476574546578742876617220546578743A20537472696E67293B0D
+                  0A626567696E0D0A202020494620546578743D2727207468656E20546578743A
+                  3D205A656E737572546F5374722841627363686C7573736172626569745B274E
+                  6F746541627363686C7573734241275D293B0D0A0D0A656E643B0D0A0D436F6D
+                  706F6E656E744E616D65060744425465787439094576656E744E616D6506094F
+                  6E47657454657874074576656E7449440235084361726574506F730102010204
+                  000001060F5472614576656E7448616E646C65720B50726F6772616D4E616D65
+                  061044424D656D6F344F6E4765744D656D6F0B50726F6772616D54797065070B
+                  747450726F63656475726506536F75726365069170726F636564757265204442
+                  4D656D6F344F6E4765744D656D6F284C696E65733A2054537472696E6773293B
+                  0D0A626567696E0D0A20206C696E65732E746578743A3D41627363686C757373
+                  6172626569745B275A6575676E697362657A656963686E756E67275D202B2027
+                  2027202B2041627363686C7573736172626569745B274C454C53275D3B0D0A65
+                  6E643B0D0A0D436F6D706F6E656E744E616D65060744424D656D6F3409457665
+                  6E744E616D6506094F6E4765744D656D6F074576656E74494402560843617265
+                  74506F730102050204000000}
               end
               object ppDesignLayers9: TppDesignLayers
                 object ppDesignLayer9: TppDesignLayer
