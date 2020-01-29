@@ -997,7 +997,7 @@ object Report: TppReport
                 end
                 object ppLabel9: TppLabel
                   UserName = 'Label9'
-                  Caption = '3'
+                  Caption = '2'
                   Font.Charset = ANSI_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Lucida Sans'
