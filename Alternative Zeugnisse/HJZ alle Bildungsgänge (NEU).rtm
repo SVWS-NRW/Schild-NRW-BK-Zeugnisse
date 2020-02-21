@@ -4,7 +4,7 @@ object Report: TppReport
   DataPipeline = dmPipelines.Schueler
   OnStartFirstPass = ReportStartFirstPass
   PrinterSetup.BinName = 'Kassette 2'
-  PrinterSetup.DocumentName = '6 - HJZ JDBK alle Bildungsg'#228'nge (NEU).rtm'
+  PrinterSetup.DocumentName = '6 -- HJZ JDBK alle Bildungsg'#228'nge (NEU).rtm'
   PrinterSetup.Duplex = dpVertical
   PrinterSetup.PaperName = 'A4'
   PrinterSetup.PrinterName = 'Default'
