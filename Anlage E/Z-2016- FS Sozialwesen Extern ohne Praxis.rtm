@@ -1,8 +1,6 @@
 object Report: TppReport
-  OnFileDeviceCreate = ReportFileDeviceCreate
   AutoStop = False
   DataPipeline = dmPipelines.Schueler
-  OnStartFirstPass = ReportStartFirstPass
   PrinterSetup.BinName = 'Default'
   PrinterSetup.DocumentName = 'Z-2016- FS Sozialwesen Extern ohne Praxis.rtm'
   PrinterSetup.Duplex = dpHorizontal
@@ -25,9 +23,6 @@ object Report: TppReport
   AllowPrintToArchive = True
   AllowPrintToFile = True
   ArchiveFileName = '($MyDocuments)\ReportArchive.raf'
-  BeforeOpenDataPipelines = ReportBeforeOpenDataPipelines
-  BeforePrint = ReportBeforePrint
-  BeforeEmail = ReportBeforeEmail
   DeviceType = 'Screen'
   DefaultFileDeviceType = 'PDF'
   EmailSettings.ReportFormat = 'PDF'
@@ -61,8 +56,6 @@ object Report: TppReport
     81FFFF00C1FFFF00C0FFFE00E0FFFC00E07FFC03F07FFC03F03FFC03F83FFE07
     F83FFF0FFC7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
   LanguageID = 'Default'
-  OnInitializeParameters = ReportInitializeParameters
-  OnPreviewFormCreate = ReportPreviewFormCreate
   OpenFile = False
   OutlineSettings.CreateNode = True
   OutlineSettings.CreatePageNodes = True
@@ -575,7 +568,7 @@ object Report: TppReport
                   6E72656465275D2B202720272B53636875656C65725B27566F726E616D654E61
                   6D65275D2B2720686174206469652045787465726E656E7072C3BC66756E6720
                   6C6175742042657363686C7573732064657320616C6C67656D65696E656E2050
-                  72C3BC66756E677361757373636875737365732062657374616E64656E2E2064
+                  72C3BC66756E677361757373636875737365732062657374616E64656E2E2044
                   6173205A6575676E69732062657265636874696774207A756D2041626C656973
                   74656E20646573204265727566737072616B74696B756D732E273B0D0A200D0A
                   0D0A656E643B0D0A0D436F6D706F6E656E744E616D6506064C6162656C350945
