@@ -151,33 +151,36 @@ object Report: TppReport
             Font.Size = 8
             Font.Style = []
             Caption = 'RichText9'
+            MailMerge = True
             RichText = 
               '{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcha' +
-              'rset0 Lucida Sans;}{\f1\fnil Lucida Sans;}}'#13#10'{\colortbl ;\red0\g' +
-              'reen0\blue0;}'#13#10'\viewkind4\uc1\pard\fi-227\li227\super\f0\fs16\pa' +
-              'r'#13#10'\pard\fi-227\li227\qj\nosupersub Dem Zeugnis liegen zugrunde:' +
-              '\par'#13#10'\pard\fi-120\li120\qj - die Vereinbarung \'#39'fcber Fachschul' +
-              'en (Beschluss der Kultusministerkonferenz vom 7. November 2002 i' +
-              'n der jeweils geltenden Fassung),\par'#13#10'- die Verordnung \'#39'fcber ' +
-              'die Ausbildung uind Pr\'#39'fcfung in den Bildungsg\'#39'e4ngen des Beru' +
-              'fskollegs (Ausbildungs- und Pr\'#39'fcfungsordnung Berufskolleg - AP' +
-              'O-BK) vom 26. Mai 1999 (SGV. NRW. 223/BASS 13-33 Nr. 1.1) in der' +
-              ' jeweils geltenden Fassung,\par'#13#10'- die Allgemeine Externen-Pr\'#39'f' +
-              'cfungsordnung f\'#39'fcr Bildungsg\'#39'e4nge des Berufskollegs (Externe' +
-              'n-Pr\'#39'fcfungsordnung Berufskolleg - PO-Externe-BK) vom 14.06.200' +
-              '7 (BASS 19-33 Nr. 4.1).\par'#13#10'\pard\fi-227\li227\qj\b Rechtbehelf' +
-              'sbelehrung:\ul\b0\par'#13#10'\pard\qj\ulnone Gegen dieses Zeugnis kann' +
-              ' innerhalb eines Monats nach Zustellung beim zust\'#39'e4ndigen Verw' +
-              'altungsgericht \i Anschrift hier einf\'#39'fcgen \i0 Klage erhoben w' +
-              'erden. Die Klage kann schriftlich oder m\'#39'fcndlich zur Nierdersc' +
-              'hrift des Urkundsbeamten der Gesch\'#39'e4ftsstelle erhoben werden. ' +
-              'Wir die Klage schriftlich erhoben, so sollen ihr drei Abschrifte' +
-              'n beigef\'#39'fcgt werden. Falls die Frist durch das Verschulden ein' +
-              'er/eines Bevollm\'#39'e4chtigten vers\'#39'e4umt wird, so wird dieses Ve' +
-              'rschulkden Ihnen zugerechnet.\par'#13#10'\pard\fi-227\li227\par'#13#10'\pard' +
-              '\qj\super 1)\nosupersub  Notenstufen gem\'#39'e4\'#39'df \'#39'a7 48 Abs. 3 ' +
-              'SchulG: sehr gut (1), gut (2), befriedigend (3), ausreichend (4)' +
-              ', mangelhaft (5), ungen\'#39'fcgend (6)\cf1\f1\par'#13#10'}'#13#10#0
+              'rset0 Lucida Sans;}{\f1\fswiss\fcharset0 ArialMT;}{\f2\fnil Luci' +
+              'da Sans;}}'#13#10'{\colortbl ;\red0\green0\blue0;}'#13#10'\viewkind4\uc1\par' +
+              'd\fi-227\li227\super\f0\fs16\par'#13#10'\pard\fi-227\li227\qj\nosupers' +
+              'ub Dem Zeugnis liegen zugrunde:\par'#13#10'\pard\fi-120\li120\qj - die' +
+              ' Vereinbarung \'#39'fcber Fachschulen (Beschluss der Kultusministerk' +
+              'onferenz vom 7. November 2002 in der jeweils geltenden Fassung),' +
+              '\par'#13#10'- die Verordnung \'#39'fcber die Ausbildung und Pr\'#39'fcfung in ' +
+              'den Bildungsg\'#39'e4ngen des Berufskollegs (Ausbildungs- und Pr\'#39'fc' +
+              'fungsordnung Berufskolleg - APO-BK) vom 26. Mai 1999 (SGV. NRW. ' +
+              '223/BASS 13-33 Nr. 1.1) in der jeweils geltenden Fassung,\par'#13#10'-' +
+              ' die Allgemeine Externen-Pr\'#39'fcfungsordnung f\'#39'fcr Bildungsg\'#39'e4' +
+              'nge des Berufskollegs (Externen-Pr\'#39'fcfungsordnung Berufskolleg ' +
+              '- PO-Externe-BK) vom 14.06.2007 (BASS 19-33 Nr. 4.1).\par'#13#10'\pard' +
+              '\qj\b Rechtsbehelfsbelehrung:\par'#13#10'\b0 Gegen dieses Zeugnis kann' +
+              ' innerhalb eines Monats nach Bekanntgabe des Zeugnisses Widerspr' +
+              'uch eingelegt werden. Der Widerspruch ist beim <dbtext datapipel' +
+              'ine='#39'EigeneSchule'#39'>Bezeichnung1</dbtext>, <dbtext datapipeline='#39 +
+              'EigeneSchule'#39'>Strasse</dbtext>, <dbtext datapipeline='#39'EigeneSchu' +
+              'le'#39'>PlzOrt</dbtext>  schriftlich oder zur Niederschrift zu erheb' +
+              'en. \par'#13#10'Falls die Frist durch das Verschulden einer/eines Bevo' +
+              'llm\'#39'e4chtigten vers\'#39'e4umt wird, wird dieses Verschulden der Wi' +
+              'derspruchsf\'#39'fchrerin/dem Widerspruchsf\'#39'fchrer zugerechnet.\f1\' +
+              'par'#13#10'\pard\fi-227\li227\qr\tab\tab\tab\tab\tab\tab\tab\f0 Schuln' +
+              'ummer: <dbtext datapipeline='#39'EigeneSchule'#39'>SchulNr</dbtext>\par'#13 +
+              #10'\pard\qj\super 1)\nosupersub  Notenstufen gem\'#39'e4\'#39'df \'#39'a7 48 A' +
+              'bs. 3 SchulG: sehr gut (1), gut (2), befriedigend (3), ausreiche' +
+              'nd (4), mangelhaft (5), ungen\'#39'fcgend (6)\cf1\f2\par'#13#10'}'#13#10#0
             RemoveEmptyLines = False
             Stretch = True
             Transparent = True
@@ -497,7 +500,7 @@ object Report: TppReport
                   Font.Style = []
                   Transparent = True
                   WordWrap = True
-                  mmHeight = 13494
+                  mmHeight = 15875
                   mmLeft = 0
                   mmTop = 2117
                   mmWidth = 170127
@@ -573,7 +576,7 @@ object Report: TppReport
                   74656E20646573204265727566737072616B74696B756D732E273B0D0A200D0A
                   0D0A656E643B0D0A0D436F6D706F6E656E744E616D6506064C6162656C350945
                   76656E744E616D6506094F6E47657454657874074576656E7449440235084361
-                  726574506F730102010205000000}
+                  726574506F730103DB000204000000}
               end
               object ppDesignLayers4: TppDesignLayers
                 object ppDesignLayer4: TppDesignLayer
@@ -616,9 +619,30 @@ object Report: TppReport
               PrinterSetup.mmPaperHeight = 297000
               PrinterSetup.mmPaperWidth = 420000
               PrinterSetup.PaperSize = 8
+              Template.Offset = 284
+              Template.Format = ftASCII
               Units = utMillimeters
               Version = '15.05'
               mmColumnWidth = 0
+              object ppHeaderBand1: TppHeaderBand
+                Background.Brush.Style = bsClear
+                mmBottomOffset = 0
+                mmHeight = 13229
+                mmPrintPosition = 0
+              end
+              object ppDetailBand2: TppDetailBand
+                Background1.Brush.Style = bsClear
+                Background2.Brush.Style = bsClear
+                mmBottomOffset = 0
+                mmHeight = 13229
+                mmPrintPosition = 0
+              end
+              object ppFooterBand1: TppFooterBand
+                Background.Brush.Style = bsClear
+                mmBottomOffset = 0
+                mmHeight = 13229
+                mmPrintPosition = 0
+              end
               object ppDesignLayers2: TppDesignLayers
                 object ppDesignLayer2: TppDesignLayer
                   UserName = 'Foreground1'
