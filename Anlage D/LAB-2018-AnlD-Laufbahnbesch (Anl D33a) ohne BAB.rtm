@@ -3,6 +3,7 @@ object Report: TppReport
   DataPipeline = dmPipelines.Schueler
   PrinterSetup.BinName = 'Default'
   PrinterSetup.DocumentName = 'LAB-2018-AnlD-Laufbahnbesch (Anl D33a) ohne BAB.rtm'
+  PrinterSetup.Duplex = dpHorizontal
   PrinterSetup.Orientation = poLandscape
   PrinterSetup.PaperName = 'A3'
   PrinterSetup.PrinterName = 'Nitro PDF Creator (Reader 5)'
@@ -94,6 +95,7 @@ object Report: TppReport
       object ppChildReport4: TppChildReport
         PrinterSetup.BinName = 'Default'
         PrinterSetup.DocumentName = 'LAB-2018-AnlD-Laufbahnbesch (Anl D33a) ohne BAB.rtm'
+        PrinterSetup.Duplex = dpHorizontal
         PrinterSetup.Orientation = poLandscape
         PrinterSetup.PaperName = 'A3'
         PrinterSetup.PrinterName = 'Nitro PDF Creator (Reader 5)'
@@ -2162,10 +2164,11 @@ object Report: TppReport
               AutoStop = False
               DataPipeline = dmPipelines.plLernabschnitte
               PrinterSetup.BinName = 'Default'
-              PrinterSetup.DocumentName = 'LAB-2018-AnlD-Laufbahnbesch (Anl D33a) mit BAB  neu.rtm'
+              PrinterSetup.DocumentName = 'LAB-2018-AnlD-Laufbahnbesch (Anl D33a) ohne BAB.rtm'
+              PrinterSetup.Duplex = dpHorizontal
               PrinterSetup.Orientation = poLandscape
-              PrinterSetup.PaperName = 'A3 297 x 420 mm'
-              PrinterSetup.PrinterName = 'EPSON WF-2630 Series'
+              PrinterSetup.PaperName = 'A3'
+              PrinterSetup.PrinterName = 'Nitro PDF Creator (Reader 5)'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 0
               PrinterSetup.mmMarginLeft = 0
@@ -2750,6 +2753,7 @@ object Report: TppReport
       object ppChildReport7: TppChildReport
         PrinterSetup.BinName = 'Default'
         PrinterSetup.DocumentName = 'LAB-2018-AnlD-Laufbahnbesch (Anl D33a) ohne BAB.rtm'
+        PrinterSetup.Duplex = dpHorizontal
         PrinterSetup.Orientation = poLandscape
         PrinterSetup.PaperName = 'A3'
         PrinterSetup.PrinterName = 'Nitro PDF Creator (Reader 5)'
@@ -3025,6 +3029,7 @@ object Report: TppReport
             object ppChildReport5: TppChildReport
               PrinterSetup.BinName = 'Default'
               PrinterSetup.DocumentName = 'LAB-2018-AnlD-Laufbahnbesch (Anl D33a) ohne BAB.rtm'
+              PrinterSetup.Duplex = dpHorizontal
               PrinterSetup.Orientation = poLandscape
               PrinterSetup.PaperName = 'A3'
               PrinterSetup.PrinterName = 'Nitro PDF Creator (Reader 5)'
@@ -3181,6 +3186,33 @@ object Report: TppReport
           end
         end
       end
+    end
+  end
+  object ppGroup2: TppGroup
+    BreakName = 'ID'
+    DataPipeline = dmPipelines.Schueler
+    GroupFileSettings.NewFile = False
+    GroupFileSettings.EmailFile = False
+    OutlineSettings.CreateNode = True
+    NewPage = True
+    StartOnOddPage = True
+    UserName = 'Group2'
+    mmNewColumnThreshold = 0
+    mmNewPageThreshold = 0
+    DataPipelineName = 'Schueler'
+    NewFile = False
+    object ppGroupHeaderBand2: TppGroupHeaderBand
+      Background.Brush.Style = bsClear
+      mmBottomOffset = 0
+      mmHeight = 0
+      mmPrintPosition = 0
+    end
+    object ppGroupFooterBand2: TppGroupFooterBand
+      Background.Brush.Style = bsClear
+      HideWhenOneDetail = False
+      mmBottomOffset = 0
+      mmHeight = 0
+      mmPrintPosition = 0
     end
   end
   object raCodeModule29: TraCodeModule

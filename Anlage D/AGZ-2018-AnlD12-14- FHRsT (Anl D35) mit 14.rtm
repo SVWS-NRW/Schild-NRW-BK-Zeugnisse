@@ -3,6 +3,7 @@ object Report: TppReport
   DataPipeline = dmPipelines.Schueler
   PrinterSetup.BinName = 'Default'
   PrinterSetup.DocumentName = 'AGZ-2018-AnlD12-14- FHRsT (Anl D35) mit 14.rtm'
+  PrinterSetup.Duplex = dpHorizontal
   PrinterSetup.Orientation = poLandscape
   PrinterSetup.PaperName = 'A3'
   PrinterSetup.PrinterName = 'Nitro PDF Creator (Reader 5)'
@@ -92,6 +93,7 @@ object Report: TppReport
       object ppChildReport4: TppChildReport
         PrinterSetup.BinName = 'Default'
         PrinterSetup.DocumentName = 'AGZ-2018-AnlD12-14- FHRsT (Anl D35) mit 14.rtm'
+        PrinterSetup.Duplex = dpHorizontal
         PrinterSetup.Orientation = poLandscape
         PrinterSetup.PaperName = 'A3'
         PrinterSetup.PrinterName = 'Nitro PDF Creator (Reader 5)'
@@ -2104,6 +2106,7 @@ object Report: TppReport
               DataPipeline = dmPipelines.ppBKAbschlussFaecher
               PrinterSetup.BinName = 'Default'
               PrinterSetup.DocumentName = 'AGZ-2018-AnlD12-14- FHRsT (Anl D35) mit 14.rtm'
+              PrinterSetup.Duplex = dpHorizontal
               PrinterSetup.Orientation = poLandscape
               PrinterSetup.PaperName = 'A3'
               PrinterSetup.PrinterName = 'Nitro PDF Creator (Reader 5)'
@@ -2378,6 +2381,7 @@ object Report: TppReport
       object ppChildReport2: TppChildReport
         PrinterSetup.BinName = 'Default'
         PrinterSetup.DocumentName = 'AGZ-2018-AnlD12-14- FHRsT (Anl D35) mit 14.rtm'
+        PrinterSetup.Duplex = dpHorizontal
         PrinterSetup.Orientation = poLandscape
         PrinterSetup.PaperName = 'A3'
         PrinterSetup.PrinterName = 'Nitro PDF Creator (Reader 5)'
@@ -2421,6 +2425,7 @@ object Report: TppReport
             object ppChildReport3: TppChildReport
               PrinterSetup.BinName = 'Default'
               PrinterSetup.DocumentName = 'AGZ-2018-AnlD12-14- FHRsT (Anl D35) mit 14.rtm'
+              PrinterSetup.Duplex = dpHorizontal
               PrinterSetup.Orientation = poLandscape
               PrinterSetup.PaperName = 'A3'
               PrinterSetup.PrinterName = 'Nitro PDF Creator (Reader 5)'
@@ -2909,6 +2914,33 @@ object Report: TppReport
           end
         end
       end
+    end
+  end
+  object ppGroup2: TppGroup
+    BreakName = 'ID'
+    DataPipeline = dmPipelines.Schueler
+    GroupFileSettings.NewFile = False
+    GroupFileSettings.EmailFile = False
+    OutlineSettings.CreateNode = True
+    NewPage = True
+    StartOnOddPage = False
+    UserName = 'Group2'
+    mmNewColumnThreshold = 0
+    mmNewPageThreshold = 0
+    DataPipelineName = 'Schueler'
+    NewFile = False
+    object ppGroupHeaderBand2: TppGroupHeaderBand
+      Background.Brush.Style = bsClear
+      mmBottomOffset = 0
+      mmHeight = 0
+      mmPrintPosition = 0
+    end
+    object ppGroupFooterBand2: TppGroupFooterBand
+      Background.Brush.Style = bsClear
+      HideWhenOneDetail = False
+      mmBottomOffset = 0
+      mmHeight = 0
+      mmPrintPosition = 0
     end
   end
   object raCodeModule29: TraCodeModule

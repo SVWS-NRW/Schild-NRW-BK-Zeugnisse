@@ -3,6 +3,7 @@ object Report: TppReport
   DataPipeline = dmPipelines.Schueler
   PrinterSetup.BinName = 'Default'
   PrinterSetup.DocumentName = 'LAB-2018-AnlD-Laufbahnbesch (Anl D33a) ohne BAB neu.rtm'
+  PrinterSetup.Duplex = dpHorizontal
   PrinterSetup.Orientation = poLandscape
   PrinterSetup.PaperName = 'A3 297 x 420 mm'
   PrinterSetup.PrinterName = 'EPSON WF-2630 Series'
@@ -94,6 +95,7 @@ object Report: TppReport
       object ppChildReport4: TppChildReport
         PrinterSetup.BinName = 'Default'
         PrinterSetup.DocumentName = 'LAB-2018-AnlD-Laufbahnbesch (Anl D33a) ohne BAB neu.rtm'
+        PrinterSetup.Duplex = dpHorizontal
         PrinterSetup.Orientation = poLandscape
         PrinterSetup.PaperName = 'A3 297 x 420 mm'
         PrinterSetup.PrinterName = 'EPSON WF-2630 Series'
@@ -152,7 +154,6 @@ object Report: TppReport
               PrinterSetup.mmPaperHeight = 297128
               PrinterSetup.mmPaperWidth = 419895
               PrinterSetup.PaperSize = 8
-              Template.Offset = 284
               Template.Format = ftASCII
               Units = utMillimeters
               Version = '15.05'
@@ -484,8 +485,15 @@ object Report: TppReport
                   657273696368742C274B7572736172743D474B533B474B4D3B4142333B414234
                   3B4C4B313B4C4B3227293B200D0A202020200D0A656E643B0D0A0D436F6D706F
                   6E656E744E616D6506065265706F7274094576656E744E616D65060B4F6E5374
-                  61727450616765074576656E7449440215084361726574506F73010205020300
-                  0000}
+                  61727450616765074576656E7449440215084361726574506F73010243020400
+                  0001060F5472614576656E7448616E646C65720B50726F6772616D4E616D6506
+                  0F5265706F72744F6E456E64506167650B50726F6772616D54797065070B7474
+                  50726F63656475726506536F75726365064E70726F636564757265205265706F
+                  72744F6E456E64506167653B0D0A626567696E0D0A202020205365747A654669
+                  6C7465722846616368756562657273696368742C2727293B0D0A656E643B0D0A
+                  0D436F6D706F6E656E744E616D6506065265706F7274094576656E744E616D65
+                  06094F6E456E6450616765074576656E7449440211084361726574506F730102
+                  290203000000}
               end
               object ppDesignLayers2: TppDesignLayers
                 object ppDesignLayer2: TppDesignLayer
@@ -2155,6 +2163,7 @@ object Report: TppReport
               DataPipeline = dmPipelines.plLernabschnitte
               PrinterSetup.BinName = 'Default'
               PrinterSetup.DocumentName = 'LAB-2018-AnlD-Laufbahnbesch (Anl D33a) ohne BAB neu.rtm'
+              PrinterSetup.Duplex = dpHorizontal
               PrinterSetup.Orientation = poLandscape
               PrinterSetup.PaperName = 'A3 297 x 420 mm'
               PrinterSetup.PrinterName = 'EPSON WF-2630 Series'
@@ -2742,6 +2751,7 @@ object Report: TppReport
       object ppChildReport7: TppChildReport
         PrinterSetup.BinName = 'Default'
         PrinterSetup.DocumentName = 'LAB-2018-AnlD-Laufbahnbesch (Anl D33a) ohne BAB neu.rtm'
+        PrinterSetup.Duplex = dpHorizontal
         PrinterSetup.Orientation = poLandscape
         PrinterSetup.PaperName = 'A3 297 x 420 mm'
         PrinterSetup.PrinterName = 'EPSON WF-2630 Series'
@@ -3027,6 +3037,7 @@ object Report: TppReport
               DataPipeline = dmPipelines.plHalbjahrUebersicht
               PrinterSetup.BinName = 'Default'
               PrinterSetup.DocumentName = 'LAB-2018-AnlD-Laufbahnbesch (Anl D33a) ohne BAB neu.rtm'
+              PrinterSetup.Duplex = dpHorizontal
               PrinterSetup.Orientation = poLandscape
               PrinterSetup.PaperName = 'A3 297 x 420 mm'
               PrinterSetup.PrinterName = 'EPSON WF-2630 Series'
@@ -3235,6 +3246,33 @@ object Report: TppReport
           end
         end
       end
+    end
+  end
+  object ppGroup2: TppGroup
+    BreakName = 'ID'
+    DataPipeline = dmPipelines.Schueler
+    GroupFileSettings.NewFile = False
+    GroupFileSettings.EmailFile = False
+    OutlineSettings.CreateNode = True
+    NewPage = True
+    StartOnOddPage = False
+    UserName = 'Group2'
+    mmNewColumnThreshold = 0
+    mmNewPageThreshold = 0
+    DataPipelineName = 'Schueler'
+    NewFile = False
+    object ppGroupHeaderBand2: TppGroupHeaderBand
+      Background.Brush.Style = bsClear
+      mmBottomOffset = 0
+      mmHeight = 0
+      mmPrintPosition = 0
+    end
+    object ppGroupFooterBand2: TppGroupFooterBand
+      Background.Brush.Style = bsClear
+      HideWhenOneDetail = False
+      mmBottomOffset = 0
+      mmHeight = 0
+      mmPrintPosition = 0
     end
   end
   object raCodeModule29: TraCodeModule
