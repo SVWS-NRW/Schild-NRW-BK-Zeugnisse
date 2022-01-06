@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - run: mkdir .zip
-      - run: do zip ."/.zip/$BK_Zeugnisse.$(date +'%d-%m-%Y').${{ github.run_number }}.zip"; done
+      - run: zip ."/.zip/$BK_Zeugnisse.$(date +'%d-%m-%Y').${{ github.run_number }}.zip"
       - uses: ncipollo/release-action@v1
         with:
           artifacts: "./.zip/*"
