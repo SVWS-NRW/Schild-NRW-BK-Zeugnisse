@@ -13,6 +13,9 @@ jobs:
         with:
           files: /*
           dest: BK_Zeugnisse.$(date +'%d-%m-%Y').${{ github.run_number }}.zip.zip
+      - uses: ncipollo/release-action@v1
+        with:
+          artifacts: "./.zip/*"
           allowUpdates: true
           tag: v1.0.${{ github.run_number }}
           token: ${{ secrets.GITHUB_TOKEN }}
