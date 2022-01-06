@@ -8,11 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     if: "contains(github.event.head_commit.message, 'release')"
     steps:
-      - uses: actions/checkout@v2
-      - uses: papeloto/action-zip@v1
-        with:
-          files: /*
-          dest: BK_Zeugnisse.$(date +'%d-%m-%Y').${{ github.run_number }}.zip.zip
+      - uses: actions/checkout@v1
+      - run: mkdir .zip
+      - run: do zip ."/.zip/$BK_Zeugnisse.$(date +'%d-%m-%Y').${{ github.run_number }}.zip"; done
       - uses: ncipollo/release-action@v1
         with:
           artifacts: "./.zip/*"
