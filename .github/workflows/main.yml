@@ -1,0 +1,19 @@
+name: Continuous Release
+on:
+  push:
+    branches:
+      - master
+jobs:
+  create-zip:
+    runs-on: ubuntu-latest
+    if: "contains(github.event.head_commit.message, 'release')"
+    steps:
+      - uses: actions/checkout@v1
+      - run: mkdir .zip
+      - run: zip -r ."/.zip/$--BK-Zeugnisse_$(date +'%d-%m-%Y').zip" . -x ".github/*" ".git/*" ".zip/*"
+      - uses: ncipollo/release-action@v1
+        with:
+          artifacts: "./.zip/*"
+          allowUpdates: true
+          tag: v1.0.${{ github.run_number }}
+          token: ${{ secrets.GITHUB_TOKEN }}
