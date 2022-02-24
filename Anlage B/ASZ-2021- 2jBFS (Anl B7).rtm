@@ -1027,7 +1027,6 @@ object Report: TppReport
             NewPrintJob = False
             OutlineSettings.CreateNode = True
             TraverseAllData = False
-            Visible = False
             DataPipelineName = 'ppBKBerufspraktikum'
             mmHeight = 1
             mmLeft = 0
