@@ -2,6 +2,8 @@ object Report: TppReport
   OnFileDeviceCreate = ReportFileDeviceCreate
   AutoStop = False
   DataPipeline = dmPipelines.Schueler
+  OnPrintingComplete = ReportPrintingComplete
+  OnSaveText = ReportSaveText
   OnStartFirstPass = ReportStartFirstPass
   PrinterSetup.BinName = 'Default'
   PrinterSetup.DocumentName = 'JAZ-2016- 2jBFS (Anl B5).rtm'
