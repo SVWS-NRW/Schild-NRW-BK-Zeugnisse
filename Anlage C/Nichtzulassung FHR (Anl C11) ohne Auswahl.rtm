@@ -16,9 +16,8 @@ object Report: TppReport
   PrinterSetup.mmPaperWidth = 210000
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
-  Template.FileName = 
-    'S:\Schild-NRW\Schild-Reports\Zeugnisse aktuell\Anlage C\Nichtzul' +
-    'assung FHR (Anl C11) ohne Auswahl.rtm'
+  Template.FileName =
+    'D:\SchILD-NRW\SchILD-Reports\Zeugnisse 2016 Lucida\Anlage C\Nichtzulassung FHR (Anl C11) ohne Auswahl.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
