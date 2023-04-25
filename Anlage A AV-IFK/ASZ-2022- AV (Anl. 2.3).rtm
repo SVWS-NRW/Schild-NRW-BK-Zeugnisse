@@ -132,6 +132,7 @@ object Report: TppReport
         PrinterSetup.mmPaperHeight = 297000
         PrinterSetup.mmPaperWidth = 420000
         PrinterSetup.PaperSize = 8
+        Template.Offset = 284
         Template.Format = ftASCII
         Units = utMillimeters
         Version = '15.05'
@@ -548,9 +549,9 @@ object Report: TppReport
             Caption = 'RichText3'
             RichText = 
               '{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil Luci' +
-              'da Sans;}}'#13#10'{\colortbl ;\red0\green0\blue0;}'#13#10'\viewkind4\uc1\par' +
-              'd\qc\cf1\b\f0\fs28\par'#13#10'und\par'#13#10'\par'#13#10'ein dem Hauptschulabschlu' +
-              'ss gleichwertiger Abschluss\par'#13#10'}'#13#10#0
+              'da Sans;}{\f1\fnil\fcharset0 Lucida Sans;}}'#13#10'{\colortbl ;\red0\g' +
+              'reen0\blue0;}'#13#10'\viewkind4\uc1\pard\qc\cf1\b\f0\fs28\par'#13#10'und\par' +
+              #13#10'\par'#13#10'\f1 Erster Schulabschluss\f0\par'#13#10'}'#13#10#0
             RemoveEmptyLines = False
             Transparent = True
             mmHeight = 23548
@@ -772,7 +773,6 @@ object Report: TppReport
         PrinterSetup.mmPaperHeight = 297000
         PrinterSetup.mmPaperWidth = 420000
         PrinterSetup.PaperSize = 8
-        Template.Offset = 284
         Template.Format = ftASCII
         Units = utMillimeters
         Version = '15.05'
@@ -1505,10 +1505,9 @@ object Report: TppReport
               #10'hat\par'#13#10'\pard\nowidctlpar\qc\b\f1\fs28 berufliche Kenntnisse, ' +
               'F\'#39'e4higkeiten und Fertigkeiten und berufliche Orientierung und ' +
               'den Ersten Schulabschluss\super\f0\par'#13#10'\pard\nowidctlpar\nosupe' +
-              'rsub\b0\fs24\par'#13#10'\par'#13#10'erworben.\par'#13#10'\f1 Ein dem Hauptschulabs' +
-              'chluss nach Klasse 9 gleichwertiger Abschluss ist im Deutschen u' +
-              'nd Europ\'#39'e4ischen Qualifikationsrahmen dem Niveau 2 zugeordnet.' +
-              '\f0\par'#13#10'\par'#13#10'\par'#13#10'\par'#13#10'\par'#13#10'}'#13#10#0
+              'rsub\b0\fs24\par'#13#10'\par'#13#10'erworben.\par'#13#10'\f1 Der Erste Schulabschl' +
+              'uss ist im Deutschen und Europ\'#39'e4ischen Qualifikationsrahmen de' +
+              'm Niveau 2 zugeordnet.\f0\par'#13#10'\par'#13#10'\par'#13#10'\par'#13#10'\par'#13#10'}'#13#10#0
             RemoveEmptyLines = False
             Stretch = True
             Transparent = True
@@ -1920,7 +1919,7 @@ object Report: TppReport
             Stretch = True
             Transparent = True
             mmHeight = 64823
-            mmLeft = 210344
+            mmLeft = 209550
             mmTop = 25929
             mmWidth = 160073
             BandType = 4
