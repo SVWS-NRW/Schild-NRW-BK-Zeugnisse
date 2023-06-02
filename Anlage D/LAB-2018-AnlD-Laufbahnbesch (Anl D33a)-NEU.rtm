@@ -416,7 +416,7 @@ object Report: TppReport
             Caption = 'RT_Grundlage'
             RichText = 
               '{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil Cali' +
-              'bri;}{\f1\fnil\fcharset0 Corbel;}{\f2\fnil Lucida Sans;}}'#13#10'{\col' +
+              'bri;}{\f1\fnil\fcharset0 Corbel;}{\f2\fnil Calibri;}}'#13#10'{\col' +
               'ortbl ;\red0\green0\blue0;}'#13#10'\viewkind4\uc1\pard\cf1\f0\fs24 Der' +
               ' Bescheinigung liegt zugrunde:\par'#13#10'\pard\fi-140\li140\par'#13#10'\par' +
               'd\qj Die Verordnung \f1\'#39'fc\f0 ber die Ausbildung und Pr\f1\'#39'fc\' +
@@ -2059,7 +2059,7 @@ object Report: TppReport
             Caption = 'RT_HinweisNoten'
             RichText = 
               '{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil Cali' +
-              'bri;}{\f1\fnil Lucida Sans;}}'#13#10'{\colortbl ;\red0\green0\blue255;' +
+              'bri;}{\f1\fnil Calibri;}}'#13#10'{\colortbl ;\red0\green0\blue255;' +
               '}'#13#10'\viewkind4\uc1\pard\cf1\b\f0\fs20 Punktzahlen werden in einfa' +
               'cher Wertung und stets zweistellig angegeben.\f1\par'#13#10'}'#13#10#0
             RemoveEmptyLines = False
