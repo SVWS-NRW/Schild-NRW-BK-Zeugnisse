@@ -2,7 +2,7 @@ object Report: TppReport
   AutoStop = False
   DataPipeline = dmPipelines.Schueler
   PrinterSetup.BinName = 'Default'
-  PrinterSetup.DocumentName = 'Nichtzulassung-Kolloquium-D3 (Anl D49neu).rtm'
+  PrinterSetup.DocumentName = 'Nichtzulassung Kolloquium-D3 (Anl D49neu).rtm'
   PrinterSetup.Duplex = dpVertical
   PrinterSetup.PaperName = 'A4 210 x 297 mm'
   PrinterSetup.PrinterName = 'Screen'
@@ -17,7 +17,7 @@ object Report: TppReport
   SaveAsTemplate = True
   Template.FileName = 
     'C:\Progs\SchILD-NRW\SchILD-Reports\ZeugnisFabrik\Anlage D\Nichtz' +
-    'ulassung-Kolloquium-D3 (Anl D49neu).rtm'
+    'ulassung Kolloquium-D3 (Anl D49neu).rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -109,7 +109,7 @@ object Report: TppReport
       Filename = 'Zeugnis_Kopf.rtm'
       mmHeight = 5000
       mmLeft = 0
-      mmTop = 0
+      mmTop = 10000
       mmWidth = 210000
       BandType = 4
       LayerName = Foreground
@@ -119,7 +119,7 @@ object Report: TppReport
       mmMinHeight = 0
       object ppChildReport3: TppChildReport
         PrinterSetup.BinName = 'Default'
-        PrinterSetup.DocumentName = 'Nichtzulassung-Kolloquium-D3 (Anl D49neu).rtm'
+        PrinterSetup.DocumentName = 'Nichtzulassung Kolloquium-D3 (Anl D49neu).rtm'
         PrinterSetup.Duplex = dpVertical
         PrinterSetup.PaperName = 'A4 210 x 297 mm'
         PrinterSetup.PrinterName = 'Screen'

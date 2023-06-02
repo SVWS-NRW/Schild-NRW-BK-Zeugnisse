@@ -1150,74 +1150,6 @@ object Report: TppReport
                   mmStopPosition = 0
                   mmMinHeight = 0
                 end
-                object myDynamicLoadingSubReport1: TmyDynamicLoadingSubReport
-                  UserName = 'DLSR_ZeugnisKopf'
-                  ExpandAll = False
-                  NewPrintJob = False
-                  OutlineSettings.CreateNode = True
-                  ParentPrinterSetup = False
-                  TraverseAllData = False
-                  Filename = 'Zeugnis_Kopf.rtm'
-                  mmHeight = 6615
-                  mmLeft = 0
-                  mmTop = 14552
-                  mmWidth = 175000
-                  BandType = 4
-                  LayerName = Foreground9
-                  mmBottomOffset = 0
-                  mmOverFlowOffset = 0
-                  mmStopPosition = 0
-                  mmMinHeight = 0
-                  object ppChildReport5: TppChildReport
-                    PrinterSetup.BinName = 'Default'
-                    PrinterSetup.DocumentName = 'D46_ErsterVersuch.rtm'
-                    PrinterSetup.Duplex = dpHorizontal
-                    PrinterSetup.PaperName = 'A4'
-                    PrinterSetup.PrinterName = 'Default'
-                    PrinterSetup.SaveDeviceSettings = False
-                    PrinterSetup.mmMarginBottom = 0
-                    PrinterSetup.mmMarginLeft = 0
-                    PrinterSetup.mmMarginRight = 0
-                    PrinterSetup.mmMarginTop = 0
-                    PrinterSetup.mmPaperHeight = 297000
-                    PrinterSetup.mmPaperWidth = 210000
-                    PrinterSetup.PaperSize = 9
-                    Template.Format = ftASCII
-                    Units = utMillimeters
-                    Version = '15.05'
-                    mmColumnWidth = 0
-                    object ppHeaderBand1: TppHeaderBand
-                      Background.Brush.Style = bsClear
-                      PrintHeight = phDynamic
-                      mmBottomOffset = 0
-                      mmHeight = 13229
-                      mmPrintPosition = 0
-                    end
-                    object ppDetailBand5: TppDetailBand
-                      Background1.Brush.Style = bsClear
-                      Background2.Brush.Style = bsClear
-                      mmBottomOffset = 0
-                      mmHeight = 13229
-                      mmPrintPosition = 0
-                    end
-                    object ppFooterBand1: TppFooterBand
-                      Background.Brush.Style = bsClear
-                      mmBottomOffset = 0
-                      mmHeight = 13229
-                      mmPrintPosition = 0
-                    end
-                    object raCodeModule8: TraCodeModule
-                      ProgramStream = {00}
-                    end
-                    object ppDesignLayers6: TppDesignLayers
-                      object ppDesignLayer6: TppDesignLayer
-                        UserName = 'Foreground2'
-                        LayerType = ltBanded
-                        Index = 0
-                      end
-                    end
-                  end
-                end
               end
               object raCodeModule5: TraCodeModule
                 ProgramStream = {
@@ -1432,6 +1364,75 @@ object Report: TppReport
               object ppDesignLayers12: TppDesignLayers
                 object ppDesignLayer12: TppDesignLayer
                   UserName = 'Foreground9'
+                  LayerType = ltBanded
+                  Index = 0
+                end
+              end
+            end
+          end
+          object myDynamicLoadingSubReport1: TmyDynamicLoadingSubReport
+            UserName = 'DLSR_ZeugnisKopf'
+            ExpandAll = False
+            NewPrintJob = False
+            OutlineSettings.CreateNode = True
+            ParentPrinterSetup = False
+            ParentWidth = False
+            TraverseAllData = False
+            Filename = 'Zeugnis_Kopf.rtm'
+            mmHeight = 6615
+            mmLeft = 210000
+            mmTop = 10000
+            mmWidth = 210000
+            BandType = 4
+            LayerName = Foreground6
+            mmBottomOffset = 0
+            mmOverFlowOffset = 0
+            mmStopPosition = 0
+            mmMinHeight = 0
+            object ppChildReport5: TppChildReport
+              PrinterSetup.BinName = 'Default'
+              PrinterSetup.DocumentName = 'D46_ErsterVersuch.rtm'
+              PrinterSetup.Duplex = dpHorizontal
+              PrinterSetup.PaperName = 'A4'
+              PrinterSetup.PrinterName = 'Default'
+              PrinterSetup.SaveDeviceSettings = False
+              PrinterSetup.mmMarginBottom = 0
+              PrinterSetup.mmMarginLeft = 0
+              PrinterSetup.mmMarginRight = 0
+              PrinterSetup.mmMarginTop = 0
+              PrinterSetup.mmPaperHeight = 297000
+              PrinterSetup.mmPaperWidth = 210000
+              PrinterSetup.PaperSize = 9
+              Template.Format = ftASCII
+              Units = utMillimeters
+              Version = '15.05'
+              mmColumnWidth = 0
+              object ppHeaderBand1: TppHeaderBand
+                Background.Brush.Style = bsClear
+                PrintHeight = phDynamic
+                mmBottomOffset = 0
+                mmHeight = 13229
+                mmPrintPosition = 0
+              end
+              object ppDetailBand5: TppDetailBand
+                Background1.Brush.Style = bsClear
+                Background2.Brush.Style = bsClear
+                mmBottomOffset = 0
+                mmHeight = 13229
+                mmPrintPosition = 0
+              end
+              object ppFooterBand1: TppFooterBand
+                Background.Brush.Style = bsClear
+                mmBottomOffset = 0
+                mmHeight = 13229
+                mmPrintPosition = 0
+              end
+              object raCodeModule8: TraCodeModule
+                ProgramStream = {00}
+              end
+              object ppDesignLayers6: TppDesignLayers
+                object ppDesignLayer6: TppDesignLayer
+                  UserName = 'Foreground2'
                   LayerType = ltBanded
                   Index = 0
                 end

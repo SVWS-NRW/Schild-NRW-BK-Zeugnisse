@@ -2,7 +2,7 @@ object Report: TppReport
   AutoStop = False
   DataPipeline = dmPipelines.Schueler
   PrinterSetup.BinName = 'Default'
-  PrinterSetup.DocumentName = 'AHR-2018_AnlD-Abitur (Anl D41).rtm'
+  PrinterSetup.DocumentName = 'AHR-2018_AnlD-Abitur (Anl D41)-NEU.rtm'
   PrinterSetup.Duplex = dpHorizontal
   PrinterSetup.Orientation = poLandscape
   PrinterSetup.PaperName = 'A3'
@@ -18,7 +18,7 @@ object Report: TppReport
   SaveAsTemplate = True
   Template.FileName = 
     'C:\Progs\SchILD-NRW\SchILD-Reports\ZeugnisFabrik\Anlage D\AHR-20' +
-    '18_AnlD-Abitur (Anl D41).rtm'
+    '18_AnlD-Abitur (Anl D41)-NEU.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -1454,6 +1454,75 @@ object Report: TppReport
             mmStopPosition = 0
             mmMinHeight = 0
             mmLeftMargin = 794
+          end
+          object myDynamicLoadingSubReport1: TmyDynamicLoadingSubReport
+            UserName = 'DLSR_ZeugnisKopf'
+            ExpandAll = False
+            NewPrintJob = False
+            OutlineSettings.CreateNode = True
+            ParentPrinterSetup = False
+            ParentWidth = False
+            TraverseAllData = False
+            Filename = 'Zeugnis_Kopf.rtm'
+            mmHeight = 6615
+            mmLeft = 210000
+            mmTop = 10000
+            mmWidth = 210000
+            BandType = 4
+            LayerName = Foreground2
+            mmBottomOffset = 0
+            mmOverFlowOffset = 0
+            mmStopPosition = 0
+            mmMinHeight = 0
+            object ppChildReport5: TppChildReport
+              PrinterSetup.BinName = 'Default'
+              PrinterSetup.DocumentName = 'D46_ErsterVersuch.rtm'
+              PrinterSetup.Duplex = dpHorizontal
+              PrinterSetup.PaperName = 'A4'
+              PrinterSetup.PrinterName = 'Default'
+              PrinterSetup.SaveDeviceSettings = False
+              PrinterSetup.mmMarginBottom = 0
+              PrinterSetup.mmMarginLeft = 0
+              PrinterSetup.mmMarginRight = 0
+              PrinterSetup.mmMarginTop = 0
+              PrinterSetup.mmPaperHeight = 297000
+              PrinterSetup.mmPaperWidth = 210000
+              PrinterSetup.PaperSize = 9
+              Template.Format = ftASCII
+              Units = utMillimeters
+              Version = '15.05'
+              mmColumnWidth = 0
+              object ppHeaderBand1: TppHeaderBand
+                Background.Brush.Style = bsClear
+                PrintHeight = phDynamic
+                mmBottomOffset = 0
+                mmHeight = 13229
+                mmPrintPosition = 0
+              end
+              object ppDetailBand2: TppDetailBand
+                Background1.Brush.Style = bsClear
+                Background2.Brush.Style = bsClear
+                mmBottomOffset = 0
+                mmHeight = 13229
+                mmPrintPosition = 0
+              end
+              object ppFooterBand1: TppFooterBand
+                Background.Brush.Style = bsClear
+                mmBottomOffset = 0
+                mmHeight = 13229
+                mmPrintPosition = 0
+              end
+              object raCodeModule8: TraCodeModule
+                ProgramStream = {00}
+              end
+              object ppDesignLayers4: TppDesignLayers
+                object ppDesignLayer4: TppDesignLayer
+                  UserName = 'PageLayer1'
+                  LayerType = ltBanded
+                  Index = 0
+                end
+              end
+            end
           end
         end
         object raCodeModule3: TraCodeModule
@@ -6260,145 +6329,6 @@ object Report: TppReport
       end
     end
   end
-  object daDataModule1: TdaDataModule
-    object daADOQueryDataView1: TdaADOQueryDataView
-      UserName = 'Query_SchuelerAbiFaecher'
-      Height = 289
-      Left = 10
-      NameColumnWidth = 105
-      SizeColumnWidth = 35
-      SortMode = 0
-      Top = 10
-      TypeColumnWidth = 52
-      Width = 347
-      AutoSearchTabOrder = 0
-      object SchuelerAbiFaecher: TppChildDBPipeline
-        AutoCreateFields = False
-        SkipWhenNoRecords = False
-        UserName = 'SchuelerAbiFaecher'
-        MasterDataPipelineName = 'Schueler'
-        object ppField1: TppField
-          FieldAlias = 'Schueler_ID'
-          FieldName = 'Schueler_ID'
-          FieldLength = 0
-          DataType = dtInteger
-          DisplayWidth = 10
-          Position = 0
-        end
-        object ppField2: TppField
-          FieldAlias = 'AbiFach'
-          FieldName = 'AbiFach'
-          FieldLength = 1
-          DisplayWidth = 1
-          Position = 1
-        end
-        object ppField3: TppField
-          FieldAlias = 'FachKrz'
-          FieldName = 'FachKrz'
-          FieldLength = 20
-          DisplayWidth = 20
-          Position = 2
-        end
-        object ppField4: TppField
-          FieldAlias = 'P_FA'
-          FieldName = 'P_FA'
-          FieldLength = 2
-          DisplayWidth = 2
-          Position = 3
-        end
-        object ppField5: TppField
-          FieldAlias = 'R_FA'
-          FieldName = 'R_FA'
-          FieldLength = 1
-          DisplayWidth = 1
-          Position = 4
-        end
-        object ppField6: TppField
-          FieldAlias = 'Zeugnisbezeichnung'
-          FieldName = 'Zeugnisbezeichnung'
-          FieldLength = 255
-          DisplayWidth = 255
-          Position = 5
-        end
-      end
-      object daSQL1: TdaSQL
-        GuidCollationType = gcMSAccess
-        DatabaseName = 'ADOConnection'
-        DatabaseType = dtMSAccess
-        DataPipelineName = 'SchuelerAbiFaecher'
-        EditSQLAsText = True
-        IsCaseSensitive = True
-        LinkColor = clMaroon
-        LinkType = ltParameterizedSQL
-        MaxSQLFieldAliasLength = 0
-        SkipWhenNoRecords = False
-        SQLText.Strings = (
-          'SELECT SAF.Schueler_ID,'
-          '       SAF.AbiFach, '
-          '       SAF.FachKrz, '
-          '       SAF.P_FA, '
-          '       SAF.R_FA,'
-          '       ESF.Zeugnisbez AS Zeugnisbezeichnung'
-          'FROM SchuelerAbiFaecher SAF'
-          'INNER JOIN EigeneSchule_Faecher ESF'
-          
-            '  ON SAF.SchulnrEigner = ESF.SchulnrEigner AND SAF.Fach_ID = ESF' +
-            '.ID'
-          'WHERE (SAF.AbiFach = '#39'1'#39' OR SAF.AbiFach = '#39'2'#39' ) AND'
-          '      SAF.P_FA > '#39#39)
-        SQLType = sqSQL2
-        object daField1: TdaField
-          Alias = 'Schueler_ID'
-          DataType = dtInteger
-          DisplayWidth = 10
-          FieldAlias = 'Schueler_ID'
-          FieldLength = 0
-          FieldName = 'Schueler_ID'
-          SQLFieldName = 'Schueler_ID'
-        end
-        object daField2: TdaField
-          Alias = 'AbiFach'
-          DisplayWidth = 1
-          FieldAlias = 'AbiFach'
-          FieldLength = 1
-          FieldName = 'AbiFach'
-          SQLFieldName = 'AbiFach'
-        end
-        object daField3: TdaField
-          Alias = 'FachKrz'
-          DisplayWidth = 20
-          FieldAlias = 'FachKrz'
-          FieldLength = 20
-          FieldName = 'FachKrz'
-          SQLFieldName = 'FachKrz'
-        end
-        object daField4: TdaField
-          Alias = 'P_FA'
-          DisplayWidth = 2
-          FieldAlias = 'P_FA'
-          FieldLength = 2
-          FieldName = 'P_FA'
-          SQLFieldName = 'P_FA'
-        end
-        object daField5: TdaField
-          Alias = 'R_FA'
-          DisplayWidth = 1
-          FieldAlias = 'R_FA'
-          FieldLength = 1
-          FieldName = 'R_FA'
-          SQLFieldName = 'R_FA'
-        end
-        object daField6: TdaField
-          Alias = 'Zeugnisbezeichnung'
-          DisplayWidth = 255
-          FieldAlias = 'Zeugnisbezeichnung'
-          FieldLength = 255
-          FieldName = 'Zeugnisbezeichnung'
-          SQLFieldName = 'Zeugnisbezeichnung'
-        end
-      end
-    end
-  end
   object raCodeModule31: TraCodeModule
     ProgramStream = {
       01060F547261436F6E737450726F6772616D094368696C645479706502120B50
@@ -7071,6 +7001,145 @@ object Report: TppReport
       2053636875656C65724E616D653B0D0A656E643B0D0A0D436F6D706F6E656E74
       4E616D65060644657461696C094576656E744E616D65060B4265666F72655072
       696E74074576656E7449440218084361726574506F7301022B0204000000}
+  end
+  object daDataModule1: TdaDataModule
+    object daADOQueryDataView1: TdaADOQueryDataView
+      UserName = 'Query_SchuelerAbiFaecher'
+      Height = 289
+      Left = 10
+      NameColumnWidth = 105
+      SizeColumnWidth = 35
+      SortMode = 0
+      Top = 10
+      TypeColumnWidth = 52
+      Width = 347
+      AutoSearchTabOrder = 0
+      object SchuelerAbiFaecher: TppChildDBPipeline
+        AutoCreateFields = False
+        SkipWhenNoRecords = False
+        UserName = 'SchuelerAbiFaecher'
+        MasterDataPipelineName = 'Schueler'
+        object ppField1: TppField
+          FieldAlias = 'Schueler_ID'
+          FieldName = 'Schueler_ID'
+          FieldLength = 0
+          DataType = dtInteger
+          DisplayWidth = 10
+          Position = 0
+        end
+        object ppField2: TppField
+          FieldAlias = 'AbiFach'
+          FieldName = 'AbiFach'
+          FieldLength = 1
+          DisplayWidth = 1
+          Position = 1
+        end
+        object ppField3: TppField
+          FieldAlias = 'FachKrz'
+          FieldName = 'FachKrz'
+          FieldLength = 20
+          DisplayWidth = 20
+          Position = 2
+        end
+        object ppField4: TppField
+          FieldAlias = 'P_FA'
+          FieldName = 'P_FA'
+          FieldLength = 2
+          DisplayWidth = 2
+          Position = 3
+        end
+        object ppField5: TppField
+          FieldAlias = 'R_FA'
+          FieldName = 'R_FA'
+          FieldLength = 1
+          DisplayWidth = 1
+          Position = 4
+        end
+        object ppField6: TppField
+          FieldAlias = 'Zeugnisbezeichnung'
+          FieldName = 'Zeugnisbezeichnung'
+          FieldLength = 255
+          DisplayWidth = 255
+          Position = 5
+        end
+      end
+      object daSQL1: TdaSQL
+        GuidCollationType = gcMSAccess
+        DatabaseName = 'ADOConnection'
+        DatabaseType = dtMSAccess
+        DataPipelineName = 'SchuelerAbiFaecher'
+        EditSQLAsText = True
+        IsCaseSensitive = True
+        LinkColor = clMaroon
+        LinkType = ltParameterizedSQL
+        MaxSQLFieldAliasLength = 0
+        SkipWhenNoRecords = False
+        SQLText.Strings = (
+          'SELECT SAF.Schueler_ID,'
+          '       SAF.AbiFach, '
+          '       SAF.FachKrz, '
+          '       SAF.P_FA, '
+          '       SAF.R_FA,'
+          '       ESF.Zeugnisbez AS Zeugnisbezeichnung'
+          'FROM SchuelerAbiFaecher SAF'
+          'INNER JOIN EigeneSchule_Faecher ESF'
+          
+            '  ON SAF.SchulnrEigner = ESF.SchulnrEigner AND SAF.Fach_ID = ESF' +
+            '.ID'
+          'WHERE (SAF.AbiFach = '#39'1'#39' OR SAF.AbiFach = '#39'2'#39' ) AND'
+          '      SAF.P_FA > '#39#39)
+        SQLType = sqSQL2
+        object daField1: TdaField
+          Alias = 'Schueler_ID'
+          DataType = dtInteger
+          DisplayWidth = 10
+          FieldAlias = 'Schueler_ID'
+          FieldLength = 0
+          FieldName = 'Schueler_ID'
+          SQLFieldName = 'Schueler_ID'
+        end
+        object daField2: TdaField
+          Alias = 'AbiFach'
+          DisplayWidth = 1
+          FieldAlias = 'AbiFach'
+          FieldLength = 1
+          FieldName = 'AbiFach'
+          SQLFieldName = 'AbiFach'
+        end
+        object daField3: TdaField
+          Alias = 'FachKrz'
+          DisplayWidth = 20
+          FieldAlias = 'FachKrz'
+          FieldLength = 20
+          FieldName = 'FachKrz'
+          SQLFieldName = 'FachKrz'
+        end
+        object daField4: TdaField
+          Alias = 'P_FA'
+          DisplayWidth = 2
+          FieldAlias = 'P_FA'
+          FieldLength = 2
+          FieldName = 'P_FA'
+          SQLFieldName = 'P_FA'
+        end
+        object daField5: TdaField
+          Alias = 'R_FA'
+          DisplayWidth = 1
+          FieldAlias = 'R_FA'
+          FieldLength = 1
+          FieldName = 'R_FA'
+          SQLFieldName = 'R_FA'
+        end
+        object daField6: TdaField
+          Alias = 'Zeugnisbezeichnung'
+          DisplayWidth = 255
+          FieldAlias = 'Zeugnisbezeichnung'
+          FieldLength = 255
+          FieldName = 'Zeugnisbezeichnung'
+          SQLFieldName = 'Zeugnisbezeichnung'
+        end
+      end
+    end
   end
   object ppDesignLayers1: TppDesignLayers
     object ppDesignLayer1: TppDesignLayer
