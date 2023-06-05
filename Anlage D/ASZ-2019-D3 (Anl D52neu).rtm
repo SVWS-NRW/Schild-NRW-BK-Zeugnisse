@@ -1661,7 +1661,7 @@ object Report: TppReport
                   Caption = 'Bemerkungen:'
                   Font.Charset = ANSI_CHARSET
                   Font.Color = clBlack
-                  Font.Name = 'Lucida Sans'
+                  Font.Name = 'Calibri'
                   Font.Size = 12
                   Font.Style = []
                   Transparent = True
@@ -1676,7 +1676,7 @@ object Report: TppReport
                   UserName = 'DBRT_Bemerkungen'
                   Font.Charset = ANSI_CHARSET
                   Font.Color = clWindowText
-                  Font.Name = 'Lucida Sans'
+                  Font.Name = 'Calibri'
                   Font.Size = 12
                   Font.Style = []
                   DataField = 'ZeugnisBem'
