@@ -865,8 +865,9 @@ object Report: TppReport
               'g die erste Stufe der Qualifizierung nach QHB ("Qualifizierung i' +
               'n der Kindertagespflege - Qualifizierungshandbuch f\'#39'fcr die Bil' +
               'dung, Erziehung und Betreuung von Kindern unter drei") des Deuts' +
-              'chen Jugendinstituts im Umfang von 160 Unterrichtsstunden erworb' +
-              'en.\f1\par'#13#10'\pard\qj\par'#13#10'}'#13#10#0
+              'chen Jugendinstituts im Umfang von 160 Unterrichtsstunden (t\'#39'e4' +
+              'tigkeitsvorbereitende Grundqualifizierung) erworben.\f1\par'#13#10'\pa' +
+              'rd\qj\par'#13#10'}'#13#10#0
             RemoveEmptyLines = False
             ShiftRelativeTo = ppSubReport8
             Stretch = True
