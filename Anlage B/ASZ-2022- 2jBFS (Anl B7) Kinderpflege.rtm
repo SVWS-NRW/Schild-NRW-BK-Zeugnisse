@@ -2,7 +2,7 @@ object Report: TppReport
   AutoStop = False
   DataPipeline = dmPipelines.Schueler
   PrinterSetup.BinName = 'Default'
-  PrinterSetup.DocumentName = 'ASZ-2021- 2jBFS (Anl B7) Kinderpflege.rtm'
+  PrinterSetup.DocumentName = 'ASZ-2022- 2jBFS (Anl B7) Kinderpflege.rtm'
   PrinterSetup.Duplex = dpHorizontal
   PrinterSetup.Orientation = poLandscape
   PrinterSetup.PaperName = 'A3 297 x 420 mm'
@@ -18,7 +18,7 @@ object Report: TppReport
   SaveAsTemplate = True
   Template.FileName = 
     'D:\SchILD-NRW\SchILD-Reports\Zeugnisse 2016 Lucida\Anlage B\ASZ-' +
-    '2021- 2jBFS (Anl B7) Kinderpflege.rtm'
+    '2022- 2jBFS (Anl B7) Kinderpflege.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -119,7 +119,7 @@ object Report: TppReport
       mmMinHeight = 0
       object ppChildReport1: TppChildReport
         PrinterSetup.BinName = 'Default'
-        PrinterSetup.DocumentName = 'ASZ-2021- 2jBFS (Anl B7) Kinderpflege.rtm'
+        PrinterSetup.DocumentName = 'ASZ-2022- 2jBFS (Anl B7) Kinderpflege.rtm'
         PrinterSetup.Duplex = dpHorizontal
         PrinterSetup.Orientation = poLandscape
         PrinterSetup.PaperName = 'A3 297 x 420 mm'
@@ -132,7 +132,6 @@ object Report: TppReport
         PrinterSetup.mmPaperHeight = 297000
         PrinterSetup.mmPaperWidth = 420000
         PrinterSetup.PaperSize = 8
-        Template.Offset = 284
         Template.Format = ftASCII
         Units = utMillimeters
         Version = '15.05'
@@ -707,7 +706,7 @@ object Report: TppReport
               AutoStop = False
               DataPipeline = dmPipelines.ppAbschlussarbeit
               PrinterSetup.BinName = 'Default'
-              PrinterSetup.DocumentName = 'ASZ-2021- 2jBFS (Anl B7) Kinderpflege.rtm'
+              PrinterSetup.DocumentName = 'ASZ-2022- 2jBFS (Anl B7) Kinderpflege.rtm'
               PrinterSetup.Duplex = dpHorizontal
               PrinterSetup.Orientation = poLandscape
               PrinterSetup.PaperName = 'A3 297 x 420 mm'
@@ -1015,6 +1014,7 @@ object Report: TppReport
         PrinterSetup.mmPaperHeight = 297000
         PrinterSetup.mmPaperWidth = 420000
         PrinterSetup.PaperSize = 8
+        Template.Offset = 284
         Template.Format = ftASCII
         Units = utMillimeters
         Version = '15.05'
@@ -1853,13 +1853,12 @@ object Report: TppReport
               'rmal;}{\s1 heading 1;}}'#13#10'\viewkind4\uc1\pard\nowidctlpar\sl360\s' +
               'lmult1\f0\fs24 <dbtext datapipeline='#39'Schueler'#39'>Anrede</dbtext> \' +
               'b <dbtext datapipeline='#39'Schueler'#39'>VornameName</dbtext>\b0\par'#13#10'h' +
-              'at einen dem\fs22\par'#13#10'\pard\nowidctlpar\fs20\par'#13#10'\pard\keepn\n' +
-              'owidctlpar\s1\qc\b\fs28 Hauptschulabschluss nach Klasse 10\par'#13#10 +
-              '\pard\nowidctlpar\b0\fs20\par'#13#10'\pard\fs22 gleichwertigen Abschlu' +
-              'ss erworben. \fs24 Der Abschluss ist im Deutschen und Europ\'#39'e4i' +
-              'schen Qualifikationsrahmen dem Niveau 2 zugeordnet.\f1\fs20\par'#13 +
-              #10'\pard\nowidctlpar\f0\fs22\par'#13#10'\par'#13#10'\fs20\par'#13#10'\par'#13#10'\f2\fs22\' +
-              'par'#13#10'\f1\fs20\par'#13#10'}'#13#10#0
+              'at den\fs22\par'#13#10'\pard\nowidctlpar\fs20\par'#13#10'\pard\keepn\nowidct' +
+              'lpar\s1\qc\b\fs28 Erweiterten Ersten Schulabschluss\par'#13#10'\pard\n' +
+              'owidctlpar\b0\fs20\par'#13#10'\pard\fs22 erworben. \fs24 Der Abschluss' +
+              ' ist im Deutschen und Europ\'#39'e4ischen Qualifikationsrahmen dem N' +
+              'iveau 2 zugeordnet.\f1\fs20\par'#13#10'\pard\nowidctlpar\f0\fs22\par'#13#10 +
+              '\par'#13#10'\fs20\par'#13#10'\par'#13#10'\f2\fs22\par'#13#10'\f1\fs20\par'#13#10'}'#13#10#0
             RemoveEmptyLines = False
             Transparent = True
             mmHeight = 64823
@@ -2312,27 +2311,31 @@ object Report: TppReport
           ProgramStream = {
             01060F5472614576656E7448616E646C65720B50726F6772616D4E616D650611
             44657461696C4265666F72655072696E740B50726F6772616D54797065070B74
-            7450726F63656475726506536F75726365142E02000070726F63656475726520
+            7450726F63656475726506536F7572636514B502000070726F63656475726520
             44657461696C4265666F72655072696E743B0D0A626567696E0D0A2020207B68
             6965722077657264656E2064696520616C6C67656D65696E62696C64656E6465
             6E2041627363686CC3BC7373652065696E2D2F6175736765626C656E6465747D
             0D0A202020205269636854657874362E76697369626C653A3D46414C53453B0D
             0A202020204946202841627363686C757373413D27464F522729206F72202841
-            627363686C757373413D274F52372729207468656E205269636854657874362E
-            76697369626C653A3D545255453B0D0A202020205269636854657874372E7669
-            7369626C653A3D46414C53453B0D0A2020202049462041627363686C75737341
-            3D2746474F27207468656E205269636854657874372E76697369626C653A3D54
-            5255453B0D0A202020205269636854657874352E76697369626C653A3D46414C
-            53453B0D0A2020202049462041627363686C757373413D274853412720746865
-            6E205269636854657874352E76697369626C653A3D545255453B0D0A20202020
-            7B4C65726E66656C646572206E75722077656E6E20766F7268616E64656E7D0D
-            0A2020202020526963685465787431302E76697369626C653A3D46414C53453B
-            0D0A2020204946204C65726E66656C6465725A75466163686B6C617373652853
-            636875656C65725B27466163686B6C617373655F4944275D293C3E2727207468
-            656E20526963685465787431302E76697369626C653A3D545255453B0D0A656E
-            643B0D0A0D436F6D706F6E656E744E616D65060644657461696C094576656E74
-            4E616D65060B4265666F72655072696E74074576656E74494402180843617265
-            74506F7301023A0209000000}
+            627363686C757373413D274F523727296F72202841627363686C757373413D27
+            4D53412729206F72202841627363686C757373413D2753413727297468656E20
+            5269636854657874362E76697369626C653A3D545255453B0D0A202020205269
+            636854657874372E76697369626C653A3D46414C53453B0D0A20202020494620
+            2841627363686C757373413D2746474F2729206F72202841627363686C757373
+            413D275341512729206F72202841627363686C757373413D27415F5127292020
+            7468656E205269636854657874372E76697369626C653A3D545255453B0D0A20
+            2020205269636854657874352E76697369626C653A3D46414C53453B0D0A2020
+            20204946202841627363686C757373413D274853412729206F72202841627363
+            686C757373413D272F48532729206F72202841627363686C757373413D274553
+            412729207468656E205269636854657874352E76697369626C653A3D54525545
+            3B0D0A202020207B4C65726E66656C646572206E75722077656E6E20766F7268
+            616E64656E7D0D0A2020202020526963685465787431302E76697369626C653A
+            3D46414C53453B0D0A2020204946204C65726E66656C6465725A75466163686B
+            6C617373652853636875656C65725B27466163686B6C617373655F4944275D29
+            3C3E2727207468656E20526963685465787431302E76697369626C653A3D5452
+            55453B0D0A656E643B0D0A0D436F6D706F6E656E744E616D6506064465746169
+            6C094576656E744E616D65060B4265666F72655072696E74074576656E744944
+            0218084361726574506F7301023A0209000000}
         end
         object ppDesignLayers3: TppDesignLayers
           object ppDesignLayer3: TppDesignLayer
