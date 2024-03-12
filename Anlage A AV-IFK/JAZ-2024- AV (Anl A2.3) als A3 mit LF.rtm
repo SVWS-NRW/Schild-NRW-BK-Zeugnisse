@@ -2,9 +2,10 @@ object Report: TppReport
   AutoStop = False
   DataPipeline = dmPipelines.Schueler
   PrinterSetup.BinName = 'Default'
-  PrinterSetup.DocumentName = 'AGZ-2021- 2jBFS (Anl B5).rtm'
+  PrinterSetup.DocumentName = 'JAZ-2024- AV (Anl A2.3) als A3 mit LF.rtm'
   PrinterSetup.Duplex = dpVertical
-  PrinterSetup.PaperName = 'A4 210 x 297 mm'
+  PrinterSetup.Orientation = poLandscape
+  PrinterSetup.PaperName = 'A3 297 x 420 mm'
   PrinterSetup.PrinterName = 'Screen'
   PrinterSetup.SaveDeviceSettings = False
   PrinterSetup.mmMarginBottom = 10000
@@ -12,12 +13,12 @@ object Report: TppReport
   PrinterSetup.mmMarginRight = 10000
   PrinterSetup.mmMarginTop = 10000
   PrinterSetup.mmPaperHeight = 297000
-  PrinterSetup.mmPaperWidth = 210000
-  PrinterSetup.PaperSize = 9
+  PrinterSetup.mmPaperWidth = 420000
+  PrinterSetup.PaperSize = 8
   SaveAsTemplate = True
   Template.FileName = 
-    'D:\SchILD-NRW\SchILD-Reports\Zeugnisse 2016 Lucida\Anlage B\AGZ-' +
-    '2021- 2jBFS (Anl B5).rtm'
+    'D:\SchILD-NRW\SchILD-Reports\Zeugnisse 2016 Lucida\Anlage A AV-I' +
+    'FK\JAZ-2024- AV (Anl A2.3) als A3 mit LF.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -110,7 +111,7 @@ object Report: TppReport
       mmHeight = 5027
       mmLeft = 0
       mmTop = 1323
-      mmWidth = 180000
+      mmWidth = 390000
       BandType = 4
       LayerName = Foreground
       mmBottomOffset = 0
@@ -119,9 +120,10 @@ object Report: TppReport
       mmMinHeight = 0
       object ppChildReport1: TppChildReport
         PrinterSetup.BinName = 'Default'
-        PrinterSetup.DocumentName = 'AGZ-2021- 2jBFS (Anl B5).rtm'
+        PrinterSetup.DocumentName = 'JAZ-2024- AV (Anl A2.3) als A3 mit LF.rtm'
         PrinterSetup.Duplex = dpVertical
-        PrinterSetup.PaperName = 'A4 210 x 297 mm'
+        PrinterSetup.Orientation = poLandscape
+        PrinterSetup.PaperName = 'A3 297 x 420 mm'
         PrinterSetup.PrinterName = 'Screen'
         PrinterSetup.SaveDeviceSettings = False
         PrinterSetup.mmMarginBottom = 10000
@@ -129,8 +131,8 @@ object Report: TppReport
         PrinterSetup.mmMarginRight = 10000
         PrinterSetup.mmMarginTop = 10000
         PrinterSetup.mmPaperHeight = 297000
-        PrinterSetup.mmPaperWidth = 210000
-        PrinterSetup.PaperSize = 9
+        PrinterSetup.mmPaperWidth = 420000
+        PrinterSetup.PaperSize = 8
         Template.Format = ftASCII
         Units = utMillimeters
         Version = '15.05'
@@ -140,7 +142,7 @@ object Report: TppReport
           Background2.Brush.Style = bsClear
           PrintHeight = phDynamic
           mmBottomOffset = 0
-          mmHeight = 277284
+          mmHeight = 243946
           mmPrintPosition = 0
           object ppDBText1: TppDBText
             UserName = 'DBText1'
@@ -156,7 +158,7 @@ object Report: TppReport
             Transparent = True
             DataPipelineName = 'Schueler'
             mmHeight = 4763
-            mmLeft = 39952
+            mmLeft = 248180
             mmTop = 95779
             mmWidth = 30956
             BandType = 4
@@ -175,8 +177,8 @@ object Report: TppReport
             Transparent = True
             DataPipelineName = 'Schueler'
             mmHeight = 4763
-            mmLeft = 83608
-            mmTop = 104795
+            mmLeft = 291836
+            mmTop = 105040
             mmWidth = 86519
             BandType = 4
             LayerName = Foreground1
@@ -194,8 +196,8 @@ object Report: TppReport
             Transparent = True
             DataPipelineName = 'Schueler'
             mmHeight = 4763
-            mmLeft = 39952
-            mmTop = 104795
+            mmLeft = 248180
+            mmTop = 105040
             mmWidth = 26458
             BandType = 4
             LayerName = Foreground1
@@ -205,12 +207,13 @@ object Report: TppReport
             ExpandAll = False
             NewPrintJob = False
             OutlineSettings.CreateNode = True
+            ParentWidth = False
             TraverseAllData = False
             Filename = 'Zeugnis_Kopf.rtm'
-            mmHeight = 5027
-            mmLeft = 0
+            mmHeight = 5292
+            mmLeft = 195351
             mmTop = 529
-            mmWidth = 180000
+            mmWidth = 194910
             BandType = 4
             LayerName = Foreground1
             mmBottomOffset = 0
@@ -219,9 +222,10 @@ object Report: TppReport
             mmMinHeight = 0
             object ppChildReport3: TppChildReport
               PrinterSetup.BinName = 'Default'
-              PrinterSetup.DocumentName = 'AGZ-2021- 2jBFS (Anl B5).rtm'
+              PrinterSetup.DocumentName = 'JAZ-2024- AV (Anl A2.3) als A3 mit LF.rtm'
               PrinterSetup.Duplex = dpVertical
-              PrinterSetup.PaperName = 'A4 210 x 297 mm'
+              PrinterSetup.Orientation = poLandscape
+              PrinterSetup.PaperName = 'A3 297 x 420 mm'
               PrinterSetup.PrinterName = 'Screen'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 10000
@@ -229,31 +233,11 @@ object Report: TppReport
               PrinterSetup.mmMarginRight = 10000
               PrinterSetup.mmMarginTop = 10000
               PrinterSetup.mmPaperHeight = 297000
-              PrinterSetup.mmPaperWidth = 210000
-              PrinterSetup.PaperSize = 9
-              Template.Format = ftASCII
+              PrinterSetup.mmPaperWidth = 420000
+              PrinterSetup.PaperSize = 8
               Units = utMillimeters
               Version = '15.05'
               mmColumnWidth = 0
-              object ppHeaderBand1: TppHeaderBand
-                Background.Brush.Style = bsClear
-                mmBottomOffset = 0
-                mmHeight = 13229
-                mmPrintPosition = 0
-              end
-              object ppDetailBand9: TppDetailBand
-                Background1.Brush.Style = bsClear
-                Background2.Brush.Style = bsClear
-                mmBottomOffset = 0
-                mmHeight = 13229
-                mmPrintPosition = 0
-              end
-              object ppFooterBand1: TppFooterBand
-                Background.Brush.Style = bsClear
-                mmBottomOffset = 0
-                mmHeight = 13229
-                mmPrintPosition = 0
-              end
               object ppDesignLayers4: TppDesignLayers
                 object ppDesignLayer4: TppDesignLayer
                   UserName = 'Foreground3'
@@ -266,7 +250,7 @@ object Report: TppReport
           object ppLabel2: TppLabel
             UserName = 'Label2'
             AutoSize = False
-            Caption = 'Abgangszeugnis'
+            Caption = 'Jahreszeugnis'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Name = 'Lucida Sans'
@@ -274,9 +258,9 @@ object Report: TppReport
             Font.Style = [fsBold]
             TextAlignment = taCentered
             Transparent = True
-            mmHeight = 6879
-            mmLeft = 10054
-            mmTop = 61403
+            mmHeight = 7144
+            mmLeft = 218282
+            mmTop = 61383
             mmWidth = 160073
             BandType = 4
             LayerName = Foreground1
@@ -294,9 +278,9 @@ object Report: TppReport
             Transparent = True
             DataPipelineName = 'Schueler'
             mmHeight = 4763
-            mmLeft = 10054
-            mmTop = 95799
-            mmWidth = 16933
+            mmLeft = 218282
+            mmTop = 95779
+            mmWidth = 16669
             BandType = 4
             LayerName = Foreground1
           end
@@ -310,9 +294,9 @@ object Report: TppReport
             Font.Style = []
             Transparent = True
             mmHeight = 4763
-            mmLeft = 10054
-            mmTop = 104795
-            mmWidth = 23548
+            mmLeft = 218282
+            mmTop = 105040
+            mmWidth = 23283
             BandType = 4
             LayerName = Foreground1
           end
@@ -326,15 +310,15 @@ object Report: TppReport
             Font.Style = []
             Transparent = True
             mmHeight = 4763
-            mmLeft = 73819
-            mmTop = 104795
-            mmWidth = 3704
+            mmLeft = 281782
+            mmTop = 105040
+            mmWidth = 3440
             BandType = 4
             LayerName = Foreground1
           end
           object ppLabel5: TppLabel
             UserName = 'Label5'
-            Caption = 'war vom'
+            Caption = 'ist Sch'#252'lerin der Klasse'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Name = 'Lucida Sans'
@@ -342,9 +326,9 @@ object Report: TppReport
             Font.Style = []
             Transparent = True
             mmHeight = 4763
-            mmLeft = 10054
-            mmTop = 113506
-            mmWidth = 16934
+            mmLeft = 218282
+            mmTop = 113242
+            mmWidth = 46831
             BandType = 4
             LayerName = Foreground1
           end
@@ -361,15 +345,31 @@ object Report: TppReport
             Transparent = True
             DataPipelineName = 'Schueler'
             mmHeight = 4763
-            mmLeft = 31485
-            mmTop = 113506
+            mmLeft = 309563
+            mmTop = 113242
             mmWidth = 26458
+            BandType = 4
+            LayerName = Foreground1
+          end
+          object ppLabel6: TppLabel
+            UserName = 'Label6'
+            Caption = 'seit'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Lucida Sans'
+            Font.Size = 12
+            Font.Style = []
+            Transparent = True
+            mmHeight = 4763
+            mmLeft = 291836
+            mmTop = 113242
+            mmWidth = 7144
             BandType = 4
             LayerName = Foreground1
           end
           object ppLabel7: TppLabel
             UserName = 'Label7'
-            Caption = 'des Bildungsgangs'
+            Caption = 'des Vollzeit-/Teilzeitbildungsgangs'
             Font.Charset = ANSI_CHARSET
             Font.Color = clBlack
             Font.Name = 'Lucida Sans'
@@ -377,31 +377,9 @@ object Report: TppReport
             Font.Style = []
             Transparent = True
             mmHeight = 4763
-            mmLeft = 10054
-            mmTop = 121179
-            mmWidth = 38629
-            BandType = 4
-            LayerName = Foreground1
-          end
-          object ppDBText10: TppDBText
-            UserName = 'DBText10'
-            DataField = 'Berufsbezeichnung'
-            DataPipeline = dmPipelines.plLernabschnitte
-            Font.Charset = ANSI_CHARSET
-            Font.Color = clBlack
-            Font.Name = 'Lucida Sans'
-            Font.Size = 12
-            Font.Style = [fsBold]
-            ParentDataPipeline = False
-            TextAlignment = taCentered
-            Transparent = True
-            WordWrap = True
-            VerticalAlignment = avCenter
-            DataPipelineName = 'plLernabschnitte'
-            mmHeight = 10583
-            mmLeft = 10102
-            mmTop = 127265
-            mmWidth = 160915
+            mmLeft = 218282
+            mmTop = 121709
+            mmWidth = 72231
             BandType = 4
             LayerName = Foreground1
           end
@@ -416,20 +394,18 @@ object Report: TppReport
             RichText = 
               '{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcha' +
               'rset0 Lucida Sans;}{\f1\fnil Lucida Sans;}}'#13#10'{\colortbl ;\red0\g' +
-              'reen0\blue0;}'#13#10'\viewkind4\uc1\pard\qj\f0\fs24 Dem Zeugnis liegen' +
-              ' zugrunde:\par'#13#10'\par'#13#10'\pard\fi-320\li680\qj -\tab Die Verordnung' +
-              ' \'#39'fcber die Ausbildung und Pr\'#39'fcfung in den Bildungsg\'#39'e4ngen ' +
-              'des Berufskollegs (Ausbildungs- und Pr\'#39'fcfungsordnung Berufskol' +
-              'leg - APO-BK) vom 26. Mai 1999 (SGV. NRW. 223/BASS 13-33 Nr. 1.1' +
-              ') in der jeweils geltenden Fassung,\par'#13#10'\pard\fi-300\li660\qj -' +
-              '\tab die Rahmenvereinbarung \'#39'fcber die Berufsfachschulen (Besch' +
-              'luss der Kultusministerkonferenz vom 17.10.2013) in der jeweils ' +
-              'geltenden Fassung.\par'#13#10'\pard\cf1\f1\par'#13#10'}'#13#10#0
+              'reen0\blue0;}'#13#10'\viewkind4\uc1\pard\qj\f0\fs24 Dem Zeugnis liegt ' +
+              'zugrunde:\par'#13#10'\par'#13#10'Die Verordnung \'#39'fcber die Ausbildung und P' +
+              'r\'#39'fcfung in den Bildungsg\'#39'e4ngen des Berufskollegs (Ausbildung' +
+              's- und Pr\'#39'fcfungsordnung Berufskolleg - APO-BK) vom 26. Mai 199' +
+              '9 (SGV. NRW. 223/BASS 13-33 Nr. 1.1) in der jeweils geltenden Fa' +
+              'ssung. \par'#13#10'\pard\fi-360\li720\par'#13#10'\par'#13#10'\pard\cf1\f1\par'#13#10'}'#13#10 +
+              #0
             RemoveEmptyLines = False
             Transparent = True
             mmHeight = 75936
-            mmLeft = 10054
-            mmTop = 189971
+            mmLeft = 218282
+            mmTop = 170127
             mmWidth = 160073
             BandType = 4
             LayerName = Foreground1
@@ -440,7 +416,7 @@ object Report: TppReport
           end
           object ppLabel13: TppLabel
             UserName = 'Label13'
-            Caption = 'im Fachbereich'
+            Caption = 'im Fachbereich/Berufsfeld'
             Font.Charset = ANSI_CHARSET
             Font.Color = clBlack
             Font.Name = 'Lucida Sans'
@@ -448,9 +424,9 @@ object Report: TppReport
             Font.Style = []
             Transparent = True
             mmHeight = 4763
-            mmLeft = 10054
-            mmTop = 139171
-            mmWidth = 30427
+            mmLeft = 218282
+            mmTop = 130969
+            mmWidth = 52388
             BandType = 4
             LayerName = Foreground1
           end
@@ -464,67 +440,15 @@ object Report: TppReport
             Font.Style = [fsBold]
             Transparent = True
             mmHeight = 4763
-            mmLeft = 62706
-            mmTop = 139171
-            mmWidth = 16933
+            mmLeft = 291836
+            mmTop = 130969
+            mmWidth = 16669
             BandType = 4
             LayerName = Foreground1
           end
-          object ppLabel6: TppLabel
-            UserName = 'Label6'
-            Caption = 'bis zur Aush'#228'ndigung dieses Zeugnisses'
-            Font.Charset = ANSI_CHARSET
-            Font.Color = clBlack
-            Font.Name = 'Lucida Sans'
-            Font.Size = 12
-            Font.Style = []
-            Transparent = True
-            mmHeight = 4763
-            mmLeft = 62442
-            mmTop = 113506
-            mmWidth = 82021
-            BandType = 4
-            LayerName = Foreground1
-          end
-          object ppDBText9: TppDBText
-            UserName = 'DBText9'
-            AutoSize = True
-            DataField = 'SchuelerIn'
-            DataPipeline = dmPipelines.Schueler
-            Font.Charset = ANSI_CHARSET
-            Font.Color = clBlack
-            Font.Name = 'Lucida Sans'
-            Font.Size = 12
-            Font.Style = []
-            ParentDataPipeline = False
-            Transparent = True
-            DataPipelineName = 'Schueler'
-            mmHeight = 4763
-            mmLeft = 145257
-            mmTop = 113506
-            mmWidth = 20637
-            BandType = 4
-            LayerName = Foreground1
-          end
-          object ppLabel15: TppLabel
-            UserName = 'Label15'
-            Caption = 'im Berufsfeld'
-            Font.Charset = ANSI_CHARSET
-            Font.Color = clBlack
-            Font.Name = 'Lucida Sans'
-            Font.Size = 12
-            Font.Style = []
-            Transparent = True
-            mmHeight = 4763
-            mmLeft = 10054
-            mmTop = 146050
-            mmWidth = 26194
-            BandType = 4
-            LayerName = Foreground1
-          end
-          object ppLabel17: TppLabel
-            UserName = 'Label17'
-            Caption = 'Label17'
+          object ppLabel19: TppLabel
+            UserName = 'Label19'
+            Caption = 'Ausbildungsvorbereitung'
             Font.Charset = ANSI_CHARSET
             Font.Color = clBlack
             Font.Name = 'Lucida Sans'
@@ -532,125 +456,118 @@ object Report: TppReport
             Font.Style = [fsBold]
             Transparent = True
             mmHeight = 4763
-            mmLeft = 62706
-            mmTop = 146050
-            mmWidth = 16933
+            mmLeft = 291836
+            mmTop = 121709
+            mmWidth = 53446
             BandType = 4
             LayerName = Foreground1
           end
-          object ppLabel19: TppLabel
-            UserName = 'Label19'
-            Caption = 'Label19'
-            Font.Charset = ANSI_CHARSET
-            Font.Color = clBlack
-            Font.Name = 'Lucida Sans'
-            Font.Size = 12
-            Font.Style = []
-            Transparent = True
-            mmHeight = 4763
-            mmLeft = 10054
-            mmTop = 153723
-            mmWidth = 16404
-            BandType = 4
-            LayerName = Foreground1
-          end
-          object ppDBText4: TppDBText
-            UserName = 'DBText4'
-            AutoSize = True
-            DataField = 'SchuljahrText'
+          object ppDBText9: TppDBText
+            UserName = 'DBText9'
+            DataField = 'Klasse'
             DataPipeline = dmPipelines.plLernabschnitte
-            Font.Charset = ANSI_CHARSET
+            Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Name = 'Lucida Sans'
             Font.Size = 12
-            Font.Style = []
+            Font.Style = [fsBold]
             ParentDataPipeline = False
             Transparent = True
             DataPipelineName = 'plLernabschnitte'
-            mmHeight = 4763
-            mmLeft = 10054
-            mmTop = 160073
-            mmWidth = 26723
+            mmHeight = 4498
+            mmLeft = 267230
+            mmTop = 113242
+            mmWidth = 17198
             BandType = 4
             LayerName = Foreground1
+          end
+          object ppRichText8: TppRichText
+            UserName = 'RichText8'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Lucida Sans'
+            Font.Size = 12
+            Font.Style = []
+            Caption = 'RichText8'
+            RichText = 
+              '{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcha' +
+              'rset0 Lucida Sans;}{\f1\fnil Lucida Sans;}}'#13#10'{\colortbl ;\red0\g' +
+              'reen0\blue0;}'#13#10'\viewkind4\uc1\pard\qj\cf1\f0\fs24 und wurde im F' +
+              '\'#39'f6rderschwerpunkt Geistige Entwicklung gem\'#39'e4\'#39'df der Ausbild' +
+              'ungsordnung f\'#39'fcr die sonderp\'#39'e4dagogische F\'#39'f6rderung (AO-SF' +
+              '-BASS 13-41 Nr. 21) sonderp\'#39'e4dagogisch gef\'#39'f6rdert.\f1\par'#13#10'}' +
+              #13#10#0
+            RemoveEmptyLines = False
+            Transparent = True
+            mmHeight = 23283
+            mmLeft = 218282
+            mmTop = 139436
+            mmWidth = 160073
+            BandType = 4
+            LayerName = Foreground1
+            mmBottomOffset = 0
+            mmOverFlowOffset = 0
+            mmStopPosition = 0
+            mmMinHeight = 0
           end
         end
         object raCodeModule1: TraCodeModule
           ProgramStream = {
             01060F5472614576656E7448616E646C65720B50726F6772616D4E616D650610
             4C6162656C31384F6E476574546578740B50726F6772616D54797065070B7474
-            50726F63656475726506536F75726365068570726F636564757265204C616265
+            50726F63656475726506536F75726365065870726F636564757265204C616265
             6C31384F6E476574546578742876617220546578743A20537472696E67293B0D
-            0A626567696E0D0A0D0A202054657874203A3D20204661636862657265696368
-            3B0D0A202069662073636877657270756E6B743D2727207468656E2054657874
-            3A3D746578742B272E273B0D0A0D0A0D0A656E643B0D0A0D436F6D706F6E656E
-            744E616D6506074C6162656C3138094576656E744E616D6506094F6E47657454
-            657874074576656E7449440235084361726574506F730102010206000001060F
-            5472614576656E7448616E646C65720B50726F6772616D4E616D650611446574
-            61696C4265666F72655072696E740B50726F6772616D54797065070B74745072
-            6F63656475726506536F757263650CE601000070726F63656475726520446574
-            61696C4265666F72655072696E743B0D0A626567696E0D0A2020202020206C61
-            62656C31332E76697369626C653A3D46414C53453B0D0A202020202020494620
-            4661636862657265696368203C3E2727207468656E206C6162656C31332E7669
-            7369626C653A3D545255453B0D0A2020202020206C6162656C31352E76697369
-            626C653A3D46414C53453B0D0A20202020202049462053636877657270756E6B
-            74203C3E2727207468656E206C6162656C31352E76697369626C653A3D545255
-            453B0D0A2020202020200D0A2020202020202F2F2053696368746261726B6569
-            7420766F6E20536368756C6A6168722C204B6C6173736520757377206E616368
-            2045696E74726167756E6720696D204861757074626572696368742E0D0A2020
-            20204C6162656C31392E76697369626C653A3D46414C53453B0D0A2020202044
-            4254657874342E76697369626C653A3D46414C53453B0D0A2020202049462073
-            6368756C6A61687264726175663D276A6127207468656E20626567696E0D0A20
-            202020202020204C6162656C31392E76697369626C653A3D545255453B0D0A20
-            20202020202020444254657874342E76697369626C653A3D545255453B0D0A20
-            202020656E643B0D0A0D0A2020202020200D0A656E643B0D0A0D436F6D706F6E
-            656E744E616D65060644657461696C094576656E744E616D65060B4265666F72
-            655072696E74074576656E7449440218084361726574506F73010210020D0000
-            01060F5472614576656E7448616E646C65720B50726F6772616D4E616D650610
-            4C6162656C31374F6E476574546578740B50726F6772616D54797065070B7474
-            50726F63656475726506536F75726365068070726F636564757265204C616265
-            6C31374F6E476574546578742876617220546578743A20537472696E67293B0D
-            0A626567696E0D0A0D0A202054657874203A3D202053636877657270756E6B74
-            3B0D0A2020494620746578743C3E272720207468656E20746578743A3D746578
-            742B272E273B0D0A0D0A0D0A656E643B0D0A0D436F6D706F6E656E744E616D65
-            06074C6162656C3137094576656E744E616D6506094F6E476574546578740745
-            76656E7449440235084361726574506F730102010206000001060F5472614576
-            656E7448616E646C65720B50726F6772616D4E616D6506114442546578743130
-            4F6E476574546578740B50726F6772616D54797065070B747450726F63656475
-            726506536F7572636514B500000070726F636564757265204442546578743130
+            0A626567696E0D0A0D0A202054657874203A3D2046616368626572656963683B
+            0D0A0D0A656E643B0D0A0D436F6D706F6E656E744E616D6506074C6162656C31
+            38094576656E744E616D6506094F6E47657454657874074576656E7449440235
+            084361726574506F730102010202000001060F5472614576656E7448616E646C
+            65720B50726F6772616D4E616D65061144657461696C4265666F72655072696E
+            740B50726F6772616D54797065070B747450726F63656475726506536F757263
+            6506F270726F6365647572652044657461696C4265666F72655072696E743B0D
+            0A626567696E0D0A2020202020206C6162656C31332E76697369626C653A3D46
+            414C53453B0D0A2020202020204946204661636862657265696368203C3E2727
+            207468656E206C6162656C31332E76697369626C653A3D545255453B0D0A2020
+            202020205269636854657874382E76697369626C653A3D46414C53453B0D0A20
+            202020202049462053636875656C65725B27466F657264657273636877657270
+            756E6B74415344275D3D27474227207468656E205269636854657874382E7669
+            7369626C653A3D545255453B200D0A656E643B0D0A0D436F6D706F6E656E744E
+            616D65060644657461696C094576656E744E616D65060B4265666F7265507269
+            6E74074576656E7449440218084361726574506F7301022F0206000001060F54
+            72614576656E7448616E646C65720B50726F6772616D4E616D65060F4C616265
+            6C374F6E476574546578740B50726F6772616D54797065070B747450726F6365
+            6475726506536F75726365143801000070726F636564757265204C6162656C37
             4F6E476574546578742876617220546578743A20537472696E67293B0D0A6265
-            67696E0D0A204946202053636875656C65725B2747657363686C65636874275D
-            3D33207468656E20546578743A3D202753746161746C6963682067657072C3BC
-            6674657220272B205465787420656C73652054657874203A3D20275374616174
-            6C6963682067657072C3BC66746520272B546578743B0D0A200D0A0D0A656E64
-            3B0D0A0D436F6D706F6E656E744E616D6506084442546578743130094576656E
-            744E616D6506094F6E47657454657874074576656E7449440235084361726574
-            506F730102020204000001060F5472614576656E7448616E646C65720B50726F
-            6772616D4E616D6506104C6162656C31394F6E476574546578740B50726F6772
-            616D54797065070B747450726F63656475726506536F757263650C7001000070
-            726F636564757265204C6162656C31394F6E4765745465787428766172205465
-            78743A20537472696E67293B0D0A7661722068616C626A6168722C206A616872
-            67616E67203A20535452494E473B0D0A626567696E0D0A202068616C626A6168
-            72203A3D202020636F7079284C65726E61627363686E697474655B2753636875
-            6C6A61687254657874275D2C392C31292B272E273B0D0A20206A61687267616E
-            673A3D202731272B636F7079284C65726E61627363686E697474655B27415344
-            4A61687267616E67275D2C322C31293B0D0A202054657874203A3D2053636875
-            656C65725B274572536965275D2B202720776172207A756C65747A7420272B53
-            636875656C65725B2753636875656C6572496E275D2B202720646572204B6C61
-            73736520272B4C65726E61627363686E697474655B274B6C61737365275D2B27
-            20696E20646572204A61687267616E6773737475666520272B206A6168726761
-            6E673B0D0A656E643B0D0A0D0A0D0A0D436F6D706F6E656E744E616D6506074C
-            6162656C3139094576656E744E616D6506094F6E47657454657874074576656E
-            7449440235084361726574506F730102010208000001060F5472614576656E74
-            48616E646C65720B50726F6772616D4E616D650610444254657874344F6E4765
-            74546578740B50726F6772616D54797065070B747450726F6365647572650653
-            6F75726365068F70726F63656475726520444254657874344F6E476574546578
-            742876617220546578743A20537472696E67293B0D0A626567696E0D0A202054
-            657874203A3D2027696D20536368756C6A61687220272B636F70792854657874
-            2C312C3729202B20272C20272B636F707928546578742C392C3129202B20272E
-            2048616C626A6168722E273B0D0A656E643B0D0A0D0A0D436F6D706F6E656E74
-            4E616D65060744425465787434094576656E744E616D6506094F6E4765745465
-            7874074576656E7449440235084361726574506F730102010205000000}
+            67696E0D0A202020494620204C65726E61627363686E697474655B2741534453
+            6368756C676C6965646572756E67275D3D2741313227207468656E0D0A202054
+            657874203A3D2027696D20566F6C6C7A65697462696C64756E677367616E6727
+            20656C7365200D0A20204946204C65726E61627363686E697474655B27415344
+            536368756C676C6965646572756E67275D3D2741313327207468656E0D0A2020
+            54657874203A3D2027696D205465696C7A65697462696C64756E677367616E67
+            270D0A2020656C73652054657874203A3D202766616C7363686573205A657567
+            6E69732066C3BC7220646965736520476C6965646572756E67273B0D0A200D0A
+            0D0A656E643B0D0A0D436F6D706F6E656E744E616D6506064C6162656C370945
+            76656E744E616D6506094F6E47657454657874074576656E7449440235084361
+            726574506F7301020E0206000001060F5472614576656E7448616E646C65720B
+            50726F6772616D4E616D65060F4C6162656C354F6E476574546578740B50726F
+            6772616D54797065070B747450726F63656475726506536F7572636506BA7072
+            6F636564757265204C6162656C354F6E47657454657874287661722054657874
+            3A20537472696E67293B0D0A626567696E0D0A202054657874203A3D20276973
+            7420272B2053636875656C65725B2753636875656C6572496E275D2B27206465
+            72204B6C6173736520273B0D0A202049462053636875656C65725B2753636875
+            656C6572496E275D3D2727207468656E20546578743A3D202762657375636874
+            20646965204B6C6173736520273B0D0A656E643B0D0A0D0A0D436F6D706F6E65
+            6E744E616D6506064C6162656C35094576656E744E616D6506094F6E47657454
+            657874074576656E7449440235084361726574506F730102010206000001060F
+            5472614576656E7448616E646C65720B50726F6772616D4E616D650610444254
+            657874384F6E476574546578740B50726F6772616D54797065070B747450726F
+            63656475726506536F7572636506A870726F6365647572652044425465787438
+            4F6E476574546578742876617220546578743A20537472696E67293B0D0A6265
+            67696E0D0A0D0A2069662053636875656C65725B27426567696E6E42696C6475
+            6E677367616E67275D3C53636875656C65725B274175666E61686D6564617475
+            6D275D207468656E2054657874203A3D2053636875656C65725B274175666E61
+            686D65646174756D275D3B0D0A200D0A20656E643B0D0A0D436F6D706F6E656E
+            744E616D65060744425465787438094576656E744E616D6506094F6E47657454
+            657874074576656E7449440235084361726574506F730102000200000000}
         end
         object ppDesignLayers2: TppDesignLayers
           object ppDesignLayer2: TppDesignLayer
@@ -672,7 +589,7 @@ object Report: TppReport
       mmHeight = 5027
       mmLeft = 0
       mmTop = 7144
-      mmWidth = 180000
+      mmWidth = 390000
       BandType = 4
       LayerName = Foreground
       mmBottomOffset = 0
@@ -681,9 +598,10 @@ object Report: TppReport
       mmMinHeight = 0
       object ppChildReport2: TppChildReport
         PrinterSetup.BinName = 'Default'
-        PrinterSetup.DocumentName = 'AGZ-2021- 2jBFS (Anl B5).rtm'
+        PrinterSetup.DocumentName = 'JAZ-2024- AV (Anl A2.3) als A3 mit LF.rtm'
         PrinterSetup.Duplex = dpVertical
-        PrinterSetup.PaperName = 'A4 210 x 297 mm'
+        PrinterSetup.Orientation = poLandscape
+        PrinterSetup.PaperName = 'A3 297 x 420 mm'
         PrinterSetup.PrinterName = 'Screen'
         PrinterSetup.SaveDeviceSettings = False
         PrinterSetup.mmMarginBottom = 10000
@@ -691,193 +609,12 @@ object Report: TppReport
         PrinterSetup.mmMarginRight = 10000
         PrinterSetup.mmMarginTop = 10000
         PrinterSetup.mmPaperHeight = 297000
-        PrinterSetup.mmPaperWidth = 210000
-        PrinterSetup.PaperSize = 9
+        PrinterSetup.mmPaperWidth = 420000
+        PrinterSetup.PaperSize = 8
         Template.Format = ftASCII
         Units = utMillimeters
         Version = '15.05'
         mmColumnWidth = 0
-        object ppTitleBand4: TppTitleBand
-          Background.Brush.Style = bsClear
-          PrintHeight = phDynamic
-          mmBottomOffset = 0
-          mmHeight = 11113
-          mmPrintPosition = 0
-          object ppSubReport8: TppSubReport
-            UserName = 'SubReport8'
-            ExpandAll = False
-            NewPrintJob = False
-            OutlineSettings.CreateNode = True
-            TraverseAllData = False
-            DataPipelineName = 'plBKBerufsbezogen'
-            mmHeight = 5027
-            mmLeft = 0
-            mmTop = 0
-            mmWidth = 180000
-            BandType = 1
-            LayerName = Foreground2
-            mmBottomOffset = 0
-            mmOverFlowOffset = 0
-            mmStopPosition = 0
-            mmMinHeight = 0
-            object ppChildReport9: TppChildReport
-              AutoStop = False
-              DataPipeline = dmPipelines.plBKBerufsbezogen
-              PrinterSetup.BinName = 'Default'
-              PrinterSetup.DocumentName = 'AGZ-2021- 2jBFS (Anl B5).rtm'
-              PrinterSetup.Duplex = dpVertical
-              PrinterSetup.PaperName = 'A4 210 x 297 mm'
-              PrinterSetup.PrinterName = 'Screen'
-              PrinterSetup.SaveDeviceSettings = False
-              PrinterSetup.mmMarginBottom = 10000
-              PrinterSetup.mmMarginLeft = 20000
-              PrinterSetup.mmMarginRight = 10000
-              PrinterSetup.mmMarginTop = 10000
-              PrinterSetup.mmPaperHeight = 297000
-              PrinterSetup.mmPaperWidth = 210000
-              PrinterSetup.PaperSize = 9
-              Template.Format = ftASCII
-              Units = utMillimeters
-              Version = '15.05'
-              mmColumnWidth = 0
-              DataPipelineName = 'plBKBerufsbezogen'
-              object ppDetailBand10: TppDetailBand
-                Background1.Brush.Style = bsClear
-                Background2.Brush.Style = bsClear
-                mmBottomOffset = 0
-                mmHeight = 1
-                mmPrintPosition = 0
-                object ppDBText5: TppDBText
-                  UserName = 'DBText5'
-                  DataField = 'LELS'
-                  DataPipeline = dmPipelines.plBKBerufsbezogen
-                  Font.Charset = ANSI_CHARSET
-                  Font.Color = clBlack
-                  Font.Name = 'Lucida Sans'
-                  Font.Size = 12
-                  Font.Style = []
-                  Transparent = True
-                  Visible = False
-                  DataPipelineName = 'plBKBerufsbezogen'
-                  mmHeight = 4498
-                  mmLeft = 6350
-                  mmTop = 0
-                  mmWidth = 17198
-                  BandType = 4
-                  LayerName = Foreground9
-                end
-              end
-              object raCodeModule9: TraCodeModule
-                ProgramStream = {
-                  01060F5472614576656E7448616E646C65720B50726F6772616D4E616D650611
-                  44657461696C4265666F72655072696E740B50726F6772616D54797065070B74
-                  7450726F63656475726506536F75726365067070726F63656475726520446574
-                  61696C4265666F72655072696E743B0D0A626567696E0D0A2020204946202042
-                  4B42657275667362657A6F67656E5B274C454C53275D3D27244E415027207468
-                  656E205269636854657874322E76697369626C653A3D545255453B0D0A656E64
-                  3B0D0A0D436F6D706F6E656E744E616D65060644657461696C094576656E744E
-                  616D65060B4265666F72655072696E74074576656E7449440218084361726574
-                  506F7301022C0203000000}
-              end
-              object ppDesignLayers10: TppDesignLayers
-                object ppDesignLayer10: TppDesignLayer
-                  UserName = 'Foreground9'
-                  LayerType = ltBanded
-                  Index = 0
-                end
-              end
-            end
-          end
-          object ppSubReport9: TppSubReport
-            UserName = 'SubReport9'
-            ExpandAll = False
-            NewPrintJob = False
-            OutlineSettings.CreateNode = True
-            TraverseAllData = False
-            DataPipelineName = 'ppBKBerufspraktikum'
-            mmHeight = 5027
-            mmLeft = 0
-            mmTop = 5556
-            mmWidth = 180000
-            BandType = 1
-            LayerName = Foreground2
-            mmBottomOffset = 0
-            mmOverFlowOffset = 0
-            mmStopPosition = 0
-            mmMinHeight = 0
-            object ppChildReport10: TppChildReport
-              AutoStop = False
-              DataPipeline = dmPipelines.ppBKBerufspraktikum
-              PrinterSetup.BinName = 'Default'
-              PrinterSetup.DocumentName = 'AGZ-2021- 2jBFS (Anl B5).rtm'
-              PrinterSetup.Duplex = dpVertical
-              PrinterSetup.PaperName = 'A4 210 x 297 mm'
-              PrinterSetup.PrinterName = 'Screen'
-              PrinterSetup.SaveDeviceSettings = False
-              PrinterSetup.mmMarginBottom = 10000
-              PrinterSetup.mmMarginLeft = 20000
-              PrinterSetup.mmMarginRight = 10000
-              PrinterSetup.mmMarginTop = 10000
-              PrinterSetup.mmPaperHeight = 297000
-              PrinterSetup.mmPaperWidth = 210000
-              PrinterSetup.PaperSize = 9
-              Template.Format = ftASCII
-              Units = utMillimeters
-              Version = '15.05'
-              mmColumnWidth = 0
-              DataPipelineName = 'ppBKBerufspraktikum'
-              object ppDetailBand11: TppDetailBand
-                Background1.Brush.Style = bsClear
-                Background2.Brush.Style = bsClear
-                mmBottomOffset = 0
-                mmHeight = 1
-                mmPrintPosition = 0
-                object ppDBText13: TppDBText
-                  UserName = 'DBText13'
-                  DataField = 'Notenkrz'
-                  DataPipeline = dmPipelines.ppBKBerufspraktikum
-                  Font.Charset = DEFAULT_CHARSET
-                  Font.Color = clBlack
-                  Font.Name = 'Arial'
-                  Font.Size = 12
-                  Font.Style = []
-                  Transparent = True
-                  Visible = False
-                  DataPipelineName = 'ppBKBerufspraktikum'
-                  mmHeight = 1
-                  mmLeft = 0
-                  mmTop = 0
-                  mmWidth = 64558
-                  BandType = 4
-                  LayerName = Foreground10
-                end
-              end
-              object raCodeModule10: TraCodeModule
-                ProgramStream = {
-                  01060F5472614576656E7448616E646C65720B50726F6772616D4E616D650611
-                  44657461696C4265666F72655072696E740B50726F6772616D54797065070B74
-                  7450726F63656475726506536F7572636506F270726F63656475726520446574
-                  61696C4265666F72655072696E743B0D0A626567696E0D0A2020207072616B6E
-                  6F74653A3D27273B0D0A20202049462028424B4265727566737072616B74696B
-                  756D5B274E6F74656E6B727A275D3C3E272D2D272920616E642028424B426572
-                  7566737072616B74696B756D5B274E6F74656E6B727A275D3C3E274E42272920
-                  616E642028424B4265727566737072616B74696B756D5B274E6F74656E6B727A
-                  275D3C3E276E622729207468656E207072616B6E6F74653A3D20424B42657275
-                  66737072616B74696B756D5B274E6F74656E6B6C617274657874275D3B0D0A65
-                  6E643B0D0A0D436F6D706F6E656E744E616D65060644657461696C094576656E
-                  744E616D65060B4265666F72655072696E74074576656E744944021808436172
-                  6574506F730103B2000204000000}
-              end
-              object ppDesignLayers11: TppDesignLayers
-                object ppDesignLayer11: TppDesignLayer
-                  UserName = 'Foreground10'
-                  LayerType = ltBanded
-                  Index = 0
-                end
-              end
-            end
-          end
-        end
         object ppDetailBand3: TppDetailBand
           Background1.Brush.Style = bsClear
           Background2.Brush.Style = bsClear
@@ -885,55 +622,19 @@ object Report: TppReport
           mmBottomOffset = 0
           mmHeight = 276226
           mmPrintPosition = 0
-          object ppRichText7: TppRichText
-            UserName = 'RichText7'
-            Font.Charset = ANSI_CHARSET
-            Font.Color = clBlack
-            Font.Name = 'Lucida Sans'
-            Font.Size = 12
-            Font.Style = []
-            KeepTogether = True
-            Caption = 'RichText7'
-            RichText = 
-              '{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcha' +
-              'rset0 Lucida Sans;}}'#13#10'{\colortbl ;\red0\green0\blue0;}'#13#10'\viewkin' +
-              'd4\uc1\pard\fi-160\li160\qj\super\f0\fs16 1  \nosupersub Notenst' +
-              'ufen gem\'#39'e4\'#39'df \'#39'a7 48 Absatz 3 SchulG: sehr gut (1), gut (2),' +
-              ' befriedigend (3), ausreichend (4), mangelhaft (5), ungen\'#39'fcgen' +
-              'd (6)\par'#13#10'\pard\fi-140\li140\qj\super 2 \nosupersub Der Unterri' +
-              'cht in den modernen Fremdsprachen hat auf der nach dem Fach in K' +
-              'lammern angegebenen Niveaustufe des \'#39'84Europ\'#39'e4ischen Referenz' +
-              'rahmens f\'#39'fcr Sprachen: Lernen, Lehren, Beurteilen\ldblquote  s' +
-              'tattgefunden. Sind zwei Referenzniveaus ausgewiesen, ist das nie' +
-              'drigere in vollem Umfang, das h\'#39'f6here in Anteilen erreicht. Be' +
-              'i mindestens ausreichenden Leistungen wird der sprachliche Kompe' +
-              'tenzerwerb auf diesem Niveau bescheinigt.\cf1\fs24\par'#13#10'}'#13#10#0
-            RemoveEmptyLines = False
-            Stretch = True
-            Transparent = True
-            mmHeight = 26699
-            mmLeft = 10054
-            mmTop = 238716
-            mmWidth = 163248
-            BandType = 4
-            LayerName = Foreground2
-            mmBottomOffset = 0
-            mmOverFlowOffset = 0
-            mmStopPosition = 0
-            mmMinHeight = 0
-          end
           object ppSubReport3: TppSubReport
             UserName = 'SubReport3'
             ExpandAll = False
             NewPrintJob = False
             OutlineSettings.CreateNode = True
-            ShiftRelativeTo = ppRichText3
+            ParentWidth = False
+            ShiftRelativeTo = ppRichText2
             TraverseAllData = False
             DataPipelineName = 'plBKBerufsbezogen'
             mmHeight = 5027
-            mmLeft = 0
+            mmLeft = 10142
             mmTop = 21696
-            mmWidth = 180000
+            mmWidth = 382765
             BandType = 4
             LayerName = Foreground2
             mmBottomOffset = 0
@@ -944,9 +645,10 @@ object Report: TppReport
               AutoStop = False
               DataPipeline = dmPipelines.plBKBerufsbezogen
               PrinterSetup.BinName = 'Default'
-              PrinterSetup.DocumentName = 'AGZ-2021- 2jBFS (Anl B5).rtm'
+              PrinterSetup.DocumentName = 'JAZ-2024- AV (Anl A2.3) als A3 mit LF.rtm'
               PrinterSetup.Duplex = dpVertical
-              PrinterSetup.PaperName = 'A4 210 x 297 mm'
+              PrinterSetup.Orientation = poLandscape
+              PrinterSetup.PaperName = 'A3 297 x 420 mm'
               PrinterSetup.PrinterName = 'Screen'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 10000
@@ -954,8 +656,8 @@ object Report: TppReport
               PrinterSetup.mmMarginRight = 10000
               PrinterSetup.mmMarginTop = 10000
               PrinterSetup.mmPaperHeight = 297000
-              PrinterSetup.mmPaperWidth = 210000
-              PrinterSetup.PaperSize = 9
+              PrinterSetup.mmPaperWidth = 420000
+              PrinterSetup.PaperSize = 8
               Template.Format = ftASCII
               Units = utMillimeters
               Version = '15.05'
@@ -984,7 +686,7 @@ object Report: TppReport
                 end
                 object ppLabel9: TppLabel
                   UserName = 'Label9'
-                  Caption = '3'
+                  Caption = '2'
                   Font.Charset = ANSI_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Lucida Sans'
@@ -992,7 +694,7 @@ object Report: TppReport
                   Font.Style = []
                   Transparent = True
                   mmHeight = 3704
-                  mmLeft = 75406
+                  mmLeft = 74613
                   mmTop = 3440
                   mmWidth = 1852
                   BandType = 1
@@ -1061,7 +763,7 @@ object Report: TppReport
                   mmHeight = 4763
                   mmLeft = 10054
                   mmTop = 265
-                  mmWidth = 118798
+                  mmWidth = 119327
                   BandType = 4
                   LayerName = Foreground4
                   mmBottomOffset = 0
@@ -1070,86 +772,30 @@ object Report: TppReport
                   mmMinHeight = 0
                   mmLeading = 0
                 end
-                object ppLabel21: TppLabel
-                  UserName = 'Label21'
-                  Caption = '4'
-                  Font.Charset = ANSI_CHARSET
-                  Font.Color = clBlack
-                  Font.Name = 'Lucida Sans'
-                  Font.Size = 6
-                  Font.Style = []
-                  TextAlignment = taCentered
-                  Transparent = True
-                  mmHeight = 3175
-                  mmLeft = 168540
-                  mmTop = 265
-                  mmWidth = 1323
-                  BandType = 4
-                  LayerName = Foreground4
-                end
               end
               object raCodeModule4: TraCodeModule
                 ProgramStream = {
-                  01060F5472614576656E7448616E646C65720B50726F6772616D4E616D65060F
-                  44425465787431374F6E5072696E740B50726F6772616D54797065070B747450
-                  726F63656475726506536F7572636506BF70726F636564757265204442546578
-                  7431374F6E5072696E743B0D0A626567696E0D0A20202020494620636F707928
-                  424B42657275667362657A6F67656E5B274E6F74656E6B727A275D2C312C3129
-                  3D273527207468656E20416E7A61686C353A3D416E7A61686C352B313B0D0A20
-                  202020494620636F707928424B42657275667362657A6F67656E5B274E6F7465
-                  6E6B727A275D2C312C31293D273627207468656E20416E7A61686C363A3D416E
-                  7A61686C362B313B0D0A656E643B0D0A0D436F6D706F6E656E744E616D650608
-                  4442546578743137094576656E744E616D6506074F6E5072696E74074576656E
-                  7449440220084361726574506F730102010202000001060F5472614576656E74
-                  48616E646C65720B50726F6772616D4E616D6506105469746C654265666F7265
-                  5072696E740B50726F6772616D54797065070B747450726F6365647572650653
-                  6F75726365069F70726F636564757265205469746C654265666F72655072696E
-                  743B0D0A626567696E0D0A202020206C6162656C392E76697369626C653A3D46
-                  414C53453B0D0A202020204946204C65726E66656C6465725A75466163686B6C
-                  617373652853636875656C65725B27466163686B6C617373655F4944275D293C
-                  3E2727207468656E206C6162656C392E76697369626C653A3D545255453B0D0A
-                  656E643B0D0A0D436F6D706F6E656E744E616D6506055469746C65094576656E
-                  744E616D65060B4265666F72655072696E74074576656E744944021808436172
-                  6574506F730102050205000001060F5472614576656E7448616E646C65720B50
-                  726F6772616D4E616D65061044424D656D6F314F6E4765744D656D6F0B50726F
-                  6772616D54797065070B747450726F63656475726506536F757263650CF00200
-                  0070726F6365647572652044424D656D6F314F6E4765744D656D6F284C696E65
-                  733A2054537472696E6773293B0D0A76617220676572203A20535452494E473B
-                  0D0A626567696E0D0A202020676572203A3D2027273B0D0A2020204946202020
-                  424B42657275667362657A6F67656E5B274973744672656D6473707261636865
-                  275D3D272B27207468656E20626567696E200D0A20202020204946204765524E
-                  6976656175417573466163684B727A28424B42657275667362657A6F67656E5B
-                  27466163686B727A275D293C3E2727207468656E206765723A3D202027282720
-                  2B204765524E6976656175417573466163684B727A28424B4265727566736265
-                  7A6F67656E5B27466163686B727A275D292B27292720656C73650D0A20202020
-                  2020202049462020424B42657275667362657A6F67656E5B274C454C53275D3C
-                  3E2727207468656E200D0A20202020202020202020626567696E0D0A20202020
-                  20202020202020696620636F707928424B42657275667362657A6F67656E5B27
-                  4C454C53275D2C312C31293C3E272827207468656E20676572203A3D20272827
-                  202B20424B42657275667362657A6F67656E5B274C454C53275D2B2729272065
-                  6C736520676572203A3D20424B42657275667362657A6F67656E5B274C454C53
-                  275D203B0D0A20202020202020202020656E64200D0A2020202020202020656C
-                  73650D0A2020202020204946204C65726E61627363686E697474655B27415344
-                  536368756C676C6965646572756E67275D3D27423036277468656E2067657220
-                  3A3D20272841322F423129273B0D0A2020202020204946204C65726E61627363
-                  686E697474655B27415344536368756C676C6965646572756E67275D3D274230
-                  37277468656E20676572203A3D202728423129273B0D0A2020202020656E643B
-                  0D0A2020202020206C696E65732E546578743A3D424B42657275667362657A6F
-                  67656E5B275A6575676E697362657A656963686E756E67275D202B272027202B
-                  6765720D0A202020202020656E643B0D0A0D436F6D706F6E656E744E616D6506
-                  0744424D656D6F31094576656E744E616D6506094F6E4765744D656D6F074576
-                  656E7449440256084361726574506F73010238020F000001060F547261457665
-                  6E7448616E646C65720B50726F6772616D4E616D650610444254657874364F6E
-                  476574546578740B50726F6772616D54797065070B747450726F636564757265
-                  06536F7572636506D070726F63656475726520444254657874364F6E47657454
-                  6578742876617220546578743A20537472696E67293B0D0A626567696E0D0A20
-                  206C6162656C32312E76697369626C653A3D46414C53453B0D0A202049462020
-                  424B42657275667362657A6F67656E5B274C454C53275D3D27244E4150272074
-                  68656E2020626567696E0D0A2020202020206C6162656C32312E76697369626C
-                  653A3D545255453B200D0A2020202020205269636854657874322E7669736962
-                  6C653A3D545255453B0D0A2020656E643B0D0A656E643B0D0A0D436F6D706F6E
-                  656E744E616D65060744425465787436094576656E744E616D6506094F6E4765
-                  7454657874074576656E7449440235084361726574506F730102220206000000}
+                  01060F5472614576656E7448616E646C65720B50726F6772616D4E616D650610
+                  5469746C654265666F72655072696E740B50726F6772616D54797065070B7474
+                  50726F63656475726506536F75726365069F70726F636564757265205469746C
+                  654265666F72655072696E743B0D0A626567696E0D0A202020206C6162656C39
+                  2E76697369626C653A3D46414C53453B0D0A202020204946204C65726E66656C
+                  6465725A75466163686B6C617373652853636875656C65725B27466163686B6C
+                  617373655F4944275D293C3E2727207468656E206C6162656C392E7669736962
+                  6C653A3D545255453B0D0A656E643B0D0A0D436F6D706F6E656E744E616D6506
+                  055469746C65094576656E744E616D65060B4265666F72655072696E74074576
+                  656E7449440218084361726574506F730102010202000001060F547261457665
+                  6E7448616E646C65720B50726F6772616D4E616D65060F44425465787431374F
+                  6E5072696E740B50726F6772616D54797065070B747450726F63656475726506
+                  536F7572636506BF70726F6365647572652044425465787431374F6E5072696E
+                  743B0D0A626567696E0D0A20202020494620636F707928424B42657275667362
+                  657A6F67656E5B274E6F74656E6B727A275D2C312C31293D273527207468656E
+                  20416E7A61686C353A3D416E7A61686C352B313B0D0A20202020494620636F70
+                  7928424B42657275667362657A6F67656E5B274E6F74656E6B727A275D2C312C
+                  31293D273627207468656E20416E7A61686C363A3D416E7A61686C362B313B0D
+                  0A656E643B0D0A0D436F6D706F6E656E744E616D650608444254657874313709
+                  4576656E744E616D6506074F6E5072696E74074576656E744944022008436172
+                  6574506F730102010202000000}
               end
               object ppDesignLayers5: TppDesignLayers
                 object ppDesignLayer5: TppDesignLayer
@@ -1165,13 +811,14 @@ object Report: TppReport
             ExpandAll = False
             NewPrintJob = False
             OutlineSettings.CreateNode = True
+            ParentWidth = False
             ShiftRelativeTo = ppSubReport3
             TraverseAllData = False
             DataPipelineName = 'plBKBerufsuebergreifend'
             mmHeight = 5027
-            mmLeft = 0
+            mmLeft = 10142
             mmTop = 28046
-            mmWidth = 180000
+            mmWidth = 385410
             BandType = 4
             LayerName = Foreground2
             mmBottomOffset = 0
@@ -1182,9 +829,10 @@ object Report: TppReport
               AutoStop = False
               DataPipeline = dmPipelines.plBKBerufsuebergreifend
               PrinterSetup.BinName = 'Default'
-              PrinterSetup.DocumentName = 'AGZ-2021- 2jBFS (Anl B5).rtm'
+              PrinterSetup.DocumentName = 'JAZ-2024- AV (Anl A2.3) als A3 mit LF.rtm'
               PrinterSetup.Duplex = dpVertical
-              PrinterSetup.PaperName = 'A4 210 x 297 mm'
+              PrinterSetup.Orientation = poLandscape
+              PrinterSetup.PaperName = 'A3 297 x 420 mm'
               PrinterSetup.PrinterName = 'Screen'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 10000
@@ -1192,8 +840,8 @@ object Report: TppReport
               PrinterSetup.mmMarginRight = 10000
               PrinterSetup.mmMarginTop = 10000
               PrinterSetup.mmPaperHeight = 297000
-              PrinterSetup.mmPaperWidth = 210000
-              PrinterSetup.PaperSize = 9
+              PrinterSetup.mmPaperWidth = 420000
+              PrinterSetup.PaperSize = 8
               Template.Format = ftASCII
               Units = utMillimeters
               Version = '15.05'
@@ -1314,13 +962,14 @@ object Report: TppReport
             ExpandAll = False
             NewPrintJob = False
             OutlineSettings.CreateNode = True
+            ParentWidth = False
             ShiftRelativeTo = ppSubReport4
             TraverseAllData = False
             DataPipelineName = 'plBKDifferenzierung'
             mmHeight = 5027
-            mmLeft = 0
+            mmLeft = 10142
             mmTop = 34925
-            mmWidth = 180000
+            mmWidth = 385410
             BandType = 4
             LayerName = Foreground2
             mmBottomOffset = 0
@@ -1331,9 +980,10 @@ object Report: TppReport
               AutoStop = False
               DataPipeline = dmPipelines.plBKDifferenzierung
               PrinterSetup.BinName = 'Default'
-              PrinterSetup.DocumentName = 'AGZ-2021- 2jBFS (Anl B5).rtm'
+              PrinterSetup.DocumentName = 'JAZ-2024- AV (Anl A2.3) als A3 mit LF.rtm'
               PrinterSetup.Duplex = dpVertical
-              PrinterSetup.PaperName = 'A4 210 x 297 mm'
+              PrinterSetup.Orientation = poLandscape
+              PrinterSetup.PaperName = 'A3 297 x 420 mm'
               PrinterSetup.PrinterName = 'Screen'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 10000
@@ -1341,8 +991,8 @@ object Report: TppReport
               PrinterSetup.mmMarginRight = 10000
               PrinterSetup.mmMarginTop = 10000
               PrinterSetup.mmPaperHeight = 297000
-              PrinterSetup.mmPaperWidth = 210000
-              PrinterSetup.PaperSize = 9
+              PrinterSetup.mmPaperWidth = 420000
+              PrinterSetup.PaperSize = 8
               Template.Format = ftASCII
               Units = utMillimeters
               Version = '15.05'
@@ -1413,7 +1063,7 @@ object Report: TppReport
                   mmHeight = 4763
                   mmLeft = 10054
                   mmTop = 265
-                  mmWidth = 119592
+                  mmWidth = 119327
                   BandType = 4
                   LayerName = Foreground6
                   mmBottomOffset = 0
@@ -1422,9 +1072,6 @@ object Report: TppReport
                   mmMinHeight = 0
                   mmLeading = 0
                 end
-              end
-              object raCodeModule8: TraCodeModule
-                ProgramStream = {00}
               end
               object ppDesignLayers7: TppDesignLayers
                 object ppDesignLayer7: TppDesignLayer
@@ -1435,18 +1082,47 @@ object Report: TppReport
               end
             end
           end
+          object ppRichText3: TppRichText
+            UserName = 'RichText3'
+            Font.Charset = ANSI_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Lucida Sans'
+            Font.Size = 12
+            Font.Style = [fsBold]
+            Caption = 'RichText3'
+            RichText = 
+              '{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcha' +
+              'rset0 Lucida Sans;}}'#13#10'{\colortbl ;\red0\green0\blue0;}'#13#10'\viewkin' +
+              'd4\uc1\pard\cf1\f0\fs24\par'#13#10'Nicht ausreichende Leistungen gef\'#39 +
+              'e4hrden den Abschluss.\b\par'#13#10'}'#13#10#0
+            RemoveEmptyLines = False
+            ShiftRelativeTo = ppSubReport5
+            Stretch = True
+            Transparent = True
+            mmHeight = 9525
+            mmLeft = 10054
+            mmTop = 42598
+            mmWidth = 159809
+            BandType = 4
+            LayerName = Foreground2
+            mmBottomOffset = 0
+            mmOverFlowOffset = 0
+            mmStopPosition = 0
+            mmMinHeight = 0
+          end
           object ppSubReport6: TppSubReport
             UserName = 'SubReport6'
             ExpandAll = False
             NewPrintJob = False
             OutlineSettings.CreateNode = True
-            ShiftRelativeTo = ppSubReport5
+            ParentWidth = False
+            ShiftRelativeTo = ppRichText3
             TraverseAllData = False
             DataPipelineName = 'plLernabschnitte'
             mmHeight = 5027
-            mmLeft = 0
+            mmLeft = 10142
             mmTop = 60590
-            mmWidth = 180000
+            mmWidth = 385410
             BandType = 4
             LayerName = Foreground2
             mmBottomOffset = 0
@@ -1457,9 +1133,10 @@ object Report: TppReport
               AutoStop = False
               DataPipeline = dmPipelines.plLernabschnitte
               PrinterSetup.BinName = 'Default'
-              PrinterSetup.DocumentName = 'AGZ-2021- 2jBFS (Anl B5).rtm'
+              PrinterSetup.DocumentName = 'JAZ-2024- AV (Anl A2.3) als A3 mit LF.rtm'
               PrinterSetup.Duplex = dpVertical
-              PrinterSetup.PaperName = 'A4 210 x 297 mm'
+              PrinterSetup.Orientation = poLandscape
+              PrinterSetup.PaperName = 'A3 297 x 420 mm'
               PrinterSetup.PrinterName = 'Screen'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 10000
@@ -1467,9 +1144,8 @@ object Report: TppReport
               PrinterSetup.mmMarginRight = 10000
               PrinterSetup.mmMarginTop = 10000
               PrinterSetup.mmPaperHeight = 297000
-              PrinterSetup.mmPaperWidth = 210000
-              PrinterSetup.PaperSize = 9
-              Template.Offset = 284
+              PrinterSetup.mmPaperWidth = 420000
+              PrinterSetup.PaperSize = 8
               Template.Format = ftASCII
               Units = utMillimeters
               Version = '15.05'
@@ -1480,8 +1156,26 @@ object Report: TppReport
                 Background2.Brush.Style = bsClear
                 PrintHeight = phDynamic
                 mmBottomOffset = 0
-                mmHeight = 45244
+                mmHeight = 31221
                 mmPrintPosition = 0
+                object ppDBText15: TppDBText
+                  UserName = 'DBText15'
+                  AutoSize = True
+                  DataPipeline = dmPipelines.plLernabschnitte
+                  Font.Charset = ANSI_CHARSET
+                  Font.Color = clBlack
+                  Font.Name = 'Lucida Sans'
+                  Font.Size = 12
+                  Font.Style = []
+                  Transparent = True
+                  DataPipelineName = 'plLernabschnitte'
+                  mmHeight = 4763
+                  mmLeft = 10319
+                  mmTop = 1852
+                  mmWidth = 19579
+                  BandType = 4
+                  LayerName = Foreground7
+                end
                 object ppLabel12: TppLabel
                   UserName = 'Label12'
                   Caption = 'Bemerkungen:'
@@ -1493,7 +1187,7 @@ object Report: TppReport
                   Transparent = True
                   mmHeight = 4763
                   mmLeft = 10319
-                  mmTop = 36248
+                  mmTop = 23548
                   mmWidth = 28046
                   BandType = 4
                   LayerName = Foreground7
@@ -1512,9 +1206,9 @@ object Report: TppReport
                   Transparent = True
                   DataPipelineName = 'plLernabschnitte'
                   mmHeight = 4811
-                  mmLeft = 40219
-                  mmTop = 36248
-                  mmWidth = 128852
+                  mmLeft = 40481
+                  mmTop = 23548
+                  mmWidth = 128588
                   BandType = 4
                   LayerName = Foreground7
                   mmBottomOffset = 0
@@ -1522,27 +1216,8 @@ object Report: TppReport
                   mmStopPosition = 0
                   mmMinHeight = 0
                 end
-                object ppLabel16: TppLabel
-                  UserName = 'Label16'
-                  AutoSize = False
-                  Caption = 'Label16'
-                  Font.Charset = ANSI_CHARSET
-                  Font.Color = clBlack
-                  Font.Name = 'Lucida Sans'
-                  Font.Size = 12
-                  Font.Style = []
-                  Transparent = True
-                  WordWrap = True
-                  mmHeight = 11113
-                  mmLeft = 10319
-                  mmTop = 6879
-                  mmWidth = 158750
-                  BandType = 4
-                  LayerName = Foreground7
-                end
                 object ppLabel20: TppLabel
                   UserName = 'Label20'
-                  AutoSize = False
                   Caption = 'Label20'
                   Font.Charset = ANSI_CHARSET
                   Font.Color = clBlack
@@ -1551,9 +1226,9 @@ object Report: TppReport
                   Font.Style = []
                   Transparent = True
                   WordWrap = True
-                  mmHeight = 10319
+                  mmHeight = 12171
                   mmLeft = 10319
-                  mmTop = 21696
+                  mmTop = 10583
                   mmWidth = 158750
                   BandType = 4
                   LayerName = Foreground7
@@ -1561,77 +1236,69 @@ object Report: TppReport
               end
               object raCodeModule5: TraCodeModule
                 ProgramStream = {
-                  01060F5472614576656E7448616E646C65720B50726F6772616D4E616D650618
-                  44425269636854657874314F6E47657452696368546578740B50726F6772616D
-                  54797065070B747450726F63656475726506536F7572636506CE70726F636564
-                  7572652044425269636854657874314F6E476574526963685465787428766172
-                  20546578743A20537472696E67293B0D0A626567696E0D0A2020204946202020
-                  4C65726E61627363686E697474655B275A6575676E697342656D275D3D272720
-                  7468656E20546578743A3D27206B65696E652720656C73650D0A202054657874
-                  203A3D204C65726E61627363686E697474655B275A6575676E697342656D275D
-                  3B0D0A2020546578743A3D5265706C61636544656661756C742854657874293B
-                  0D0A656E643B0D0A0D436F6D706F6E656E744E616D65060B4442526963685465
-                  787431094576656E744E616D65060D4F6E476574526963685465787407457665
-                  6E7449440235084361726574506F730102010201000001060F5472614576656E
-                  7448616E646C65720B50726F6772616D4E616D6506104C6162656C31364F6E47
-                  6574546578740B50726F6772616D54797065070B747450726F63656475726506
-                  536F75726365144303000070726F636564757265204C6162656C31364F6E4765
-                  74546578742876617220546578743A20537472696E67293B0D0A76617220616E
-                  666461742C20656E646461742C207072616B74696B756D203A20535452494E47
-                  3B0D0A20202020656E6465203A20494E54454745523B0D0A626567696E0D0A20
-                  205072616B74696B756D203A3D2730273B0D0A2020616E666461743A3D273031
-                  2E30382E272B20636F7079284C65726E61627363686E697474655B2753636875
-                  6C6A61687254657874275D2C312C34293B0D0A2020656E64653A3D537472546F
-                  496E7428636F7079284C65726E61627363686E697474655B27536368756C6A61
-                  687254657874275D2C312C3429292B313B0D0A2020656E64646174203A3D2733
-                  312E30372E272B20496E74546F53747228656E6465293B0D0A20204946204C6F
-                  61645665726D65726B65566F6E42697328275072616B74696B756D7364617565
-                  72272C2720272C616E666461742C656E646461742C46414C5345293C3E272720
-                  7468656E200D0A20205072616B74696B756D3A3D4C6F61645665726D65726B65
-                  566F6E42697328275072616B74696B756D736461756572272C2720272C616E66
-                  6461742C656E646461742C46414C53452920656C7365205072616B74696B756D
-                  3A3D5072616B74696B756D736461756572203B0D0A202049462053636875656C
-                  65725B2747657363686C65636874275D3D33207468656E0D0A20205465787420
-                  3A3D202744657220536368C3BC6C6572202720656C73652054657874203A3D27
-                  44696520536368C3BC6C6572696E20273B0D0A2020546578743A3D5465787420
-                  2B20276861742065696E2062696C64756E677367616E676265676C656974656E
-                  646573205072616B74696B756D20696D20556D66616E6720766F6E20272B5072
-                  616B74696B756D2B27206162736F6C76696572742E273B0D0A20204946207072
-                  616B6E6F74653C3E2727207468656E20546578743A3D2054657874202B202720
-                  446965736573207775726465206D697420646572204E6F746520272B7072616B
-                  6E6F7465202B272062657765727465742E273B0D0A20204946205072616B7469
-                  6B756D203D20273027207468656E2054657874203A3D27273B200D0A656E643B
-                  0D0A202020200D0A202020200D0A0D436F6D706F6E656E744E616D6506074C61
-                  62656C3136094576656E744E616D6506094F6E47657454657874074576656E74
-                  49440235084361726574506F7301022E020E000001060F5472614576656E7448
-                  616E646C65720B50726F6772616D4E616D6506104C6162656C32304F6E476574
-                  546578740B50726F6772616D54797065070B747450726F63656475726506536F
-                  7572636514BD01000070726F636564757265204C6162656C32304F6E47657454
-                  6578742876617220546578743A20537472696E67293B0D0A626567696E0D0A20
-                  2049462053636875656C65725B2747657363686C65636874275D3D3320746865
-                  6E0D0A2020202054657874203A3D202744657220536368C3BC6C657220686174
-                  2064696520536368756C70666C6963687420696E206465722053656B756E6461
-                  7273747566652049492067656DC3A4C39F20C2A73338204162732E2034205363
-                  68756C67657365747A204E525720657266C3BC6C6C742C20736F6665726E206B
-                  65696E2041757362696C64756E677376657268C3A46C746E6973206265676F6E
-                  6E656E20776972642E2720656C73650D0A2020202054657874203A3D20274469
-                  6520536368C3BC6C6572696E206861742064696520536368756C70666C696368
-                  7420696E206465722053656B756E64617273747566652049492067656DC3A4C3
-                  9F20C2A73338204162732E203420536368756C67657365747A204E5257206572
-                  66C3BC6C6C742C20736F6665726E206B65696E2041757362696C64756E677376
-                  657268C3A46C746E6973206265676F6E6E656E20776972642E273B200D0A0D0A
-                  656E643B0D0A0D436F6D706F6E656E744E616D6506074C6162656C3230094576
-                  656E744E616D6506094F6E47657454657874074576656E744944023508436172
-                  6574506F730102050207000001060F5472614576656E7448616E646C65720B50
-                  726F6772616D4E616D65061144657461696C4265666F72655072696E740B5072
-                  6F6772616D54797065070B747450726F63656475726506536F75726365069270
-                  726F6365647572652044657461696C4265666F72655072696E743B0D0A626567
-                  696E0D0A0D0A202020204C6162656C32302E76697369626C65203A3D2046414C
-                  53453B0D0A2020202049462053636875656C65725B2742657275667373636875
-                  6C70666C457266275D3D272B27207468656E206C6162656C32302E7669736962
-                  6C653A3D545255453B0D0A656E643B0D0A0D436F6D706F6E656E744E616D6506
-                  0644657461696C094576656E744E616D65060B4265666F72655072696E740745
-                  76656E7449440218084361726574506F730102580203000000}
+                  01060F5472614576656E7448616E646C65720B50726F6772616D4E616D650611
+                  44425465787431354F6E476574546578740B50726F6772616D54797065070B74
+                  7450726F63656475726506536F75726365141501000070726F63656475726520
+                  44425465787431354F6E476574546578742876617220546578743A2053747269
+                  6E67293B0D0A626567696E0D0A0D0A202054657874203A3D202756657273C3A4
+                  756D7465205374756E64656E3A20272B20496E74546F537472284C65726E6162
+                  7363686E697474655B274665686C537464275D293B0D0A20204946204C65726E
+                  61627363686E697474655B274665686C537464275D3E30207468656E20546578
+                  743A3D2054657874202B20272C206461766F6E20756E656E74736368756C6469
+                  67743A20272B20496E74546F537472284C65726E61627363686E697474655B27
+                  556E4665686C537464275D293B0D0A2020546578743A3D546578742B272E273B
+                  200D0A0D0A656E643B0D0A0D436F6D706F6E656E744E616D6506084442546578
+                  743135094576656E744E616D6506094F6E47657454657874074576656E744944
+                  0235084361726574506F730102120206000001060F5472614576656E7448616E
+                  646C65720B50726F6772616D4E616D65061844425269636854657874314F6E47
+                  657452696368546578740B50726F6772616D54797065070B747450726F636564
+                  75726506536F7572636506CE70726F6365647572652044425269636854657874
+                  314F6E47657452696368546578742876617220546578743A20537472696E6729
+                  3B0D0A626567696E0D0A20202049462020204C65726E61627363686E69747465
+                  5B275A6575676E697342656D275D3D2727207468656E20546578743A3D27206B
+                  65696E652720656C73650D0A202054657874203A3D204C65726E61627363686E
+                  697474655B275A6575676E697342656D275D3B0D0A2020546578743A3D526570
+                  6C61636544656661756C742854657874293B0D0A656E643B0D0A0D436F6D706F
+                  6E656E744E616D65060B4442526963685465787431094576656E744E616D6506
+                  0D4F6E4765745269636854657874074576656E7449440235084361726574506F
+                  730102010201000001060F5472614576656E7448616E646C65720B50726F6772
+                  616D4E616D6506104C6162656C32304F6E476574546578740B50726F6772616D
+                  54797065070B747450726F63656475726506536F75726365140A04000070726F
+                  636564757265204C6162656C32304F6E47657454657874287661722054657874
+                  3A20537472696E67293B0D0A76617220616E666461742C20656E646461742C20
+                  7072616B74696B756D203A20535452494E473B0D0A20202020656E6465203A20
+                  494E54454745523B0D0A626567696E0D0A20205072616B74696B756D203A3D27
+                  30273B0D0A2020616E666461743A3D2730312E30382E272B20636F7079284C65
+                  726E61627363686E697474655B27536368756C6A61687254657874275D2C312C
+                  34293B0D0A2020656E64653A3D537472546F496E7428636F7079284C65726E61
+                  627363686E697474655B27536368756C6A61687254657874275D2C312C342929
+                  2B313B0D0A2020656E64646174203A3D2733312E30372E272B20496E74546F53
+                  747228656E6465293B0D0A20204946204C6F61645665726D65726B65566F6E42
+                  697328275072616B74696B756D736461756572272C2720272C616E666461742C
+                  656E646461742C46414C5345293C3E2727207468656E200D0A20205072616B74
+                  696B756D3A3D4C6F61645665726D65726B65566F6E42697328275072616B7469
+                  6B756D736461756572272C2720272C616E666461742C656E646461742C46414C
+                  53452920656C7365205072616B74696B756D3A3D5072616B74696B756D736461
+                  756572203B0D0A202049462053636875656C65725B2747657363686C65636874
+                  275D3D33207468656E0D0A202054657874203A3D202744657220536368C3BC6C
+                  65722720656C73652069662053636875656C65725B2747657363686C65636874
+                  275D3D34207468656E2054657874203A3D2744696520536368C3BC6C6572696E
+                  2720656C736520546578743A3D53636875656C65725B27566F726E616D654E61
+                  6D65275D203B0D0A0D0A4946204C65726E61627363686E697474655B27415344
+                  536368756C676C6965646572756E67275D3D2741313227207468656E0D0A2020
+                  20202020546578743A3D54657874202B20272068617420696D205261686D656E
+                  2064657220566F6C6C7A656974666F726D2065696E2062696C64756E67736761
+                  6E676265676C656974656E646573205072616B74696B756D20696D20556D6661
+                  6E6720766F6E20272B5072616B74696B756D2B27206162736F6C76696572742E
+                  2720200D0A20202020656C7365200D0A202020202020546578743A3D54657874
+                  202B20272068617420696D205261686D656E20646572205465696C7A65697466
+                  6F726D2065696E2062696C64756E677367616E676265676C656974656E646573
+                  205072616B74696B756D20696D20556D66616E6720766F6E20272B5072616B74
+                  696B756D2B27206162736F6C76696572742E273B200D0A202020494620507261
+                  6B74696B756D203D20273027207468656E2054657874203A3D27273B200D0A65
+                  6E643B0D0A0D0A0D436F6D706F6E656E744E616D6506074C6162656C32300945
+                  76656E744E616D6506094F6E47657454657874074576656E7449440235084361
+                  726574506F730102010213000000}
               end
               object ppDesignLayers8: TppDesignLayers
                 object ppDesignLayer8: TppDesignLayer
@@ -1654,26 +1321,25 @@ object Report: TppReport
             RichText = 
               '{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcha' +
               'rset0 Lucida Sans;}}'#13#10'{\colortbl ;\red0\green0\blue0;}'#13#10'\viewkin' +
-              'd4\uc1\pard\qj\b\f0\fs20 Rechtsbehelfsbelehrung:\tab\tab\tab\tab' +
-              '\tab\tab\b0\par'#13#10'Gegen dieses Zeugnis kann innerhalb eines Monat' +
-              's nach Bekanntgabe des Zeugnisses Widerspruch eingelegt werden. ' +
-              'Der Widerspruch ist beim <dbtext datapipeline='#39'EigeneSchule'#39'>Bez' +
-              'eichnung1</dbtext>, <dbtext datapipeline='#39'EigeneSchule'#39'>Strasse<' +
-              '/dbtext>, <dbtext datapipeline='#39'EigeneSchule'#39'>PlzOrt</dbtext> sc' +
-              'hriftlich oder zur Niederschrift zu erheben. \par'#13#10'Falls die Fri' +
-              'st durch das Verschulden einer/eines Bevollm\'#39'e4chtigten vers\'#39'e' +
-              '4umt wird, wird dieses Verschulden der Widerspruchsf\'#39'fchrerin/d' +
-              'em Widerspruchsf\'#39'fchrer zugerechnet.\par'#13#10'\pard\qr Schulnummer:' +
-              '<dbtext datapipeline='#39'EigeneSchule'#39'>SchulNr</dbtext>\cf1\fs24\pa' +
-              'r'#13#10'}'#13#10#0
+              'd4\uc1\pard\qj\b\f0\fs20 Rechtsbehelfsbelehrung:\b0\par'#13#10'Gegen d' +
+              'ieses Zeugnis kann innerhalb eines Monats nach Bekanntgabe des Z' +
+              'eugnisses Widerspruch eingelegt werden. Der Widerspruch ist beim' +
+              ' <dbtext datapipeline='#39'EigeneSchule'#39'>Bezeichnung1</dbtext>, <dbt' +
+              'ext datapipeline='#39'EigeneSchule'#39'>Strasse</dbtext>, <dbtext datapi' +
+              'peline='#39'EigeneSchule'#39'>PlzOrt</dbtext> schriftlich oder zur Niede' +
+              'rschrift zu erheben. \par'#13#10'Falls die Frist durch das Verschulden' +
+              ' einer/eines Bevollm\'#39'e4chtigten vers\'#39'e4umt wird, wird dieses V' +
+              'erschulden der Widerspruchsf\'#39'fchrerin/dem Widerspruchsf\'#39'fchrer' +
+              ' zugerechnet.\par'#13#10'\pard\qr Schulnummer:<dbtext datapipeline='#39'Ei' +
+              'geneSchule'#39'>SchulNr</dbtext>\cf1\fs24\par'#13#10'}'#13#10#0
             RemoveEmptyLines = False
             ShiftRelativeTo = ppSubReport7
             Stretch = True
             Transparent = True
-            mmHeight = 34660
+            mmHeight = 36777
             mmLeft = 10054
-            mmTop = 154252
-            mmWidth = 163248
+            mmTop = 174625
+            mmWidth = 159809
             BandType = 4
             LayerName = Foreground2
             mmBottomOffset = 0
@@ -1693,15 +1359,15 @@ object Report: TppReport
               '{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fswiss\fp' +
               'rq2\fcharset0 Lucida Sans;}{\f1\fnil\fcharset0 Lucida Sans;}}'#13#10'{' +
               '\colortbl ;\red0\green0\blue0;}'#13#10'\viewkind4\uc1\pard\sa160\sl252' +
-              '\slmult1\super\f0\fs16 3 \nosupersub  Die F\'#39'e4cher im berufsbez' +
-              'ogenen Lernbereich umfassen die in der Anlage aufgef\'#39'fchrten Le' +
-              'rnfelder.\fs24\par'#13#10'\pard\cf1\f1\fs18\par'#13#10'}'#13#10#0
+              '\slmult1\super\f0\fs16 2  \nosupersub  Die F\'#39'e4cher im berufsbe' +
+              'zogenen Lernbereich umfassen die in der Anlage aufgef\'#39'fchrten L' +
+              'ernfelder.\fs24\par'#13#10'\pard\cf1\f1\fs18\par'#13#10'}'#13#10#0
             RemoveEmptyLines = False
             Stretch = True
             Transparent = True
             mmHeight = 5292
             mmLeft = 10054
-            mmTop = 260999
+            mmTop = 270661
             mmWidth = 159015
             BandType = 4
             LayerName = Foreground2
@@ -1715,13 +1381,14 @@ object Report: TppReport
             ExpandAll = False
             NewPrintJob = False
             OutlineSettings.CreateNode = True
+            ParentWidth = False
             ShiftRelativeTo = ppSubReport6
             TraverseAllData = False
             DataPipelineName = 'plLernabschnitte'
             mmHeight = 5027
-            mmLeft = 0
+            mmLeft = 10142
             mmTop = 68527
-            mmWidth = 180000
+            mmWidth = 385410
             BandType = 4
             LayerName = Foreground2
             mmBottomOffset = 0
@@ -1732,9 +1399,10 @@ object Report: TppReport
               AutoStop = False
               DataPipeline = dmPipelines.plLernabschnitte
               PrinterSetup.BinName = 'Default'
-              PrinterSetup.DocumentName = 'AGZ-2021- 2jBFS (Anl B5).rtm'
+              PrinterSetup.DocumentName = 'JAZ-2024- AV (Anl A2.3) als A3 mit LF.rtm'
               PrinterSetup.Duplex = dpVertical
-              PrinterSetup.PaperName = 'A4 210 x 297 mm'
+              PrinterSetup.Orientation = poLandscape
+              PrinterSetup.PaperName = 'A3 297 x 420 mm'
               PrinterSetup.PrinterName = 'Screen'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 10000
@@ -1742,9 +1410,8 @@ object Report: TppReport
               PrinterSetup.mmMarginRight = 10000
               PrinterSetup.mmMarginTop = 10000
               PrinterSetup.mmPaperHeight = 297000
-              PrinterSetup.mmPaperWidth = 210000
-              PrinterSetup.PaperSize = 9
-              Template.Offset = 284
+              PrinterSetup.mmPaperWidth = 420000
+              PrinterSetup.PaperSize = 8
               Template.Format = ftASCII
               Units = utMillimeters
               Version = '15.05'
@@ -1754,7 +1421,7 @@ object Report: TppReport
                 Background1.Brush.Style = bsClear
                 Background2.Brush.Style = bsClear
                 mmBottomOffset = 0
-                mmHeight = 37571
+                mmHeight = 51594
                 mmPrintPosition = 0
                 object ppDBText19: TppDBText
                   UserName = 'DBText19'
@@ -1769,9 +1436,9 @@ object Report: TppReport
                   ParentDataPipeline = False
                   Transparent = True
                   DataPipelineName = 'EigeneSchule'
-                  mmHeight = 4763
+                  mmHeight = 4762
                   mmLeft = 10319
-                  mmTop = 3963
+                  mmTop = 5024
                   mmWidth = 20373
                   BandType = 4
                   LayerName = Foreground8
@@ -1787,46 +1454,14 @@ object Report: TppReport
                   TextAlignment = taCentered
                   Transparent = True
                   mmHeight = 3704
-                  mmLeft = 32808
-                  mmTop = 22490
+                  mmLeft = 35719
+                  mmTop = 21430
                   mmWidth = 10583
                   BandType = 4
                   LayerName = Foreground8
                 end
                 object ppDBText20: TppDBText
                   UserName = 'DBText20'
-                  AutoSize = True
-                  DataField = 'SchulleiterName'
-                  DataPipeline = dmPipelines.EigeneSchule
-                  Font.Charset = ANSI_CHARSET
-                  Font.Color = clBlack
-                  Font.Name = 'Lucida Sans'
-                  Font.Size = 10
-                  Font.Style = []
-                  ParentDataPipeline = False
-                  TextAlignment = taRightJustified
-                  Transparent = True
-                  DataPipelineName = 'EigeneSchule'
-                  mmHeight = 3968
-                  mmLeft = 144992
-                  mmTop = 26988
-                  mmWidth = 26723
-                  BandType = 4
-                  LayerName = Foreground8
-                end
-                object ppLine1: TppLine
-                  UserName = 'Line1'
-                  Position = lpBottom
-                  Weight = 0.750000000000000000
-                  mmHeight = 3969
-                  mmLeft = 100013
-                  mmTop = 22490
-                  mmWidth = 71702
-                  BandType = 4
-                  LayerName = Foreground8
-                end
-                object ppDBText21: TppDBText
-                  UserName = 'DBText201'
                   AutoSize = True
                   DataField = 'KLNachname'
                   DataPipeline = dmPipelines.plLernabschnitte
@@ -1839,9 +1474,40 @@ object Report: TppReport
                   Transparent = True
                   DataPipelineName = 'plLernabschnitte'
                   mmHeight = 3969
-                  mmLeft = 150548
-                  mmTop = 9260
+                  mmLeft = 148961
+                  mmTop = 9790
                   mmWidth = 21167
+                  BandType = 4
+                  LayerName = Foreground8
+                end
+                object ppLine1: TppLine
+                  UserName = 'Line1'
+                  Position = lpBottom
+                  Weight = 0.750000000000000000
+                  mmHeight = 3969
+                  mmLeft = 98425
+                  mmTop = 21431
+                  mmWidth = 71702
+                  BandType = 4
+                  LayerName = Foreground8
+                end
+                object ppDBText21: TppDBText
+                  UserName = 'DBText201'
+                  AutoSize = True
+                  DataField = 'AbteilungsleiterName'
+                  DataPipeline = dmPipelines.plLernabschnitte
+                  Font.Charset = ANSI_CHARSET
+                  Font.Color = clBlack
+                  Font.Name = 'Lucida Sans'
+                  Font.Size = 10
+                  Font.Style = []
+                  TextAlignment = taRightJustified
+                  Transparent = True
+                  DataPipelineName = 'plLernabschnitte'
+                  mmHeight = 3969
+                  mmLeft = 134673
+                  mmTop = 25665
+                  mmWidth = 35454
                   BandType = 4
                   LayerName = Foreground8
                 end
@@ -1850,20 +1516,53 @@ object Report: TppReport
                   Position = lpBottom
                   Weight = 0.750000000000000000
                   mmHeight = 3969
-                  mmLeft = 100013
-                  mmTop = 4763
+                  mmLeft = 98425
+                  mmTop = 5027
                   mmWidth = 71702
                   BandType = 4
                   LayerName = Foreground8
                 end
-                object ppLine6: TppLine
-                  UserName = 'Line6'
+                object ppLabel15: TppLabel
+                  UserName = 'Label15'
+                  Caption = 'Die Kenntnisnahme wird best'#228'tigt:'
+                  Font.Charset = ANSI_CHARSET
+                  Font.Color = clBlack
+                  Font.Name = 'Lucida Sans'
+                  Font.Size = 12
+                  Font.Style = []
+                  Transparent = True
+                  mmHeight = 4763
+                  mmLeft = 10319
+                  mmTop = 37306
+                  mmWidth = 68792
+                  BandType = 4
+                  LayerName = Foreground8
+                end
+                object ppLine3: TppLine
+                  UserName = 'Line3'
                   Position = lpBottom
                   Weight = 0.750000000000000000
                   mmHeight = 3969
-                  mmLeft = 10319
-                  mmTop = 4757
+                  mmLeft = 98425
+                  mmTop = 38100
                   mmWidth = 71702
+                  BandType = 4
+                  LayerName = Foreground8
+                end
+                object ppLabel17: TppLabel
+                  UserName = 'Label17'
+                  Caption = 'Label17'
+                  Font.Charset = ANSI_CHARSET
+                  Font.Color = clBlack
+                  Font.Name = 'Lucida Sans'
+                  Font.Size = 10
+                  Font.Style = []
+                  TextAlignment = taRightJustified
+                  Transparent = True
+                  mmHeight = 3969
+                  mmLeft = 157163
+                  mmTop = 42863
+                  mmWidth = 12965
                   BandType = 4
                   LayerName = Foreground8
                 end
@@ -1878,8 +1577,19 @@ object Report: TppReport
                   Transparent = True
                   mmHeight = 3969
                   mmLeft = 10319
-                  mmTop = 8726
-                  mmWidth = 53446
+                  mmTop = 9786
+                  mmWidth = 52917
+                  BandType = 4
+                  LayerName = Foreground8
+                end
+                object ppLine6: TppLine
+                  UserName = 'Line6'
+                  Position = lpBottom
+                  Weight = 0.750000000000000000
+                  mmHeight = 3969
+                  mmLeft = 10319
+                  mmTop = 5818
+                  mmWidth = 71702
                   BandType = 4
                   LayerName = Foreground8
                 end
@@ -1897,35 +1607,64 @@ object Report: TppReport
                   0235084361726574506F7301023A0204000001060F5472614576656E7448616E
                   646C65720B50726F6772616D4E616D65061144425465787432304F6E47657454
                   6578740B50726F6772616D54797065070B747450726F63656475726506536F75
-                  7263650C8C01000070726F6365647572652044425465787432304F6E47657454
-                  6578742876617220546578743A20537472696E67293B0D0A7661722074697465
-                  6C736C2C20736C616D74203A20535452494E473B0D0A626567696E0D0A202020
-                  49462020456967656E65536368756C655B27536368756C6C6569746572546974
-                  656C275D3C3E2727207468656E20746974656C736C3A3D20456967656E655363
-                  68756C655B27536368756C6C6569746572546974656C275D2B2027202720656C
-                  736520746974656C736C3A3D27273B0D0A20202049462020456967656E655363
-                  68756C655B27536368756C6C6569746572416D747362657A275D3C3E27272074
-                  68656E20736C616D743A3D272C20272B20456967656E65536368756C655B2753
-                  6368756C6C6569746572416D747362657A275D20656C736520736C616D743A3D
-                  27273B0D0A20202054657874203A3D20746974656C736C2B2054657874202B73
-                  6C616D742B27202D20272B456967656E65536368756C655B27536368756C6C65
-                  697465724D57275D3B200D0A656E643B0D0A0D0A0D436F6D706F6E656E744E61
-                  6D6506084442546578743230094576656E744E616D6506094F6E476574546578
-                  74074576656E7449440235084361726574506F730102010208000001060F5472
-                  614576656E7448616E646C65720B50726F6772616D4E616D6506124442546578
-                  743230314F6E476574546578740B50726F6772616D54797065070B747450726F
-                  63656475726506536F757263650C1A01000070726F6365647572652044425465
-                  78743230314F6E476574546578742876617220546578743A20537472696E6729
-                  3B0D0A766172206B6C616D74203A20537472696E673B0D0A626567696E0D0A20
-                  204946204C65726E61627363686E697474655B274B4C416D747362657A275D3C
-                  3E2727207468656E206B6C616D74203A3D272C20272B204C65726E6162736368
-                  6E697474655B274B4C416D747362657A275D20656C7365206B6C616D74203A3D
-                  27273B0D0A54657874203A3D4C65726E61627363686E697474655B274B4C5469
-                  74656C275D2B202720272B2054657874202B6B6C616D742B2027202D20272B20
-                  4C65726E61627363686E697474655B274B6C617373656E6C65687265724D5727
-                  5D3B0D0A656E643B0D0A0D0A0D436F6D706F6E656E744E616D65060944425465
-                  7874323031094576656E744E616D6506094F6E47657454657874074576656E74
-                  49440235084361726574506F7301025B0204000000}
+                  7263650C1901000070726F6365647572652044425465787432304F6E47657454
+                  6578742876617220546578743A20537472696E67293B0D0A766172206B6C616D
+                  74203A20537472696E673B0D0A626567696E0D0A20204946204C65726E616273
+                  63686E697474655B274B4C416D747362657A275D3C3E2727207468656E206B6C
+                  616D74203A3D272C20272B204C65726E61627363686E697474655B274B4C416D
+                  747362657A275D20656C7365206B6C616D74203A3D27273B0D0A54657874203A
+                  3D4C65726E61627363686E697474655B274B4C546974656C275D2B202720272B
+                  2054657874202B6B6C616D742B2027202D20272B204C65726E61627363686E69
+                  7474655B274B6C617373656E6C65687265724D57275D3B0D0A0D0A656E643B0D
+                  0A0D436F6D706F6E656E744E616D6506084442546578743230094576656E744E
+                  616D6506094F6E47657454657874074576656E7449440235084361726574506F
+                  730102010202000001060F5472614576656E7448616E646C65720B50726F6772
+                  616D4E616D6506124442546578743230314F6E476574546578740B50726F6772
+                  616D54797065070B747450726F63656475726506536F757263650C8C03000070
+                  726F636564757265204442546578743230314F6E476574546578742876617220
+                  546578743A20537472696E67293B0D0A76617220746974656C203A2053545249
+                  4E473B0D0A20202020746974656C7376203A20535452494E473B0D0A20202020
+                  7376616D742C20616C616D74203A20535452494E473B0D0A0D0A626567696E0D
+                  0A4946204C65726E61627363686E697474655B2741627465696C756E67736C65
+                  69746572546974656C275D3C3E2727207468656E20746974656C3A3D204C6572
+                  6E61627363686E697474655B2741627465696C756E67736C6569746572546974
+                  656C275D2B27202720656C736520746974656C3A3D27273B0D0A494620456967
+                  656E65536368756C655B27537476536368756C6C6569746572546974656C275D
+                  3C3E2727207468656E20746974656C73763A3D20456967656E65536368756C65
+                  5B27537476536368756C6C6569746572546974656C275D202B2027202720656C
+                  736520746974656C73763A3D27273B0D0A4946204C65726E61627363686E6974
+                  74655B2741627465696C756E67736C6569746572416D747362657A656963686E
+                  756E67275D3C3E2727207468656E20616C616D74203A3D272C20272B4C65726E
+                  61627363686E697474655B2741627465696C756E67736C6569746572416D7473
+                  62657A656963686E756E67275D20656C736520616C616D743A3D27273B0D0A49
+                  4620456967656E65536368756C655B27537476536368756C6C6569746572416D
+                  747362657A275D3C3E2727207468656E207376616D743A3D272C20272B204569
+                  67656E65536368756C655B27537476536368756C6C6569746572416D74736265
+                  7A275D20656C7365207376616D74203A3D27273B0D0A2054657874203A3D2074
+                  6974656C202B2054657874202B616C616D742B2027202D20272B4C65726E6162
+                  7363686E697474655B2741627465696C756E67736C65697465724D57275D203B
+                  0D0A202020494620204C65726E61627363686E697474655B2741627465696C75
+                  6E67736C65697465724B727A275D3D204C65726E61627363686E697474655B27
+                  4B6C617373656E4C6568726572275D7468656E0D0A2020202020205465787420
+                  3A3D20746974656C7376202B20456967656E65536368756C655B275374765363
+                  68756C6C65697465724E616D65275D202B207376616D742B2027202D20272B20
+                  456967656E65536368756C655B27737476536368756C6C65697465724D57275D
+                  3B0D0A656E643B0D0A0D0A0D436F6D706F6E656E744E616D6506094442546578
+                  74323031094576656E744E616D6506094F6E47657454657874074576656E7449
+                  440235084361726574506F7301025F0204000001060F5472614576656E744861
+                  6E646C65720B50726F6772616D4E616D6506104C6162656C31374F6E47657454
+                  6578740B50726F6772616D54797065070B747450726F63656475726506536F75
+                  726365140301000070726F636564757265204C6162656C31374F6E4765745465
+                  78742876617220546578743A20537472696E67293B0D0A626567696E0D0A2020
+                  202069662053636875656C65725B27766F6C6C6A616568726967275D3D272B27
+                  207468656E20626567696E0D0A20202020202049462053636875656C65725B27
+                  47657363686C65636874275D3D33207468656E20546578743A3D2027766F6C6C
+                  6AC3A468726967657220536368C3BC6C65722720656C736520546578743A3D27
+                  766F6C6C6AC3A4687269676520536368C3BC6C6572696E273B0D0A2020202020
+                  20656E640D0A20202020656C73652054657874203A3D27456C7465726E746569
+                  6C273B0D0A656E643B0D0A0D436F6D706F6E656E744E616D6506074C6162656C
+                  3137094576656E744E616D6506094F6E47657454657874074576656E74494402
+                  35084361726574506F730102180205000000}
               end
               object ppDesignLayers9: TppDesignLayers
                 object ppDesignLayer9: TppDesignLayer
@@ -1956,7 +1695,7 @@ object Report: TppReport
             mmHeight = 8731
             mmLeft = 10054
             mmTop = 2646
-            mmWidth = 163248
+            mmWidth = 159809
             BandType = 4
             LayerName = Foreground2
             mmBottomOffset = 0
@@ -1972,35 +1711,6 @@ object Report: TppReport
             Font.Size = 12
             Font.Style = []
             Caption = 'RichText2'
-            RichText = 
-              '{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fswiss\fp' +
-              'rq2\fcharset0 Lucida Sans;}{\f1\fnil\fcharset0 Lucida Sans;}}'#13#10'{' +
-              '\colortbl ;\red0\green0\blue0;}'#13#10'\viewkind4\uc1\pard\sa160\sl252' +
-              '\slmult1\super\f0\fs16 4 \nosupersub  In den fachpraktischen Ant' +
-              'eilen der F\'#39'e4cher und Lernfelder wurden keine ausreichenden Le' +
-              'istungen erzielt.\fs24\par'#13#10'\pard\cf1\f1\fs18\par'#13#10'}'#13#10#0
-            RemoveEmptyLines = False
-            Stretch = True
-            Transparent = True
-            mmHeight = 4498
-            mmLeft = 10054
-            mmTop = 266555
-            mmWidth = 159015
-            BandType = 4
-            LayerName = Foreground2
-            mmBottomOffset = 0
-            mmOverFlowOffset = 0
-            mmStopPosition = 0
-            mmMinHeight = 0
-          end
-          object ppRichText3: TppRichText
-            UserName = 'RichText3'
-            Font.Charset = ANSI_CHARSET
-            Font.Color = clBlack
-            Font.Name = 'Lucida Sans'
-            Font.Size = 12
-            Font.Style = []
-            Caption = 'RichText3'
             MailMerge = True
             RichText = 
               '{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fswiss\fp' +
@@ -2008,15 +1718,15 @@ object Report: TppReport
               '\colortbl ;\red0\green0\blue0;}'#13#10'\viewkind4\uc1\pard\sa160\sl252' +
               '\slmult1\f0\fs24 In der Konferenz am \b <dbtext datapipeline='#39'pl' +
               'Lernabschnitte'#39'>Konferenzdatum</dbtext>\b0  sind folgende Leistu' +
-              'ngen\super 1,2\nosupersub  festgestellt worden:\par'#13#10'\pard\cf1\f' +
-              '1\par'#13#10'}'#13#10#0
+              'ngen\super 1\nosupersub  festgestellt worden:\par'#13#10'\pard\cf1\f1\' +
+              'par'#13#10'}'#13#10#0
             RemoveEmptyLines = False
             Stretch = True
             Transparent = True
-            mmHeight = 8900
+            mmHeight = 8178
             mmLeft = 10054
-            mmTop = 11906
-            mmWidth = 163248
+            mmTop = 12700
+            mmWidth = 159809
             BandType = 4
             LayerName = Foreground2
             mmBottomOffset = 0
@@ -2024,14 +1734,43 @@ object Report: TppReport
             mmStopPosition = 0
             mmMinHeight = 0
           end
-          object ppLine3: TppLine
-            UserName = 'Line3'
+          object ppRichText7: TppRichText
+            UserName = 'RichText7'
+            Font.Charset = ANSI_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Lucida Sans'
+            Font.Size = 12
+            Font.Style = []
+            Caption = 'RichText7'
+            RichText = 
+              '{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fswiss\fp' +
+              'rq2\fcharset0 Lucida Sans;}{\f1\fnil\fcharset0 Lucida Sans;}}'#13#10'{' +
+              '\colortbl ;\red0\green0\blue0;}'#13#10'\viewkind4\uc1\pard\fi-120\li12' +
+              '0\qj\super\f0\fs16 1  \nosupersub Notenstufen gem\'#39'e4\'#39'df \'#39'a7 4' +
+              '8 Absatz 3 SchulG: sehr gut (1), gut (2), befriedigend (3), ausr' +
+              'eichend (4), mangelhaft (5), ungen\'#39'fcgend (6)\cf1\f1\fs24\par'#13#10 +
+              '}'#13#10#0
+            RemoveEmptyLines = False
+            Transparent = True
+            mmHeight = 7938
+            mmLeft = 10054
+            mmTop = 262203
+            mmWidth = 159712
+            BandType = 4
+            LayerName = Foreground2
+            mmBottomOffset = 0
+            mmOverFlowOffset = 0
+            mmStopPosition = 0
+            mmMinHeight = 0
+          end
+          object ppLine4: TppLine
+            UserName = 'Line4'
             Position = lpBottom
             Weight = 0.750000000000000000
-            mmHeight = 2646
+            mmHeight = 3969
             mmLeft = 10054
-            mmTop = 236292
-            mmWidth = 44739
+            mmTop = 258037
+            mmWidth = 51474
             BandType = 4
             LayerName = Foreground2
           end
@@ -2047,15 +1786,8 @@ object Report: TppReport
             6163686B6C617373655F4944275D293C3E2727207468656E2052696368546578
             74352E76697369626C653A3D545255453B0D0A0D0A656E643B0D0A0D436F6D70
             6F6E656E744E616D65060644657461696C094576656E744E616D65060B426566
-            6F72655072696E74074576656E7449440218084361726574506F730102010205
-            000001060F5472614576656E7448616E646C65720B50726F6772616D4E616D65
-            06115265706F72744F6E5374617274506167650B50726F6772616D5479706507
-            0B747450726F63656475726506536F75726365064970726F6365647572652052
-            65706F72744F6E5374617274506167653B0D0A626567696E0D0A202020526963
-            6854657874322E76697369626C653A3D46414C53453B0D0A656E643B0D0A0D43
-            6F6D706F6E656E744E616D6506065265706F7274094576656E744E616D65060B
-            4F6E537461727450616765074576656E7449440215084361726574506F730102
-            070203000000}
+            6F72655072696E74074576656E7449440218084361726574506F730102430204
+            000000}
         end
         object ppDesignLayers3: TppDesignLayers
           object ppDesignLayer3: TppDesignLayer
@@ -2098,61 +1830,50 @@ object Report: TppReport
     ProgramStream = {
       01060D54726156617250726F6772616D094368696C645479706502110B50726F
       6772616D4E616D6506095661726961626C65730B50726F6772616D5479706507
-      0B747450726F63656475726506536F757263650C0201000070726F6365647572
-      65205661726961626C65733B0D0A7661720D0A20202020416E7A61686C35203A
-      20496E74656765723B0D0A20202020416E7A61686C36203A20496E7465676572
-      3B0D0A202020204661636862657265696368203A20537472696E673B0D0A2020
-      202053636877657270756E6B74203A20537472696E673B0D0A20202020507261
-      6B74696B756D736461756572203A20535452494E473B0D0A2020202053636875
-      6C70666C69636874203A20535452494E473B0D0A20202020736368756C6A6168
-      726472617566203A20737472696E673B0D0A202020207072616B6E6F74653A20
-      535452494E473B0D0A0D0A626567696E0D0A0D0A656E643B0D0A084361726574
-      506F730102160209000001060F5472614576656E7448616E646C65720B50726F
-      6772616D4E616D65061144657461696C4265666F72655072696E740B50726F67
-      72616D54797065070B747450726F63656475726506536F757263651486030000
-      70726F6365647572652044657461696C4265666F72655072696E743B0D0A0D0A
-      626567696E0D0A20202020736368756C6A61687264726175663A3D276E65696E
-      273B202F2F2057656E6E204175736761626520766F6E204B6C617373652C2053
-      6368756C6A616872207573772E20676577C3BC6E736368742C20686965722027
-      6A61272065696E74726167656E2E0D0A2020200D0A202020416E7A61686C3620
-      3A3D303B0D0A202020416E7A61686C35203A3D303B0D0A202020204661636862
-      657265696368203A3D27273B0D0A2020202053636877657270756E6B74203A3D
-      27273B0D0A2020207B4946204C65726E61627363686E697474655B27464B6C41
-      7053494D275D3D2027313036303127207468656E204661636862657265696368
-      203A3D2027546563686E696B2F4E6174757277697373656E736368616674656E
-      2720656C73650D0A2020204946204C65726E61627363686E697474655B27464B
-      6C417053494D275D3D2027313036303327207468656E20466163686265726569
-      6368203A3D2027546563686E696B2F4E6174757277697373656E736368616674
-      656E2720656C73650D0A2020204946204C65726E61627363686E697474655B27
-      464B6C417053494D275D3D2027313033303127207468656E2046616368626572
-      65696368203A3D202747657374616C74756E672720656C73650D0A2020204946
-      204C65726E61627363686E697474655B27464B6C417053494D275D3D20273130
-      34303327207468656E204661636862657265696368203A3D2027476573756E64
-      686569742F45727A696568756E6720756E6420536F7A69616C65732720656C73
-      650D0A2020204946204C65726E61627363686E697474655B27464B6C41705349
-      4D275D3D2027313033303227207468656E204661636862657265696368203A3D
-      202747657374616C74756E672720656C7365200D0A2020204946204C65726E61
-      627363686E697474655B27464B6C417053494D275D3D20273130363038272074
-      68656E204661636862657265696368203A3D2027546563686E696B2F4E617475
-      7277697373656E736368616674656E273B7D0D0A202020202046616368626572
-      656963683A3D4C65726E61627363686E697474655B274265727566736562656E
-      6531275D3B0D0A20202053636877657270756E6B743A3D204C65726E61627363
-      686E697474655B274265727566736562656E6532275D3B2020200D0A20200D0A
-      656E643B0D0A0D436F6D706F6E656E744E616D65060644657461696C09457665
-      6E744E616D65060B4265666F72655072696E74074576656E7449440218084361
-      726574506F730102010202000001060F5472614576656E7448616E646C65720B
-      50726F6772616D4E616D6506115265706F72744265666F72655072696E740B50
-      726F6772616D54797065070B747450726F63656475726506536F7572636514EA
-      00000070726F636564757265205265706F72744265666F72655072696E743B0D
-      0A626567696E0D0A20205072616B74696B756D736461756572203A3D20537472
-      696E67496E7075742827426974746520556D66616E6720646573205072616B74
-      696B756D732065696E676562656E2028303D6B65696E205072616B74696B756D
-      292E204469657365722045696E74726167206B616E6E2064757263682065696E
-      656E205665726D65726B2028225072616B74696B756D736461756572222920C3
-      BC62657273636872696562656E2077657264656E2E272C273320576F6368656E
-      27293B0D0A656E643B0D0A0D0A0D436F6D706F6E656E744E616D650606526570
-      6F7274094576656E744E616D65060B4265666F72655072696E74074576656E74
-      49440201084361726574506F730102010205000000}
+      0B747450726F63656475726506536F7572636506B170726F6365647572652056
+      61726961626C65733B0D0A7661720D0A20202020416E7A61686C35203A20496E
+      74656765723B0D0A20202020416E7A61686C36203A20496E74656765723B0D0A
+      202020204661636862657265696368203A20537472696E673B0D0A2020202053
+      636877657270756E6B74203A20537472696E673B0D0A202020205072616B7469
+      6B756D736461756572203A20535452494E473B0D0A0D0A626567696E0D0A0D0A
+      656E643B0D0A084361726574506F730102140206000001060F5472614576656E
+      7448616E646C65720B50726F6772616D4E616D65061144657461696C4265666F
+      72655072696E740B50726F6772616D54797065070B747450726F636564757265
+      06536F75726365146D02000070726F6365647572652044657461696C4265666F
+      72655072696E743B0D0A626567696E0D0A202020416E7A61686C36203A3D303B
+      0D0A202020416E7A61686C35203A3D303B0D0A20202020466163686265726569
+      6368203A3D27273B0D0A2020202053636877657270756E6B74203A3D27273B0D
+      0A2020207B4946204C65726E61627363686E697474655B27464B6C417053494D
+      275D3D2027313036303327207468656E204661636862657265696368203A3D20
+      27456C656B74726F746563686E696B2720656C73650D0A2020204946204C6572
+      6E61627363686E697474655B27464B6C417053494D275D3D2027313033303127
+      207468656E204661636862657265696368203A3D202746617262746563686E69
+      6B20756E64205261756D67657374616C74756E672720656C73650D0A20202049
+      46204C65726E61627363686E697474655B27464B6C417053494D275D3D202731
+      3036303827207468656E204661636862657265696368203A3D20275465787469
+      6C746563686E696B20756E642042656B6C656964756E672720656C7365200D0A
+      202020202020204946204C65726E61627363686E697474655B27464B6C417053
+      494D275D3D2027313039303027207468656E204661636862657265696368203A
+      3D2027496E7465726E6174696F6E616C652046C3B6726465726B6C6173736527
+      3B7D0D0A20202046616368626572656963683A3D4C65726E61627363686E6974
+      74655B274265727566736562656E6531275D3B0D0A2020205363687765727075
+      6E6B743A3D204C65726E61627363686E697474655B274265727566736562656E
+      6532275D3B0D0A0D0A20202020202020200D0A656E643B0D0A0D436F6D706F6E
+      656E744E616D65060644657461696C094576656E744E616D65060B4265666F72
+      655072696E74074576656E7449440218084361726574506F7301020102010000
+      01060F5472614576656E7448616E646C65720B50726F6772616D4E616D650611
+      5265706F72744265666F72655072696E740B50726F6772616D54797065070B74
+      7450726F63656475726506536F7572636514F300000070726F63656475726520
+      5265706F72744265666F72655072696E743B0D0A626567696E0D0A2020507261
+      6B74696B756D736461756572203A3D20537472696E67496E7075742827426974
+      746520556D66616E6720646573205072616B74696B756D732065696E67656265
+      6E2028303D6B65696E205072616B74696B756D292E204469657365722045696E
+      74726167206B616E6E2064757263682065696E656E205665726D65726B202822
+      5072616B74696B756D736461756572222920C3BC62657273636872696562656E
+      2077657264656E2E272C273320546167656E2070726F20576F63686527293B0D
+      0A656E643B0D0A0D0A0D436F6D706F6E656E744E616D6506065265706F727409
+      4576656E744E616D65060B4265666F72655072696E74074576656E7449440201
+      084361726574506F730103C1000203000000}
   end
   object ppDesignLayers1: TppDesignLayers
     object ppDesignLayer1: TppDesignLayer
