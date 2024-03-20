@@ -5,7 +5,7 @@ object Report: TppReport
   PrinterSetup.DocumentName = 'AGZ-2024- Anl C (Anl C5).rtm'
   PrinterSetup.Duplex = dpVertical
   PrinterSetup.PaperName = 'A4 210 x 297 mm'
-  PrinterSetup.PrinterName = 'Screen'
+  PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
   PrinterSetup.mmMarginBottom = 10000
   PrinterSetup.mmMarginLeft = 20000
@@ -15,9 +15,8 @@ object Report: TppReport
   PrinterSetup.mmPaperWidth = 210000
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
-  Template.FileName = 
-    'D:\SchILD-NRW\SchILD-Reports\Zeugnisse 2016 Lucida\Anlage C\AGZ-' +
-    '2024- Anl C (Anl C5).rtm'
+  Template.FileName =
+    'D:\SchILD-NRW\SchILD-Reports\Zeugnisse 2024\Anlage C\AGZ-2024- Anl C (Anl C5).rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -122,7 +121,7 @@ object Report: TppReport
         PrinterSetup.DocumentName = 'AGZ-2024- Anl C (Anl C5).rtm'
         PrinterSetup.Duplex = dpVertical
         PrinterSetup.PaperName = 'A4 210 x 297 mm'
-        PrinterSetup.PrinterName = 'Screen'
+        PrinterSetup.PrinterName = 'Default'
         PrinterSetup.SaveDeviceSettings = False
         PrinterSetup.mmMarginBottom = 10000
         PrinterSetup.mmMarginLeft = 20000
@@ -222,7 +221,7 @@ object Report: TppReport
               PrinterSetup.DocumentName = 'AGZ-2024- Anl C (Anl C5).rtm'
               PrinterSetup.Duplex = dpVertical
               PrinterSetup.PaperName = 'A4 210 x 297 mm'
-              PrinterSetup.PrinterName = 'Screen'
+              PrinterSetup.PrinterName = 'Default'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 10000
               PrinterSetup.mmMarginLeft = 20000
@@ -814,7 +813,7 @@ object Report: TppReport
         PrinterSetup.DocumentName = 'AGZ-2024- Anl C (Anl C5).rtm'
         PrinterSetup.Duplex = dpVertical
         PrinterSetup.PaperName = 'A4 210 x 297 mm'
-        PrinterSetup.PrinterName = 'Screen'
+        PrinterSetup.PrinterName = 'Default'
         PrinterSetup.SaveDeviceSettings = False
         PrinterSetup.mmMarginBottom = 10000
         PrinterSetup.mmMarginLeft = 20000
@@ -859,7 +858,7 @@ object Report: TppReport
               PrinterSetup.DocumentName = 'AGZ-2024- Anl C (Anl C5).rtm'
               PrinterSetup.Duplex = dpVertical
               PrinterSetup.PaperName = 'A4 210 x 297 mm'
-              PrinterSetup.PrinterName = 'Screen'
+              PrinterSetup.PrinterName = 'Default'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 10000
               PrinterSetup.mmMarginLeft = 20000
@@ -1071,7 +1070,7 @@ object Report: TppReport
               PrinterSetup.DocumentName = 'AGZ-2024- Anl C (Anl C5).rtm'
               PrinterSetup.Duplex = dpVertical
               PrinterSetup.PaperName = 'A4 210 x 297 mm'
-              PrinterSetup.PrinterName = 'Screen'
+              PrinterSetup.PrinterName = 'Default'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 10000
               PrinterSetup.mmMarginLeft = 20000
@@ -1222,7 +1221,7 @@ object Report: TppReport
               PrinterSetup.DocumentName = 'AGZ-2024- Anl C (Anl C5).rtm'
               PrinterSetup.Duplex = dpVertical
               PrinterSetup.PaperName = 'A4 210 x 297 mm'
-              PrinterSetup.PrinterName = 'Screen'
+              PrinterSetup.PrinterName = 'Default'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 10000
               PrinterSetup.mmMarginLeft = 20000
@@ -1403,7 +1402,7 @@ object Report: TppReport
               PrinterSetup.DocumentName = 'AGZ-2024- Anl C (Anl C5).rtm'
               PrinterSetup.Duplex = dpVertical
               PrinterSetup.PaperName = 'A4 210 x 297 mm'
-              PrinterSetup.PrinterName = 'Screen'
+              PrinterSetup.PrinterName = 'Default'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 10000
               PrinterSetup.mmMarginLeft = 20000
@@ -1607,7 +1606,7 @@ object Report: TppReport
               PrinterSetup.DocumentName = 'AGZ-2024- Anl C (Anl C5).rtm'
               PrinterSetup.Duplex = dpVertical
               PrinterSetup.PaperName = 'A4 210 x 297 mm'
-              PrinterSetup.PrinterName = 'Screen'
+              PrinterSetup.PrinterName = 'Default'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 10000
               PrinterSetup.mmMarginLeft = 20000
@@ -1860,7 +1859,7 @@ object Report: TppReport
               PrinterSetup.DocumentName = 'AGZ-2024- Anl C (Anl C5).rtm'
               PrinterSetup.Duplex = dpVertical
               PrinterSetup.PaperName = 'A4 210 x 297 mm'
-              PrinterSetup.PrinterName = 'Screen'
+              PrinterSetup.PrinterName = 'Default'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 10000
               PrinterSetup.mmMarginLeft = 20000

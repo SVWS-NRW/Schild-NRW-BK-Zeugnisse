@@ -5,7 +5,7 @@ object Report: TppReport
   PrinterSetup.DocumentName = 'HJZ-2024- 2jBFS (Anl B5).rtm'
   PrinterSetup.Duplex = dpVertical
   PrinterSetup.PaperName = 'A4 210 x 297 mm'
-  PrinterSetup.PrinterName = 'Screen'
+  PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
   PrinterSetup.mmMarginBottom = 10000
   PrinterSetup.mmMarginLeft = 20000
@@ -122,7 +122,7 @@ object Report: TppReport
         PrinterSetup.DocumentName = 'HJZ-2024- 2jBFS (Anl B5).rtm'
         PrinterSetup.Duplex = dpVertical
         PrinterSetup.PaperName = 'A4 210 x 297 mm'
-        PrinterSetup.PrinterName = 'Screen'
+        PrinterSetup.PrinterName = 'Default'
         PrinterSetup.SaveDeviceSettings = False
         PrinterSetup.mmMarginBottom = 10000
         PrinterSetup.mmMarginLeft = 20000
@@ -222,7 +222,7 @@ object Report: TppReport
               PrinterSetup.DocumentName = 'HJZ-2024- 2jBFS (Anl B5).rtm'
               PrinterSetup.Duplex = dpVertical
               PrinterSetup.PaperName = 'A4 210 x 297 mm'
-              PrinterSetup.PrinterName = 'Screen'
+              PrinterSetup.PrinterName = 'Default'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 10000
               PrinterSetup.mmMarginLeft = 20000
@@ -631,7 +631,7 @@ object Report: TppReport
         PrinterSetup.DocumentName = 'HJZ-2024- 2jBFS (Anl B5).rtm'
         PrinterSetup.Duplex = dpVertical
         PrinterSetup.PaperName = 'A4 210 x 297 mm'
-        PrinterSetup.PrinterName = 'Screen'
+        PrinterSetup.PrinterName = 'Default'
         PrinterSetup.SaveDeviceSettings = False
         PrinterSetup.mmMarginBottom = 10000
         PrinterSetup.mmMarginLeft = 20000
@@ -675,7 +675,7 @@ object Report: TppReport
               PrinterSetup.DocumentName = 'HJZ-2024- 2jBFS (Anl B5).rtm'
               PrinterSetup.Duplex = dpVertical
               PrinterSetup.PaperName = 'A4 210 x 297 mm'
-              PrinterSetup.PrinterName = 'Screen'
+              PrinterSetup.PrinterName = 'Default'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 10000
               PrinterSetup.mmMarginLeft = 20000
@@ -761,7 +761,7 @@ object Report: TppReport
               PrinterSetup.DocumentName = 'HJZ-2024- 2jBFS (Anl B5).rtm'
               PrinterSetup.Duplex = dpVertical
               PrinterSetup.PaperName = 'A4 210 x 297 mm'
-              PrinterSetup.PrinterName = 'Screen'
+              PrinterSetup.PrinterName = 'Default'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 10000
               PrinterSetup.mmMarginLeft = 20000
@@ -860,7 +860,7 @@ object Report: TppReport
               PrinterSetup.DocumentName = 'HJZ-2024- 2jBFS (Anl B5).rtm'
               PrinterSetup.Duplex = dpVertical
               PrinterSetup.PaperName = 'A4 210 x 297 mm'
-              PrinterSetup.PrinterName = 'Screen'
+              PrinterSetup.PrinterName = 'Default'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 10000
               PrinterSetup.mmMarginLeft = 20000
@@ -1075,7 +1075,7 @@ object Report: TppReport
               PrinterSetup.DocumentName = 'HJZ-2024- 2jBFS (Anl B5).rtm'
               PrinterSetup.Duplex = dpVertical
               PrinterSetup.PaperName = 'A4 210 x 297 mm'
-              PrinterSetup.PrinterName = 'Screen'
+              PrinterSetup.PrinterName = 'Default'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 10000
               PrinterSetup.mmMarginLeft = 20000
@@ -1224,7 +1224,7 @@ object Report: TppReport
               PrinterSetup.DocumentName = 'HJZ-2024- 2jBFS (Anl B5).rtm'
               PrinterSetup.Duplex = dpVertical
               PrinterSetup.PaperName = 'A4 210 x 297 mm'
-              PrinterSetup.PrinterName = 'Screen'
+              PrinterSetup.PrinterName = 'Default'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 10000
               PrinterSetup.mmMarginLeft = 20000
@@ -1375,7 +1375,7 @@ object Report: TppReport
               PrinterSetup.DocumentName = 'HJZ-2024- 2jBFS (Anl B5).rtm'
               PrinterSetup.Duplex = dpVertical
               PrinterSetup.PaperName = 'A4 210 x 297 mm'
-              PrinterSetup.PrinterName = 'Screen'
+              PrinterSetup.PrinterName = 'Default'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 10000
               PrinterSetup.mmMarginLeft = 20000
@@ -1638,7 +1638,7 @@ object Report: TppReport
               PrinterSetup.DocumentName = 'HJZ-2024- 2jBFS (Anl B5).rtm'
               PrinterSetup.Duplex = dpVertical
               PrinterSetup.PaperName = 'A4 210 x 297 mm'
-              PrinterSetup.PrinterName = 'Screen'
+              PrinterSetup.PrinterName = 'Default'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 10000
               PrinterSetup.mmMarginLeft = 20000

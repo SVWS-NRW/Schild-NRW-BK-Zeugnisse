@@ -5,7 +5,7 @@ object Report: TppReport
   PrinterSetup.DocumentName = 'AGZ-2024- AV (Anl A2.3).rtm'
   PrinterSetup.Duplex = dpVertical
   PrinterSetup.PaperName = 'A4 210 x 297 mm'
-  PrinterSetup.PrinterName = 'Screen'
+  PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
   PrinterSetup.mmMarginBottom = 10000
   PrinterSetup.mmMarginLeft = 20000
@@ -122,7 +122,7 @@ object Report: TppReport
         PrinterSetup.DocumentName = 'AGZ-2024- AV (Anl A2.3).rtm'
         PrinterSetup.Duplex = dpVertical
         PrinterSetup.PaperName = 'A4 210 x 297 mm'
-        PrinterSetup.PrinterName = 'Screen'
+        PrinterSetup.PrinterName = 'Default'
         PrinterSetup.SaveDeviceSettings = False
         PrinterSetup.mmMarginBottom = 10000
         PrinterSetup.mmMarginLeft = 20000
@@ -222,7 +222,7 @@ object Report: TppReport
               PrinterSetup.DocumentName = 'AGZ-2024- AV (Anl A2.3).rtm'
               PrinterSetup.Duplex = dpVertical
               PrinterSetup.PaperName = 'A4 210 x 297 mm'
-              PrinterSetup.PrinterName = 'Screen'
+              PrinterSetup.PrinterName = 'Default'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 10000
               PrinterSetup.mmMarginLeft = 20000
@@ -591,7 +591,7 @@ object Report: TppReport
         PrinterSetup.DocumentName = 'AGZ-2024- AV (Anl A2.3).rtm'
         PrinterSetup.Duplex = dpVertical
         PrinterSetup.PaperName = 'A4 210 x 297 mm'
-        PrinterSetup.PrinterName = 'Screen'
+        PrinterSetup.PrinterName = 'Default'
         PrinterSetup.SaveDeviceSettings = False
         PrinterSetup.mmMarginBottom = 10000
         PrinterSetup.mmMarginLeft = 20000
@@ -637,7 +637,7 @@ object Report: TppReport
               PrinterSetup.DocumentName = 'AGZ-2024- AV (Anl A2.3).rtm'
               PrinterSetup.Duplex = dpVertical
               PrinterSetup.PaperName = 'A4 210 x 297 mm'
-              PrinterSetup.PrinterName = 'Screen'
+              PrinterSetup.PrinterName = 'Default'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 10000
               PrinterSetup.mmMarginLeft = 20000
@@ -817,7 +817,7 @@ object Report: TppReport
               PrinterSetup.DocumentName = 'AGZ-2024- AV (Anl A2.3).rtm'
               PrinterSetup.Duplex = dpVertical
               PrinterSetup.PaperName = 'A4 210 x 297 mm'
-              PrinterSetup.PrinterName = 'Screen'
+              PrinterSetup.PrinterName = 'Default'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 10000
               PrinterSetup.mmMarginLeft = 20000
@@ -966,7 +966,7 @@ object Report: TppReport
               PrinterSetup.DocumentName = 'AGZ-2024- AV (Anl A2.3).rtm'
               PrinterSetup.Duplex = dpVertical
               PrinterSetup.PaperName = 'A4 210 x 297 mm'
-              PrinterSetup.PrinterName = 'Screen'
+              PrinterSetup.PrinterName = 'Default'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 10000
               PrinterSetup.mmMarginLeft = 20000
@@ -1090,7 +1090,7 @@ object Report: TppReport
               PrinterSetup.DocumentName = 'AGZ-2024- AV (Anl A2.3).rtm'
               PrinterSetup.Duplex = dpVertical
               PrinterSetup.PaperName = 'A4 210 x 297 mm'
-              PrinterSetup.PrinterName = 'Screen'
+              PrinterSetup.PrinterName = 'Default'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 10000
               PrinterSetup.mmMarginLeft = 20000
@@ -1381,7 +1381,7 @@ object Report: TppReport
               PrinterSetup.DocumentName = 'AGZ-2024- AV (Anl A2.3).rtm'
               PrinterSetup.Duplex = dpVertical
               PrinterSetup.PaperName = 'A4 210 x 297 mm'
-              PrinterSetup.PrinterName = 'Screen'
+              PrinterSetup.PrinterName = 'Default'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 10000
               PrinterSetup.mmMarginLeft = 20000

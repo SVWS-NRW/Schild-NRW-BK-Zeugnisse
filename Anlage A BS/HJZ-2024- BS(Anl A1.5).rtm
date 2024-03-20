@@ -6,7 +6,7 @@ object Report: TppReport
   PrinterSetup.Duplex = dpHorizontal
   PrinterSetup.Orientation = poLandscape
   PrinterSetup.PaperName = 'A3 297 x 420 mm'
-  PrinterSetup.PrinterName = 'Screen'
+  PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
   PrinterSetup.mmMarginBottom = 10000
   PrinterSetup.mmMarginLeft = 20000
@@ -124,7 +124,7 @@ object Report: TppReport
         PrinterSetup.Duplex = dpHorizontal
         PrinterSetup.Orientation = poLandscape
         PrinterSetup.PaperName = 'A3 297 x 420 mm'
-        PrinterSetup.PrinterName = 'Screen'
+        PrinterSetup.PrinterName = 'Default'
         PrinterSetup.SaveDeviceSettings = False
         PrinterSetup.mmMarginBottom = 10000
         PrinterSetup.mmMarginLeft = 20000
@@ -226,7 +226,7 @@ object Report: TppReport
               PrinterSetup.Duplex = dpHorizontal
               PrinterSetup.Orientation = poLandscape
               PrinterSetup.PaperName = 'A3 297 x 420 mm'
-              PrinterSetup.PrinterName = 'Screen'
+              PrinterSetup.PrinterName = 'Default'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 10000
               PrinterSetup.mmMarginLeft = 20000
@@ -634,7 +634,7 @@ object Report: TppReport
         PrinterSetup.Duplex = dpHorizontal
         PrinterSetup.Orientation = poLandscape
         PrinterSetup.PaperName = 'A3 297 x 420 mm'
-        PrinterSetup.PrinterName = 'Screen'
+        PrinterSetup.PrinterName = 'Default'
         PrinterSetup.SaveDeviceSettings = False
         PrinterSetup.mmMarginBottom = 10000
         PrinterSetup.mmMarginLeft = 20000
@@ -678,7 +678,7 @@ object Report: TppReport
               PrinterSetup.Duplex = dpHorizontal
               PrinterSetup.Orientation = poLandscape
               PrinterSetup.PaperName = 'A3 297 x 420 mm'
-              PrinterSetup.PrinterName = 'Screen'
+              PrinterSetup.PrinterName = 'Default'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 10000
               PrinterSetup.mmMarginLeft = 20000
@@ -770,7 +770,7 @@ object Report: TppReport
               PrinterSetup.Duplex = dpHorizontal
               PrinterSetup.Orientation = poLandscape
               PrinterSetup.PaperName = 'A3 297 x 420 mm'
-              PrinterSetup.PrinterName = 'Screen'
+              PrinterSetup.PrinterName = 'Default'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 10000
               PrinterSetup.mmMarginLeft = 20000
@@ -872,7 +872,7 @@ object Report: TppReport
               PrinterSetup.Duplex = dpHorizontal
               PrinterSetup.Orientation = poLandscape
               PrinterSetup.PaperName = 'A3 297 x 420 mm'
-              PrinterSetup.PrinterName = 'Screen'
+              PrinterSetup.PrinterName = 'Default'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 10000
               PrinterSetup.mmMarginLeft = 20000
@@ -1075,7 +1075,7 @@ object Report: TppReport
               PrinterSetup.Duplex = dpHorizontal
               PrinterSetup.Orientation = poLandscape
               PrinterSetup.PaperName = 'A3 297 x 420 mm'
-              PrinterSetup.PrinterName = 'Screen'
+              PrinterSetup.PrinterName = 'Default'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 10000
               PrinterSetup.mmMarginLeft = 20000
@@ -1214,7 +1214,7 @@ object Report: TppReport
               PrinterSetup.Duplex = dpHorizontal
               PrinterSetup.Orientation = poLandscape
               PrinterSetup.PaperName = 'A3 297 x 420 mm'
-              PrinterSetup.PrinterName = 'Screen'
+              PrinterSetup.PrinterName = 'Default'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 10000
               PrinterSetup.mmMarginLeft = 20000
@@ -1370,7 +1370,7 @@ object Report: TppReport
               PrinterSetup.Duplex = dpHorizontal
               PrinterSetup.Orientation = poLandscape
               PrinterSetup.PaperName = 'A3 297 x 420 mm'
-              PrinterSetup.PrinterName = 'Screen'
+              PrinterSetup.PrinterName = 'Default'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 10000
               PrinterSetup.mmMarginLeft = 20000
@@ -1583,7 +1583,7 @@ object Report: TppReport
               PrinterSetup.Duplex = dpHorizontal
               PrinterSetup.Orientation = poLandscape
               PrinterSetup.PaperName = 'A3 297 x 420 mm'
-              PrinterSetup.PrinterName = 'Screen'
+              PrinterSetup.PrinterName = 'Default'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 10000
               PrinterSetup.mmMarginLeft = 20000

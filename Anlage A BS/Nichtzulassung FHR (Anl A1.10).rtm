@@ -4,7 +4,7 @@ object Report: TppReport
   PrinterSetup.BinName = 'Default'
   PrinterSetup.DocumentName = 'Nichtzulassung FHR (Anl A1.10).rtm'
   PrinterSetup.PaperName = 'A4 210 x 297 mm'
-  PrinterSetup.PrinterName = 'Screen'
+  PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
   PrinterSetup.mmMarginBottom = 10000
   PrinterSetup.mmMarginLeft = 20000
@@ -390,7 +390,7 @@ object Report: TppReport
         PrinterSetup.BinName = 'Default'
         PrinterSetup.DocumentName = 'Nichtzulassung FHR (Anl A1.10).rtm'
         PrinterSetup.PaperName = 'A4 210 x 297 mm'
-        PrinterSetup.PrinterName = 'Screen'
+        PrinterSetup.PrinterName = 'Default'
         PrinterSetup.SaveDeviceSettings = False
         PrinterSetup.mmMarginBottom = 10000
         PrinterSetup.mmMarginLeft = 20000
@@ -436,7 +436,7 @@ object Report: TppReport
         PrinterSetup.BinName = 'Default'
         PrinterSetup.DocumentName = 'Nichtzulassung FHR (Anl A1.10).rtm'
         PrinterSetup.PaperName = 'A4 210 x 297 mm'
-        PrinterSetup.PrinterName = 'Screen'
+        PrinterSetup.PrinterName = 'Default'
         PrinterSetup.SaveDeviceSettings = False
         PrinterSetup.mmMarginBottom = 10000
         PrinterSetup.mmMarginLeft = 20000
@@ -606,9 +606,9 @@ object Report: TppReport
           AutoStop = False
           DataPipeline = dmPipelines.ppBKAbschlussFaecher
           PrinterSetup.BinName = 'Default'
-          PrinterSetup.DocumentName = 'Nichtzulassung FHR (Anl C11).rtm'
+          PrinterSetup.DocumentName = 'Nichtzulassung FHR (Anl A1.10).rtm'
           PrinterSetup.PaperName = 'A4 210 x 297 mm'
-          PrinterSetup.PrinterName = 'Screen'
+          PrinterSetup.PrinterName = 'Default'
           PrinterSetup.SaveDeviceSettings = False
           PrinterSetup.mmMarginBottom = 10000
           PrinterSetup.mmMarginLeft = 20000

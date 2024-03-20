@@ -4,7 +4,7 @@ object Report: TppReport
   PrinterSetup.BinName = 'Default'
   PrinterSetup.DocumentName = 'Nichtbestehen FHR (Anl A1.11) ohne Auswahl.rtm'
   PrinterSetup.PaperName = 'A4 210 x 297 mm'
-  PrinterSetup.PrinterName = 'Screen'
+  PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
   PrinterSetup.mmMarginBottom = 10000
   PrinterSetup.mmMarginLeft = 20000
@@ -292,7 +292,7 @@ object Report: TppReport
         PrinterSetup.BinName = 'Default'
         PrinterSetup.DocumentName = 'Nichtbestehen FHR (Anl A1.11) ohne Auswahl.rtm'
         PrinterSetup.PaperName = 'A4 210 x 297 mm'
-        PrinterSetup.PrinterName = 'Screen'
+        PrinterSetup.PrinterName = 'Default'
         PrinterSetup.SaveDeviceSettings = False
         PrinterSetup.mmMarginBottom = 10000
         PrinterSetup.mmMarginLeft = 20000
@@ -547,7 +547,7 @@ object Report: TppReport
         PrinterSetup.BinName = 'Default'
         PrinterSetup.DocumentName = 'Nichtbestehen FHR (Anl A1.11) ohne Auswahl.rtm'
         PrinterSetup.PaperName = 'A4 210 x 297 mm'
-        PrinterSetup.PrinterName = 'Screen'
+        PrinterSetup.PrinterName = 'Default'
         PrinterSetup.SaveDeviceSettings = False
         PrinterSetup.mmMarginBottom = 10000
         PrinterSetup.mmMarginLeft = 20000
@@ -639,7 +639,7 @@ object Report: TppReport
           PrinterSetup.BinName = 'Default'
           PrinterSetup.DocumentName = 'Nichtbestehen FHR (Anl A1.11) ohne Auswahl.rtm'
           PrinterSetup.PaperName = 'A4 210 x 297 mm'
-          PrinterSetup.PrinterName = 'Screen'
+          PrinterSetup.PrinterName = 'Default'
           PrinterSetup.SaveDeviceSettings = False
           PrinterSetup.mmMarginBottom = 10000
           PrinterSetup.mmMarginLeft = 20000
