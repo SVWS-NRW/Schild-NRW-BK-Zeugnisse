@@ -16,7 +16,7 @@ object Report: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\Progs\SchILD-NRW\SchILD-Reports\Schild-NRW-BK-Zeugnisse\Anlag' +
+    'C:\progs\schild-nrw\SchILD-Reports\Schild-NRW-BK-Zeugnisse\Anlag' +
     'e D\AGZ-2024- AnlD FOS13- nach Pr  (Anl D45).rtm'
   Template.Format = ftASCII
   Units = utMillimeters
@@ -665,7 +665,7 @@ object Report: TppReport
             DataPipelineName = 'Schueler'
             mmHeight = 4763
             mmLeft = 65617
-            mmTop = 2117
+            mmTop = 1852
             mmWidth = 40746
             BandType = 4
             LayerName = Foreground2
