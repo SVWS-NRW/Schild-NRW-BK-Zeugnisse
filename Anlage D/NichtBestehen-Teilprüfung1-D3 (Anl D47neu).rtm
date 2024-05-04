@@ -17,8 +17,8 @@ object Report: TppReport
   PrinterSetup.PaperSize = 8
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\Progs\SchILD-NRW\SchILD-Reports\ZeugnisFabrik\Anlage D\NichtB' +
-    'estehen-Teilpr'#252'fung1-D3 (Anl D47neu).rtm'
+    'C:\progs\schild-nrw\SchILD-Reports\Schild-NRW-BK-Zeugnisse\Anlag' +
+    'e D\NichtBestehen-Teilpr'#252'fung1-D3 (Anl D47neu).rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -235,19 +235,19 @@ object Report: TppReport
                     '{\rtf1\fbidis\ansi\ansicpg1252\deff0\deflang1031\deflangfe1031{\' +
                     'fonttbl{\f0\fswiss\fprq2\fcharset0 Calibri;}{\f1\fswiss\fprq2\fc' +
                     'harset177 Arial;}}'#13#10'{\colortbl ;\red0\green0\blue0;}'#13#10'\viewkind4' +
-                    '\uc1\pard\ltrpar\nowidctlpar\cf1\b\f0\fs22 $formaleAnrede$\par'#13#10 +
-                    '\fs10\par'#13#10'\pard\ltrpar\nowidctlpar\qj\cf0\lang7\b0\fs22 in sein' +
-                    'er Sitzung am $DatumPA$ hat der allgemeine Pr\'#39'fcfungsausschuss ' +
-                    'die Leistungen\lang1031\'#39'b9\lang1037\f1\rtlch\'#39'd7\lang1031\f0\lt' +
-                    'rch\'#39'b2\lang7  in den F\'#39'e4chern gem\'#39'e4\'#39'df der Nummern 1 bis 4' +
-                    ' festgestellt und \'#39'fcber die M\'#39'f6glichkeit des Bestehens der E' +
-                    'rsten Teilpr\'#39'fcfung der Berufsabschlusspr\'#39'fcfung gem\'#39'e4\'#39'df N' +
-                    'ummer 5 entschieden. \par'#13#10'\pard\ltrpar\nowidctlpar\tab\par'#13#10'\pa' +
-                    'rd\ltrpar\nowidctlpar\fi-284\li284\qj 1.\tab F\'#39'e4cher, die im R' +
-                    'ahmen des schriftlichen Abiturverfahrens gepr\'#39'fcft wurden. In d' +
-                    'iesen F\'#39'e4chern ist im Rahmen der Ersten Teilpr\'#39'fcfung keine g' +
-                    'esonderte m\'#39'fcndliche Pr\'#39'fcfung m\'#39'f6glich:\lang1031\'#39'b3\lang7' +
-                    '\par'#13#10'}'#13#10#0
+                    '\uc1\pard\ltrpar\nowidctlpar\cf1\b\f0\fs22 <dbtext datapipeline=' +
+                    #39'Schueler'#39'>FormaleAnrede</dbtext>\par'#13#10'\fs10\par'#13#10'\pard\ltrpar\n' +
+                    'owidctlpar\qj\cf0\lang7\b0\fs22 in seiner Sitzung am $DatumPA$ h' +
+                    'at der allgemeine Pr\'#39'fcfungsausschuss die Leistungen\lang1031\'#39 +
+                    'b9\lang1037\f1\rtlch\'#39'd7\lang1031\f0\ltrch\'#39'b2\lang7  in den F\'#39 +
+                    'e4chern gem\'#39'e4\'#39'df der Nummern 1 bis 4 festgestellt und \'#39'fcber' +
+                    ' die M\'#39'f6glichkeit des Bestehens der Ersten Teilpr\'#39'fcfung der ' +
+                    'Berufsabschlusspr\'#39'fcfung gem\'#39'e4\'#39'df Nummer 5 entschieden. \par' +
+                    #13#10'\pard\ltrpar\nowidctlpar\tab\par'#13#10'\pard\ltrpar\nowidctlpar\fi-' +
+                    '284\li284\qj 1.\tab F\'#39'e4cher, die im Rahmen des schriftlichen A' +
+                    'biturverfahrens gepr\'#39'fcft wurden. In diesen F\'#39'e4chern ist im R' +
+                    'ahmen der Ersten Teilpr\'#39'fcfung keine gesonderte m\'#39'fcndliche Pr' +
+                    '\'#39'fcfung m\'#39'f6glich:\lang1031\'#39'b3\lang7\par'#13#10'}'#13#10#0
                   RemoveEmptyLines = False
                   Transparent = True
                   mmHeight = 36000
@@ -1326,40 +1326,31 @@ object Report: TppReport
                   74074576656E7449440217084361726574506F7301022A0204000001060F5472
                   614576656E7448616E646C65720B50726F6772616D4E616D65061452545F4265
                   7363686C757373314F6E5072696E740B50726F6772616D54797065070B747450
-                  726F63656475726506536F7572636514D703000070726F636564757265205254
+                  726F63656475726506536F7572636514B202000070726F636564757265205254
                   5F42657363686C757373314F6E5072696E743B0D0A7661720D0A20206641203A
                   20737472696E673B0D0A2020646174756D5041203A20737472696E673B0D0A62
-                  6567696E0D0A20202F2F6D75737320566F722D20756E64204E6163686E616D65
-                  20656E7468616C74656E210D0A202069662053636875656C65725B2747657363
-                  686C65636874275D203D2033207468656E0D0A202020206641203A3D20275365
-                  6872206765656872746572204865727220270D0A2020656C73650D0A20202020
-                  6641203A3D2027536568722067656568727465204672617520273B0D0A202066
-                  41203A3D206641202B2053636875656C65725B27566F726E616D654E616D6527
-                  5D202B20272C273B0D0A202052545F42657363686C757373312E526963685465
-                  7874203A3D205265706C616365546578744578282052545F42657363686C7573
-                  73312E52696368546578742C202724666F726D616C65416E7265646524272C20
-                  664120293B0D0A20200D0A20202F2F446174756D205072C3BC66756E67736175
-                  73736368757373207365747A656E0D0A2020646174756D5041203A3D2027273B
-                  0D0A20206966205A5041445F446174756D5041203D202727207468656E0D0A20
-                  202020626567696E0D0A2020202020206966204973744C656572284C65726E61
-                  627363686E697474652C20274B6F6E666572656E7A646174756D272029207468
-                  656E0D0A2020202020202020626567696E0D0A2020202020202020202053686F
-                  774D657373616765282053636875656C65725B27566F726E616D654E616D6527
-                  5D202B20273A204B65696E204B6F6E666572656E7A646174756D20676566756E
-                  64656E2120202720293B0D0A20202020202020202020646174756D5041203A3D
-                  205069636B446174756D2827446174756D20646572205072C3BC66756E677361
-                  75737363687573737369747A756E67272C202727293B0D0A2020202020202020
-                  20205A5041445F446174756D5041203A3D20646174756D50413B0D0A20202020
-                  20202020656E640D0A202020202020656C73650D0A2020202020202020646174
-                  756D5041203A3D2044617465546F537472284C65726E61627363686E69747465
-                  5B274B6F6E666572656E7A646174756D275D293B0D0A20202020656E64202020
-                  200D0A2020656C73650D0A20202020646174756D5041203A3D205A5041445F44
-                  6174756D50413B0D0A202052545F42657363686C757373312E52696368546578
-                  74203A3D205265706C616365546578744578282052545F42657363686C757373
-                  312E52696368546578742C202724446174756D504124272C20646174756D5041
-                  20293B0D0A656E643B0D0A0D436F6D706F6E656E744E616D65060D52545F4265
-                  7363686C75737331094576656E744E616D6506074F6E5072696E74074576656E
-                  7449440220084361726574506F730102540214000000}
+                  6567696E0D0A20202F2F446174756D205072C3BC66756E677361757373636875
+                  7373207365747A656E0D0A2020646174756D5041203A3D2027273B0D0A202069
+                  66205A5041445F446174756D5041203D202727207468656E0D0A202020206265
+                  67696E0D0A2020202020206966204973744C656572284C65726E61627363686E
+                  697474652C20274B6F6E666572656E7A646174756D272029207468656E0D0A20
+                  20202020202020626567696E0D0A2020202020202020202053686F774D657373
+                  616765282053636875656C65725B27566F726E616D654E616D65275D202B2027
+                  3A204B65696E204B6F6E666572656E7A646174756D20676566756E64656E2120
+                  202720293B0D0A20202020202020202020646174756D5041203A3D205069636B
+                  446174756D2827446174756D20646572205072C3BC66756E6773617573736368
+                  7573737369747A756E67272C202727293B0D0A202020202020202020205A5041
+                  445F446174756D5041203A3D20646174756D50413B0D0A202020202020202065
+                  6E640D0A202020202020656C73650D0A2020202020202020646174756D504120
+                  3A3D2044617465546F537472284C65726E61627363686E697474655B274B6F6E
+                  666572656E7A646174756D275D293B0D0A20202020656E64202020200D0A2020
+                  656C73650D0A20202020646174756D5041203A3D205A5041445F446174756D50
+                  413B0D0A202052545F42657363686C757373312E5269636854657874203A3D20
+                  5265706C616365546578744578282052545F42657363686C757373312E526963
+                  68546578742C202724446174756D504124272C20646174756D504120293B0D0A
+                  656E643B0D0A0D436F6D706F6E656E744E616D65060D52545F42657363686C75
+                  737331094576656E744E616D6506074F6E5072696E74074576656E7449440220
+                  084361726574506F730102010206000000}
               end
               object ppDesignLayers12: TppDesignLayers
                 object ppDesignLayer12: TppDesignLayer

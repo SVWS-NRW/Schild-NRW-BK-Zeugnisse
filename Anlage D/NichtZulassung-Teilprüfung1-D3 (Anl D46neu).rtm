@@ -17,8 +17,8 @@ object Report: TppReport
   PrinterSetup.PaperSize = 8
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\Progs\SchILD-NRW\SchILD-Reports\ZeugnisFabrik\Anlage D\NichtZ' +
-    'ulassung-Teilpr'#252'fung1-D3 (Anl D46neu).rtm'
+    'C:\progs\schild-nrw\SchILD-Reports\Schild-NRW-BK-Zeugnisse\Anlag' +
+    'e D\NichtZulassung-Teilpr'#252'fung1-D3 (Anl D46neu).rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -234,19 +234,19 @@ object Report: TppReport
                     '{\rtf1\fbidis\ansi\ansicpg1252\deff0\deflang1031\deflangfe1031{\' +
                     'fonttbl{\f0\fswiss\fprq2\fcharset0 Calibri;}{\f1\fswiss\fprq2\fc' +
                     'harset177 Arial;}}'#13#10'{\colortbl ;\red0\green0\blue0;}'#13#10'\viewkind4' +
-                    '\uc1\pard\ltrpar\nowidctlpar\cf1\b\f0\fs22 $formaleAnrede$\par'#13#10 +
-                    '\fs10\par'#13#10'\pard\ltrpar\nowidctlpar\qj\cf0\lang7\b0\fs22 in sein' +
-                    'er Sitzung am $DatumPA$ hat der allgemeine Pr\'#39'fcfungsausschuss ' +
-                    'die Leistungen\lang1031\'#39'b9\lang1037\f1\rtlch\'#39'd7\lang1031\f0\lt' +
-                    'rch\'#39'b2\lang7  in den F\'#39'e4chern gem\'#39'e4\'#39'df der Nummern 1 bis 4' +
-                    ' festgestellt und \'#39'fcber die M\'#39'f6glichkeit des Bestehens der E' +
-                    'rsten Teilpr\'#39'fcfung der Berufsabschlusspr\'#39'fcfung gem\'#39'e4\'#39'df N' +
-                    'ummer 5 entschieden. \par'#13#10'\pard\ltrpar\nowidctlpar\tab\par'#13#10'\pa' +
-                    'rd\ltrpar\nowidctlpar\fi-284\li284\qj 1.\tab F\'#39'e4cher, die im R' +
-                    'ahmen des schriftlichen Abiturverfahrens gepr\'#39'fcft wurden. In d' +
-                    'iesen F\'#39'e4chern ist im Rahmen der Ersten Teilpr\'#39'fcfung keine g' +
-                    'esonderte m\'#39'fcndliche Pr\'#39'fcfung m\'#39'f6glich:\lang1031\'#39'b3\lang7' +
-                    '\par'#13#10'}'#13#10#0
+                    '\uc1\pard\ltrpar\nowidctlpar\cf1\b\f0\fs22 <dbtext datapipeline=' +
+                    #39'Schueler'#39'>FormaleAnrede</dbtext>\par'#13#10'\fs10\par'#13#10'\pard\ltrpar\n' +
+                    'owidctlpar\qj\cf0\lang7\b0\fs22 in seiner Sitzung am $DatumPA$ h' +
+                    'at der allgemeine Pr\'#39'fcfungsausschuss die Leistungen\lang1031\'#39 +
+                    'b9\lang1037\f1\rtlch\'#39'd7\lang1031\f0\ltrch\'#39'b2\lang7  in den F\'#39 +
+                    'e4chern gem\'#39'e4\'#39'df der Nummern 1 bis 4 festgestellt und \'#39'fcber' +
+                    ' die M\'#39'f6glichkeit des Bestehens der Ersten Teilpr\'#39'fcfung der ' +
+                    'Berufsabschlusspr\'#39'fcfung gem\'#39'e4\'#39'df Nummer 5 entschieden. \par' +
+                    #13#10'\pard\ltrpar\nowidctlpar\tab\par'#13#10'\pard\ltrpar\nowidctlpar\fi-' +
+                    '284\li284\qj 1.\tab F\'#39'e4cher, die im Rahmen des schriftlichen A' +
+                    'biturverfahrens gepr\'#39'fcft wurden. In diesen F\'#39'e4chern ist im R' +
+                    'ahmen der Ersten Teilpr\'#39'fcfung keine gesonderte m\'#39'fcndliche Pr' +
+                    '\'#39'fcfung m\'#39'f6glich:\lang1031\'#39'b3\lang7\par'#13#10'}'#13#10#0
                   RemoveEmptyLines = False
                   Transparent = True
                   mmHeight = 36000
