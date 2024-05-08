@@ -250,11 +250,11 @@ object Report: TppReport
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Name = 'Lucida Sans'
-            Font.Size = 14
+            Font.Size = 26
             Font.Style = [fsBold]
             TextAlignment = taCentered
             Transparent = True
-            mmHeight = 6879
+            mmHeight = 16669
             mmLeft = 10054
             mmTop = 61403
             mmWidth = 160073
