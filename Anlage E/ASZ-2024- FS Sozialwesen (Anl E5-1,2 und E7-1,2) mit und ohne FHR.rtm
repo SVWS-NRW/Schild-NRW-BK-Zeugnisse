@@ -688,14 +688,14 @@ object Report: TppReport
                     'tbl ;\red0\green0\blue0;}'#13#10'\viewkind4\uc1\pard\cf1\f0\fs24 $Adre' +
                     'ssAnrede$\b <dbtext datapipeline='#39'Schueler'#39'>VornameName</dbtext>' +
                     ' \par'#13#10'\b0\par'#13#10'wird die \par'#13#10'\pard\qc\b\fs28 Fachhochschulreif' +
-                    'e\par'#13#10'\pard\b0\par'#13#10'\fs24 zuerkannt. \cf0 Der Abschluss ist im ' +
-                    'Deutschen und Europ\'#39'e4ischen Qualifikationsrahmen dem Niveau 4 ' +
-                    'zugeordnet.\f1\fs20\par'#13#10'\pard\qj\cf1\f0\fs22 Entsprechend der V' +
-                    'ereinbarung \'#39'fcber den Erwerb einer Fachhochschulreife in beruf' +
-                    'lichen Bildungsg\'#39'e4ngen - Beschluss der Kultusministerkonferenz' +
-                    ' vom 5. Juni 1998 in der jeweils geltenden Fassung - berechtigt ' +
-                    'dieses Zeugnis in allen L\'#39'e4ndern der Bundesrepublik Deutschlan' +
-                    'd zum Studium an Fachhochschulen.\par'#13#10'\pard\par'#13#10'}'#13#10#0
+                    'e\par'#13#10'\pard\b0\par'#13#10'\fs24 zuerkannt. \par'#13#10'\pard\qj\cf0 Der Abs' +
+                    'chluss ist im Deutschen und Europ\'#39'e4ischen Qualifikationsrahmen' +
+                    ' dem Niveau 4 zugeordnet.\f1\fs20\par'#13#10'\cf1\f0\fs22 Entsprechend' +
+                    ' der Vereinbarung \'#39'fcber den Erwerb einer Fachhochschulreife in' +
+                    ' beruflichen Bildungsg\'#39'e4ngen - Beschluss der Kultusministerkon' +
+                    'ferenz vom 5. Juni 1998 in der jeweils geltenden Fassung - berec' +
+                    'htigt dieses Zeugnis in allen L\'#39'e4ndern der Bundesrepublik Deut' +
+                    'schland zum Studium an Fachhochschulen.\par'#13#10'\pard\par'#13#10'}'#13#10#0
                   RemoveEmptyLines = False
                   Transparent = True
                   mmHeight = 61913

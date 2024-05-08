@@ -17,7 +17,7 @@ object Report: TppReport
   PrinterSetup.mmPaperWidth = 420000
   PrinterSetup.PaperSize = 256
   SaveAsTemplate = True
-  Template.FileName = 'D:\SchILD-NRW\SchILD-Reports\Zeugnisse 2016 Lucida\Anlage E\Pruefungsliste FS.rtm'
+  Template.FileName = 'C:\progs\schild-nrw\SchILD-Reports\Schild-NRW-BK-Zeugnisse\Anlage E\Pruefungsliste FS.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True

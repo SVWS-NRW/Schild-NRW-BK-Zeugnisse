@@ -511,11 +511,12 @@ object Report: TppReport
             ExpandAll = False
             NewPrintJob = False
             OutlineSettings.CreateNode = True
+            ShiftRelativeTo = ppRichText2
             TraverseAllData = False
             DataPipelineName = 'plBKBerufsbezogen'
             mmHeight = 5027
             mmLeft = 0
-            mmTop = 21696
+            mmTop = 29646
             mmWidth = 180000
             BandType = 4
             LayerName = Foreground2
@@ -687,14 +688,15 @@ object Report: TppReport
               '{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcha' +
               'rset0 Lucida Sans;}{\f1\fswiss\fprq2\fcharset0 Lucida Sans;}}'#13#10'{' +
               '\colortbl ;\red0\green0\blue0;}'#13#10'\viewkind4\uc1\pard\cf1\f0\fs22' +
-              ' Der allgemeine Pr\'#39'fcfungsausschuss stellt in seiner Abschlussk' +
-              'onferenz am \b <dbtext datapipeline='#39'plLernabschnitte'#39'>Konferenz' +
-              'datum</dbtext> \b0 folgende Leistungen\cf0\super\f1\fs24 1\cf1\n' +
-              'osupersub\f0\fs22  fest:\b\fs24\par'#13#10'}'#13#10#0
+              '\par'#13#10'Der allgemeine Pr\'#39'fcfungsausschuss stellt in seiner Absch' +
+              'lusskonferenz am \b <dbtext datapipeline='#39'plLernabschnitte'#39'>Konf' +
+              'erenzdatum</dbtext> \b0 folgende Leistungen\cf0\super\f1\fs24 1\' +
+              'cf1\nosupersub\f0\fs22  fest:\b\fs24\par'#13#10'}'#13#10#0
             RemoveEmptyLines = False
+            ShiftRelativeTo = ppRichText6
             Stretch = True
             Transparent = True
-            mmHeight = 5556
+            mmHeight = 11113
             mmLeft = 10054
             mmTop = 13758
             mmWidth = 165100
@@ -715,7 +717,7 @@ object Report: TppReport
             DataPipelineName = 'plBKBerufsuebergreifend'
             mmHeight = 5027
             mmLeft = 0
-            mmTop = 28046
+            mmTop = 35996
             mmWidth = 180000
             BandType = 4
             LayerName = Foreground2
@@ -878,7 +880,7 @@ object Report: TppReport
             DataPipelineName = 'plBKDifferenzierung'
             mmHeight = 5027
             mmLeft = 0
-            mmTop = 50800
+            mmTop = 58750
             mmWidth = 180000
             BandType = 4
             LayerName = Foreground2
@@ -1041,6 +1043,7 @@ object Report: TppReport
               'chueler'#39'>VornameName</dbtext> \b0\'#39'fcber die Nichtzulassung zum ' +
               'Fachschulexamen\par'#13#10'}'#13#10#0
             RemoveEmptyLines = False
+            Stretch = True
             Transparent = True
             mmHeight = 6350
             mmLeft = 10054
@@ -1063,7 +1066,7 @@ object Report: TppReport
             DataPipelineName = 'ppProjektarbeit'
             mmHeight = 5027
             mmLeft = 0
-            mmTop = 35190
+            mmTop = 43140
             mmWidth = 180000
             BandType = 4
             LayerName = Foreground2
@@ -1219,7 +1222,7 @@ object Report: TppReport
             Transparent = True
             mmHeight = 38100
             mmLeft = 10054
-            mmTop = 62177
+            mmTop = 70127
             mmWidth = 160073
             BandType = 4
             LayerName = Foreground2
