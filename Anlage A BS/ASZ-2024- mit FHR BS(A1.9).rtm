@@ -132,6 +132,7 @@ object Report: TppReport
         PrinterSetup.mmPaperHeight = 297000
         PrinterSetup.mmPaperWidth = 420000
         PrinterSetup.PaperSize = 8
+        Template.Offset = 284
         Template.Format = ftASCII
         Units = utMillimeters
         Version = '15.05'
@@ -853,6 +854,7 @@ object Report: TppReport
         PrinterSetup.mmPaperHeight = 297000
         PrinterSetup.mmPaperWidth = 420000
         PrinterSetup.PaperSize = 8
+        Template.Offset = 284
         Template.Format = ftASCII
         Units = utMillimeters
         Version = '15.05'
@@ -1140,6 +1142,7 @@ object Report: TppReport
               PrinterSetup.mmPaperHeight = 297000
               PrinterSetup.mmPaperWidth = 420000
               PrinterSetup.PaperSize = 8
+              Template.Offset = 284
               Template.Format = ftASCII
               Units = utMillimeters
               Version = '15.05'
@@ -1196,7 +1199,7 @@ object Report: TppReport
                 object ppDBText12: TppDBText
                   UserName = 'DBText9'
                   Color = clSilver
-                  DataField = 'NoteAbschlussBA'
+                  DataField = 'NoteAbschluss'
                   DataPipeline = dmPipelines.plBKAbschlussFaecher_BUE
                   Font.Charset = ANSI_CHARSET
                   Font.Color = clBlack

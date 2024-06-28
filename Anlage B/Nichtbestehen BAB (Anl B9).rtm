@@ -1,8 +1,6 @@
 object Report: TppReport
-  OnFileDeviceCreate = ReportFileDeviceCreate
   AutoStop = False
   DataPipeline = dmPipelines.Schueler
-  OnStartFirstPass = ReportStartFirstPass
   PrinterSetup.BinName = 'Default'
   PrinterSetup.DocumentName = 'Nichtbestehen BAB (Anl B9).rtm'
   PrinterSetup.PaperName = 'A4 210 x 297 mm'
@@ -17,16 +15,13 @@ object Report: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    'D:\SchILD-NRW\SchILD-Reports\Zeugnisse 2016 Lucida\Anlage B\Nich' +
-    'tbestehen BAB (Anl B9).rtm'
+    'D:\SchILD-NRW\SchILD-Reports\Zeugnisse 2024\Anlage B\Nichtbesteh' +
+    'en BAB (Anl B9).rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
   AllowPrintToFile = True
   ArchiveFileName = '($MyDocuments)\ReportArchive.raf'
-  BeforeOpenDataPipelines = ReportBeforeOpenDataPipelines
-  BeforePrint = ReportBeforePrint
-  BeforeEmail = ReportBeforeEmail
   DeviceType = 'Screen'
   DefaultFileDeviceType = 'PDF'
   EmailSettings.ReportFormat = 'PDF'
@@ -60,8 +55,6 @@ object Report: TppReport
     81FFFF00C1FFFF00C0FFFE00E0FFFC00E07FFC03F07FFC03F03FFC03F83FFE07
     F83FFF0FFC7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
   LanguageID = 'Default'
-  OnInitializeParameters = ReportInitializeParameters
-  OnPreviewFormCreate = ReportPreviewFormCreate
   OpenFile = False
   OutlineSettings.CreateNode = True
   OutlineSettings.CreatePageNodes = True

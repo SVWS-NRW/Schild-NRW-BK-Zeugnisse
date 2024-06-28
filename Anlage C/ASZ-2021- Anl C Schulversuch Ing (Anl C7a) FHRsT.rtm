@@ -17,8 +17,8 @@ object Report: TppReport
   PrinterSetup.PaperSize = 8
   SaveAsTemplate = True
   Template.FileName = 
-    'D:\SchILD-NRW\SchILD-Reports\Zeugnisse 2016 Lucida\Anlage C\ASZ-' +
-    '2021- Anl C Schulversuch Ing (Anl C7a) FHRsT.rtm'
+    'D:\SchILD-NRW\SchILD-Reports\Zeugnisse 2024\Anlage C\ASZ-2021- A' +
+    'nl C Schulversuch Ing (Anl C7a) FHRsT.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -66,7 +66,7 @@ object Report: TppReport
   ThumbnailSettings.Visible = True
   ThumbnailSettings.DeadSpace = 30
   PDFSettings.Author = 'Schild-NRW'
-  PDFSettings.EmbedFontOptions = [efUseSubset]
+  PDFSettings.EmbedFontOptions = []
   PDFSettings.EncryptSettings.AllowCopy = True
   PDFSettings.EncryptSettings.AllowInteract = True
   PDFSettings.EncryptSettings.AllowModify = True

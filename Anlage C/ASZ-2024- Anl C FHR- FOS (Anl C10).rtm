@@ -17,8 +17,8 @@ object Report: TppReport
   PrinterSetup.PaperSize = 8
   SaveAsTemplate = True
   Template.FileName = 
-    'D:\SchILD-NRW\SchILD-Reports\Zeugnisse 2016 Lucida\Anlage C\ASZ-' +
-    '2024- Anl C FHR- FOS (Anl C10).rtm'
+    'D:\SchILD-NRW\SchILD-Reports\Zeugnisse 2024\Anlage C\ASZ-2024- A' +
+    'nl C FHR- FOS (Anl C10).rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True

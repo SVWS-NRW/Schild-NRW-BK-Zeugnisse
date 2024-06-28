@@ -15,8 +15,8 @@ object Report: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    'D:\SchILD-NRW\SchILD-Reports\Zeugnisse 2016 Lucida\Anlage A BS\N' +
-    'ichtzulassung FHR (Anl A1.10).rtm'
+    'D:\SchILD-NRW\SchILD-Reports\Zeugnisse 2024\Anlage A BS\Nichtzul' +
+    'assung FHR (Anl A1.10).rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
