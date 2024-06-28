@@ -17,8 +17,8 @@ object RepOrt: TppReport
   SaveAsTemplate = True
   Template.FileName = 
     'C:\Progs\SVWS\SchILD-Reports\Schild-NRW-BK-Zeugnisse\Anlagen mit' +
-    ' Zeugniseinstellungen.ini\Anlage D\NichtzulassungAbitur-2024i-(D' +
-    '37).rtm'
+    ' Zeugniseinstellungen.ini\Schild3\Anlage D\NichtzulassungAbitur-' +
+    '2024i-(D37).rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -76,7 +76,7 @@ object RepOrt: TppReport
   ThumbnailSettings.PageHighlight.Width = 3
   ThumbnailSettings.ThumbnailSize = tsSmall
   PDFSettings.Author = 'Schild-NRW'
-  PDFSettings.EmbedFontOptions = []
+  PDFSettings.EmbedFontOptions = [efUseSubset]
   PDFSettings.EncryptSettings.AllowCopy = True
   PDFSettings.EncryptSettings.AllowInteract = True
   PDFSettings.EncryptSettings.AllowModify = True
@@ -88,7 +88,7 @@ object RepOrt: TppReport
   PDFSettings.EncryptSettings.KeyLength = kl40Bit
   PDFSettings.EncryptSettings.EncryptionType = etRC4
   PDFSettings.DigitalSignatureSettings.SignPDF = False
-  PDFSettings.FontEncoding = feAnsi
+  PDFSettings.FontEncoding = feUnicode
   PDFSettings.ImageCompressionLevel = 25
   PDFSettings.PDFAFormat = pafNone
   PreviewFormSettings.PageBorder.mmPadding = 0
@@ -475,13 +475,13 @@ object RepOrt: TppReport
             Border.mmPadding = 0
             ExportRTFAsBitmap = False
             DataField = 'Berufsebene1'
-            DataPipeline = dmPipelines.plLernAbschnitte
+            DataPipeline = dmPipelines.plLernabschnitte
             ParentDataPipeline = False
             RemoveEmptyLines = False
             ShiftRelativeTo = ppRichText6
             Stretch = True
             Transparent = True
-            DataPipelineName = 'plLernAbschnitte'
+            DataPipelineName = 'plLernabschnitte'
             mmHeight = 5000
             mmLeft = 60000
             mmTop = 114000
@@ -536,13 +536,13 @@ object RepOrt: TppReport
             Border.mmPadding = 0
             ExportRTFAsBitmap = False
             DataField = 'Berufsebene2'
-            DataPipeline = dmPipelines.plLernAbschnitte
+            DataPipeline = dmPipelines.plLernabschnitte
             ParentDataPipeline = False
             RemoveEmptyLines = False
             ShiftRelativeTo = ppDBRichText3
             Stretch = True
             Transparent = True
-            DataPipelineName = 'plLernAbschnitte'
+            DataPipelineName = 'plLernabschnitte'
             mmHeight = 5000
             mmLeft = 60000
             mmTop = 120000
@@ -696,7 +696,7 @@ object RepOrt: TppReport
               PrinterSetup.mmMarginTop = 0
               PrinterSetup.mmPaperHeight = 100000
               PrinterSetup.mmPaperWidth = 165000
-              PrinterSetup.PaperSize = 256
+              PrinterSetup.PaperSize = 199
               Template.Format = ftASCII
               Units = utMillimeters
               Version = '22.03'

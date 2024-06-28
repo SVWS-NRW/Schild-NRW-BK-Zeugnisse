@@ -17,8 +17,8 @@ object RepOrt: TppReport
   SaveAsTemplate = True
   Template.FileName = 
     'C:\Progs\SVWS\SchILD-Reports\Schild-NRW-BK-Zeugnisse\Anlagen mit' +
-    ' Zeugniseinstellungen.ini\Anlage D\AGZ-2024i-AnlD-Bewerbung(D34)' +
-    '.rtm'
+    ' Zeugniseinstellungen.ini\Schild3\Anlage D\AGZ-2024i-AnlD-Bewerb' +
+    'ung(D34).rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -76,7 +76,7 @@ object RepOrt: TppReport
   ThumbnailSettings.PageHighlight.Width = 3
   ThumbnailSettings.ThumbnailSize = tsSmall
   PDFSettings.Author = 'Schild-NRW'
-  PDFSettings.EmbedFontOptions = []
+  PDFSettings.EmbedFontOptions = [efUseSubset]
   PDFSettings.EncryptSettings.AllowCopy = True
   PDFSettings.EncryptSettings.AllowInteract = True
   PDFSettings.EncryptSettings.AllowModify = True
@@ -88,7 +88,7 @@ object RepOrt: TppReport
   PDFSettings.EncryptSettings.KeyLength = kl40Bit
   PDFSettings.EncryptSettings.EncryptionType = etRC4
   PDFSettings.DigitalSignatureSettings.SignPDF = False
-  PDFSettings.FontEncoding = feAnsi
+  PDFSettings.FontEncoding = feUnicode
   PDFSettings.ImageCompressionLevel = 25
   PDFSettings.PDFAFormat = pafNone
   PreviewFormSettings.PageBorder.mmPadding = 0
@@ -520,12 +520,12 @@ object RepOrt: TppReport
             Border.mmPadding = 0
             ExportRTFAsBitmap = False
             DataField = 'Berufsebene1'
-            DataPipeline = dmPipelines.plLernAbschnitte
+            DataPipeline = dmPipelines.plLernabschnitte
             ParentDataPipeline = False
             RemoveEmptyLines = False
             Stretch = True
             Transparent = True
-            DataPipelineName = 'plLernAbschnitte'
+            DataPipelineName = 'plLernabschnitte'
             mmHeight = 5000
             mmLeft = 65000
             mmTop = 126000
@@ -580,13 +580,13 @@ object RepOrt: TppReport
             Border.mmPadding = 0
             ExportRTFAsBitmap = False
             DataField = 'Berufsebene2'
-            DataPipeline = dmPipelines.plLernAbschnitte
+            DataPipeline = dmPipelines.plLernabschnitte
             ParentDataPipeline = False
             RemoveEmptyLines = False
             ShiftRelativeTo = ppDBRichText3
             Stretch = True
             Transparent = True
-            DataPipelineName = 'plLernAbschnitte'
+            DataPipelineName = 'plLernabschnitte'
             mmHeight = 5000
             mmLeft = 65000
             mmTop = 132000
@@ -1181,7 +1181,7 @@ object RepOrt: TppReport
             ParentWidth = False
             ShiftRelativeTo = ppSubReport5
             TraverseAllData = False
-            DataPipelineName = 'PLZUV'
+            DataPipelineName = 'plZUV'
             mmHeight = 5000
             mmLeft = 0
             mmTop = 40000
@@ -1194,7 +1194,7 @@ object RepOrt: TppReport
             mmMinHeight = 0
             object ppChildReport1: TppChildReport
               AutoStop = False
-              DataPipeline = dmPipelines.PLZUV
+              DataPipeline = dmPipelines.plZUV
               PrinterSetup.BinName = 'Default'
               PrinterSetup.DocumentName = 'JAZ-2016- Anl D- Kl 11(Anl D32).rtm'
               PrinterSetup.Duplex = dpVertical
@@ -1212,7 +1212,7 @@ object RepOrt: TppReport
               Units = utMillimeters
               Version = '22.03'
               mmColumnWidth = 0
-              DataPipelineName = 'PLZUV'
+              DataPipelineName = 'plZUV'
               object ppTitleBand4: TppTitleBand
                 Border.mmPadding = 0
                 mmBottomOffset = 0
@@ -1223,14 +1223,14 @@ object RepOrt: TppReport
                   UserName = 'DBText1'
                   Border.mmPadding = 0
                   DataField = 'Fachgruppe'
-                  DataPipeline = dmPipelines.PLZUV
+                  DataPipeline = dmPipelines.plZUV
                   Font.Charset = ANSI_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
                   Font.Size = 12
                   Font.Style = [fsBold]
                   Transparent = True
-                  DataPipelineName = 'PLZUV'
+                  DataPipelineName = 'plZUV'
                   mmHeight = 6000
                   mmLeft = 0
                   mmTop = 3000
@@ -1251,7 +1251,7 @@ object RepOrt: TppReport
                   Border.mmPadding = 0
                   CharWrap = False
                   DataField = 'Zeugnisbezeichnung'
-                  DataPipeline = dmPipelines.PLZUV
+                  DataPipeline = dmPipelines.plZUV
                   Font.Charset = ANSI_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
@@ -1260,7 +1260,7 @@ object RepOrt: TppReport
                   RemoveEmptyLines = False
                   Stretch = True
                   Transparent = True
-                  DataPipelineName = 'PLZUV'
+                  DataPipelineName = 'plZUV'
                   mmHeight = 5000
                   mmLeft = 0
                   mmTop = 500
@@ -1522,7 +1522,7 @@ object RepOrt: TppReport
             ParentPrinterSetup = False
             ShiftRelativeTo = ppSubReport7
             TraverseAllData = False
-            DataPipelineName = 'plLernAbschnitte'
+            DataPipelineName = 'plLernabschnitte'
             mmHeight = 5000
             mmLeft = 0
             mmTop = 52000
@@ -1535,7 +1535,7 @@ object RepOrt: TppReport
             mmMinHeight = 0
             object ppChildReport10: TppChildReport
               AutoStop = False
-              DataPipeline = dmPipelines.plLernAbschnitte
+              DataPipeline = dmPipelines.plLernabschnitte
               PrinterSetup.BinName = 'Default'
               PrinterSetup.DocumentName = 'AGZ-2024-Anl D - Bewerbung (Anl D34).rtm'
               PrinterSetup.Duplex = dpVertical
@@ -1553,7 +1553,7 @@ object RepOrt: TppReport
               Units = utMillimeters
               Version = '22.03'
               mmColumnWidth = 0
-              DataPipelineName = 'plLernAbschnitte'
+              DataPipelineName = 'plLernabschnitte'
               object ppDetailBand12: TppDetailBand
                 Border.mmPadding = 0
                 mmBottomOffset = 0
@@ -1564,14 +1564,14 @@ object RepOrt: TppReport
                   UserName = 'DBText9'
                   Border.mmPadding = 0
                   DataField = 'FehlStd'
-                  DataPipeline = dmPipelines.plLernAbschnitte
+                  DataPipeline = dmPipelines.plLernabschnitte
                   Font.Charset = DEFAULT_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
                   Font.Size = 12
                   Font.Style = []
                   Transparent = True
-                  DataPipelineName = 'plLernAbschnitte'
+                  DataPipelineName = 'plLernabschnitte'
                   mmHeight = 5000
                   mmLeft = 0
                   mmTop = 10000
@@ -1662,7 +1662,7 @@ object RepOrt: TppReport
               PrinterSetup.mmMarginTop = 0
               PrinterSetup.mmPaperHeight = 55000
               PrinterSetup.mmPaperWidth = 170000
-              PrinterSetup.PaperSize = 256
+              PrinterSetup.PaperSize = 199
               Template.Format = ftASCII
               Units = utMillimeters
               Version = '22.03'

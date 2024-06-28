@@ -5,7 +5,7 @@ object RepOrt: TppReport
   PrinterSetup.DocumentName = 'AHR-2024-AnlD-Abitur (Anl D41)-NEU.rtm'
   PrinterSetup.Duplex = dpHorizontal
   PrinterSetup.Orientation = poLandscape
-  PrinterSetup.PaperName = 'Custom'
+  PrinterSetup.PaperName = 'A3'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
   PrinterSetup.mmMarginBottom = 0
@@ -14,12 +14,12 @@ object RepOrt: TppReport
   PrinterSetup.mmMarginTop = 0
   PrinterSetup.mmPaperHeight = 297000
   PrinterSetup.mmPaperWidth = 420000
-  PrinterSetup.PaperSize = 256
+  PrinterSetup.PaperSize = 8
   SaveAsTemplate = True
   Template.FileName = 
     'C:\Progs\SVWS\SchILD-Reports\Schild-NRW-BK-Zeugnisse\Anlagen mit' +
-    ' Zeugniseinstellungen.ini\Anlage D\AHR-2024i-AnlD-Abitur(D41).rt' +
-    'm'
+    ' Zeugniseinstellungen.ini\Schild3\Anlage D\AHR-2024i-AnlD-Abitur' +
+    '(D41).rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -61,7 +61,7 @@ object RepOrt: TppReport
   PDFSettings.EncryptSettings.KeyLength = kl40Bit
   PDFSettings.EncryptSettings.EncryptionType = etRC4
   PDFSettings.DigitalSignatureSettings.SignPDF = False
-  PDFSettings.FontEncoding = feAnsi
+  PDFSettings.FontEncoding = feUnicode
   PDFSettings.ImageCompressionLevel = 25
   PDFSettings.PDFAFormat = pafNone
   PreviewFormSettings.PageBorder.mmPadding = 0
@@ -130,7 +130,7 @@ object RepOrt: TppReport
         PrinterSetup.DocumentName = 'AHR-2018_AnlD-Abitur (Anl D41).rtm'
         PrinterSetup.Duplex = dpHorizontal
         PrinterSetup.Orientation = poLandscape
-        PrinterSetup.PaperName = 'Custom'
+        PrinterSetup.PaperName = 'A3'
         PrinterSetup.PrinterName = 'Default'
         PrinterSetup.SaveDeviceSettings = False
         PrinterSetup.mmMarginBottom = 0
@@ -139,7 +139,7 @@ object RepOrt: TppReport
         PrinterSetup.mmMarginTop = 0
         PrinterSetup.mmPaperHeight = 297000
         PrinterSetup.mmPaperWidth = 420000
-        PrinterSetup.PaperSize = 256
+        PrinterSetup.PaperSize = 8
         Template.DatabaseSettings.Name = 'Sub_Seite4_1'
         Template.Format = ftASCII
         Units = utMillimeters
@@ -220,7 +220,7 @@ object RepOrt: TppReport
               PrinterSetup.mmMarginTop = 0
               PrinterSetup.mmPaperHeight = 100000
               PrinterSetup.mmPaperWidth = 170000
-              PrinterSetup.PaperSize = 256
+              PrinterSetup.PaperSize = 199
               Template.Format = ftASCII
               Units = utMillimeters
               Version = '22.03'
@@ -478,7 +478,7 @@ object RepOrt: TppReport
             ParentWidth = False
             ShiftRelativeTo = ppRichText5
             TraverseAllData = False
-            DataPipelineName = 'plLernAbschnitte'
+            DataPipelineName = 'plLernabschnitte'
             mmHeight = 6000
             mmLeft = 25000
             mmTop = 37000
@@ -490,7 +490,7 @@ object RepOrt: TppReport
             mmStopPosition = 0
             mmMinHeight = 0
             object ppChildReport3: TppChildReport
-              DataPipeline = dmPipelines.plLernAbschnitte
+              DataPipeline = dmPipelines.plLernabschnitte
               PrinterSetup.BinName = 'Default'
               PrinterSetup.DocumentName = 'Abschluss HA10 Ge (Anl 34) 3'
               PrinterSetup.Duplex = dpNone
@@ -504,13 +504,13 @@ object RepOrt: TppReport
               PrinterSetup.mmMarginTop = 0
               PrinterSetup.mmPaperHeight = 50000
               PrinterSetup.mmPaperWidth = 165000
-              PrinterSetup.PaperSize = 256
+              PrinterSetup.PaperSize = 199
               Template.DatabaseSettings.Name = 'Sub_Bem'
               Template.Format = ftASCII
               Units = utMillimeters
               Version = '22.03'
               mmColumnWidth = 0
-              DataPipelineName = 'plLernAbschnitte'
+              DataPipelineName = 'plLernabschnitte'
               object ppDetailBand3: TppDetailBand
                 Border.mmPadding = 0
                 PrintHeight = phDynamic
@@ -528,11 +528,11 @@ object RepOrt: TppReport
                   Border.mmPadding = 0
                   ExportRTFAsBitmap = False
                   DataField = 'ZeugnisBem'
-                  DataPipeline = dmPipelines.plLernAbschnitte
+                  DataPipeline = dmPipelines.plLernabschnitte
                   RemoveEmptyLines = False
                   Stretch = True
                   Transparent = True
-                  DataPipelineName = 'plLernAbschnitte'
+                  DataPipelineName = 'plLernabschnitte'
                   mmHeight = 9525
                   mmLeft = 0
                   mmTop = 0
@@ -644,7 +644,7 @@ object RepOrt: TppReport
               PrinterSetup.mmMarginTop = 0
               PrinterSetup.mmPaperHeight = 100000
               PrinterSetup.mmPaperWidth = 170000
-              PrinterSetup.PaperSize = 256
+              PrinterSetup.PaperSize = 199
               Template.Format = ftASCII
               Units = utMillimeters
               Version = '22.03'
@@ -1493,12 +1493,12 @@ object RepOrt: TppReport
             Border.mmPadding = 0
             ExportRTFAsBitmap = False
             DataField = 'Berufsebene1'
-            DataPipeline = dmPipelines.plLernAbschnitte
+            DataPipeline = dmPipelines.plLernabschnitte
             ParentDataPipeline = False
             RemoveEmptyLines = False
             Stretch = True
             Transparent = True
-            DataPipelineName = 'plLernAbschnitte'
+            DataPipelineName = 'plLernabschnitte'
             mmHeight = 5027
             mmLeft = 288875
             mmTop = 160000
@@ -1860,7 +1860,7 @@ object RepOrt: TppReport
         PrinterSetup.DocumentName = 'AHR-2018_AnlD-Abitur (Anl D41).rtm'
         PrinterSetup.Duplex = dpHorizontal
         PrinterSetup.Orientation = poLandscape
-        PrinterSetup.PaperName = 'Custom'
+        PrinterSetup.PaperName = 'A3'
         PrinterSetup.PrinterName = 'Default'
         PrinterSetup.SaveDeviceSettings = False
         PrinterSetup.mmMarginBottom = 10000
@@ -1869,7 +1869,7 @@ object RepOrt: TppReport
         PrinterSetup.mmMarginTop = 0
         PrinterSetup.mmPaperHeight = 297000
         PrinterSetup.mmPaperWidth = 420000
-        PrinterSetup.PaperSize = 256
+        PrinterSetup.PaperSize = 8
         Template.DatabaseSettings.Name = 'Sub_Seite4_1'
         Template.Format = ftASCII
         Units = utMillimeters
@@ -3145,6 +3145,7 @@ object RepOrt: TppReport
               PrinterSetup.mmPaperHeight = 165000
               PrinterSetup.mmPaperWidth = 165000
               PrinterSetup.PaperSize = 256
+              Template.Offset = 284
               Template.Format = ftASCII
               Units = utMillimeters
               Version = '22.03'
@@ -3380,57 +3381,56 @@ object RepOrt: TppReport
                 ProgramStream = {
                   01060F5472614576656E7448616E646C65720B50726F6772616D4E616D650611
                   44657461696C4265666F72655072696E740B50726F6772616D54797065070B74
-                  7450726F63656475726506536F7572636514D300000070726F63656475726520
-                  44657461696C4265666F72655072696E743B0D0A626567696E0D0A2020446574
-                  61696C2E76697369626C65203A3D2046414C53453B0D0A202049462028416269
-                  666165636865725B27417566676162656E66656C64275D203D2027272920616E
-                  642028416269666165636865725B2746616368677275707065275D203D202742
-                  6572756673C3BC6265726772656966656E646572204265726569636827292054
-                  48454E200D0A2020202044657461696C2E76697369626C65203A3D2054525545
-                  3B0D0A656E643B0D0A0D436F6D706F6E656E744E616D65060644657461696C09
-                  4576656E744E616D65060B4265666F72655072696E74074576656E7449440218
-                  084361726574506F730102050205000001060F5472614576656E7448616E646C
-                  65720B50726F6772616D4E616D6506124442545F5031325F314F6E4765745465
-                  78740B50726F6772616D54797065070B747450726F63656475726506536F7572
-                  6365066B70726F636564757265204442545F5031325F314F6E47657454657874
-                  2876617220546578743A20537472696E67293B0D0A626567696E0D0A0D0A2020
-                  69662074657874203D202727207468656E0D0A2020202054657874203A3D2027
-                  2D2D273B200D0A0D0A656E643B0D0A0D436F6D706F6E656E744E616D65060944
-                  42545F5031325F31094576656E744E616D6506094F6E47657454657874074576
-                  656E7449440235084361726574506F730102010206000001060F547261457665
-                  6E7448616E646C65720B50726F6772616D4E616D6506124442545F5031325F32
-                  4F6E476574546578740B50726F6772616D54797065070B747450726F63656475
-                  726506536F75726365066B70726F636564757265204442545F5031325F324F6E
-                  476574546578742876617220546578743A20537472696E67293B0D0A62656769
-                  6E0D0A0D0A202069662074657874203D202727207468656E0D0A202020205465
-                  7874203A3D20272D2D273B200D0A0D0A656E643B0D0A0D436F6D706F6E656E74
-                  4E616D6506094442545F5031325F32094576656E744E616D6506094F6E476574
-                  54657874074576656E7449440235084361726574506F73010201020400000106
-                  0F5472614576656E7448616E646C65720B50726F6772616D4E616D6506124442
-                  545F5031335F314F6E476574546578740B50726F6772616D54797065070B7474
-                  50726F63656475726506536F75726365066B70726F636564757265204442545F
-                  5031335F314F6E476574546578742876617220546578743A20537472696E6729
-                  3B0D0A626567696E0D0A0D0A202069662074657874203D202727207468656E0D
-                  0A2020202054657874203A3D20272D2D273B200D0A0D0A656E643B0D0A0D436F
-                  6D706F6E656E744E616D6506094442545F5031335F31094576656E744E616D65
-                  06094F6E47657454657874074576656E7449440235084361726574506F730102
-                  010204000001060F5472614576656E7448616E646C65720B50726F6772616D4E
-                  616D6506124442545F5031335F324F6E476574546578740B50726F6772616D54
-                  797065070B747450726F63656475726506536F75726365066B70726F63656475
-                  7265204442545F5031335F324F6E476574546578742876617220546578743A20
-                  537472696E67293B0D0A626567696E0D0A0D0A202069662074657874203D2027
-                  27207468656E0D0A2020202054657874203A3D20272D2D273B200D0A0D0A656E
-                  643B0D0A0D436F6D706F6E656E744E616D6506094442545F5031335F32094576
-                  656E744E616D6506094F6E47657454657874074576656E744944023508436172
-                  6574506F730102010206000001060F5472614576656E7448616E646C65720B50
-                  726F6772616D4E616D6506154442545F466163686E616D654F6E476574546578
-                  740B50726F6772616D54797065070B747450726F63656475726506536F757263
-                  65065970726F636564757265204442545F466163686E616D654F6E4765745465
-                  78742876617220546578743A20537472696E67293B0D0A626567696E0D0A2020
-                  54657874203A3D2027202027202B20546578743B0D0A656E643B0D0A0D436F6D
-                  706F6E656E744E616D65060C4442545F466163686E616D65094576656E744E61
-                  6D6506094F6E47657454657874074576656E7449440235084361726574506F73
-                  0102010204000000}
+                  7450726F63656475726506536F7572636506B970726F63656475726520446574
+                  61696C4265666F72655072696E743B0D0A626567696E0D0A202044657461696C
+                  2E76697369626C65203A3D2046414C53453B0D0A202049462028416269666165
+                  636865725B27417566676162656E66656C64275D203D2027272920616E642028
+                  416269666165636865725B27466163686772757070655F4944275D203D203130
+                  29205448454E200D0A2020202044657461696C2E76697369626C65203A3D2054
+                  5255453B0D0A656E643B0D0A0D436F6D706F6E656E744E616D65060644657461
+                  696C094576656E744E616D65060B4265666F72655072696E74074576656E7449
+                  440218084361726574506F730102050205000001060F5472614576656E744861
+                  6E646C65720B50726F6772616D4E616D6506124442545F5031325F314F6E4765
+                  74546578740B50726F6772616D54797065070B747450726F6365647572650653
+                  6F75726365066B70726F636564757265204442545F5031325F314F6E47657454
+                  6578742876617220546578743A20537472696E67293B0D0A626567696E0D0A0D
+                  0A202069662074657874203D202727207468656E0D0A2020202054657874203A
+                  3D20272D2D273B200D0A0D0A656E643B0D0A0D436F6D706F6E656E744E616D65
+                  06094442545F5031325F31094576656E744E616D6506094F6E47657454657874
+                  074576656E7449440235084361726574506F730102010206000001060F547261
+                  4576656E7448616E646C65720B50726F6772616D4E616D6506124442545F5031
+                  325F324F6E476574546578740B50726F6772616D54797065070B747450726F63
+                  656475726506536F75726365066B70726F636564757265204442545F5031325F
+                  324F6E476574546578742876617220546578743A20537472696E67293B0D0A62
+                  6567696E0D0A0D0A202069662074657874203D202727207468656E0D0A202020
+                  2054657874203A3D20272D2D273B200D0A0D0A656E643B0D0A0D436F6D706F6E
+                  656E744E616D6506094442545F5031325F32094576656E744E616D6506094F6E
+                  47657454657874074576656E7449440235084361726574506F73010201020400
+                  0001060F5472614576656E7448616E646C65720B50726F6772616D4E616D6506
+                  124442545F5031335F314F6E476574546578740B50726F6772616D5479706507
+                  0B747450726F63656475726506536F75726365066B70726F6365647572652044
+                  42545F5031335F314F6E476574546578742876617220546578743A2053747269
+                  6E67293B0D0A626567696E0D0A0D0A202069662074657874203D202727207468
+                  656E0D0A2020202054657874203A3D20272D2D273B200D0A0D0A656E643B0D0A
+                  0D436F6D706F6E656E744E616D6506094442545F5031335F31094576656E744E
+                  616D6506094F6E47657454657874074576656E7449440235084361726574506F
+                  730102010204000001060F5472614576656E7448616E646C65720B50726F6772
+                  616D4E616D6506124442545F5031335F324F6E476574546578740B50726F6772
+                  616D54797065070B747450726F63656475726506536F75726365066B70726F63
+                  6564757265204442545F5031335F324F6E476574546578742876617220546578
+                  743A20537472696E67293B0D0A626567696E0D0A0D0A20206966207465787420
+                  3D202727207468656E0D0A2020202054657874203A3D20272D2D273B200D0A0D
+                  0A656E643B0D0A0D436F6D706F6E656E744E616D6506094442545F5031335F32
+                  094576656E744E616D6506094F6E47657454657874074576656E744944023508
+                  4361726574506F730102010206000001060F5472614576656E7448616E646C65
+                  720B50726F6772616D4E616D6506154442545F466163686E616D654F6E476574
+                  546578740B50726F6772616D54797065070B747450726F63656475726506536F
+                  75726365065970726F636564757265204442545F466163686E616D654F6E4765
+                  74546578742876617220546578743A20537472696E67293B0D0A626567696E0D
+                  0A202054657874203A3D2027202027202B20546578743B0D0A656E643B0D0A0D
+                  436F6D706F6E656E744E616D65060C4442545F466163686E616D65094576656E
+                  744E616D6506094F6E47657454657874074576656E7449440235084361726574
+                  506F730102010204000000}
               end
               object ppDesignLayers26: TppDesignLayers
                 object ppDesignLayer29: TppDesignLayer
@@ -3479,7 +3479,7 @@ object RepOrt: TppReport
               PrinterSetup.mmMarginTop = 0
               PrinterSetup.mmPaperHeight = 20000
               PrinterSetup.mmPaperWidth = 165000
-              PrinterSetup.PaperSize = 256
+              PrinterSetup.PaperSize = 199
               Template.Format = ftASCII
               Units = utMillimeters
               Version = '22.03'
@@ -3788,7 +3788,7 @@ object RepOrt: TppReport
               PrinterSetup.mmMarginTop = 0
               PrinterSetup.mmPaperHeight = 20000
               PrinterSetup.mmPaperWidth = 165000
-              PrinterSetup.PaperSize = 256
+              PrinterSetup.PaperSize = 199
               Template.Format = ftASCII
               Units = utMillimeters
               Version = '22.03'
@@ -5212,7 +5212,7 @@ object RepOrt: TppReport
               PrinterSetup.mmMarginTop = 0
               PrinterSetup.mmPaperHeight = 50000
               PrinterSetup.mmPaperWidth = 165000
-              PrinterSetup.PaperSize = 256
+              PrinterSetup.PaperSize = 199
               Template.Offset = 284
               Template.Format = ftASCII
               Units = utMillimeters
@@ -5825,7 +5825,7 @@ object RepOrt: TppReport
               PrinterSetup.mmMarginTop = 0
               PrinterSetup.mmPaperHeight = 60000
               PrinterSetup.mmPaperWidth = 165000
-              PrinterSetup.PaperSize = 256
+              PrinterSetup.PaperSize = 199
               Template.Format = ftASCII
               Units = utMillimeters
               Version = '22.03'
@@ -6447,7 +6447,7 @@ object RepOrt: TppReport
               PrinterSetup.mmMarginTop = 0
               PrinterSetup.mmPaperHeight = 40000
               PrinterSetup.mmPaperWidth = 165000
-              PrinterSetup.PaperSize = 256
+              PrinterSetup.PaperSize = 199
               Template.Format = ftASCII
               Units = utMillimeters
               Version = '22.03'

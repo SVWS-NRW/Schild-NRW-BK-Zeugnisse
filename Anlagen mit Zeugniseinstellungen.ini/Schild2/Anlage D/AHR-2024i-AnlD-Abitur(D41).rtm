@@ -17,7 +17,7 @@ object Report: TppReport
   PrinterSetup.PaperSize = 256
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\progs\svws\SchILD-Reports\Schild-NRW-BK-Zeugnisse\Anlagen mit' +
+    'C:\Progs\SVWS\SchILD-Reports\Schild-NRW-BK-Zeugnisse\Anlagen mit' +
     ' Zeugniseinstellungen.ini\Schild2\Anlage D\AHR-2024i-AnlD-Abitur' +
     '(D41).rtm'
   Template.Format = ftASCII
@@ -46,7 +46,7 @@ object Report: TppReport
   PDFSettings.EncryptSettings.AllowPrint = True
   PDFSettings.EncryptSettings.Enabled = False
   PDFSettings.EncryptSettings.KeyLength = kl40Bit
-  PDFSettings.FontEncoding = feAnsi
+  PDFSettings.FontEncoding = feUnicode
   PDFSettings.ImageCompressionLevel = 25
   PreviewFormSettings.ZoomSetting = zs100Percent
   PreviewFormSettings.SinglePageOnly = True

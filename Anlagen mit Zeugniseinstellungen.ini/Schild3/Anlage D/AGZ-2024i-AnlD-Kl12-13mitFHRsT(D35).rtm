@@ -5,7 +5,7 @@ object RepOrt: TppReport
   PrinterSetup.DocumentName = 'AGZ-2024-D3 (Anl D53neu).rtm'
   PrinterSetup.Duplex = dpHorizontal
   PrinterSetup.Orientation = poLandscape
-  PrinterSetup.PaperName = 'Custom'
+  PrinterSetup.PaperName = 'A3'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
   PrinterSetup.mmMarginBottom = 0
@@ -14,12 +14,12 @@ object RepOrt: TppReport
   PrinterSetup.mmMarginTop = 0
   PrinterSetup.mmPaperHeight = 297000
   PrinterSetup.mmPaperWidth = 420000
-  PrinterSetup.PaperSize = 256
+  PrinterSetup.PaperSize = 8
   SaveAsTemplate = True
   Template.FileName = 
     'C:\Progs\SVWS\SchILD-Reports\Schild-NRW-BK-Zeugnisse\Anlagen mit' +
-    ' Zeugniseinstellungen.ini\Anlage D\AGZ-2024i-AnlD-Kl12-13mitFHRs' +
-    'T(D35).rtm'
+    ' Zeugniseinstellungen.ini\Schild3\Anlage D\AGZ-2024i-AnlD-Kl12-1' +
+    '3mitFHRsT(D35).rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -61,7 +61,7 @@ object RepOrt: TppReport
   PDFSettings.EncryptSettings.KeyLength = kl40Bit
   PDFSettings.EncryptSettings.EncryptionType = etRC4
   PDFSettings.DigitalSignatureSettings.SignPDF = False
-  PDFSettings.FontEncoding = feAnsi
+  PDFSettings.FontEncoding = feUnicode
   PDFSettings.ImageCompressionLevel = 25
   PDFSettings.PDFAFormat = pafNone
   PreviewFormSettings.PageBorder.mmPadding = 0
@@ -130,7 +130,7 @@ object RepOrt: TppReport
         PrinterSetup.DocumentName = 'AHR-2018_AnlD-Abitur (Anl D41).rtm'
         PrinterSetup.Duplex = dpHorizontal
         PrinterSetup.Orientation = poLandscape
-        PrinterSetup.PaperName = 'Custom'
+        PrinterSetup.PaperName = 'A3'
         PrinterSetup.PrinterName = 'Default'
         PrinterSetup.SaveDeviceSettings = False
         PrinterSetup.mmMarginBottom = 0
@@ -139,7 +139,7 @@ object RepOrt: TppReport
         PrinterSetup.mmMarginTop = 0
         PrinterSetup.mmPaperHeight = 297000
         PrinterSetup.mmPaperWidth = 420000
-        PrinterSetup.PaperSize = 256
+        PrinterSetup.PaperSize = 8
         Template.DatabaseSettings.Name = 'Sub_Seite4_1'
         Template.Format = ftASCII
         Units = utMillimeters
@@ -175,7 +175,7 @@ object RepOrt: TppReport
               PrinterSetup.DocumentName = 'AHR-2018_AnlD-Abitur (Anl D41).rtm'
               PrinterSetup.Duplex = dpHorizontal
               PrinterSetup.Orientation = poLandscape
-              PrinterSetup.PaperName = 'Custom'
+              PrinterSetup.PaperName = 'A3'
               PrinterSetup.PrinterName = 'Default'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 0
@@ -184,7 +184,7 @@ object RepOrt: TppReport
               PrinterSetup.mmMarginTop = 0
               PrinterSetup.mmPaperHeight = 297000
               PrinterSetup.mmPaperWidth = 420000
-              PrinterSetup.PaperSize = 256
+              PrinterSetup.PaperSize = 8
               Template.Format = ftASCII
               Units = utMillimeters
               Version = '22.03'
@@ -476,12 +476,12 @@ object RepOrt: TppReport
             Border.mmPadding = 0
             ExportRTFAsBitmap = False
             DataField = 'Berufsebene1'
-            DataPipeline = dmPipelines.plLernAbschnitte
+            DataPipeline = dmPipelines.plLernabschnitte
             ParentDataPipeline = False
             RemoveEmptyLines = False
             Stretch = True
             Transparent = True
-            DataPipelineName = 'plLernAbschnitte'
+            DataPipelineName = 'plLernabschnitte'
             mmHeight = 5000
             mmLeft = 290000
             mmTop = 118000
@@ -536,13 +536,13 @@ object RepOrt: TppReport
             Border.mmPadding = 0
             ExportRTFAsBitmap = False
             DataField = 'Berufsebene2'
-            DataPipeline = dmPipelines.plLernAbschnitte
+            DataPipeline = dmPipelines.plLernabschnitte
             ParentDataPipeline = False
             RemoveEmptyLines = False
             ShiftRelativeTo = ppDBRichText3
             Stretch = True
             Transparent = True
-            DataPipelineName = 'plLernAbschnitte'
+            DataPipelineName = 'plLernabschnitte'
             mmHeight = 5000
             mmLeft = 290000
             mmTop = 124000
@@ -656,13 +656,13 @@ object RepOrt: TppReport
             Border.mmPadding = 0
             ExportRTFAsBitmap = False
             DataField = 'ZeugnisDatum'
-            DataPipeline = dmPipelines.plLernAbschnitte
+            DataPipeline = dmPipelines.plLernabschnitte
             ParentDataPipeline = False
             RemoveEmptyLines = False
             ShiftRelativeTo = ppRichText8
             Stretch = True
             Transparent = True
-            DataPipelineName = 'plLernAbschnitte'
+            DataPipelineName = 'plLernabschnitte'
             mmHeight = 5000
             mmLeft = 290000
             mmTop = 136000
@@ -860,7 +860,7 @@ object RepOrt: TppReport
         PrinterSetup.DocumentName = 'AHR-2018_AnlD-Abitur (Anl D41).rtm'
         PrinterSetup.Duplex = dpHorizontal
         PrinterSetup.Orientation = poLandscape
-        PrinterSetup.PaperName = 'Custom'
+        PrinterSetup.PaperName = 'A3'
         PrinterSetup.PrinterName = 'Default'
         PrinterSetup.SaveDeviceSettings = False
         PrinterSetup.mmMarginBottom = 10000
@@ -869,7 +869,7 @@ object RepOrt: TppReport
         PrinterSetup.mmMarginTop = 0
         PrinterSetup.mmPaperHeight = 297000
         PrinterSetup.mmPaperWidth = 420000
-        PrinterSetup.PaperSize = 256
+        PrinterSetup.PaperSize = 8
         Template.DatabaseSettings.Name = 'Sub_Seite4_1'
         Template.Format = ftASCII
         Units = utMillimeters
@@ -987,7 +987,7 @@ object RepOrt: TppReport
               PrinterSetup.mmMarginTop = 0
               PrinterSetup.mmPaperHeight = 297000
               PrinterSetup.mmPaperWidth = 170000
-              PrinterSetup.PaperSize = 256
+              PrinterSetup.PaperSize = 199
               Template.Format = ftASCII
               Units = utMillimeters
               Version = '22.03'
@@ -1892,7 +1892,7 @@ object RepOrt: TppReport
               PrinterSetup.mmMarginTop = 0
               PrinterSetup.mmPaperHeight = 297000
               PrinterSetup.mmPaperWidth = 170000
-              PrinterSetup.PaperSize = 256
+              PrinterSetup.PaperSize = 199
               Template.Format = ftASCII
               Units = utMillimeters
               Version = '22.03'
@@ -4131,11 +4131,11 @@ object RepOrt: TppReport
             Border.mmPadding = 0
             ExportRTFAsBitmap = False
             DataField = 'ZeugnisBem'
-            DataPipeline = dmPipelines.plLernAbschnitte
+            DataPipeline = dmPipelines.plLernabschnitte
             RemoveEmptyLines = False
             Stretch = True
             Transparent = True
-            DataPipelineName = 'plLernAbschnitte'
+            DataPipelineName = 'plLernabschnitte'
             mmHeight = 7500
             mmLeft = 230000
             mmTop = 38000
@@ -4303,7 +4303,7 @@ object RepOrt: TppReport
               PrinterSetup.mmMarginTop = 0
               PrinterSetup.mmPaperHeight = 55000
               PrinterSetup.mmPaperWidth = 170000
-              PrinterSetup.PaperSize = 256
+              PrinterSetup.PaperSize = 199
               Template.Format = ftASCII
               Units = utMillimeters
               Version = '22.03'

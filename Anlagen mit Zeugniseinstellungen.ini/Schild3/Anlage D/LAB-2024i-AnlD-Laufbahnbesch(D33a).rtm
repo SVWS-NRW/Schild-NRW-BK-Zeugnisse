@@ -49,7 +49,7 @@ object RepOrt: TppReport
   ThumbnailSettings.DeadSpace = 30
   ThumbnailSettings.PageHighlight.Width = 3
   ThumbnailSettings.ThumbnailSize = tsSmall
-  PDFSettings.EmbedFontOptions = []
+  PDFSettings.EmbedFontOptions = [efUseSubset]
   PDFSettings.EncryptSettings.AllowCopy = True
   PDFSettings.EncryptSettings.AllowInteract = True
   PDFSettings.EncryptSettings.AllowModify = True
@@ -61,7 +61,7 @@ object RepOrt: TppReport
   PDFSettings.EncryptSettings.KeyLength = kl40Bit
   PDFSettings.EncryptSettings.EncryptionType = etRC4
   PDFSettings.DigitalSignatureSettings.SignPDF = False
-  PDFSettings.FontEncoding = feAnsi
+  PDFSettings.FontEncoding = feUnicode
   PDFSettings.ImageCompressionLevel = 25
   PDFSettings.PDFAFormat = pafNone
   PreviewFormSettings.PageBorder.mmPadding = 0
