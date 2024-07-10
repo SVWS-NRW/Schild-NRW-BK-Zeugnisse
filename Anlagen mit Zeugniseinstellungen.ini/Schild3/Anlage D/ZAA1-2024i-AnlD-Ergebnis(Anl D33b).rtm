@@ -1,4 +1,4 @@
-9806 RepOrt: TppReport
+object RepOrt: TppReport
   AutoStop = False
   DataPipeline = dmPipelines.Schueler
   PrinterSetup.BinName = 'Default'

@@ -1,4 +1,4 @@
-object Report: TppReport
+object RepOrt: TppReport
   AutoStop = False
   DataPipeline = dmPipelines.Schueler
   PrinterSetup.BinName = 'Default'
@@ -16,8 +16,8 @@ object Report: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\progs\schild-nrw\SchILD-Reports\Schild-NRW-BK-Zeugnisse\Anlag' +
-    'e D\JAZ-2024-Anl D- Kl 11(Anl D32)-NEU.rtm'
+    'C:\Progs\SVWS\SchILD-Reports\Schild-NRW-BK-Zeugnisse\Anlage D\JA' +
+    'Z-2024-Anl D- Kl 11(Anl D32)-NEU.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -26,6 +26,14 @@ object Report: TppReport
   DeviceType = 'Screen'
   DefaultFileDeviceType = 'PDF'
   EmailSettings.ReportFormat = 'PDF'
+  EmailSettings.ConnectionSettings.MailService = 'SMTP'
+  EmailSettings.ConnectionSettings.WebMail.GmailSettings.OAuth2.AuthStorage = [oasAccessToken, oasRefreshToken]
+  EmailSettings.ConnectionSettings.WebMail.GmailSettings.OAuth2.RedirectURI = 'http://localhost'
+  EmailSettings.ConnectionSettings.WebMail.GmailSettings.OAuth2.RedirectPort = 0
+  EmailSettings.ConnectionSettings.WebMail.Outlook365Settings.OAuth2.AuthStorage = [oasAccessToken, oasRefreshToken]
+  EmailSettings.ConnectionSettings.WebMail.Outlook365Settings.OAuth2.RedirectURI = 'http://localhost'
+  EmailSettings.ConnectionSettings.WebMail.Outlook365Settings.OAuth2.RedirectPort = 0
+  EmailSettings.ConnectionSettings.EnableMultiPlugin = False
   EmailSettings.DeleteFile = False
   EmailSettings.Enabled = True
   EmailSettings.PreviewInEmailClient = False
@@ -64,23 +72,35 @@ object Report: TppReport
   ThumbnailSettings.Enabled = True
   ThumbnailSettings.Visible = True
   ThumbnailSettings.DeadSpace = 30
+  ThumbnailSettings.PageHighlight.Width = 3
+  ThumbnailSettings.ThumbnailSize = tsSmall
   PDFSettings.Author = 'Schild-NRW'
   PDFSettings.EmbedFontOptions = [efUseSubset]
   PDFSettings.EncryptSettings.AllowCopy = True
   PDFSettings.EncryptSettings.AllowInteract = True
   PDFSettings.EncryptSettings.AllowModify = True
   PDFSettings.EncryptSettings.AllowPrint = True
+  PDFSettings.EncryptSettings.AllowExtract = True
+  PDFSettings.EncryptSettings.AllowAssemble = True
+  PDFSettings.EncryptSettings.AllowQualityPrint = True
   PDFSettings.EncryptSettings.Enabled = False
   PDFSettings.EncryptSettings.KeyLength = kl40Bit
+  PDFSettings.EncryptSettings.EncryptionType = etRC4
+  PDFSettings.DigitalSignatureSettings.SignPDF = False
   PDFSettings.FontEncoding = feUnicode
   PDFSettings.ImageCompressionLevel = 25
-  PreviewFormSettings.ZoomSetting = zs100Percent
+  PDFSettings.PDFAFormat = pafNone
+  PreviewFormSettings.PageBorder.mmPadding = 0
   PreviewFormSettings.SinglePageOnly = True
+  PreviewFormSettings.ZoomSetting = zs100Percent
+  RTFSettings.AppName = 'ReportBuilder'
+  RTFSettings.Author = 'ReportBuilder'
   RTFSettings.DefaultFont.Charset = DEFAULT_CHARSET
   RTFSettings.DefaultFont.Color = clWindowText
   RTFSettings.DefaultFont.Height = -15
   RTFSettings.DefaultFont.Name = 'Arial'
   RTFSettings.DefaultFont.Style = []
+  RTFSettings.Title = 'Report'
   TextFileName = '($MyDocuments)\Report.pdf'
   TextSearchSettings.DefaultString = '<Suchtext>'
   TextSearchSettings.Enabled = True
@@ -88,19 +108,32 @@ object Report: TppReport
   XLSSettings.Author = 'ReportBuilder'
   XLSSettings.Subject = 'Report'
   XLSSettings.Title = 'Report'
+  XLSSettings.WorksheetName = 'Report'
+  CloudDriveSettings.DropBoxSettings.OAuth2.AuthStorage = [oasAccessToken, oasRefreshToken]
+  CloudDriveSettings.DropBoxSettings.OAuth2.RedirectURI = 'http://localhost'
+  CloudDriveSettings.DropBoxSettings.OAuth2.RedirectPort = 0
+  CloudDriveSettings.DropBoxSettings.DirectorySupport = True
+  CloudDriveSettings.GoogleDriveSettings.OAuth2.AuthStorage = [oasAccessToken, oasRefreshToken]
+  CloudDriveSettings.GoogleDriveSettings.OAuth2.RedirectURI = 'http://localhost'
+  CloudDriveSettings.GoogleDriveSettings.OAuth2.RedirectPort = 0
+  CloudDriveSettings.GoogleDriveSettings.DirectorySupport = False
+  CloudDriveSettings.OneDriveSettings.OAuth2.AuthStorage = [oasAccessToken, oasRefreshToken]
+  CloudDriveSettings.OneDriveSettings.OAuth2.RedirectURI = 'http://localhost'
+  CloudDriveSettings.OneDriveSettings.OAuth2.RedirectPort = 0
+  CloudDriveSettings.OneDriveSettings.DirectorySupport = True
   Left = 128
   Top = 8
-  Version = '15.05'
+  Version = '22.03'
   mmColumnWidth = 210000
   DataPipelineName = 'Schueler'
   object ppDetailBand1: TppDetailBand
-    Background1.Brush.Style = bsClear
-    Background2.Brush.Style = bsClear
+    Border.mmPadding = 0
     PrintHeight = phDynamic
     mmBottomOffset = 0
     mmHeight = 14023
     mmPrintPosition = 0
     object ppSubReport8: TppSubReport
+      DesignLayer = ppDesignLayer1
       UserName = 'Seite_1'
       ExpandAll = False
       NewPrintJob = False
@@ -135,24 +168,27 @@ object Report: TppReport
         PrinterSetup.PaperSize = 256
         Template.Format = ftASCII
         Units = utMillimeters
-        Version = '15.05'
+        Version = '22.03'
         mmColumnWidth = 210000
         object ppDetailBand9: TppDetailBand
-          Background1.Brush.Style = bsClear
-          Background2.Brush.Style = bsClear
+          Border.mmPadding = 0
           PrintHeight = phDynamic
           mmBottomOffset = 0
           mmHeight = 277000
           mmPrintPosition = 0
           object ppLabel19: TppLabel
+            DesignLayer = ppDesignLayer4
             UserName = 'L_Jahreszeugnis'
             AutoSize = False
+            Border.mmPadding = 0
             Caption = 'JAHRESZEUGNIS'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Name = 'Calibri'
             Font.Size = 26
             Font.Style = [fsBold]
+            FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+            FormFieldSettings.FormFieldType = fftNone
             Transparent = True
             VerticalAlignment = avBottom
             mmHeight = 11000
@@ -163,14 +199,18 @@ object Report: TppReport
             LayerName = Foreground3
           end
           object ppLabel23: TppLabel
+            DesignLayer = ppDesignLayer4
             UserName = 'L_BeruflichesGymnasium'
             AutoSize = False
+            Border.mmPadding = 0
             Caption = 'Berufliches Gymnasium'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Name = 'Calibri'
             Font.Size = 18
             Font.Style = []
+            FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+            FormFieldSettings.FormFieldType = fftNone
             Transparent = True
             mmHeight = 7500
             mmLeft = 0
@@ -180,7 +220,9 @@ object Report: TppReport
             LayerName = Foreground3
           end
           object ppDBText9: TppDBText
+            DesignLayer = ppDesignLayer4
             UserName = 'DBT_Anrede'
+            Border.mmPadding = 0
             DataField = 'Anrede'
             DataPipeline = dmPipelines.Schueler
             Font.Charset = DEFAULT_CHARSET
@@ -199,8 +241,10 @@ object Report: TppReport
             LayerName = Foreground3
           end
           object ppDBText4: TppDBText
+            DesignLayer = ppDesignLayer4
             UserName = 'DBT_VornameName'
             AutoSize = True
+            Border.mmPadding = 0
             DataField = 'VornameName'
             DataPipeline = dmPipelines.Schueler
             Font.Charset = DEFAULT_CHARSET
@@ -219,14 +263,18 @@ object Report: TppReport
             LayerName = Foreground3
           end
           object ppLabel21: TppLabel
+            DesignLayer = ppDesignLayer4
             UserName = 'L_T_GeborenAm'
             AutoSize = False
+            Border.mmPadding = 0
             Caption = 'geboren am'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Name = 'Calibri'
             Font.Size = 12
             Font.Style = []
+            FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+            FormFieldSettings.FormFieldType = fftNone
             Transparent = True
             mmHeight = 5000
             mmLeft = 0
@@ -236,7 +284,9 @@ object Report: TppReport
             LayerName = Foreground3
           end
           object ppDBText8: TppDBText
+            DesignLayer = ppDesignLayer4
             UserName = 'DBT_W_GeborenAm'
+            Border.mmPadding = 0
             DataField = 'Geburtsdatum'
             DataPipeline = dmPipelines.Schueler
             Font.Charset = DEFAULT_CHARSET
@@ -255,14 +305,18 @@ object Report: TppReport
             LayerName = Foreground3
           end
           object ppLabel22: TppLabel
+            DesignLayer = ppDesignLayer4
             UserName = 'L_T_GeborenIn'
             AutoSize = False
+            Border.mmPadding = 0
             Caption = 'in'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Name = 'Calibri'
             Font.Size = 12
             Font.Style = []
+            FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+            FormFieldSettings.FormFieldType = fftNone
             Transparent = True
             mmHeight = 5000
             mmLeft = 0
@@ -272,7 +326,9 @@ object Report: TppReport
             LayerName = Foreground3
           end
           object ppDBText5: TppDBText
+            DesignLayer = ppDesignLayer4
             UserName = 'DBT_W_GeborenIn'
+            Border.mmPadding = 0
             DataField = 'Geburtsort'
             DataPipeline = dmPipelines.Schueler
             Font.Charset = DEFAULT_CHARSET
@@ -291,14 +347,18 @@ object Report: TppReport
             LayerName = Foreground3
           end
           object ppLabel25: TppLabel
+            DesignLayer = ppDesignLayer4
             UserName = 'L_T_Schuljahr'
             AutoSize = False
+            Border.mmPadding = 0
             Caption = 'hat im Schuljahr'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Name = 'Calibri'
             Font.Size = 12
             Font.Style = []
+            FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+            FormFieldSettings.FormFieldType = fftNone
             Transparent = True
             mmHeight = 5000
             mmLeft = 0
@@ -308,20 +368,23 @@ object Report: TppReport
             LayerName = Foreground3
           end
           object ppRichText12: TppRichText
+            DesignLayer = ppDesignLayer4
             UserName = 'RT_W_Schuljahr'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Name = 'Calibri'
             Font.Size = 12
             Font.Style = []
+            Border.mmPadding = 0
             Caption = 'RT_W_Schuljahr'
+            ExportRTFAsBitmap = False
             MailMerge = True
             RichText = 
-              '{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcha' +
-              'rset0 Calibri;}{\f1\fnil Calibri;}}'#13#10'{\colortbl ;\red0\green0\bl' +
-              'ue0;}'#13#10'\viewkind4\uc1\pard\cf1\f0\fs24 <dbtext datapipeline='#39'plL' +
-              'ernabschnitte'#39'>SchuljahrTextOhneAbschnitt</dbtext> 2. Halbjahr\f' +
-              '1\par'#13#10'}'#13#10#0
+              '{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1031{\fonttbl{\f' +
+              '0\fnil\fcharset0 Calibri;}{\f1\fnil Calibri;}}'#13#10'{\colortbl ;\red' +
+              '0\green0\blue0;}'#13#10'{\*\generator Riched20 10.0.19041}\viewkind4\u' +
+              'c1 '#13#10'\pard\cf1\f0\fs24 <dbtext datapipeline='#39'plLernabschnitte'#39'>S' +
+              'chuljahrTextOhneAbschnitt</dbtext> 2. Halbjahr\f1\par'#13#10'}'#13#10#0
             RemoveEmptyLines = False
             Stretch = True
             Transparent = True
@@ -337,14 +400,18 @@ object Report: TppReport
             mmMinHeight = 0
           end
           object ppLabel24: TppLabel
+            DesignLayer = ppDesignLayer4
             UserName = 'L_T_Bildungsgang'
             AutoSize = False
+            Border.mmPadding = 0
             Caption = 'des Bildungsgangs'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Name = 'Calibri'
             Font.Size = 12
             Font.Style = []
+            FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+            FormFieldSettings.FormFieldType = fftNone
             Transparent = True
             mmHeight = 5000
             mmLeft = 0
@@ -354,12 +421,15 @@ object Report: TppReport
             LayerName = Foreground3
           end
           object ppDBRichText2: TppDBRichText
+            DesignLayer = ppDesignLayer4
             UserName = 'DBRT_W_Bildungsgang'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Name = 'Calibri'
             Font.Size = 12
             Font.Style = [fsBold]
+            Border.mmPadding = 0
+            ExportRTFAsBitmap = False
             DataField = 'Berufsbezeichnung'
             DataPipeline = dmPipelines.plLernabschnitte
             ParentDataPipeline = False
@@ -379,18 +449,21 @@ object Report: TppReport
             mmMinHeight = 0
           end
           object ppRichText16: TppRichText
+            DesignLayer = ppDesignLayer4
             UserName = 'RT_T_Fachbereich'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Name = 'Calibri'
             Font.Size = 12
             Font.Style = []
+            Border.mmPadding = 0
             Caption = 'RT_T_Fachbereich'
+            ExportRTFAsBitmap = False
             RichText = 
-              '{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcha' +
-              'rset0 Calibri;}{\f1\fnil Calibri;}}'#13#10'{\colortbl ;\red0\green0\bl' +
-              'ue0;}'#13#10'\viewkind4\uc1\pard\cf1\f0\fs24 im Fachbereich\f1\par'#13#10'}'#13 +
-              #10#0
+              '{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1031{\fonttbl{\f' +
+              '0\fnil\fcharset0 Calibri;}{\f1\fnil Calibri;}}'#13#10'{\colortbl ;\red' +
+              '0\green0\blue0;}'#13#10'{\*\generator Riched20 10.0.19041}\viewkind4\u' +
+              'c1 '#13#10'\pard\cf1\f0\fs24 im Fachbereich\f1\par'#13#10'}'#13#10#0
             RemoveEmptyLines = False
             ShiftRelativeTo = ppDBRichText2
             Transparent = True
@@ -406,18 +479,22 @@ object Report: TppReport
             mmMinHeight = 0
           end
           object ppRichText9: TppRichText
+            DesignLayer = ppDesignLayer4
             UserName = 'RT_T_Schwerpunkt'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Name = 'Calibri'
             Font.Size = 12
             Font.Style = []
+            Border.mmPadding = 0
             Caption = 'RT_T_Schwerpunkt'
+            ExportRTFAsBitmap = False
             RichText = 
-              '{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcha' +
-              'rset0 Calibri;}{\f1\fnil Calibri;}}'#13#10'{\colortbl ;\red0\green0\bl' +
-              'ue0;}'#13#10'\viewkind4\uc1\pard\cf1\f0\fs24 mit dem fachlichen Schwer' +
-              'punkt\f1\par'#13#10'}'#13#10#0
+              '{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1031{\fonttbl{\f' +
+              '0\fnil\fcharset0 Calibri;}{\f1\fnil Calibri;}}'#13#10'{\colortbl ;\red' +
+              '0\green0\blue0;}'#13#10'{\*\generator Riched20 10.0.19041}\viewkind4\u' +
+              'c1 '#13#10'\pard\cf1\f0\fs24 mit dem fachlichen Schwerpunkt\f1\par'#13#10'}'#13 +
+              #10#0
             RemoveEmptyLines = False
             ShiftRelativeTo = ppDBRichText3
             Stretch = True
@@ -434,18 +511,21 @@ object Report: TppReport
             mmMinHeight = 0
           end
           object ppRichText13: TppRichText
+            DesignLayer = ppDesignLayer4
             UserName = 'RT_T_Klasse'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Name = 'Calibri'
             Font.Size = 12
             Font.Style = []
+            Border.mmPadding = 0
             Caption = 'RT_T_Klasse'
+            ExportRTFAsBitmap = False
             RichText = 
-              '{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcha' +
-              'rset0 Calibri;}{\f1\fnil Calibri;}}'#13#10'{\colortbl ;\red0\green0\bl' +
-              'ue0;}'#13#10'\viewkind4\uc1\pard\cf1\f0\fs24 in der Klasse\f1\par'#13#10'}'#13#10 +
-              #0
+              '{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1031{\fonttbl{\f' +
+              '0\fnil\fcharset0 Calibri;}{\f1\fnil Calibri;}}'#13#10'{\colortbl ;\red' +
+              '0\green0\blue0;}'#13#10'{\*\generator Riched20 10.0.19041}\viewkind4\u' +
+              'c1 '#13#10'\pard\cf1\f0\fs24 in der Klasse\f1\par'#13#10'}'#13#10#0
             RemoveEmptyLines = False
             ShiftRelativeTo = ppDBRichText4
             Transparent = True
@@ -461,17 +541,21 @@ object Report: TppReport
             mmMinHeight = 0
           end
           object ppRichText7: TppRichText
+            DesignLayer = ppDesignLayer4
             UserName = 'RT_T_besucht'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Name = 'Calibri'
             Font.Size = 12
             Font.Style = []
+            Border.mmPadding = 0
             Caption = 'RT_T_Klasse'
+            ExportRTFAsBitmap = False
             RichText = 
-              '{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcha' +
-              'rset0 Calibri;}{\f1\fnil Calibri;}}'#13#10'{\colortbl ;\red0\green0\bl' +
-              'ue0;}'#13#10'\viewkind4\uc1\pard\cf1\f0\fs24 besucht.\f1\par'#13#10'}'#13#10#0
+              '{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1031{\fonttbl{\f' +
+              '0\fnil\fcharset0 Calibri;}{\f1\fnil Calibri;}}'#13#10'{\colortbl ;\red' +
+              '0\green0\blue0;}'#13#10'{\*\generator Riched20 10.0.19041}\viewkind4\u' +
+              'c1 '#13#10'\pard\cf1\f0\fs24 besucht.\f1\par'#13#10'}'#13#10#0
             RemoveEmptyLines = False
             ShiftRelativeTo = ppDBRichText5
             Transparent = True
@@ -487,14 +571,18 @@ object Report: TppReport
             mmMinHeight = 0
           end
           object ppLabel26: TppLabel
+            DesignLayer = ppDesignLayer4
             UserName = 'L_T_Bildungsgang1'
             AutoSize = False
+            Border.mmPadding = 0
             Caption = 'die Jahrgangsstufe'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Name = 'Calibri'
             Font.Size = 12
             Font.Style = []
+            FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+            FormFieldSettings.FormFieldType = fftNone
             Transparent = True
             mmHeight = 5000
             mmLeft = 0
@@ -504,14 +592,18 @@ object Report: TppReport
             LayerName = Foreground3
           end
           object ppLabel27: TppLabel
+            DesignLayer = ppDesignLayer4
             UserName = 'Label27'
             AutoSize = False
+            Border.mmPadding = 0
             Caption = '11'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Name = 'Calibri'
             Font.Size = 12
             Font.Style = []
+            FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+            FormFieldSettings.FormFieldType = fftNone
             Transparent = True
             mmHeight = 5000
             mmLeft = 60000
@@ -521,12 +613,15 @@ object Report: TppReport
             LayerName = Foreground3
           end
           object ppDBRichText3: TppDBRichText
+            DesignLayer = ppDesignLayer4
             UserName = 'DBRT_W_Fachbereich'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Name = 'Calibri'
             Font.Size = 12
             Font.Style = []
+            Border.mmPadding = 0
+            ExportRTFAsBitmap = False
             DataField = 'Berufsebene1'
             DataPipeline = dmPipelines.plLernabschnitte
             ParentDataPipeline = False
@@ -547,12 +642,15 @@ object Report: TppReport
             mmMinHeight = 0
           end
           object ppDBRichText4: TppDBRichText
+            DesignLayer = ppDesignLayer4
             UserName = 'DBRT_W_Schwerpunkt'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Name = 'Calibri'
             Font.Size = 12
             Font.Style = []
+            Border.mmPadding = 0
+            ExportRTFAsBitmap = False
             DataField = 'Berufsebene2'
             DataPipeline = dmPipelines.plLernabschnitte
             ParentDataPipeline = False
@@ -573,12 +671,15 @@ object Report: TppReport
             mmMinHeight = 0
           end
           object ppDBRichText5: TppDBRichText
+            DesignLayer = ppDesignLayer4
             UserName = 'DBRT_W_Klasse'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Name = 'Calibri'
             Font.Size = 12
             Font.Style = []
+            Border.mmPadding = 0
+            ExportRTFAsBitmap = False
             DataField = 'Klasse'
             DataPipeline = dmPipelines.plLernabschnitte
             ParentDataPipeline = False
@@ -599,21 +700,25 @@ object Report: TppReport
             mmMinHeight = 0
           end
           object ppRichText5: TppRichText
+            DesignLayer = ppDesignLayer4
             UserName = 'RichText5'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Name = 'Calibri'
             Font.Size = 12
             Font.Style = []
+            Border.mmPadding = 0
             Caption = 'RichText5'
+            ExportRTFAsBitmap = False
             RichText = 
-              '{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil Cali' +
-              'bri;}{\f1\fnil\fcharset0 Calibri;}}'#13#10'{\colortbl ;\red0\green0\bl' +
-              'ue0;}'#13#10'\viewkind4\uc1\pard\qj\cf1\f0\fs24 Dem Zeugnis liegt zugr' +
-              'unde:\par'#13#10'\fs12\par'#13#10'\f1\fs24 Die Verordnung \'#39'fcber die Ausbil' +
-              'dung und Pr\'#39'fcfung in den Bildungsg\'#39'e4ngen des Berufskollegs (' +
-              'Ausbildungs- und Pr\'#39'fcfungsordnung Berufskolleg - APO-BK) vom 2' +
-              '6. Mai 1999 (SGV. NRW. 223/BASS 13-33 Nr. 1.1).\f0\par'#13#10'}'#13#10#0
+              '{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1031{\fonttbl{\f' +
+              '0\fnil Calibri;}{\f1\fnil\fcharset0 Calibri;}}'#13#10'{\colortbl ;\red' +
+              '0\green0\blue0;}'#13#10'{\*\generator Riched20 10.0.19041}\viewkind4\u' +
+              'c1 '#13#10'\pard\qj\cf1\f0\fs24 Dem Zeugnis liegt zugrunde:\par'#13#10'\fs12' +
+              '\par'#13#10'\f1\fs24 Die Verordnung \'#39'fcber die Ausbildung und Pr\'#39'fcf' +
+              'ung in den Bildungsg\'#39'e4ngen des Berufskollegs (Ausbildungs- und' +
+              ' Pr\'#39'fcfungsordnung Berufskolleg - APO-BK) vom 26. Mai 1999 (SGV' +
+              '. NRW. 223/BASS 13-33 Nr. 1.1).\f0\par'#13#10'}'#13#10#0
             RemoveEmptyLines = False
             Transparent = True
             mmHeight = 30000
@@ -627,13 +732,14 @@ object Report: TppReport
             mmStopPosition = 0
             mmMinHeight = 0
           end
-          object myDynamicLoadingSubReport1: TmyDynamicLoadingSubReport
+          object myDynamicLoadingSubReport1: TmyDynamicLoadingSubRepOrt
+            DesignLayer = ppDesignLayer4
             UserName = 'DynamicLoadingSubReport1'
             ExpandAll = False
             NewPrintJob = False
             OutlineSettings.CreateNode = True
             TraverseAllData = False
-            Filename = 'Zeugnis_Kopf.rtm'
+            FileName = 'Zeugnis_Kopf.rtm'
             mmHeight = 5027
             mmLeft = 0
             mmTop = 10000
@@ -661,23 +767,22 @@ object Report: TppReport
               PrinterSetup.PaperSize = 256
               Template.Format = ftASCII
               Units = utMillimeters
-              Version = '15.05'
+              Version = '22.03'
               mmColumnWidth = 0
               object ppHeaderBand1: TppHeaderBand
-                Background.Brush.Style = bsClear
+                Border.mmPadding = 0
                 mmBottomOffset = 0
                 mmHeight = 13229
                 mmPrintPosition = 0
               end
               object ppDetailBand8: TppDetailBand
-                Background1.Brush.Style = bsClear
-                Background2.Brush.Style = bsClear
+                Border.mmPadding = 0
                 mmBottomOffset = 0
                 mmHeight = 13229
                 mmPrintPosition = 0
               end
               object ppFooterBand1: TppFooterBand
-                Background.Brush.Style = bsClear
+                Border.mmPadding = 0
                 mmBottomOffset = 0
                 mmHeight = 13229
                 mmPrintPosition = 0
@@ -737,6 +842,7 @@ object Report: TppReport
       end
     end
     object ppSubReport2: TppSubReport
+      DesignLayer = ppDesignLayer1
       UserName = 'Seite_2'
       ExpandAll = False
       KeepTogether = True
@@ -771,30 +877,33 @@ object Report: TppReport
         PrinterSetup.PaperSize = 256
         Template.Format = ftASCII
         Units = utMillimeters
-        Version = '15.05'
+        Version = '22.03'
         mmColumnWidth = 0
         object ppDetailBand3: TppDetailBand
-          Background1.Brush.Style = bsClear
-          Background2.Brush.Style = bsClear
+          Border.mmPadding = 0
           PrintHeight = phDynamic
           mmBottomOffset = 0
           mmHeight = 277000
           mmPrintPosition = 0
           object ppRichText1: TppRichText
+            DesignLayer = ppDesignLayer3
             UserName = 'RT_Seite2Titel'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Name = 'Calibri'
             Font.Size = 11
             Font.Style = []
+            Border.mmPadding = 0
             Caption = 'RT_Seite2Titel'
+            ExportRTFAsBitmap = False
             MailMerge = True
             RichText = 
-              '{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcha' +
-              'rset0 Calibri;}{\f1\fnil Calibri;}}'#13#10'{\colortbl ;\red0\green0\bl' +
-              'ue0;}'#13#10'\viewkind4\uc1\pard\cf1\f0\fs22 2. Seite des Zeugnisses f' +
-              '\'#39'fcr <dbtext datapipeline='#39'Schueler'#39'>AdressAnrede</dbtext> \b $' +
-              'SchuelerName$\f1\par'#13#10'\par'#13#10'}'#13#10#0
+              '{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1031{\fonttbl{\f' +
+              '0\fnil\fcharset0 Calibri;}{\f1\fnil Calibri;}}'#13#10'{\colortbl ;\red' +
+              '0\green0\blue0;}'#13#10'{\*\generator Riched20 10.0.19041}\viewkind4\u' +
+              'c1 '#13#10'\pard\cf1\f0\fs22 2. Seite des Zeugnisses f\'#39'fcr <dbtext da' +
+              'tapipeline='#39'Schueler'#39'>AdressAnrede</dbtext> \b $SchuelerName$\f1' +
+              '\par'#13#10'\par'#13#10'}'#13#10#0
             RemoveEmptyLines = False
             Stretch = True
             Transparent = True
@@ -810,21 +919,25 @@ object Report: TppReport
             mmMinHeight = 0
           end
           object ppRichText2: TppRichText
+            DesignLayer = ppDesignLayer3
             UserName = 'RT_Konferenz'
             Font.Charset = ANSI_CHARSET
             Font.Color = clBlack
             Font.Name = 'Calibri'
             Font.Size = 12
             Font.Style = []
+            Border.mmPadding = 0
             Caption = 'RT_Konferenz'
+            ExportRTFAsBitmap = False
             MailMerge = True
             RichText = 
-              '{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcha' +
-              'rset0 Calibri;}}'#13#10'{\colortbl ;\red0\green0\blue0;}'#13#10'\viewkind4\u' +
-              'c1\pard\sa160\sl252\slmult1\cf1\f0\fs24 In der Konferenz am <dbt' +
-              'ext datapipeline='#39'plLernabschnitte'#39'>Konferenzdatum</dbtext> sind' +
-              ' folgende Leistungen\super 1\nosupersub  festgestellt worden:\pa' +
-              'r'#13#10'\pard\par'#13#10'}'#13#10#0
+              '{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1031{\fonttbl{\f' +
+              '0\fnil\fcharset0 Calibri;}}'#13#10'{\colortbl ;\red0\green0\blue0;}'#13#10'{' +
+              '\*\generator Riched20 10.0.19041}\viewkind4\uc1 '#13#10'\pard\sa160\sl' +
+              '252\slmult1\cf1\f0\fs24 In der Konferenz am <dbtext datapipeline' +
+              '='#39'plLernabschnitte'#39'>Konferenzdatum</dbtext> sind folgende Leistu' +
+              'ngen\super 1\nosupersub  festgestellt worden:\par'#13#10#13#10'\pard\par'#13#10 +
+              '}'#13#10#0
             RemoveEmptyLines = False
             Stretch = True
             Transparent = True
@@ -840,6 +953,7 @@ object Report: TppReport
             mmMinHeight = 0
           end
           object ppSubReport3: TppSubReport
+            DesignLayer = ppDesignLayer3
             UserName = 'SR_Berufsbezogen'
             ExpandAll = False
             NewPrintJob = False
@@ -877,23 +991,27 @@ object Report: TppReport
               PrinterSetup.PaperSize = 256
               Template.Format = ftASCII
               Units = utMillimeters
-              Version = '15.05'
+              Version = '22.03'
               mmColumnWidth = 0
               DataPipelineName = 'plBKBerufsbezogen'
               object ppTitleBand1: TppTitleBand
-                Background.Brush.Style = bsClear
+                Border.mmPadding = 0
                 mmBottomOffset = 0
                 mmHeight = 8996
                 mmPrintPosition = 0
                 object ppLabel1: TppLabel
+                  DesignLayer = ppDesignLayer5
                   UserName = 'L_Zeugnisbereich_BB'
                   AutoSize = False
+                  Border.mmPadding = 0
                   Caption = 'Berufsbezogener Lernbereich'
                   Font.Charset = ANSI_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
                   Font.Size = 12
                   Font.Style = [fsBold]
+                  FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+                  FormFieldSettings.FormFieldType = fftNone
                   Transparent = True
                   mmHeight = 6000
                   mmLeft = 0
@@ -904,14 +1022,15 @@ object Report: TppReport
                 end
               end
               object ppDetailBand4: TppDetailBand
-                Background1.Brush.Style = bsClear
-                Background2.Brush.Style = bsClear
+                Border.mmPadding = 0
                 PrintHeight = phDynamic
                 mmBottomOffset = 0
                 mmHeight = 5556
                 mmPrintPosition = 0
                 object ppDBMemo1: TppDBMemo
+                  DesignLayer = ppDesignLayer5
                   UserName = 'DBM_Fachname'
+                  Border.mmPadding = 0
                   CharWrap = False
                   DataField = 'Zeugnisbezeichnung'
                   DataPipeline = dmPipelines.plBKBerufsbezogen
@@ -937,7 +1056,9 @@ object Report: TppReport
                   mmLeading = 0
                 end
                 object ppDBText6: TppDBText
+                  DesignLayer = ppDesignLayer5
                   UserName = 'DBT_Note'
+                  Border.mmPadding = 0
                   Color = clSilver
                   DataField = 'Notenklartext'
                   DataPipeline = dmPipelines.plBKBerufsbezogen
@@ -978,6 +1099,7 @@ object Report: TppReport
             end
           end
           object ppSubReport4: TppSubReport
+            DesignLayer = ppDesignLayer3
             UserName = 'SR_Berufs'#252'bergreifend'
             ExpandAll = False
             NewPrintJob = False
@@ -1013,26 +1135,29 @@ object Report: TppReport
               PrinterSetup.mmPaperHeight = 297000
               PrinterSetup.mmPaperWidth = 170000
               PrinterSetup.PaperSize = 256
-              Template.Offset = 284
               Template.Format = ftASCII
               Units = utMillimeters
-              Version = '15.05'
+              Version = '22.03'
               mmColumnWidth = 0
               DataPipelineName = 'plBKBerufsuebergreifend'
               object ppTitleBand2: TppTitleBand
-                Background.Brush.Style = bsClear
+                Border.mmPadding = 0
                 mmBottomOffset = 0
                 mmHeight = 8996
                 mmPrintPosition = 0
                 object ppLabel10: TppLabel
+                  DesignLayer = ppDesignLayer6
                   UserName = 'L_Zeugnisbereich_B'#220
                   AutoSize = False
+                  Border.mmPadding = 0
                   Caption = 'Berufs'#252'bergreifender Lernbereich'
                   Font.Charset = ANSI_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
                   Font.Size = 12
                   Font.Style = [fsBold]
+                  FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+                  FormFieldSettings.FormFieldType = fftNone
                   Transparent = True
                   mmHeight = 6000
                   mmLeft = 0
@@ -1043,14 +1168,15 @@ object Report: TppReport
                 end
               end
               object ppDetailBand5: TppDetailBand
-                Background1.Brush.Style = bsClear
-                Background2.Brush.Style = bsClear
+                Border.mmPadding = 0
                 PrintHeight = phDynamic
                 mmBottomOffset = 0
                 mmHeight = 5556
                 mmPrintPosition = 0
                 object ppDBMemo3: TppDBMemo
+                  DesignLayer = ppDesignLayer6
                   UserName = 'DBM_Fachname'
+                  Border.mmPadding = 0
                   CharWrap = False
                   DataField = 'Zeugnisbezeichnung'
                   DataPipeline = dmPipelines.plBKBerufsuebergreifend
@@ -1076,17 +1202,19 @@ object Report: TppReport
                   mmLeading = 0
                 end
                 object ppDBText1: TppDBText
+                  DesignLayer = ppDesignLayer6
                   UserName = 'DBT_Note'
+                  Border.mmPadding = 0
                   Color = clSilver
                   DataField = 'Notenklartext'
-                  DataPipeline = dmPipelines.plBKBerufsbezogen
+                  DataPipeline = dmPipelines.plBKBerufsuebergreifend
                   Font.Charset = ANSI_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
                   Font.Size = 12
                   Font.Style = [fsBold]
                   TextAlignment = taCentered
-                  DataPipelineName = 'plBKBerufsbezogen'
+                  DataPipelineName = 'plBKBerufsuebergreifend'
                   mmHeight = 5000
                   mmLeft = 130000
                   mmTop = 500
@@ -1116,6 +1244,7 @@ object Report: TppReport
             end
           end
           object ppSubReport5: TppSubReport
+            DesignLayer = ppDesignLayer3
             UserName = 'SR_Differenzierung'
             ExpandAll = False
             NewPrintJob = False
@@ -1151,26 +1280,29 @@ object Report: TppReport
               PrinterSetup.mmPaperHeight = 297000
               PrinterSetup.mmPaperWidth = 170000
               PrinterSetup.PaperSize = 256
-              Template.Offset = 284
               Template.Format = ftASCII
               Units = utMillimeters
-              Version = '15.05'
+              Version = '22.03'
               mmColumnWidth = 0
               DataPipelineName = 'plBKDifferenzierung'
               object ppTitleBand3: TppTitleBand
-                Background.Brush.Style = bsClear
+                Border.mmPadding = 0
                 mmBottomOffset = 0
                 mmHeight = 8996
                 mmPrintPosition = 0
                 object ppLabel11: TppLabel
+                  DesignLayer = ppDesignLayer7
                   UserName = 'L_Zeugnisbereich_DIFF'
                   AutoSize = False
+                  Border.mmPadding = 0
                   Caption = 'Differenzierungsbereich'
                   Font.Charset = ANSI_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
                   Font.Size = 12
                   Font.Style = [fsBold]
+                  FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+                  FormFieldSettings.FormFieldType = fftNone
                   Transparent = True
                   mmHeight = 6000
                   mmLeft = 0
@@ -1181,14 +1313,15 @@ object Report: TppReport
                 end
               end
               object ppDetailBand6: TppDetailBand
-                Background1.Brush.Style = bsClear
-                Background2.Brush.Style = bsClear
+                Border.mmPadding = 0
                 PrintHeight = phDynamic
                 mmBottomOffset = 0
                 mmHeight = 5556
                 mmPrintPosition = 0
                 object ppDBMemo2: TppDBMemo
+                  DesignLayer = ppDesignLayer7
                   UserName = 'DBM_Fachname'
+                  Border.mmPadding = 0
                   CharWrap = False
                   DataField = 'Zeugnisbezeichnung'
                   DataPipeline = dmPipelines.plBKDifferenzierung
@@ -1214,17 +1347,20 @@ object Report: TppReport
                   mmLeading = 0
                 end
                 object ppDBText2: TppDBText
+                  DesignLayer = ppDesignLayer7
                   UserName = 'DBT_Note'
+                  Border.mmPadding = 0
                   Color = clSilver
                   DataField = 'Notenklartext'
-                  DataPipeline = dmPipelines.plBKBerufsbezogen
+                  DataPipeline = dmPipelines.plBKDifferenzierung
                   Font.Charset = ANSI_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
                   Font.Size = 12
                   Font.Style = [fsBold]
+                  ParentDataPipeline = False
                   TextAlignment = taCentered
-                  DataPipelineName = 'plBKBerufsbezogen'
+                  DataPipelineName = 'plBKDifferenzierung'
                   mmHeight = 5000
                   mmLeft = 130000
                   mmTop = 500
@@ -1254,6 +1390,7 @@ object Report: TppReport
             end
           end
           object ppSubReport1: TppSubReport
+            DesignLayer = ppDesignLayer3
             UserName = 'SR_Zusatzveranstaltungen'
             ExpandAll = False
             NewPrintJob = False
@@ -1291,16 +1428,18 @@ object Report: TppReport
               PrinterSetup.PaperSize = 256
               Template.Format = ftASCII
               Units = utMillimeters
-              Version = '15.05'
+              Version = '22.03'
               mmColumnWidth = 0
               DataPipelineName = 'plZUV'
               object ppTitleBand4: TppTitleBand
-                Background.Brush.Style = bsClear
+                Border.mmPadding = 0
                 mmBottomOffset = 0
                 mmHeight = 8996
                 mmPrintPosition = 0
                 object ppDBText7: TppDBText
+                  DesignLayer = ppDesignLayer2
                   UserName = 'DBText1'
+                  Border.mmPadding = 0
                   DataField = 'Fachgruppe'
                   DataPipeline = dmPipelines.plZUV
                   Font.Charset = ANSI_CHARSET
@@ -1319,14 +1458,15 @@ object Report: TppReport
                 end
               end
               object ppDetailBand2: TppDetailBand
-                Background1.Brush.Style = bsClear
-                Background2.Brush.Style = bsClear
+                Border.mmPadding = 0
                 PrintHeight = phDynamic
                 mmBottomOffset = 0
                 mmHeight = 5556
                 mmPrintPosition = 0
                 object ppDBMemo4: TppDBMemo
+                  DesignLayer = ppDesignLayer2
                   UserName = 'DBM_Fachname'
+                  Border.mmPadding = 0
                   CharWrap = False
                   DataField = 'Zeugnisbezeichnung'
                   DataPipeline = dmPipelines.plZUV
@@ -1352,17 +1492,19 @@ object Report: TppReport
                   mmLeading = 0
                 end
                 object ppDBText3: TppDBText
+                  DesignLayer = ppDesignLayer2
                   UserName = 'DBT_Note'
+                  Border.mmPadding = 0
                   Color = clSilver
                   DataField = 'Notenklartext'
-                  DataPipeline = dmPipelines.plBKBerufsbezogen
+                  DataPipeline = dmPipelines.plZUV
                   Font.Charset = ANSI_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
                   Font.Size = 12
                   Font.Style = [fsBold]
                   TextAlignment = taCentered
-                  DataPipelineName = 'plBKBerufsbezogen'
+                  DataPipelineName = 'plZUV'
                   mmHeight = 5000
                   mmLeft = 130000
                   mmTop = 500
@@ -1392,6 +1534,7 @@ object Report: TppReport
             end
           end
           object ppSubReport6: TppSubReport
+            DesignLayer = ppDesignLayer3
             UserName = 'SR_Bemerkungen'
             ExpandAll = False
             NewPrintJob = False
@@ -1430,25 +1573,28 @@ object Report: TppReport
               Template.Offset = 284
               Template.Format = ftASCII
               Units = utMillimeters
-              Version = '15.05'
+              Version = '22.03'
               mmColumnWidth = 0
               DataPipelineName = 'plLernabschnitte'
               object ppDetailBand7: TppDetailBand
-                Background1.Brush.Style = bsClear
-                Background2.Brush.Style = bsClear
+                Border.mmPadding = 0
                 PrintHeight = phDynamic
                 mmBottomOffset = 0
                 mmHeight = 47096
                 mmPrintPosition = 0
                 object ppLabel20: TppLabel
+                  DesignLayer = ppDesignLayer8
                   UserName = 'L_Versetzungsvermerk'
                   AutoSize = False
+                  Border.mmPadding = 0
                   Caption = 'L_Versetzungsvermerk'
                   Font.Charset = ANSI_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
                   Font.Size = 12
                   Font.Style = []
+                  FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+                  FormFieldSettings.FormFieldType = fftNone
                   Transparent = True
                   VerticalAlignment = avCenter
                   mmHeight = 5000
@@ -1459,14 +1605,18 @@ object Report: TppReport
                   LayerName = Foreground7
                 end
                 object ppLabel13: TppLabel
+                  DesignLayer = ppDesignLayer8
                   UserName = 'L_Wiederholungsvermerk'
                   AutoSize = False
+                  Border.mmPadding = 0
                   Caption = 'Sie k'#246'nnen die Jahrgangsstufe 11 wiederholen.'
                   Font.Charset = ANSI_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
                   Font.Size = 12
                   Font.Style = []
+                  FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+                  FormFieldSettings.FormFieldType = fftNone
                   Transparent = True
                   VerticalAlignment = avCenter
                   mmHeight = 5000
@@ -1477,14 +1627,18 @@ object Report: TppReport
                   LayerName = Foreground7
                 end
                 object ppLabel4: TppLabel
+                  DesignLayer = ppDesignLayer8
                   UserName = 'L_Fehlstunden'
                   AutoSize = False
+                  Border.mmPadding = 0
                   Caption = 'Fehlstunden'
                   Font.Charset = ANSI_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
                   Font.Size = 12
                   Font.Style = []
+                  FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+                  FormFieldSettings.FormFieldType = fftNone
                   Transparent = True
                   VerticalAlignment = avCenter
                   mmHeight = 5000
@@ -1495,14 +1649,18 @@ object Report: TppReport
                   LayerName = Foreground7
                 end
                 object ppLabel12: TppLabel
+                  DesignLayer = ppDesignLayer8
                   UserName = 'L_Bemerkungen'
                   AutoSize = False
+                  Border.mmPadding = 0
                   Caption = 'Bemerkungen:'
                   Font.Charset = ANSI_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
                   Font.Size = 12
                   Font.Style = []
+                  FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+                  FormFieldSettings.FormFieldType = fftNone
                   Transparent = True
                   mmHeight = 5000
                   mmLeft = 0
@@ -1512,12 +1670,15 @@ object Report: TppReport
                   LayerName = Foreground7
                 end
                 object ppDBRichText1: TppDBRichText
+                  DesignLayer = ppDesignLayer8
                   UserName = 'DBRT_Zeugnisbermerkung'
                   Font.Charset = ANSI_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
                   Font.Size = 12
                   Font.Style = []
+                  Border.mmPadding = 0
+                  ExportRTFAsBitmap = False
                   DataField = 'ZeugnisBem'
                   DataPipeline = dmPipelines.plLernabschnitte
                   RemoveEmptyLines = False
@@ -1597,6 +1758,7 @@ object Report: TppReport
             end
           end
           object ppSubReport11: TppSubReport
+            DesignLayer = ppDesignLayer3
             UserName = 'SR_Unterschriften'
             ExpandAll = False
             NewPrintJob = False
@@ -1630,30 +1792,32 @@ object Report: TppReport
               PrinterSetup.PaperSize = 199
               Template.Format = ftASCII
               Units = utMillimeters
-              Version = '15.05'
+              Version = '22.03'
               mmColumnWidth = 165000
               object ppDetailBand11: TppDetailBand
-                Background1.Brush.Style = bsClear
-                Background2.Brush.Style = bsClear
+                Border.mmPadding = 0
                 mmBottomOffset = 0
                 mmHeight = 55000
                 mmPrintPosition = 0
                 object ppRichText3: TppRichText
+                  DesignLayer = ppDesignLayer12
                   UserName = 'RT_Zeugnisdatum'
                   Font.Charset = DEFAULT_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
                   Font.Size = 12
                   Font.Style = []
+                  Border.mmPadding = 0
                   Caption = 'RT_Zeugnisdatum'
+                  ExportRTFAsBitmap = False
                   MailMerge = True
                   RichText = 
-                    '{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil Cali' +
-                    'bri;}{\f1\fnil\fcharset0 Calibri;}}'#13#10'{\colortbl ;\red0\green0\bl' +
-                    'ue0;}'#13#10'\viewkind4\uc1\pard\cf1\f0\fs24 <dbtext datapipeline='#39'Eig' +
-                    'eneSchule'#39'>Ort</dbtext>\f1 , <dbtext datapipeline='#39'plLernabschni' +
-                    'tte'#39' displayformat='#39'dd.mm.yyyy'#39'>ZeugnisDatum</dbtext>\f0\par'#13#10'}'#13 +
-                    #10#0
+                    '{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1031{\fonttbl{\f' +
+                    '0\fnil Calibri;}{\f1\fnil\fcharset0 Calibri;}}'#13#10'{\colortbl ;\red' +
+                    '0\green0\blue0;}'#13#10'{\*\generator Riched20 10.0.19041}\viewkind4\u' +
+                    'c1 '#13#10'\pard\cf1\f0\fs24 <dbtext datapipeline='#39'EigeneSchule'#39'>Ort</' +
+                    'dbtext>\f1 , <dbtext datapipeline='#39'plLernabschnitte'#39' displayform' +
+                    'at='#39'dd.mm.yyyy'#39'>ZeugnisDatum</dbtext>\f0\par'#13#10'}'#13#10#0
                   RemoveEmptyLines = False
                   Transparent = True
                   mmHeight = 5000
@@ -1668,7 +1832,9 @@ object Report: TppReport
                   mmMinHeight = 0
                 end
                 object ppLine14: TppLine
+                  DesignLayer = ppDesignLayer12
                   UserName = 'LN_Zeugnisdatum'
+                  Border.mmPadding = 0
                   Position = lpBottom
                   Weight = 0.750000000000000000
                   mmHeight = 4000
@@ -1679,7 +1845,9 @@ object Report: TppReport
                   LayerName = PageLayer1
                 end
                 object ppLine7: TppLine
+                  DesignLayer = ppDesignLayer12
                   UserName = 'LN_Klassenlehrer'
+                  Border.mmPadding = 0
                   Position = lpBottom
                   Weight = 0.750000000000000000
                   mmHeight = 4000
@@ -1690,14 +1858,18 @@ object Report: TppReport
                   LayerName = PageLayer1
                 end
                 object ppLabel3: TppLabel
+                  DesignLayer = ppDesignLayer12
                   UserName = 'L_OrtDatum'
                   AutoSize = False
+                  Border.mmPadding = 0
                   Caption = 'Ort, Datum der Zeugnisausgabe'
                   Font.Charset = ANSI_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
                   Font.Size = 10
                   Font.Style = []
+                  FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+                  FormFieldSettings.FormFieldType = fftNone
                   Transparent = True
                   mmHeight = 4500
                   mmLeft = 0
@@ -1707,14 +1879,18 @@ object Report: TppReport
                   LayerName = PageLayer1
                 end
                 object ppLabel75: TppLabel
+                  DesignLayer = ppDesignLayer12
                   UserName = 'L_Klassenlehrer'
                   AutoSize = False
+                  Border.mmPadding = 0
                   Caption = 'Klassenlehrer'
                   Font.Charset = DEFAULT_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
                   Font.Size = 10
                   Font.Style = []
+                  FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+                  FormFieldSettings.FormFieldType = fftNone
                   TextAlignment = taRightJustified
                   Transparent = True
                   mmHeight = 4000
@@ -1725,14 +1901,18 @@ object Report: TppReport
                   LayerName = PageLayer1
                 end
                 object ppLabel76: TppLabel
+                  DesignLayer = ppDesignLayer12
                   UserName = 'L_KlassenlehrerStv'
                   AutoSize = False
+                  Border.mmPadding = 0
                   Caption = 'KlassenlehrerStv'
                   Font.Charset = DEFAULT_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
                   Font.Size = 10
                   Font.Style = []
+                  FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+                  FormFieldSettings.FormFieldType = fftNone
                   TextAlignment = taRightJustified
                   Transparent = True
                   mmHeight = 4000
@@ -1743,14 +1923,18 @@ object Report: TppReport
                   LayerName = PageLayer1
                 end
                 object ppLabel2: TppLabel
+                  DesignLayer = ppDesignLayer12
                   UserName = 'L_Siegel'
                   AutoSize = False
+                  Border.mmPadding = 0
                   Caption = '(Siegel)'
                   Font.Charset = DEFAULT_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
                   Font.Size = 10
                   Font.Style = []
+                  FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+                  FormFieldSettings.FormFieldType = fftNone
                   TextAlignment = taCentered
                   Transparent = True
                   mmHeight = 4000
@@ -1761,7 +1945,9 @@ object Report: TppReport
                   LayerName = PageLayer1
                 end
                 object ppLine5: TppLine
+                  DesignLayer = ppDesignLayer12
                   UserName = 'LN_Schulleiter'
+                  Border.mmPadding = 0
                   Position = lpBottom
                   Weight = 0.750000000000000000
                   mmHeight = 4000
@@ -1772,14 +1958,18 @@ object Report: TppReport
                   LayerName = PageLayer1
                 end
                 object ppLabel40: TppLabel
+                  DesignLayer = ppDesignLayer12
                   UserName = 'L_Schulleiter'
                   AutoSize = False
+                  Border.mmPadding = 0
                   Caption = 'Schulleiter'
                   Font.Charset = DEFAULT_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
                   Font.Size = 10
                   Font.Style = []
+                  FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+                  FormFieldSettings.FormFieldType = fftNone
                   TextAlignment = taRightJustified
                   Transparent = True
                   mmHeight = 4000
@@ -1790,14 +1980,18 @@ object Report: TppReport
                   LayerName = PageLayer1
                 end
                 object ppLabel15: TppLabel
+                  DesignLayer = ppDesignLayer12
                   UserName = 'L_Kenntnisnahme'
                   AutoSize = False
+                  Border.mmPadding = 0
                   Caption = 'Die Kenntnisnahme wird best'#228'tigt:'
                   Font.Charset = ANSI_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
                   Font.Size = 12
                   Font.Style = []
+                  FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+                  FormFieldSettings.FormFieldType = fftNone
                   Transparent = True
                   mmHeight = 5000
                   mmLeft = 0
@@ -1807,7 +2001,9 @@ object Report: TppReport
                   LayerName = PageLayer1
                 end
                 object ppLine3: TppLine
+                  DesignLayer = ppDesignLayer12
                   UserName = 'LN_Unterschrift'
+                  Border.mmPadding = 0
                   Position = lpBottom
                   Weight = 0.750000000000000000
                   mmHeight = 4500
@@ -1818,14 +2014,18 @@ object Report: TppReport
                   LayerName = PageLayer1
                 end
                 object ppLabel17: TppLabel
+                  DesignLayer = ppDesignLayer12
                   UserName = 'L_Unterschrift'
                   AutoSize = False
+                  Border.mmPadding = 0
                   Caption = 'Unterschrift'
                   Font.Charset = ANSI_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
                   Font.Size = 10
                   Font.Style = []
+                  FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+                  FormFieldSettings.FormFieldType = fftNone
                   TextAlignment = taRightJustified
                   Transparent = True
                   mmHeight = 5000
@@ -2015,28 +2215,32 @@ object Report: TppReport
             end
           end
           object ppRichText4: TppRichText
+            DesignLayer = ppDesignLayer3
             UserName = 'RT_Rechtsbehelf'
             Font.Charset = ANSI_CHARSET
             Font.Color = clBlack
             Font.Name = 'Calibri'
             Font.Size = 10
             Font.Style = []
+            Border.mmPadding = 0
             Caption = 'RT_Rechtsbehelf'
+            ExportRTFAsBitmap = False
             MailMerge = True
             RichText = 
-              '{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcha' +
-              'rset0 Calibri;}}'#13#10'{\colortbl ;\red0\green0\blue0;}'#13#10'\viewkind4\u' +
-              'c1\pard\qj\cf1\f0\fs20 Rechtsbehelfsbelehrung:\par'#13#10'Gegen dieses' +
-              ' Zeugnis kann innerhalb eines Monats nach Bekanntgabe des Zeugni' +
-              'sses Widerspruch eingelegt werden. Der Widerspruch ist beim <dbt' +
-              'ext datapipeline='#39'EigeneSchule'#39'>Bezeichnung1</dbtext>, <dbtext d' +
-              'atapipeline='#39'EigeneSchule'#39'>Strasse</dbtext>, <dbtext datapipelin' +
-              'e='#39'EigeneSchule'#39'>PlzOrt</dbtext> schriftlich oder zur Niederschr' +
-              'ift zu erheben. Falls die Frist durch das Verschulden einer/eine' +
-              's Bevollm\'#39'e4chtigten vers\'#39'e4umt wird, wird dieses Verschulden ' +
-              'der Widerspruchsf\'#39'fchrerin/dem Widerspruchsf\'#39'fchrer zugerechne' +
-              't.\par'#13#10'\pard\qr Schulnummer: <dbtext datapipeline='#39'EigeneSchule' +
-              #39'>SchulNr</dbtext>\par'#13#10'}'#13#10#0
+              '{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1031{\fonttbl{\f' +
+              '0\fnil\fcharset0 Calibri;}}'#13#10'{\colortbl ;\red0\green0\blue0;}'#13#10'{' +
+              '\*\generator Riched20 10.0.19041}\viewkind4\uc1 '#13#10'\pard\qj\cf1\f' +
+              '0\fs20 Rechtsbehelfsbelehrung:\par'#13#10'Gegen dieses Zeugnis kann in' +
+              'nerhalb eines Monats nach Bekanntgabe des Zeugnisses Widerspruch' +
+              ' eingelegt werden. Der Widerspruch ist beim <dbtext datapipeline' +
+              '='#39'EigeneSchule'#39'>Bezeichnung1</dbtext>, <dbtext datapipeline='#39'Eig' +
+              'eneSchule'#39'>Strasse</dbtext>, <dbtext datapipeline='#39'EigeneSchule'#39 +
+              '>PlzOrt</dbtext> schriftlich oder zur Niederschrift zu erheben. ' +
+              'Falls die Frist durch das Verschulden einer/eines Bevollm\'#39'e4cht' +
+              'igten vers\'#39'e4umt wird, wird dieses Verschulden der Widerspruchs' +
+              'f\'#39'fchrerin/dem Widerspruchsf\'#39'fchrer zugerechnet.\par'#13#10#13#10'\pard\' +
+              'qr Schulnummer: <dbtext datapipeline='#39'EigeneSchule'#39'>SchulNr</dbt' +
+              'ext>\par'#13#10'}'#13#10#0
             RemoveEmptyLines = False
             Stretch = True
             Transparent = True
@@ -2052,7 +2256,9 @@ object Report: TppReport
             mmMinHeight = 0
           end
           object ppLine9: TppLine
+            DesignLayer = ppDesignLayer3
             UserName = 'LN_Fu'#223'note'
+            Border.mmPadding = 0
             Position = lpBottom
             Weight = 0.750000000000000000
             mmHeight = 1000
@@ -2063,20 +2269,24 @@ object Report: TppReport
             LayerName = Foreground2
           end
           object ppRichText11: TppRichText
+            DesignLayer = ppDesignLayer3
             UserName = 'RT_Fu'#223'note1'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Name = 'Calibri'
             Font.Size = 8
             Font.Style = []
+            Border.mmPadding = 0
             Caption = 'RT_Fu'#223'note1'
+            ExportRTFAsBitmap = False
             RichText = 
-              '{\rtf1\ansi\ansicpg1252\deff0\deflang1031\deflangfe1031\deftab70' +
-              '8{\fonttbl{\f0\fswiss\fprq2\fcharset0 Calibri;}}'#13#10'{\colortbl ;\r' +
-              'ed0\green0\blue0;}'#13#10'\viewkind4\uc1\pard\nowidctlpar\fi-284\li284' +
-              '\qj\cf1\f0\fs16 1)\tab Notenstufen gem\'#39'e4\'#39'df \'#39'a7 48 Absatz 3 ' +
-              'SchulG: sehr gut (1), gut (2), befriedigend (3), ausreichend (4)' +
-              ', mangelhaft (5), ungen\'#39'fcgend (6)\par'#13#10'\par'#13#10'}'#13#10#0
+              '{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1031\deflangfe10' +
+              '31\deftab708{\fonttbl{\f0\fswiss\fprq2\fcharset0 Calibri;}}'#13#10'{\c' +
+              'olortbl ;\red0\green0\blue0;}'#13#10'{\*\generator Riched20 10.0.19041' +
+              '}\viewkind4\uc1 '#13#10'\pard\nowidctlpar\fi-284\li284\qj\cf1\f0\fs16 ' +
+              '1)\tab Notenstufen gem\'#39'e4\'#39'df \'#39'a7 48 Absatz 3 SchulG: sehr gut' +
+              ' (1), gut (2), befriedigend (3), ausreichend (4), mangelhaft (5)' +
+              ', ungen\'#39'fcgend (6)\par'#13#10'\par'#13#10'}'#13#10#0
             RemoveEmptyLines = False
             Stretch = True
             Transparent = True
@@ -2138,13 +2348,13 @@ object Report: TppReport
     DataPipelineName = 'Schueler'
     NewFile = False
     object ppGroupHeaderBand1: TppGroupHeaderBand
-      Background.Brush.Style = bsClear
+      Border.mmPadding = 0
       mmBottomOffset = 0
       mmHeight = 0
       mmPrintPosition = 0
     end
     object ppGroupFooterBand1: TppGroupFooterBand
-      Background.Brush.Style = bsClear
+      Border.mmPadding = 0
       HideWhenOneDetail = False
       mmBottomOffset = 0
       mmHeight = 0

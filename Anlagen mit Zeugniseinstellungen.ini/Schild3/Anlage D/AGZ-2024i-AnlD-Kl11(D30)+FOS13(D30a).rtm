@@ -499,12 +499,12 @@ object RepOrt: TppReport
             Border.mmPadding = 0
             ExportRTFAsBitmap = False
             DataField = 'Berufsebene1'
-            DataPipeline = dmPipelines.plLernAbschnitte
+            DataPipeline = dmPipelines.plLernabschnitte
             ParentDataPipeline = False
             RemoveEmptyLines = False
             Stretch = True
             Transparent = True
-            DataPipelineName = 'plLernAbschnitte'
+            DataPipelineName = 'plLernabschnitte'
             mmHeight = 5000
             mmLeft = 60000
             mmTop = 118000
@@ -559,13 +559,13 @@ object RepOrt: TppReport
             Border.mmPadding = 0
             ExportRTFAsBitmap = False
             DataField = 'Berufsebene2'
-            DataPipeline = dmPipelines.plLernAbschnitte
+            DataPipeline = dmPipelines.plLernabschnitte
             ParentDataPipeline = False
             RemoveEmptyLines = False
             ShiftRelativeTo = ppDBRichText3
             Stretch = True
             Transparent = True
-            DataPipelineName = 'plLernAbschnitte'
+            DataPipelineName = 'plLernabschnitte'
             mmHeight = 5000
             mmLeft = 60000
             mmTop = 124000
@@ -679,13 +679,13 @@ object RepOrt: TppReport
             Border.mmPadding = 0
             ExportRTFAsBitmap = False
             DataField = 'ZeugnisDatum'
-            DataPipeline = dmPipelines.plLernAbschnitte
+            DataPipeline = dmPipelines.plLernabschnitte
             ParentDataPipeline = False
             RemoveEmptyLines = False
             ShiftRelativeTo = ppRichText8
             Stretch = True
             Transparent = True
-            DataPipelineName = 'plLernAbschnitte'
+            DataPipelineName = 'plLernabschnitte'
             mmHeight = 5000
             mmLeft = 60000
             mmTop = 136000
@@ -1258,14 +1258,14 @@ object RepOrt: TppReport
                   Border.mmPadding = 0
                   Color = clSilver
                   DataField = 'Notenklartext'
-                  DataPipeline = dmPipelines.plBKBerufsbezogen
+                  DataPipeline = dmPipelines.plBKBerufsuebergreifend
                   Font.Charset = ANSI_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
                   Font.Size = 12
                   Font.Style = [fsBold]
                   TextAlignment = taCentered
-                  DataPipelineName = 'plBKBerufsbezogen'
+                  DataPipelineName = 'plBKBerufsuebergreifend'
                   mmHeight = 5000
                   mmLeft = 130000
                   mmTop = 500
@@ -1403,14 +1403,14 @@ object RepOrt: TppReport
                   Border.mmPadding = 0
                   Color = clSilver
                   DataField = 'Notenklartext'
-                  DataPipeline = dmPipelines.plBKBerufsbezogen
+                  DataPipeline = dmPipelines.plBKDifferenzierung
                   Font.Charset = ANSI_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
                   Font.Size = 12
                   Font.Style = [fsBold]
                   TextAlignment = taCentered
-                  DataPipelineName = 'plBKBerufsbezogen'
+                  DataPipelineName = 'plBKDifferenzierung'
                   mmHeight = 5000
                   mmLeft = 130000
                   mmTop = 500
@@ -1449,7 +1449,7 @@ object RepOrt: TppReport
             ParentWidth = False
             ShiftRelativeTo = ppSubReport5
             TraverseAllData = False
-            DataPipelineName = 'PLZUV'
+            DataPipelineName = 'plZUV'
             mmHeight = 5000
             mmLeft = 0
             mmTop = 42000
@@ -1462,7 +1462,7 @@ object RepOrt: TppReport
             mmMinHeight = 0
             object ppChildReport1: TppChildReport
               AutoStop = False
-              DataPipeline = dmPipelines.PLZUV
+              DataPipeline = dmPipelines.plZUV
               PrinterSetup.BinName = 'Default'
               PrinterSetup.DocumentName = 'JAZ-2016- Anl D- Kl 11(Anl D32).rtm'
               PrinterSetup.Duplex = dpVertical
@@ -1480,7 +1480,7 @@ object RepOrt: TppReport
               Units = utMillimeters
               Version = '22.03'
               mmColumnWidth = 0
-              DataPipelineName = 'PLZUV'
+              DataPipelineName = 'plZUV'
               object ppTitleBand4: TppTitleBand
                 Border.mmPadding = 0
                 mmBottomOffset = 0
@@ -1491,14 +1491,14 @@ object RepOrt: TppReport
                   UserName = 'DBText1'
                   Border.mmPadding = 0
                   DataField = 'Fachgruppe'
-                  DataPipeline = dmPipelines.PLZUV
+                  DataPipeline = dmPipelines.plZUV
                   Font.Charset = ANSI_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
                   Font.Size = 12
                   Font.Style = [fsBold]
                   Transparent = True
-                  DataPipelineName = 'PLZUV'
+                  DataPipelineName = 'plZUV'
                   mmHeight = 6000
                   mmLeft = 0
                   mmTop = 3000
@@ -1519,7 +1519,7 @@ object RepOrt: TppReport
                   Border.mmPadding = 0
                   CharWrap = False
                   DataField = 'Zeugnisbezeichnung'
-                  DataPipeline = dmPipelines.PLZUV
+                  DataPipeline = dmPipelines.plZUV
                   Font.Charset = ANSI_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
@@ -1528,7 +1528,7 @@ object RepOrt: TppReport
                   RemoveEmptyLines = False
                   Stretch = True
                   Transparent = True
-                  DataPipelineName = 'PLZUV'
+                  DataPipelineName = 'plZUV'
                   mmHeight = 5000
                   mmLeft = 0
                   mmTop = 500
@@ -1547,14 +1547,14 @@ object RepOrt: TppReport
                   Border.mmPadding = 0
                   Color = clSilver
                   DataField = 'Notenklartext'
-                  DataPipeline = dmPipelines.plBKBerufsbezogen
+                  DataPipeline = dmPipelines.plZUV
                   Font.Charset = ANSI_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
                   Font.Size = 12
                   Font.Style = [fsBold]
                   TextAlignment = taCentered
-                  DataPipelineName = 'plBKBerufsbezogen'
+                  DataPipelineName = 'plZUV'
                   mmHeight = 5000
                   mmLeft = 130000
                   mmTop = 500
@@ -1593,7 +1593,7 @@ object RepOrt: TppReport
             ParentWidth = False
             ShiftRelativeTo = ppSubReport1
             TraverseAllData = False
-            DataPipelineName = 'plLernAbschnitte'
+            DataPipelineName = 'plLernabschnitte'
             mmHeight = 5000
             mmLeft = 0
             mmTop = 49000
@@ -1606,7 +1606,7 @@ object RepOrt: TppReport
             mmMinHeight = 0
             object ppChildReport7: TppChildReport
               AutoStop = False
-              DataPipeline = dmPipelines.plLernAbschnitte
+              DataPipeline = dmPipelines.plLernabschnitte
               PrinterSetup.BinName = 'Default'
               PrinterSetup.DocumentName = 'JAZ-2016- Anl D- Kl 11(Anl D32).rtm'
               PrinterSetup.Duplex = dpVertical
@@ -1624,7 +1624,7 @@ object RepOrt: TppReport
               Units = utMillimeters
               Version = '22.03'
               mmColumnWidth = 0
-              DataPipelineName = 'plLernAbschnitte'
+              DataPipelineName = 'plLernabschnitte'
               object ppTitleBand5: TppTitleBand
                 Border.mmPadding = 0
                 mmBottomOffset = 0
@@ -1669,11 +1669,11 @@ object RepOrt: TppReport
                   Border.mmPadding = 0
                   ExportRTFAsBitmap = False
                   DataField = 'ZeugnisBem'
-                  DataPipeline = dmPipelines.plLernAbschnitte
+                  DataPipeline = dmPipelines.plLernabschnitte
                   RemoveEmptyLines = False
                   Stretch = True
                   Transparent = True
-                  DataPipelineName = 'plLernAbschnitte'
+                  DataPipelineName = 'plLernabschnitte'
                   mmHeight = 7408
                   mmLeft = 36000
                   mmTop = 3440

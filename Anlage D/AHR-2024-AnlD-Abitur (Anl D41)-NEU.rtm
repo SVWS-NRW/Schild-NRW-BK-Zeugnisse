@@ -16,8 +16,9 @@ object Report: TppReport
   PrinterSetup.mmPaperWidth = 420000
   PrinterSetup.PaperSize = 8
   SaveAsTemplate = True
-  Template.FileName =
-    'C:\progs\svws\SchILD-Reports\Schild-NRW-BK-Zeugnisse\Anlage D\AHR-2024-AnlD-Abitur (Anl D41)-NEU.rtm'
+  Template.FileName = 
+    'C:\progs\SVWS\SchILD-Reports\Schild-NRW-BK-Zeugnisse\Anlage D\AH' +
+    'R-2024-AnlD-Abitur (Anl D41)-NEU.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -211,7 +212,7 @@ object Report: TppReport
               PrinterSetup.mmMarginTop = 0
               PrinterSetup.mmPaperHeight = 100000
               PrinterSetup.mmPaperWidth = 170000
-              PrinterSetup.PaperSize = 256
+              PrinterSetup.PaperSize = 199
               Template.Format = ftASCII
               Units = utMillimeters
               Version = '15.05'
@@ -437,7 +438,7 @@ object Report: TppReport
               PrinterSetup.mmMarginTop = 0
               PrinterSetup.mmPaperHeight = 50000
               PrinterSetup.mmPaperWidth = 165000
-              PrinterSetup.PaperSize = 256
+              PrinterSetup.PaperSize = 199
               Template.DatabaseSettings.Name = 'Sub_Bem'
               Template.Format = ftASCII
               Units = utMillimeters
@@ -571,7 +572,7 @@ object Report: TppReport
               PrinterSetup.mmMarginTop = 0
               PrinterSetup.mmPaperHeight = 100000
               PrinterSetup.mmPaperWidth = 165000
-              PrinterSetup.PaperSize = 256
+              PrinterSetup.PaperSize = 199
               Template.Format = ftASCII
               Units = utMillimeters
               Version = '15.05'
@@ -3160,7 +3161,7 @@ object Report: TppReport
               PrinterSetup.mmMarginTop = 0
               PrinterSetup.mmPaperHeight = 20000
               PrinterSetup.mmPaperWidth = 165000
-              PrinterSetup.PaperSize = 256
+              PrinterSetup.PaperSize = 199
               Template.Format = ftASCII
               Units = utMillimeters
               Version = '15.05'
@@ -3443,7 +3444,7 @@ object Report: TppReport
               PrinterSetup.mmMarginTop = 0
               PrinterSetup.mmPaperHeight = 20000
               PrinterSetup.mmPaperWidth = 165000
-              PrinterSetup.PaperSize = 256
+              PrinterSetup.PaperSize = 199
               Template.Format = ftASCII
               Units = utMillimeters
               Version = '15.05'
@@ -4671,7 +4672,7 @@ object Report: TppReport
               PrinterSetup.mmMarginTop = 0
               PrinterSetup.mmPaperHeight = 50000
               PrinterSetup.mmPaperWidth = 165000
-              PrinterSetup.PaperSize = 256
+              PrinterSetup.PaperSize = 199
               Template.Offset = 284
               Template.Format = ftASCII
               Units = utMillimeters
@@ -5229,7 +5230,7 @@ object Report: TppReport
               PrinterSetup.mmMarginTop = 0
               PrinterSetup.mmPaperHeight = 60000
               PrinterSetup.mmPaperWidth = 165000
-              PrinterSetup.PaperSize = 256
+              PrinterSetup.PaperSize = 199
               Template.Format = ftASCII
               Units = utMillimeters
               Version = '15.05'
@@ -5808,7 +5809,7 @@ object Report: TppReport
               PrinterSetup.mmMarginTop = 0
               PrinterSetup.mmPaperHeight = 40000
               PrinterSetup.mmPaperWidth = 165000
-              PrinterSetup.PaperSize = 256
+              PrinterSetup.PaperSize = 199
               Template.Format = ftASCII
               Units = utMillimeters
               Version = '15.05'
@@ -6182,6 +6183,33 @@ object Report: TppReport
             mmMinHeight = 0
           end
         end
+        object ppGroup1: TppGroup
+          BreakName = 'ppLabel69'
+          BreakType = btCustomField
+          GroupFileSettings.NewFile = False
+          GroupFileSettings.EmailFile = False
+          KeepTogether = True
+          OutlineSettings.CreateNode = True
+          StartOnOddPage = False
+          UserName = 'Group1'
+          mmNewColumnThreshold = 0
+          mmNewPageThreshold = 0
+          DataPipelineName = ''
+          NewFile = False
+          object ppGroupHeaderBand1: TppGroupHeaderBand
+            Background.Brush.Style = bsClear
+            mmBottomOffset = 0
+            mmHeight = 0
+            mmPrintPosition = 0
+          end
+          object ppGroupFooterBand1: TppGroupFooterBand
+            Background.Brush.Style = bsClear
+            HideWhenOneDetail = False
+            mmBottomOffset = 0
+            mmHeight = 0
+            mmPrintPosition = 0
+          end
+        end
         object raCodeModule30: TraCodeModule
           ProgramStream = {
             01060D54726156617250726F6772616D094368696C645479706502110B50726F
@@ -6279,33 +6307,6 @@ object Report: TppReport
           end
         end
       end
-    end
-  end
-  object ppGroup1: TppGroup
-    BreakName = 'ID'
-    DataPipeline = dmPipelines.Schueler
-    GroupFileSettings.NewFile = False
-    GroupFileSettings.EmailFile = False
-    KeepTogether = True
-    OutlineSettings.CreateNode = True
-    StartOnOddPage = False
-    UserName = 'Group1'
-    mmNewColumnThreshold = 0
-    mmNewPageThreshold = 0
-    DataPipelineName = 'Schueler'
-    NewFile = False
-    object ppGroupHeaderBand1: TppGroupHeaderBand
-      Background.Brush.Style = bsClear
-      mmBottomOffset = 0
-      mmHeight = 0
-      mmPrintPosition = 0
-    end
-    object ppGroupFooterBand1: TppGroupFooterBand
-      Background.Brush.Style = bsClear
-      HideWhenOneDetail = False
-      mmBottomOffset = 0
-      mmHeight = 0
-      mmPrintPosition = 0
     end
   end
   object raCodeModule31: TraCodeModule
@@ -6977,34 +6978,7 @@ object Report: TppReport
       20566F726E616D655072696E74203A3D2053636875656C65724E616D653B0D0A
       656E643B0D0A0D436F6D706F6E656E744E616D65060644657461696C09457665
       6E744E616D65060B4265666F72655072696E74074576656E7449440218084361
-      726574506F7301022B0204000001060F5472614576656E7448616E646C65720B
-      50726F6772616D4E616D65061647726F7570314265666F726547726F75704272
-      65616B0B50726F6772616D54797065070B747450726F63656475726506536F75
-      72636514C702000070726F6365647572652047726F7570314265666F72654772
-      6F7570427265616B3B0D0A5641520D0A20206F7074696F6E656E203A20535452
-      494E473B0D0A20207472656E6E7A65696368656E203A20535452494E473B0D0A
-      0D0A424547494E0D0A20204946204C65726E61627363686E697474655B274661
-      63686B6C617373655F6D275D203C3E204C65726E61627363686E697474655B27
-      466163686B6C617373655F77275D205448454E20424547494E0D0A2020202049
-      462053636875656C65725B2747657363686C65636874275D203D203320544845
-      4E0D0A2020202020206265727566203A3D204C65726E61627363686E69747465
-      5B27466163686B6C617373655F6D275D0D0A20202020454C5345204946205363
-      6875656C65725B2747657363686C65636874275D203D2034205448454E200D0A
-      2020202020206265727566203A3D204C65726E61627363686E697474655B2746
-      6163686B6C617373655F77275D0D0A20202020454C534520424547494E0D0A20
-      20202020207472656E6E7A65696368656E203A3D202723273B0D0A2020202020
-      206F7074696F6E656E203A3D204C65726E61627363686E697474655B27466163
-      686B6C617373655F6D275D202B207472656E6E7A65696368656E202B204C6572
-      6E61627363686E697474655B27466163686B6C617373655F77275D3B0D0A2020
-      202020206265727566203A3D2053656C656374537472696E6745782827426974
-      746520466F726D206465722042657275667362657A656963686E756E672077C3
-      A4686C656E2066C3BC7220272B53636875656C65725B274E616D65566F726E61
-      6D65275D2B27203A272C206F7074696F6E656E2C207472656E6E7A6569636865
-      6E293B0D0A20202020454E443B0D0A2020454E4420454C53450D0A2020202062
-      65727566203A3D204C65726E61627363686E697474655B27466163686B6C6173
-      73655F6D275D3B0D0A454E443B0D0A0D436F6D706F6E656E744E616D65060647
-      726F757031094576656E744E616D6506104265666F726547726F757042726561
-      6B074576656E744944021C084361726574506F730102050213000000}
+      726574506F7301022B0204000000}
   end
   object ppDesignLayers1: TppDesignLayers
     object ppDesignLayer1: TppDesignLayer

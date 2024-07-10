@@ -18,8 +18,8 @@ object RepOrt: TppReport
   SaveAsTemplate = True
   Template.FileName = 
     'C:\Progs\SVWS\SchILD-Reports\Schild-NRW-BK-Zeugnisse\Anlagen mit' +
-    ' Zeugniseinstellungen.ini\Anlage D\ASZ-2024i-AnlD-FOS13-AHR(D44a' +
-    ').rtm'
+    ' Zeugniseinstellungen.ini\Schild3\Anlage D\ASZ-2024i-AnlD-FOS13-' +
+    'AHR(D44a).rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -463,12 +463,12 @@ object RepOrt: TppReport
             Border.mmPadding = 0
             ExportRTFAsBitmap = False
             DataField = 'Berufsebene1'
-            DataPipeline = dmPipelines.plLernAbschnitte
+            DataPipeline = dmPipelines.plLernabschnitte
             ParentDataPipeline = False
             RemoveEmptyLines = False
             Stretch = True
             Transparent = True
-            DataPipelineName = 'plLernAbschnitte'
+            DataPipelineName = 'plLernabschnitte'
             mmHeight = 5000
             mmLeft = 290000
             mmTop = 160000
@@ -523,13 +523,13 @@ object RepOrt: TppReport
             Border.mmPadding = 0
             ExportRTFAsBitmap = False
             DataField = 'Berufsebene2'
-            DataPipeline = dmPipelines.plLernAbschnitte
+            DataPipeline = dmPipelines.plLernabschnitte
             ParentDataPipeline = False
             RemoveEmptyLines = False
             ShiftRelativeTo = ppDBRichText3
             Stretch = True
             Transparent = True
-            DataPipelineName = 'plLernAbschnitte'
+            DataPipelineName = 'plLernabschnitte'
             mmHeight = 5000
             mmLeft = 290000
             mmTop = 166000
@@ -1006,16 +1006,17 @@ object RepOrt: TppReport
                   UserName = 'DBT_Note'
                   Border.mmPadding = 0
                   Color = clSilver
-                  DataField = 'Notenklartext'
-                  DataPipeline = dmPipelines.plBKBerufsbezogen
+                  DataField = 'NoteSchriftlich'
+                  DataPipeline = dmPipelines.ppBKAbschlussFaecher
                   Font.Charset = ANSI_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
                   Font.Size = 12
                   Font.Style = [fsBold]
+                  ParentDataPipeline = False
                   TextAlignment = taCentered
                   VerticalAlignment = avCenter
-                  DataPipelineName = 'plBKBerufsbezogen'
+                  DataPipelineName = 'ppBKAbschlussFaecher'
                   mmHeight = 5000
                   mmLeft = 124500
                   mmTop = 500
@@ -1034,22 +1035,29 @@ object RepOrt: TppReport
                 ProgramStream = {
                   01060F5472614576656E7448616E646C65720B50726F6772616D4E616D650611
                   44657461696C4265666F72655072696E740B50726F6772616D54797065070B74
-                  7450726F63656475726506536F7572636506A070726F63656475726520446574
+                  7450726F63656475726506536F7572636506A270726F63656475726520446574
                   61696C4265666F72655072696E743B0D0A626567696E0D0A202064657461696C
                   2E76697369626C65203A3D2028424B41627363686C757373466165636865725B
-                  27497374536368726966746C696368275D203D20272B2729206F722028424B41
-                  627363686C757373466165636865725B27497374536368726966746C69636842
-                  41275D203D20272B27293B0D0A656E643B0D0A0D436F6D706F6E656E744E616D
-                  65060644657461696C094576656E744E616D65060B4265666F72655072696E74
-                  074576656E7449440218084361726574506F730102010204000001060F547261
-                  4576656E7448616E646C65720B50726F6772616D4E616D65060F4442545F4E6F
-                  74654F6E5072696E740B50726F6772616D54797065070B747450726F63656475
-                  726506536F75726365065270726F636564757265204442545F4E6F74654F6E50
-                  72696E743B0D0A626567696E0D0A20204442545F4E6F74652E436F6C6F72203A
-                  3D205A50475F46617262654E6F74656E46656C643B0D0A656E643B0D0A0D436F
-                  6D706F6E656E744E616D6506084442545F4E6F7465094576656E744E616D6506
-                  074F6E5072696E74074576656E7449440220084361726574506F730102010204
-                  000000}
+                  2746616368536368726966746C696368275D203D20272B2729206F722028424B
+                  41627363686C757373466165636865725B2746616368536368726966746C6963
+                  684241275D203D20272B27293B0D0A656E643B0D0A0D436F6D706F6E656E744E
+                  616D65060644657461696C094576656E744E616D65060B4265666F7265507269
+                  6E74074576656E7449440218084361726574506F730102010203000001060F54
+                  72614576656E7448616E646C65720B50726F6772616D4E616D65060F4442545F
+                  4E6F74654F6E5072696E740B50726F6772616D54797065070B747450726F6365
+                  6475726506536F75726365065270726F636564757265204442545F4E6F74654F
+                  6E5072696E743B0D0A626567696E0D0A20204442545F4E6F74652E436F6C6F72
+                  203A3D205A50475F46617262654E6F74656E46656C643B0D0A656E643B0D0A0D
+                  436F6D706F6E656E744E616D6506084442545F4E6F7465094576656E744E616D
+                  6506074F6E5072696E74074576656E7449440220084361726574506F73010201
+                  0204000001060F5472614576656E7448616E646C65720B50726F6772616D4E61
+                  6D6506114442545F4E6F74654F6E476574546578740B50726F6772616D547970
+                  65070B747450726F63656475726506536F75726365065F70726F636564757265
+                  204442545F4E6F74654F6E476574546578742876617220546578743A20537472
+                  696E67293B0D0A626567696E0D0A0D0A202054657874203A3D205A656E737572
+                  546F5374722854657874293B0D0A0D0A656E643B0D0A0D436F6D706F6E656E74
+                  4E616D6506084442545F4E6F7465094576656E744E616D6506094F6E47657454
+                  657874074576656E7449440235084361726574506F730102420206000000}
               end
               object ppDesignLayers10: TppDesignLayers
                 object ppDesignLayer10: TppDesignLayer
@@ -1383,14 +1391,14 @@ object RepOrt: TppReport
                   Border.mmPadding = 0
                   Color = clSilver
                   DataField = 'Notenklartext'
-                  DataPipeline = dmPipelines.plBKBerufsbezogen
+                  DataPipeline = dmPipelines.plBKBerufsuebergreifend
                   Font.Charset = ANSI_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
                   Font.Size = 12
                   Font.Style = [fsBold]
                   TextAlignment = taCentered
-                  DataPipelineName = 'plBKBerufsbezogen'
+                  DataPipelineName = 'plBKBerufsuebergreifend'
                   mmHeight = 5000
                   mmLeft = 124500
                   mmTop = 500
@@ -1528,14 +1536,14 @@ object RepOrt: TppReport
                   Border.mmPadding = 0
                   Color = clSilver
                   DataField = 'Notenklartext'
-                  DataPipeline = dmPipelines.plBKBerufsbezogen
+                  DataPipeline = dmPipelines.plBKDifferenzierung
                   Font.Charset = ANSI_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
                   Font.Size = 12
                   Font.Style = [fsBold]
                   TextAlignment = taCentered
-                  DataPipelineName = 'plBKBerufsbezogen'
+                  DataPipelineName = 'plBKDifferenzierung'
                   mmHeight = 5000
                   mmLeft = 124500
                   mmTop = 500
@@ -1574,7 +1582,7 @@ object RepOrt: TppReport
             ParentWidth = False
             ShiftRelativeTo = ppSubReport5
             TraverseAllData = False
-            DataPipelineName = 'PLZUV'
+            DataPipelineName = 'plZUV'
             mmHeight = 5000
             mmLeft = 25500
             mmTop = 79000
@@ -1587,7 +1595,7 @@ object RepOrt: TppReport
             mmMinHeight = 0
             object ppChildReport8: TppChildReport
               AutoStop = False
-              DataPipeline = dmPipelines.PLZUV
+              DataPipeline = dmPipelines.plZUV
               PrinterSetup.BinName = 'Default'
               PrinterSetup.DocumentName = 'JAZ-2016- Anl D- Kl 11(Anl D32).rtm'
               PrinterSetup.Duplex = dpVertical
@@ -1605,7 +1613,7 @@ object RepOrt: TppReport
               Units = utMillimeters
               Version = '22.03'
               mmColumnWidth = 0
-              DataPipelineName = 'PLZUV'
+              DataPipelineName = 'plZUV'
               object ppTitleBand4: TppTitleBand
                 Border.mmPadding = 0
                 mmBottomOffset = 0
@@ -1616,14 +1624,14 @@ object RepOrt: TppReport
                   UserName = 'DBText1'
                   Border.mmPadding = 0
                   DataField = 'Fachgruppe'
-                  DataPipeline = dmPipelines.PLZUV
+                  DataPipeline = dmPipelines.plZUV
                   Font.Charset = ANSI_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
                   Font.Size = 12
                   Font.Style = [fsBold]
                   Transparent = True
-                  DataPipelineName = 'PLZUV'
+                  DataPipelineName = 'plZUV'
                   mmHeight = 6000
                   mmLeft = 0
                   mmTop = 3000
@@ -1644,7 +1652,7 @@ object RepOrt: TppReport
                   Border.mmPadding = 0
                   CharWrap = False
                   DataField = 'Zeugnisbezeichnung'
-                  DataPipeline = dmPipelines.PLZUV
+                  DataPipeline = dmPipelines.plZUV
                   Font.Charset = ANSI_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
@@ -1653,7 +1661,7 @@ object RepOrt: TppReport
                   RemoveEmptyLines = False
                   Stretch = True
                   Transparent = True
-                  DataPipelineName = 'PLZUV'
+                  DataPipelineName = 'plZUV'
                   mmHeight = 5000
                   mmLeft = 0
                   mmTop = 500
@@ -1672,14 +1680,14 @@ object RepOrt: TppReport
                   Border.mmPadding = 0
                   Color = clSilver
                   DataField = 'Notenklartext'
-                  DataPipeline = dmPipelines.plBKBerufsbezogen
+                  DataPipeline = dmPipelines.plZUV
                   Font.Charset = ANSI_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
                   Font.Size = 12
                   Font.Style = [fsBold]
                   TextAlignment = taCentered
-                  DataPipelineName = 'plBKBerufsbezogen'
+                  DataPipelineName = 'plZUV'
                   mmHeight = 5000
                   mmLeft = 124500
                   mmTop = 500
@@ -1993,7 +2001,7 @@ object RepOrt: TppReport
             ParentWidth = False
             ShiftRelativeTo = ppRichText15
             TraverseAllData = False
-            DataPipelineName = 'plLernAbschnitte'
+            DataPipelineName = 'plLernabschnitte'
             mmHeight = 5000
             mmLeft = 235500
             mmTop = 39000
@@ -2006,7 +2014,7 @@ object RepOrt: TppReport
             mmMinHeight = 0
             object ppChildReport11: TppChildReport
               AutoStop = False
-              DataPipeline = dmPipelines.plLernAbschnitte
+              DataPipeline = dmPipelines.plLernabschnitte
               PrinterSetup.BinName = 'Default'
               PrinterSetup.DocumentName = 'ASZ-2016- BS(Anl A1.8 und A1.6).rtm'
               PrinterSetup.Duplex = dpHorizontal
@@ -2024,7 +2032,7 @@ object RepOrt: TppReport
               Units = utMillimeters
               Version = '22.03'
               mmColumnWidth = 0
-              DataPipelineName = 'plLernAbschnitte'
+              DataPipelineName = 'plLernabschnitte'
               object ppDetailBand12: TppDetailBand
                 Border.mmPadding = 0
                 PrintHeight = phDynamic
@@ -2042,10 +2050,10 @@ object RepOrt: TppReport
                   Border.mmPadding = 0
                   ExportRTFAsBitmap = False
                   DataField = 'ZeugnisBem'
-                  DataPipeline = dmPipelines.plLernAbschnitte
+                  DataPipeline = dmPipelines.plLernabschnitte
                   RemoveEmptyLines = False
                   Transparent = True
-                  DataPipelineName = 'plLernAbschnitte'
+                  DataPipelineName = 'plLernabschnitte'
                   mmHeight = 6000
                   mmLeft = 0
                   mmTop = 0
