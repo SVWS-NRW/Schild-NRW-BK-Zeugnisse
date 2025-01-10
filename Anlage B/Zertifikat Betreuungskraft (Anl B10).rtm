@@ -113,7 +113,7 @@ object Report: TppReport
         'rset0 Lucida Sans;}{\f1\fnil Lucida Sans;}}'#13#10'{\colortbl ;\red0\g' +
         'reen0\blue0;}'#13#10'\viewkind4\uc1\pard\sl-320\slmult0\qc\tx3240\b\f0' +
         '\fs28 Zertifikat \'#39'fcber die fachliche Qualifikation zur "Betreu' +
-        'ungskraft"\par'#13#10'nach \'#39'a787b Absatz 3 SGB XI\par'#13#10'\b0\fs24\par'#13#10 +
+        'ungskraft"\par'#13#10'nach \'#39'a743b Absatz 3 SGB XI\par'#13#10'\b0\fs24\par'#13#10 +
         '\pard\sl-320\slmult0\qr\tx3240\par'#13#10'\pard\sl360\slmult1\tx3240 <' +
         'dbtext>Anrede</dbtext> \b <dbtext>VornameName</dbtext>\par'#13#10'\par' +
         'd\sl360\slmult1\qj\tx3240\b0 geb. am \b <dbtext>Geburtsdatum</db' +
@@ -121,14 +121,14 @@ object Report: TppReport
         'qj wird bescheinigt, dass <dbtext>ErSieKlein</dbtext> im Rahmen ' +
         'der Ausbildung &zum Staatlich gepr\'#39'fcften Sozialassistenten%zur' +
         ' Staatlich gepr\'#39'fcften Sozialassistentin& die erforderlichen Ke' +
-        'nntnisse zur Betreuungskraft gem\'#39'e4\'#39'df Richtlinien nach \'#39'a787' +
-        'B Absatz 3 SGB XI (betreuungskr\'#39'e4fte-RL vom 19. August 2008 in' +
-        ' der jeweils geltenden Fassung) erworben hat.\par'#13#10'\par'#13#10'Dieses ' +
-        'Zertifikat gilt in Verbindung mit dem Abgangszeugnis/Abschlussze' +
-        'ugnis des Bildungsganges der Berufsfachschule "&Staatlich gepr\'#39 +
-        'fcfter Sozialassistent%Staatlich gepr\'#39'fcfte Sozialassistentin&"' +
-        ' vom <dbtext datapipeline='#39'plLernabschnitte'#39'>ZeugnisDatum</dbtex' +
-        't>.\cf1\f1\par'#13#10'}'#13#10#0
+        'nntnisse zur Betreuungskraft gem\'#39'e4\'#39'df Richtlinien nach \'#39'a743' +
+        'b Absatz 3 SGB XI (Betreuungskr\'#39'e4fte-RL vom 1. Januar 2017 in ' +
+        'der jeweils geltenden Fassung) erworben hat.\par'#13#10'\par'#13#10'Dieses Z' +
+        'ertifikat gilt in Verbindung mit dem Abgangszeugnis/Abschlusszeu' +
+        'gnis des Bildungsganges der Berufsfachschule "&Staatlich gepr\'#39'f' +
+        'cfter Sozialassistent%Staatlich gepr\'#39'fcfte Sozialassistentin&" ' +
+        'vom <dbtext datapipeline='#39'plLernabschnitte'#39'>ZeugnisDatum</dbtext' +
+        '>.\cf1\f1\par'#13#10'}'#13#10#0
       RemoveEmptyLines = False
       Stretch = True
       Transparent = True
