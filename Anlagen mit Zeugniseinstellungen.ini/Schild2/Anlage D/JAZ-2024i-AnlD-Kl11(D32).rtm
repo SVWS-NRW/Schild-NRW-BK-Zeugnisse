@@ -1688,7 +1688,7 @@ object Report: TppReport
               PrinterSetup.mmMarginTop = 0
               PrinterSetup.mmPaperHeight = 55000
               PrinterSetup.mmPaperWidth = 170000
-              PrinterSetup.PaperSize = 199
+              PrinterSetup.PaperSize = 256
               Template.Format = ftASCII
               Units = utMillimeters
               Version = '15.05'
@@ -2965,6 +2965,26 @@ object Report: TppReport
       LookupSettings.SortOrder = soName
       Value = False
       UserName = 'Halbjahreszeugnis'
+    end
+    object ppParameter2: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = 'AnlageD'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'AnlageD'
+      UserName = 'Anlage'
+    end
+    object ppParameter3: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = 'AnlageD32'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'AnlageD32'
+      UserName = 'Formular'
     end
   end
 end

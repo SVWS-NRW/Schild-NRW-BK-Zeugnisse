@@ -3147,12 +3147,21 @@ object RepOrt: TppReport
     object ppParameter1: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = 'True'
-      DataType = dtBoolean
+      AutoSearchSettings.SearchExpression = 'AnlageD'
+      DataType = dtString
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = True
-      UserName = 'Halbjahreszeugnis'
+      Value = 'AnlageD'
+      UserName = 'Anlage'
     end
-  end
+    object ppParameter2: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = 'AnlageD45'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'AnlageD45'
+      UserName = 'Formular'
+    end  end
 end
