@@ -5,7 +5,7 @@ object Report: TppReport
   PrinterSetup.DocumentName = 'AGZ-2024i-AnlD-Kl12-13mitFHRsT(D35).rtm'
   PrinterSetup.Duplex = dpHorizontal
   PrinterSetup.Orientation = poLandscape
-  PrinterSetup.PaperName = 'Custom'
+  PrinterSetup.PaperName = 'A3'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
   PrinterSetup.mmMarginBottom = 0
@@ -17,7 +17,7 @@ object Report: TppReport
   PrinterSetup.PaperSize = 256
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\progs\svws\SchILD-Reports\Schild-NRW-BK-Zeugnisse\Anlagen mit' +
+    'C:\progs\SVWS\SchILD-Reports\Schild-NRW-BK-Zeugnisse\Anlagen mit' +
     ' Zeugniseinstellungen.ini\Schild2\Anlage D\AGZ-2024i-AnlD-Kl12-1' +
     '3mitFHRsT(D35).rtm'
   Template.Format = ftASCII
@@ -97,7 +97,7 @@ object Report: TppReport
         PrinterSetup.DocumentName = 'AHR-2018_AnlD-Abitur (Anl D41).rtm'
         PrinterSetup.Duplex = dpHorizontal
         PrinterSetup.Orientation = poLandscape
-        PrinterSetup.PaperName = 'Custom'
+        PrinterSetup.PaperName = 'A3'
         PrinterSetup.PrinterName = 'Default'
         PrinterSetup.SaveDeviceSettings = False
         PrinterSetup.mmMarginBottom = 0
@@ -142,7 +142,7 @@ object Report: TppReport
               PrinterSetup.DocumentName = 'AHR-2018_AnlD-Abitur (Anl D41).rtm'
               PrinterSetup.Duplex = dpHorizontal
               PrinterSetup.Orientation = poLandscape
-              PrinterSetup.PaperName = 'Custom'
+              PrinterSetup.PaperName = 'A3'
               PrinterSetup.PrinterName = 'Default'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 0
@@ -757,7 +757,7 @@ object Report: TppReport
         PrinterSetup.DocumentName = 'AHR-2018_AnlD-Abitur (Anl D41).rtm'
         PrinterSetup.Duplex = dpHorizontal
         PrinterSetup.Orientation = poLandscape
-        PrinterSetup.PaperName = 'Custom'
+        PrinterSetup.PaperName = 'A3'
         PrinterSetup.PrinterName = 'Default'
         PrinterSetup.SaveDeviceSettings = False
         PrinterSetup.mmMarginBottom = 10000
@@ -5351,6 +5351,26 @@ object Report: TppReport
       LookupSettings.SortOrder = soName
       Value = False
       UserName = 'bis14'
+    end
+    object ppParameter2: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = 'AnlageD'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'AnlageD'
+      UserName = 'Anlage'
+    end
+    object ppParameter3: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = 'AnlageD35'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'AnlageD35'
+      UserName = 'Formular'
     end
   end
 end

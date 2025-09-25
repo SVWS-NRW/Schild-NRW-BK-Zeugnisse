@@ -16,7 +16,7 @@ object Report: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\progs\svws\SchILD-Reports\Schild-NRW-BK-Zeugnisse\Anlagen mit' +
+    'C:\progs\SVWS\SchILD-Reports\Schild-NRW-BK-Zeugnisse\Anlagen mit' +
     ' Zeugniseinstellungen.ini\Schild2\Anlage D\FHRsT-2024i-AnlD(D35a' +
     ').rtm'
   Template.Format = ftASCII
@@ -4295,6 +4295,26 @@ object Report: TppReport
       LookupSettings.SortOrder = soName
       Value = ''
       UserName = 'Archivierung'
+    end
+    object ppParameter1: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = 'AnlageD'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'AnlageD'
+      UserName = 'Anlage'
+    end
+    object ppParameter2: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = 'AnlageD35a'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'AnlageD35a'
+      UserName = 'Formular'
     end
   end
 end

@@ -3075,5 +3075,24 @@ object RepOrt: TppReport
       Value = 'Schildvorgabe'
       UserName = 'Archivierung'
     end
-  end
+    object ppParameter1: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = 'AnlageD'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'AnlageD'
+      UserName = 'Anlage'
+    end
+    object ppParameter2: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = 'AnlageD33b'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'AnlageD33b'
+      UserName = 'Formular'
+    end  end
 end
