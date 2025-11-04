@@ -44,7 +44,7 @@ jobs:
       # 5) ZIP-Archiv bauen, ohne Ordner und Dateien aus .zipignore
       - name: Build ZIP (uses .zipignore)
         shell: bash
-        run: zip -r ."/.zip/$--BK-Zeugnisse_$(date +'%d-%m-%Y').zip" . -x ".github/*" ".git/*" ".zip/*"
+        run: zip -r "./.zip/BK-Zeugnisse-v${VERSION}-$(date +'%d.%m.%Y').zip" . -x ".github/*" ".git/*" ".zip/*"
 
       # 6) GitHub Release erstellen oder aktualisieren
       - name: Create/Update GitHub Release
