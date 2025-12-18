@@ -14,12 +14,12 @@ object Report: TppReport
   PrinterSetup.mmMarginTop = 0
   PrinterSetup.mmPaperHeight = 297000
   PrinterSetup.mmPaperWidth = 420000
-  PrinterSetup.PaperSize = 256
+  PrinterSetup.PaperSize = 8
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\progs\SVWS\SchILD-Reports\Schild-NRW-BK-Zeugnisse\Anlagen mit' +
-    ' Zeugniseinstellungen.ini\Schild2\Anlage D\AGZ-2024i-AnlD-Kl12-1' +
-    '4mitFHRsT(D35).rtm'
+    'C:\Progs\SVWS\SchILD-Reports\Git-BK-Zeugnisse\Anlagen mit Zeugni' +
+    'seinstellungen.ini\Schild2\Anlage D\AGZ-2024i-AnlD-Kl12-14mitFHR' +
+    'sT(D35).rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -106,7 +106,7 @@ object Report: TppReport
         PrinterSetup.mmMarginTop = 0
         PrinterSetup.mmPaperHeight = 297000
         PrinterSetup.mmPaperWidth = 420000
-        PrinterSetup.PaperSize = 256
+        PrinterSetup.PaperSize = 8
         Template.DatabaseSettings.Name = 'Sub_Seite4_1'
         Template.Format = ftASCII
         Units = utMillimeters
@@ -151,7 +151,7 @@ object Report: TppReport
               PrinterSetup.mmMarginTop = 0
               PrinterSetup.mmPaperHeight = 297000
               PrinterSetup.mmPaperWidth = 420000
-              PrinterSetup.PaperSize = 256
+              PrinterSetup.PaperSize = 8
               Template.Format = ftASCII
               Units = utMillimeters
               Version = '15.05'
@@ -774,7 +774,7 @@ object Report: TppReport
         PrinterSetup.mmMarginTop = 0
         PrinterSetup.mmPaperHeight = 297000
         PrinterSetup.mmPaperWidth = 420000
-        PrinterSetup.PaperSize = 256
+        PrinterSetup.PaperSize = 8
         Template.DatabaseSettings.Name = 'Sub_Seite4_1'
         Template.Format = ftASCII
         Units = utMillimeters
@@ -831,7 +831,7 @@ object Report: TppReport
               'fprq2 Calibri;}{\f3\fnil Calibri;}}'#13#10'{\colortbl ;\red0\green0\bl' +
               'ue0;}'#13#10'\viewkind4\uc1\pard\cf1\f0\fs24 In der Konferenz am <dbte' +
               'xt datapipeline='#39'plLernabschnitte'#39'>Konferenzdatum</dbtext> sind ' +
-              'folgende Leistungen\f1\'#39'b9\f2\u722?\cf0\kerning2\u8308?\cf1\kern' +
+              'folgende Leistungen\f1\'#39'b9\f2\u722?\cf0\kerning2\f1\'#39'b2\cf1\kern' +
               'ing0\f0  festgestellt worden:\f3\fs22\par'#13#10'}'#13#10#0
             RemoveEmptyLines = False
             Stretch = True
@@ -883,7 +883,7 @@ object Report: TppReport
               PrinterSetup.mmMarginTop = 0
               PrinterSetup.mmPaperHeight = 297000
               PrinterSetup.mmPaperWidth = 170000
-              PrinterSetup.PaperSize = 256
+              PrinterSetup.PaperSize = 199
               Template.Format = ftASCII
               Units = utMillimeters
               Version = '15.05'
@@ -922,7 +922,7 @@ object Report: TppReport
                   Border.BorderPositions = [bpTop, bpRight, bpBottom]
                   Border.Visible = True
                   Border.Weight = 0.750000000000000000
-                  Caption = 'Aufga-'#13#10'ben-feld'#178
+                  Caption = 'Aufga-'#13#10'ben-feld'#179
                   Font.Charset = DEFAULT_CHARSET
                   Font.Color = clWindowText
                   Font.Name = 'Calibri'
@@ -945,7 +945,7 @@ object Report: TppReport
                   Border.BorderPositions = [bpTop, bpRight, bpBottom]
                   Border.Visible = True
                   Border.Weight = 0.750000000000000000
-                  Caption = 'Kurs- art'#179
+                  Caption = 'Kurs- art'#8308
                   Font.Charset = DEFAULT_CHARSET
                   Font.Color = clWindowText
                   Font.Name = 'Calibri'
@@ -968,7 +968,7 @@ object Report: TppReport
                   Border.BorderPositions = [bpTop, bpRight, bpBottom]
                   Border.Visible = True
                   Border.Weight = 0.750000000000000000
-                  Caption = 'Leistungen'#8308' im Halbjahr'
+                  Caption = 'Leistungen'#8309' im Halbjahr'
                   Font.Charset = DEFAULT_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
@@ -1689,7 +1689,7 @@ object Report: TppReport
               PrinterSetup.mmMarginTop = 0
               PrinterSetup.mmPaperHeight = 297000
               PrinterSetup.mmPaperWidth = 170000
-              PrinterSetup.PaperSize = 256
+              PrinterSetup.PaperSize = 199
               Template.Format = ftASCII
               Units = utMillimeters
               Version = '15.05'
@@ -2564,10 +2564,10 @@ object Report: TppReport
               'cher Wertung und stets zweistellig angegeben.\f1\par'#13#10'}'#13#10#0
             RemoveEmptyLines = False
             Visible = False
-            mmHeight = 8000
-            mmLeft = 20000
-            mmTop = 209000
-            mmWidth = 170000
+            mmHeight = 6350
+            mmLeft = 20108
+            mmTop = 204523
+            mmWidth = 170127
             BandType = 4
             LayerName = Foreground1
             mmBottomOffset = 0
@@ -2589,27 +2589,30 @@ object Report: TppReport
               '\blue0;}'#13#10'\viewkind4\uc1\pard\nowidctlpar\fi-284\li284\qj\tx284\' +
               'super\f0\fs18 ____________________________________________\par'#13#10 +
               '\pard\nowidctlpar\fi-284\li284\qj\tx312 1\cf1\nosupersub\fs16\ta' +
-              'b Der Unterricht in den modernen Fremdsprachen hat auf der nach ' +
-              'dem Fach in Klammern angegebenen Niveaustufe des "Europ\'#39'e4ische' +
-              'n Referenzrahmens f\'#39'fcr Sprachen: Lernen, Lehren, Beurteilen" s' +
-              'tattgefunden. Sind zwei Referenz\-niveaus ausgewiesen, ist das n' +
-              'iedrigere in vollem Umfang, das h\'#39'f6here in Anteilen erreicht. ' +
-              'Bei mindestens ausreichenden Leistungen (5 Punkte) wird der spra' +
-              'chliche Kompetenzerwerb auf diesem Niveau bescheinigt. Die Nivea' +
-              'ustufe bezieht sich auf das letzte Schulhalbjahr, in dem das Fac' +
-              'h erteilt wurde.\par'#13#10'\pard\nowidctlpar\tx312\tx510\fs6\par'#13#10'\cf' +
-              '0\super\fs18 2\cf1\nosupersub\fs16\tab I\tab = sprachlich-litera' +
-              'risch-k\'#39'fcnstlerisches Aufgabenfeld\par'#13#10' \tab II\tab =  gesell' +
-              'schaftswissenschaftliches Aufgabenfeld\par'#13#10'\tab III\tab = mathe' +
-              'matisch-naturwissenschaftlich-technisches Aufgabenfeld\par'#13#10'\fs4' +
-              '\par'#13#10'\cf0\super\fs18 3\cf1\nosupersub\fs16\tab LK\tab = Leistun' +
-              'gskursfach\par'#13#10'\tab GK\tab = Grundkursfach\par'#13#10'\fs4\par'#13#10'\cf0\' +
-              'super\fs18 4\cf1\nosupersub\fs16\tab F\'#39'fcr die Umsetzung von No' +
-              'ten in Punkte gilt:\par'#13#10'}'#13#10#0
+              'b Notenstufen gem\'#39'e4\'#39'df \'#39'a7 48 Absatz 3 SchulG: sehr gut (1),' +
+              ' gut (2), befriedigend (3), ausreichend (4), mangelhaft (5), ung' +
+              'en\'#39'fcgend (6)\par'#13#10'\cf0\super\fs18 2\cf1\nosupersub\fs16\tab De' +
+              'r Unterricht in den modernen Fremdsprachen hat auf der nach dem ' +
+              'Fach in Klammern angegebenen Niveaustufe des "Europ\'#39'e4ischen Re' +
+              'ferenzrahmens f\'#39'fcr Sprachen: Lernen, Lehren, Beurteilen" statt' +
+              'gefunden. Sind zwei Referenz\-niveaus ausgewiesen, ist das niedr' +
+              'igere in vollem Umfang, das h\'#39'f6here in Anteilen erreicht. Bei ' +
+              'mindestens ausreichenden Leistungen (5 Punkte) wird der sprachli' +
+              'che Kompetenzerwerb auf diesem Niveau bescheinigt. Die Niveaustu' +
+              'fe bezieht sich auf das letzte Schulhalbjahr, in dem das Fach er' +
+              'teilt wurde.\par'#13#10'\pard\nowidctlpar\tx312\tx510\fs6\par'#13#10'\cf0\su' +
+              'per\fs18 3\cf1\nosupersub\fs16\tab I\tab = sprachlich-literarisc' +
+              'h-k\'#39'fcnstlerisches Aufgabenfeld\par'#13#10' \tab II\tab =  gesellscha' +
+              'ftswissenschaftliches Aufgabenfeld\par'#13#10'\tab III\tab = mathemati' +
+              'sch-naturwissenschaftlich-technisches Aufgabenfeld\par'#13#10'\fs4\par' +
+              #13#10'\cf0\super\fs18 4\cf1\nosupersub\fs16\tab LK\tab = Leistungsku' +
+              'rsfach\par'#13#10'\tab GK\tab = Grundkursfach\par'#13#10'\fs4\par'#13#10'\cf0\supe' +
+              'r\fs18 5\cf1\nosupersub\fs16\tab F\'#39'fcr die Umsetzung von Noten ' +
+              'in Punkte gilt:\par'#13#10'}'#13#10#0
             RemoveEmptyLines = False
-            mmHeight = 44000
+            mmHeight = 46567
             mmLeft = 20000
-            mmTop = 214000
+            mmTop = 211403
             mmWidth = 170000
             BandType = 4
             LayerName = Foreground1
@@ -3785,7 +3788,7 @@ object Report: TppReport
               PrinterSetup.mmMarginTop = 0
               PrinterSetup.mmPaperHeight = 55000
               PrinterSetup.mmPaperWidth = 170000
-              PrinterSetup.PaperSize = 256
+              PrinterSetup.PaperSize = 199
               Template.Format = ftASCII
               Units = utMillimeters
               Version = '15.05'

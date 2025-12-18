@@ -16,8 +16,8 @@ object Report: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\progs\schild-nrw\SchILD-Reports\Schild-NRW-BK-Zeugnisse\Anlag' +
-    'e D\AGZ-2024-AnlD FOS13- nach Pr  (Anl D45).rtm'
+    'C:\Progs\SVWS\SchILD-Reports\Git-BK-Zeugnisse\Anlage D\AGZ-2024-' +
+    'AnlD FOS13- nach Pr  (Anl D45).rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -1782,18 +1782,17 @@ object Report: TppReport
               '{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcha' +
               'rset0 Lucida Sans;}{\f1\fswiss\fcharset0 ArialMT;}}'#13#10'\viewkind4\' +
               'uc1\pard\qj\b\f0\fs20 Rechtsbehelfsbelehrung:\par'#13#10'\b0 Gegen die' +
-              ' Noten f\'#39'fcr die Pr\'#39'fcfungsleistungen und die Abschlussnoten e' +
-              'inschlie\'#39'dflich der Durchschnittsnote kann innerhalb eines Mona' +
-              'ts nach Bekanntgabe des Zeugnisses Widerspruch eingelegt werden.' +
-              ' Der Widerspruch ist beim <dbtext datapipeline='#39'EigeneSchule'#39'>Be' +
-              'zeichnung1</dbtext>, <dbtext datapipeline='#39'EigeneSchule'#39'>Strasse' +
-              '</dbtext>, <dbtext datapipeline='#39'EigeneSchule'#39'>PlzOrt</dbtext>  ' +
-              'schriftlich oder zur Niederschrift zu erheben. Falls die Frist d' +
-              'urch das Verschulden einer/eines Bevollm\'#39'e4chtigten vers\'#39'e4umt' +
-              ' wird, wird dieses Verschulden der Widerspruchsf\'#39'fchrerin/dem W' +
-              'iderspruchsf\'#39'fchrer zugerechnet.\f1\par'#13#10'\pard\qr\tab\tab\tab\t' +
-              'ab\tab\tab\tab\tab\tab\f0 Schulnummer: <dbtext datapipeline='#39'Eig' +
-              'eneSchule'#39'>SchulNr</dbtext>\fs22\par'#13#10'\pard\qj\f1\fs20\par'#13#10'}'#13#10#0
+              'ses Zeugnis kann innerhalb eines Monats nach Bekanntgabe des Zeu' +
+              'gnisses Widerspruch eingelegt werden. Der Widerspruch ist beim <' +
+              'dbtext datapipeline='#39'EigeneSchule'#39'>Bezeichnung1</dbtext>, <dbtex' +
+              't datapipeline='#39'EigeneSchule'#39'>Strasse</dbtext>, <dbtext datapipe' +
+              'line='#39'EigeneSchule'#39'>PlzOrt</dbtext>  schriftlich oder zur Nieder' +
+              'schrift zu erheben. Falls die Frist durch das Verschulden einer/' +
+              'eines Bevollm\'#39'e4chtigten vers\'#39'e4umt wird, wird dieses Verschul' +
+              'den der Widerspruchsf\'#39'fchrerin/dem Widerspruchsf\'#39'fchrer zugere' +
+              'chnet.\f1\par'#13#10'\pard\qr\tab\tab\tab\tab\tab\tab\tab\tab\tab\f0 S' +
+              'chulnummer: <dbtext datapipeline='#39'EigeneSchule'#39'>SchulNr</dbtext>' +
+              '\fs22\par'#13#10'\pard\qj\f1\fs20\par'#13#10'}'#13#10#0
             RemoveEmptyLines = False
             ShiftRelativeTo = ppSubReport7
             Stretch = True

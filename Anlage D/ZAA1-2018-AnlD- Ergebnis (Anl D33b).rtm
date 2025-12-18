@@ -15,8 +15,9 @@ object Report: TppReport
   PrinterSetup.mmPaperWidth = 210080
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
-  Template.FileName =
-    'D:\SchILD-NRW\SchILD-Reports\Zeugnisse 2016 Lucida\Anlage D\ZAA1-2018-AnlD- Ergebnis (Anl D33b).rtm'
+  Template.FileName = 
+    'C:\Progs\SVWS\SchILD-Reports\Git-BK-Zeugnisse\Anlage D\ZAA1-2018' +
+    '-AnlD- Ergebnis (Anl D33b).rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -1193,10 +1194,10 @@ object Report: TppReport
                       end
                     end
                   end
-                  object ppTableColumn4: TppTableColumn
+                  object ppTableColumn1: TppTableColumn
                     mmWidth = 74348
                   end
-                  object ppTableColumn5: TppTableColumn
+                  object ppTableColumn2: TppTableColumn
                     mmWidth = 12435
                   end
                 end
@@ -1267,10 +1268,10 @@ object Report: TppReport
                       mmPadding = 1058
                     end
                   end
-                  object ppTableColumn7: TppTableColumn
+                  object ppTableColumn3: TppTableColumn
                     mmWidth = 74348
                   end
-                  object ppTableColumn8: TppTableColumn
+                  object ppTableColumn6: TppTableColumn
                     mmWidth = 12435
                   end
                 end
@@ -1528,16 +1529,16 @@ object Report: TppReport
                       mmPadding = 1058
                     end
                   end
-                  object ppTableColumn10: TppTableColumn
+                  object ppTableColumn9: TppTableColumn
                     mmWidth = 118798
                   end
-                  object ppTableColumn11: TppTableColumn
+                  object ppTableColumn14: TppTableColumn
                     mmWidth = 14023
                   end
-                  object ppTableColumn12: TppTableColumn
+                  object ppTableColumn15: TppTableColumn
                     mmWidth = 11906
                   end
-                  object ppTableColumn13: TppTableColumn
+                  object ppTableColumn16: TppTableColumn
                     mmWidth = 12435
                   end
                 end
@@ -2187,17 +2188,17 @@ object Report: TppReport
               '{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcha' +
               'rset0 Lucida Sans;}{\f1\fnil Lucida Sans;}}'#13#10'{\colortbl ;\red0\g' +
               'reen0\blue0;}'#13#10'\viewkind4\uc1\pard\qj\cf1\b\f0\fs16 Rechtsbehelf' +
-              'sbelehrung\b0 : \par'#13#10'Gegen diese Bescheinigung kann innerhalb e' +
-              'ines Monats nach Bekanntgabe der Bescheinigung Widerspruch erhob' +
-              'en werden. Der Widerspruch ist schriftlich oder zur Niederschrif' +
-              't beim <dbtext datapipeline='#39'EigeneSchule'#39'>Bezeichnung1</dbtext>' +
-              ', <dbtext datapipeline='#39'EigeneSchule'#39'>Strasse</dbtext>, <dbtext ' +
-              'datapipeline='#39'EigeneSchule'#39'>PlzOrt</dbtext> zu erheben. \par'#13#10'Fa' +
-              'lls die Frist durch das Verschulden einer/eines Bevollm\'#39'e4chtig' +
-              'ten vers\'#39'e4umt wird, so wird dieses Verschulden der Widerspruch' +
-              'sf\'#39'fchrerin/dem Widerspruchsf\'#39'fchrer zugerechnet. \f1\tab\tab\' +
-              'tab\tab\par'#13#10'\pard\qr Schulnummer: <dbtext datapipeline='#39'EigeneS' +
-              'chule'#39'>SchulNr</dbtext>\par'#13#10'}'#13#10#0
+              'sbelehrung\b0 : \par'#13#10'Gegen die Kursabschlussnoten der Jahrgangs' +
+              'stufe 13.2 kann innerhalb eines Monats nach Bekanntgabe der Besc' +
+              'heinigung Widerspruch eingelegt werden. Der Widerspruch ist beim' +
+              ' <dbtext datapipeline='#39'EigeneSchule'#39'>Bezeichnung1</dbtext>, <dbt' +
+              'ext datapipeline='#39'EigeneSchule'#39'>Strasse</dbtext>, <dbtext datapi' +
+              'peline='#39'EigeneSchule'#39'>PlzOrt</dbtext> schriftlich oder zur Niede' +
+              'rschrift zu erheben. Falls die Frist durch das Verschulden einer' +
+              '/eines Bevollm\'#39'e4chtigten vers\'#39'e4umt wird, so wird dieses Vers' +
+              'chulden der Widerspruchsf\'#39'fchrerin/dem Widerspruchsf\'#39'fchrer zu' +
+              'gerechnet. \f1\tab\tab\tab\tab\par'#13#10'\pard\qr Schulnummer: <dbtex' +
+              't datapipeline='#39'EigeneSchule'#39'>SchulNr</dbtext>\par'#13#10'}'#13#10#0
             RemoveEmptyLines = False
             Stretch = True
             Transparent = True

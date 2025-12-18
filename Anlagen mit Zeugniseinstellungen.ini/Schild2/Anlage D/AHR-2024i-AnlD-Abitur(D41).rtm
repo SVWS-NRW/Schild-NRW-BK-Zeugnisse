@@ -14,12 +14,12 @@ object Report: TppReport
   PrinterSetup.mmMarginTop = 0
   PrinterSetup.mmPaperHeight = 297000
   PrinterSetup.mmPaperWidth = 420000
-  PrinterSetup.PaperSize = 256
+  PrinterSetup.PaperSize = 8
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\progs\SVWS\SchILD-Reports\Schild-NRW-BK-Zeugnisse\Anlagen mit' +
-    ' Zeugniseinstellungen.ini\Schild2\Anlage D\AHR-2024i-AnlD-Abitur' +
-    '(D41).rtm'
+    'C:\Progs\SVWS\SchILD-Reports\Git-BK-Zeugnisse\Anlagen mit Zeugni' +
+    'seinstellungen.ini\Schild2\Anlage D\AHR-2024i-AnlD-Abitur(D41).r' +
+    'tm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -106,7 +106,7 @@ object Report: TppReport
         PrinterSetup.mmMarginTop = 0
         PrinterSetup.mmPaperHeight = 297000
         PrinterSetup.mmPaperWidth = 420000
-        PrinterSetup.PaperSize = 256
+        PrinterSetup.PaperSize = 8
         Template.DatabaseSettings.Name = 'Sub_Seite4_1'
         Template.Format = ftASCII
         Units = utMillimeters
@@ -183,7 +183,7 @@ object Report: TppReport
               PrinterSetup.mmMarginTop = 0
               PrinterSetup.mmPaperHeight = 100000
               PrinterSetup.mmPaperWidth = 170000
-              PrinterSetup.PaperSize = 256
+              PrinterSetup.PaperSize = 199
               Template.Format = ftASCII
               Units = utMillimeters
               Version = '15.05'
@@ -444,7 +444,7 @@ object Report: TppReport
               PrinterSetup.mmMarginTop = 0
               PrinterSetup.mmPaperHeight = 50000
               PrinterSetup.mmPaperWidth = 165000
-              PrinterSetup.PaperSize = 256
+              PrinterSetup.PaperSize = 199
               Template.DatabaseSettings.Name = 'Sub_Bem'
               Template.Format = ftASCII
               Units = utMillimeters
@@ -578,7 +578,7 @@ object Report: TppReport
               PrinterSetup.mmMarginTop = 0
               PrinterSetup.mmPaperHeight = 100000
               PrinterSetup.mmPaperWidth = 170000
-              PrinterSetup.PaperSize = 256
+              PrinterSetup.PaperSize = 199
               Template.Format = ftASCII
               Units = utMillimeters
               Version = '15.05'
@@ -1052,20 +1052,19 @@ object Report: TppReport
               '{\rtf1\ansi\ansicpg1252\deff0{\fonttbl{\f0\fnil Calibri;}{\f1\fn' +
               'il\fcharset0 Calibri;}}'#13#10'{\colortbl ;\red0\green0\blue0;}'#13#10'\view' +
               'kind4\uc1\pard\qj\cf1\lang1031\f0\fs24 Rechtsbehelfsbelehrung: \' +
-              'par'#13#10'\f1 Gegen die Kursabschlussnoten der Jahrgangsstufe 13.2 un' +
-              'd die Leistungen in der Abiturpr\'#39'fcfung sowie die Berechnung de' +
-              'r Gesamtqualifikation einschlie\'#39'dflich der Durchschnittsnote ka' +
-              'nn innerhalb eines Monats nach Bekanntgabe des Zeugnisses Widers' +
-              'pruch erhoben werden. Der Widerspruch ist bei der Schule (<dbtex' +
-              't datapipeline='#39'EigeneSchule'#39'>Bezeichnung1</dbtext>, <dbtext dat' +
-              'apipeline='#39'EigeneSchule'#39'>Strasse</dbtext>, <dbtext datapipeline=' +
-              #39'EigeneSchule'#39'>PLZ</dbtext> <dbtext datapipeline='#39'EigeneSchule'#39'>' +
-              'Ort</dbtext\f0 >), schriftlich oder zur Niederschrift zu erheben' +
-              '. \par'#13#10'\f1 Falls die Frist durch das Verschulden einer/eines Be' +
-              'vollm\'#39'e4chtigten vers\'#39'e4umt wird, wird dieses Verschulden der ' +
-              'Widerspruchsf\'#39'fchrerin/dem Widerspruchsf\'#39'fchrer zugerechnet.\p' +
-              'ar'#13#10'\f0\fs12\par'#13#10'\pard\qr\fs24 Schulnummer: <dbtext datapipelin' +
-              'e='#39'EigeneSchule'#39'>SchulNr</dbtext>\par'#13#10'}'#13#10#0
+              'par'#13#10'\f1 Gegen die Leistungen in der Abiturpr\'#39'fcfung sowie die ' +
+              'Berechnung der Gesamtqualifikation einschlie\'#39'dflich der Durchsc' +
+              'hnittsnote kann innerhalb eines Monats nach Bekanntgabe des Zeug' +
+              'nisses Widerspruch erhoben werden. Der Widerspruch ist bei der S' +
+              'chule (<dbtext datapipeline='#39'EigeneSchule'#39'>Bezeichnung1</dbtext>' +
+              ', <dbtext datapipeline='#39'EigeneSchule'#39'>Strasse</dbtext>, <dbtext ' +
+              'datapipeline='#39'EigeneSchule'#39'>PLZ</dbtext> <dbtext datapipeline='#39'E' +
+              'igeneSchule'#39'>Ort</dbtext\f0 >), schriftlich oder zur Niederschri' +
+              'ft zu erheben. \par'#13#10'\f1 Falls die Frist durch das Verschulden e' +
+              'iner/eines Bevollm\'#39'e4chtigten vers\'#39'e4umt wird, wird dieses Ver' +
+              'schulden der Widerspruchsf\'#39'fchrerin/dem Widerspruchsf\'#39'fchrer z' +
+              'ugerechnet.\par'#13#10'\f0\fs12\par'#13#10'\pard\qr\fs24 Schulnummer: <dbtex' +
+              't datapipeline='#39'EigeneSchule'#39'>SchulNr</dbtext>\par'#13#10'}'#13#10#0
             RemoveEmptyLines = False
             Stretch = True
             mmHeight = 47890
@@ -1789,9 +1788,8 @@ object Report: TppReport
         PrinterSetup.mmMarginTop = 0
         PrinterSetup.mmPaperHeight = 297000
         PrinterSetup.mmPaperWidth = 420000
-        PrinterSetup.PaperSize = 256
+        PrinterSetup.PaperSize = 8
         Template.DatabaseSettings.Name = 'Sub_Seite4_1'
-        Template.Offset = 284
         Template.Format = ftASCII
         Units = utMillimeters
         Version = '15.05'
@@ -3270,7 +3268,7 @@ object Report: TppReport
               PrinterSetup.mmMarginTop = 0
               PrinterSetup.mmPaperHeight = 20000
               PrinterSetup.mmPaperWidth = 165000
-              PrinterSetup.PaperSize = 256
+              PrinterSetup.PaperSize = 199
               Template.Format = ftASCII
               Units = utMillimeters
               Version = '15.05'
@@ -3553,7 +3551,7 @@ object Report: TppReport
               PrinterSetup.mmMarginTop = 0
               PrinterSetup.mmPaperHeight = 20000
               PrinterSetup.mmPaperWidth = 165000
-              PrinterSetup.PaperSize = 256
+              PrinterSetup.PaperSize = 199
               Template.Format = ftASCII
               Units = utMillimeters
               Version = '15.05'
@@ -4780,7 +4778,7 @@ object Report: TppReport
               PrinterSetup.mmMarginTop = 0
               PrinterSetup.mmPaperHeight = 50000
               PrinterSetup.mmPaperWidth = 165000
-              PrinterSetup.PaperSize = 256
+              PrinterSetup.PaperSize = 199
               Template.Format = ftASCII
               Units = utMillimeters
               Version = '15.05'
@@ -5337,7 +5335,7 @@ object Report: TppReport
               PrinterSetup.mmMarginTop = 0
               PrinterSetup.mmPaperHeight = 60000
               PrinterSetup.mmPaperWidth = 165000
-              PrinterSetup.PaperSize = 256
+              PrinterSetup.PaperSize = 199
               Template.Format = ftASCII
               Units = utMillimeters
               Version = '15.05'
@@ -5916,7 +5914,7 @@ object Report: TppReport
               PrinterSetup.mmMarginTop = 0
               PrinterSetup.mmPaperHeight = 40000
               PrinterSetup.mmPaperWidth = 165000
-              PrinterSetup.PaperSize = 256
+              PrinterSetup.PaperSize = 199
               Template.Format = ftASCII
               Units = utMillimeters
               Version = '15.05'

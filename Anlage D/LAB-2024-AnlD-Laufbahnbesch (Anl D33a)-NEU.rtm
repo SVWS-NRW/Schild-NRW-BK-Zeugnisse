@@ -17,8 +17,8 @@ object Report: TppReport
   PrinterSetup.PaperSize = 8
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\progs\schild-nrw\SchILD-Reports\Schild-NRW-BK-Zeugnisse\Anlag' +
-    'e D\LAB-2024-AnlD-Laufbahnbesch (Anl D33a)-NEU.rtm'
+    'C:\Progs\SVWS\SchILD-Reports\Git-BK-Zeugnisse\Anlage D\LAB-2024-' +
+    'AnlD-Laufbahnbesch (Anl D33a)-NEU.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -719,7 +719,7 @@ object Report: TppReport
                   Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
                   Border.Visible = True
                   Border.Weight = 0.750000000000000000
-                  Caption = 'Fach'#185
+                  Caption = 'Fach'
                   Font.Charset = DEFAULT_CHARSET
                   Font.Color = clWindowText
                   Font.Name = 'Calibri'
@@ -741,7 +741,7 @@ object Report: TppReport
                   Border.BorderPositions = [bpTop, bpRight, bpBottom]
                   Border.Visible = True
                   Border.Weight = 0.750000000000000000
-                  Caption = 'Aufga-'#13#10'benfeld'#178
+                  Caption = 'Aufga-'#13#10'benfeld'#185
                   Font.Charset = DEFAULT_CHARSET
                   Font.Color = clWindowText
                   Font.Name = 'Calibri'
@@ -764,7 +764,7 @@ object Report: TppReport
                   Border.BorderPositions = [bpTop, bpRight, bpBottom]
                   Border.Visible = True
                   Border.Weight = 0.750000000000000000
-                  Caption = 'Abitur-'#13#10'fach'#179
+                  Caption = 'Abitur-'#13#10'fach'#178
                   Font.Charset = DEFAULT_CHARSET
                   Font.Color = clWindowText
                   Font.Name = 'Calibri'
@@ -787,7 +787,7 @@ object Report: TppReport
                   Border.BorderPositions = [bpTop, bpRight, bpBottom]
                   Border.Visible = True
                   Border.Weight = 0.750000000000000000
-                  Caption = 'Leistungen im Halbjahr'
+                  Caption = 'Leistungen'#179' im Halbjahr'
                   Font.Charset = DEFAULT_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
