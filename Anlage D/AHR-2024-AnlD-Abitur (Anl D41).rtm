@@ -17,8 +17,8 @@ object Report: TppReport
   PrinterSetup.PaperSize = 8
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\progs\schild-nrw\SchILD-Reports\Schild-NRW-BK-Zeugnisse\Anlag' +
-    'e D\AHR-2024-AnlD-Abitur (Anl D41).rtm'
+    'C:\Progs\SVWS\SchILD-Reports\Git-BK-Zeugnisse\Anlage D\AHR-2024-' +
+    'AnlD-Abitur (Anl D41).rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -107,7 +107,6 @@ object Report: TppReport
         PrinterSetup.mmPaperWidth = 420000
         PrinterSetup.PaperSize = 8
         Template.DatabaseSettings.Name = 'Sub_Seite4_1'
-        Template.Offset = 284
         Template.Format = ftASCII
         Units = utMillimeters
         Version = '15.05'
@@ -117,7 +116,7 @@ object Report: TppReport
           Background2.Brush.Style = bsClear
           PrintHeight = phDynamic
           mmBottomOffset = 0
-          mmHeight = 6085
+          mmHeight = 7408
           mmPrintPosition = 0
           object ppSubReport4: TppSubReport
             UserName = 'Seite4'
@@ -594,20 +593,19 @@ object Report: TppReport
                       '{\rtf1\ansi\ansicpg1252\deff0{\fonttbl{\f0\fnil\fcharset0 Lucida' +
                       ' Sans;}{\f1\fnil Lucida Sans;}}'#13#10'{\colortbl ;\red0\green0\blue0;' +
                       '}'#13#10'\viewkind4\uc1\pard\qj\cf1\lang1031\b\f0\fs18 Rechtsbehelfsbe' +
-                      'lehrung: \par'#13#10'\b0 Gegen die Kursabschlussnoten der Jahrgangsstu' +
-                      'fe 13.2 und die Leistungen in der Abiturpr\'#39'fcfung sowie die Ber' +
-                      'echnung der Gesamtqualifikation einschlie\'#39'dflich der Durchschni' +
-                      'ttsnote kann innerhalb eines Monats nach Bekanntgabe des Zeugnis' +
-                      'ses Widerspruch erhoben werden. Der Widerspruch ist bei der Schu' +
-                      'le (<dbtext datapipeline='#39'EigeneSchule'#39'>Bezeichnung1</dbtext>, <' +
-                      'dbtext datapipeline='#39'EigeneSchule'#39'>Strasse</dbtext>, <dbtext dat' +
-                      'apipeline='#39'EigeneSchule'#39'>PLZ</dbtext> <dbtext datapipeline='#39'Eige' +
-                      'neSchule'#39'>Ort</dbtext>), schriftlich oder zur Niederschrift zu e' +
-                      'rheben. \par'#13#10'Falls die Frist durch das Verschulden einer/eines ' +
-                      'Bevollm\'#39'e4chtigten vers\'#39'e4umt wird, wird dieses Verschulden de' +
-                      'r Widerspruchsf\'#39'fchrerin/dem Widerspruchsf\'#39'fchrer zugerechnet.' +
-                      '\par'#13#10'\pard\qr Schulnummer: <dbtext datapipeline='#39'EigeneSchule'#39'>' +
-                      'SchulNr</dbtext>\f1\fs16\par'#13#10'}'#13#10#0
+                      'lehrung: \par'#13#10'\b0 Gegen die Leistungen in der Abiturpr\'#39'fcfung ' +
+                      'sowie die Berechnung der Gesamtqualifikation einschlie\'#39'dflich d' +
+                      'er Durchschnittsnote kann innerhalb eines Monats nach Bekanntgab' +
+                      'e des Zeugnisses Widerspruch erhoben werden. Der Widerspruch ist' +
+                      ' bei der Schule (<dbtext datapipeline='#39'EigeneSchule'#39'>Bezeichnung' +
+                      '1</dbtext>, <dbtext datapipeline='#39'EigeneSchule'#39'>Strasse</dbtext>' +
+                      ', <dbtext datapipeline='#39'EigeneSchule'#39'>PLZ</dbtext> <dbtext datap' +
+                      'ipeline='#39'EigeneSchule'#39'>Ort</dbtext>), schriftlich oder zur Niede' +
+                      'rschrift zu erheben. \par'#13#10'Falls die Frist durch das Verschulden' +
+                      ' einer/eines Bevollm\'#39'e4chtigten vers\'#39'e4umt wird, wird dieses V' +
+                      'erschulden der Widerspruchsf\'#39'fchrerin/dem Widerspruchsf\'#39'fchrer' +
+                      ' zugerechnet.\par'#13#10'\pard\qr Schulnummer: <dbtext datapipeline='#39'E' +
+                      'igeneSchule'#39'>SchulNr</dbtext>\f1\fs16\par'#13#10'}'#13#10#0
                     RemoveEmptyLines = False
                     mmHeight = 34396
                     mmLeft = 15081
@@ -1837,7 +1835,6 @@ object Report: TppReport
               PrinterSetup.mmPaperWidth = 210000
               PrinterSetup.PaperSize = 9
               Template.DatabaseSettings.Name = 'Sub_AbiA4_Seite2_neu'
-              Template.Offset = 284
               Template.Format = ftASCII
               Units = utMillimeters
               Version = '15.05'
@@ -2601,7 +2598,6 @@ object Report: TppReport
                     PrinterSetup.mmPaperWidth = 210016
                     PrinterSetup.PaperSize = 9
                     Template.DatabaseSettings.Name = 'Sub_Abif'#228'cher'
-                    Template.Offset = 284
                     Template.Format = ftASCII
                     Units = utMillimeters
                     Version = '15.05'
@@ -6289,8 +6285,10 @@ object Report: TppReport
                       'en schlie\'#39'dft das Zeugnis den "Europ\'#39'e4ischen Referenzrahmen f' +
                       '\'#39'fcr Sprachen: Lernen, Lehren, Beurteilen" ein. Sind zwei Refer' +
                       'enzniveaus angegeben, ist das niedrigere in vollem Umfang, das h' +
-                      '\'#39'f6here in Anteilen erreicht.\par'#13#10'\pard\fi-480\li480\qj\f2\par' +
-                      #13#10'\pard\fi-480\li480\par'#13#10'\pard\par'#13#10'}'#13#10#0
+                      '\'#39'f6here in Anteilen erreicht. Das ausgewiesene Niveau kann auch' +
+                      ' in einem vorangegangenen Schuljahr erreicht worden sein.\par'#13#10'\' +
+                      'pard\fi-480\li480\qj\f2\par'#13#10'\pard\fi-480\li480\par'#13#10'\pard\par'#13#10 +
+                      '}'#13#10#0
                     RemoveEmptyLines = False
                     Stretch = True
                     mmHeight = 35190

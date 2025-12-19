@@ -17,8 +17,8 @@ object Report: TppReport
   PrinterSetup.PaperSize = 8
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\progs\SVWS\SchILD-Reports\Schild-NRW-BK-Zeugnisse\Anlage D\AG' +
-    'Z-2024-AnlD12-14- FHRsT (Anl D35) nur bis 13.rtm'
+    'C:\Progs\SVWS\SchILD-Reports\Git-BK-Zeugnisse\Anlage D\AGZ-2024-' +
+    'AnlD12-14- FHRsT (Anl D35) nur bis 13.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -789,9 +789,9 @@ object Report: TppReport
             Pen.Style = psClear
             Stretch = True
             Transparent = True
-            mmHeight = 64823
+            mmHeight = 69737
             mmLeft = 265
-            mmTop = 223309
+            mmTop = 218206
             mmWidth = 210080
             BandType = 4
             LayerName = Foreground1
@@ -810,7 +810,7 @@ object Report: TppReport
               Font.Style = []
               mmHeight = 14913
               mmLeft = 13229
-              mmTop = 261731
+              mmTop = 256628
               mmWidth = 158269
               BandType = 4
               LayerName = Foreground1
@@ -827,7 +827,7 @@ object Report: TppReport
               Transparent = True
               mmHeight = 3969
               mmLeft = 41804
-              mmTop = 262732
+              mmTop = 257629
               mmWidth = 12700
               BandType = 4
               LayerName = Foreground1
@@ -844,7 +844,7 @@ object Report: TppReport
               Transparent = True
               mmHeight = 3969
               mmLeft = 66940
-              mmTop = 262732
+              mmTop = 257629
               mmWidth = 5291
               BandType = 4
               LayerName = Foreground1
@@ -861,7 +861,7 @@ object Report: TppReport
               Transparent = True
               mmHeight = 3969
               mmLeft = 106098
-              mmTop = 262732
+              mmTop = 257629
               mmWidth = 18521
               BandType = 4
               LayerName = Foreground1
@@ -878,7 +878,7 @@ object Report: TppReport
               Transparent = True
               mmHeight = 3969
               mmLeft = 128852
-              mmTop = 262732
+              mmTop = 257629
               mmWidth = 17463
               BandType = 4
               LayerName = Foreground1
@@ -895,7 +895,7 @@ object Report: TppReport
               Transparent = True
               mmHeight = 3969
               mmLeft = 150284
-              mmTop = 262732
+              mmTop = 257629
               mmWidth = 19314
               BandType = 4
               LayerName = Foreground1
@@ -912,7 +912,7 @@ object Report: TppReport
               Transparent = True
               mmHeight = 3968
               mmLeft = 37571
-              mmTop = 267230
+              mmTop = 262127
               mmWidth = 17992
               BandType = 4
               LayerName = Foreground1
@@ -929,7 +929,7 @@ object Report: TppReport
               Transparent = True
               mmHeight = 3968
               mmLeft = 60061
-              mmTop = 267230
+              mmTop = 262127
               mmWidth = 17991
               BandType = 4
               LayerName = Foreground1
@@ -946,7 +946,7 @@ object Report: TppReport
               Transparent = True
               mmHeight = 3968
               mmLeft = 83344
-              mmTop = 267230
+              mmTop = 262127
               mmWidth = 16933
               BandType = 4
               LayerName = Foreground1
@@ -963,7 +963,7 @@ object Report: TppReport
               Transparent = True
               mmHeight = 3968
               mmLeft = 106098
-              mmTop = 267230
+              mmTop = 262127
               mmWidth = 17992
               BandType = 4
               LayerName = Foreground1
@@ -980,7 +980,7 @@ object Report: TppReport
               Transparent = True
               mmHeight = 3968
               mmLeft = 128059
-              mmTop = 267230
+              mmTop = 262127
               mmWidth = 17991
               BandType = 4
               LayerName = Foreground1
@@ -996,7 +996,7 @@ object Report: TppReport
               Transparent = True
               mmHeight = 3968
               mmLeft = 157692
-              mmTop = 267230
+              mmTop = 262127
               mmWidth = 2117
               BandType = 4
               LayerName = Foreground1
@@ -1013,7 +1013,7 @@ object Report: TppReport
               Transparent = True
               mmHeight = 3969
               mmLeft = 36513
-              mmTop = 272257
+              mmTop = 267154
               mmWidth = 21166
               BandType = 4
               LayerName = Foreground1
@@ -1030,7 +1030,7 @@ object Report: TppReport
               Transparent = True
               mmHeight = 3969
               mmLeft = 57944
-              mmTop = 272257
+              mmTop = 267154
               mmWidth = 21167
               BandType = 4
               LayerName = Foreground1
@@ -1047,7 +1047,7 @@ object Report: TppReport
               Transparent = True
               mmHeight = 3969
               mmLeft = 81492
-              mmTop = 272257
+              mmTop = 267154
               mmWidth = 21167
               BandType = 4
               LayerName = Foreground1
@@ -1064,7 +1064,7 @@ object Report: TppReport
               Transparent = True
               mmHeight = 3969
               mmLeft = 104511
-              mmTop = 272257
+              mmTop = 267154
               mmWidth = 21166
               BandType = 4
               LayerName = Foreground1
@@ -1081,7 +1081,7 @@ object Report: TppReport
               Transparent = True
               mmHeight = 3969
               mmLeft = 126471
-              mmTop = 272257
+              mmTop = 267154
               mmWidth = 22225
               BandType = 4
               LayerName = Foreground1
@@ -1097,7 +1097,7 @@ object Report: TppReport
               Transparent = True
               mmHeight = 3969
               mmLeft = 157163
-              mmTop = 272257
+              mmTop = 267154
               mmWidth = 4233
               BandType = 4
               LayerName = Foreground1
@@ -1113,7 +1113,7 @@ object Report: TppReport
               Font.Style = []
               mmHeight = 3704
               mmLeft = 14288
-              mmTop = 267242
+              mmTop = 262139
               mmWidth = 18256
               BandType = 4
               LayerName = Foreground1
@@ -1130,7 +1130,7 @@ object Report: TppReport
               Transparent = True
               mmHeight = 3598
               mmLeft = 14288
-              mmTop = 272269
+              mmTop = 267166
               mmWidth = 13229
               BandType = 4
               LayerName = Foreground1
@@ -1147,7 +1147,7 @@ object Report: TppReport
               Transparent = True
               mmHeight = 3969
               mmLeft = 82286
-              mmTop = 262732
+              mmTop = 257629
               mmWidth = 19579
               BandType = 4
               LayerName = Foreground1
@@ -1164,26 +1164,29 @@ object Report: TppReport
                 '{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcha' +
                 'rset0 Lucida Sans;}{\f1\fnil Lucida Sans;}}'#13#10'{\colortbl ;\red0\g' +
                 'reen0\blue0;}'#13#10'\viewkind4\uc1\pard\fi-260\li260\qj\cf1\f0\fs16 1' +
-                '  Der Unterricht in den modernen Fremdsprachen hat auf der nach ' +
-                'dem Fach in Klammern angegebenen Niveaustufe des "Europ\'#39'e4ische' +
-                'n Referenzrahmens f\'#39'fcr Sprachen: Lernen, Lehren, Beurteilen" s' +
-                'tattgefunden. Sind zwei Referenzniveaus ausgewiesen, ist das nie' +
-                'drigere in vollem Umfang, das h\'#39'f6here in Anteilen erreicht. Be' +
-                'i mindestens ausreichenden Leistungen (5 Punkte) wird der sprach' +
-                'liche Kompetenzerwerb auf diesem Niveau bescheinigt. Die Niveaus' +
-                'tufe bezieht sich auf das letzte Schulhalbjahr, in dem das Fach ' +
-                'ert\f1 eilt wurde.\par'#13#10'\pard\f0 2    I    = (sprachlich-literar' +
-                'isch-k\'#39'fcnstlerisches Aufgabenfeld)\f1\par'#13#10'     \f0  \f1 II   ' +
-                '= (gesellschaftswissenschaftliches Aufgabenfeld)\par'#13#10'     \f0  ' +
-                '\f1 III  = (mathematisch-naturwissenschaftlich-technisches Aufga' +
-                'benfeld)\par'#13#10'3\f0   \f1  LK = (Leistungskursfach)\par'#13#10'    \f0 ' +
-                ' \f1 GK = (Grundkursfach)\par'#13#10'\f0 4   F\'#39'fcr die Umsetzung von ' +
-                'Noten in Punkte gilt:\f1\tab\tab\tab\tab\tab\par'#13#10'}'#13#10#0
+                '  Notenstufen gem\'#39'e4\'#39'df \'#39'a7 48 Absatz 3 SchulG: sehr gut (1),' +
+                ' gut (2), befriedigend (3), ausreichend (4), mangelhaft (5), ung' +
+                'en\'#39'fcgend (6)\par'#13#10'2  Der Unterricht in den modernen Fremdsprac' +
+                'hen hat auf der nach dem Fach in Klammern angegebenen Niveaustuf' +
+                'e des "Europ\'#39'e4ischen Referenzrahmens f\'#39'fcr Sprachen: Lernen, ' +
+                'Lehren, Beurteilen" stattgefunden. Sind zwei Referenzniveaus aus' +
+                'gewiesen, ist das niedrigere in vollem Umfang, das h\'#39'f6here in ' +
+                'Anteilen erreicht. Bei mindestens ausreichenden Leistungen (5 Pu' +
+                'nkte) wird der sprachliche Kompetenzerwerb auf diesem Niveau bes' +
+                'cheinigt. Die Niveaustufe bezieht sich auf das letzte Schulhalbj' +
+                'ahr, in dem das Fach ert\f1 eilt wurde.\par'#13#10'\pard\f0 3    I    ' +
+                '= (sprachlich-literarisch-k\'#39'fcnstlerisches Aufgabenfeld)\f1\par' +
+                #13#10'     \f0  \f1 II   = (gesellschaftswissenschaftliches Aufgaben' +
+                'feld)\par'#13#10'     \f0  \f1 III  = (mathematisch-naturwissenschaftl' +
+                'ich-technisches Aufgabenfeld)\par'#13#10'\f0 4  \f1  LK = (Leistungsku' +
+                'rsfach)\par'#13#10'    \f0  \f1 GK = (Grundkursfach)\par'#13#10'\f0 5   F\'#39'f' +
+                'cr die Umsetzung von Noten in Punkte gilt:\f1\tab\tab\tab\tab\ta' +
+                'b\par'#13#10'}'#13#10#0
               RemoveEmptyLines = False
               Stretch = True
-              mmHeight = 35719
+              mmHeight = 40822
               mmLeft = 13230
-              mmTop = 224367
+              mmTop = 218395
               mmWidth = 157692
               BandType = 4
               LayerName = Foreground1
@@ -1269,7 +1272,7 @@ object Report: TppReport
           end
           object ppLabel37: TppLabel
             UserName = 'Label37'
-            Caption = '4'
+            Caption = '5'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Name = 'Lucida Sans'
@@ -1479,7 +1482,7 @@ object Report: TppReport
           end
           object ppLabel33: TppLabel
             UserName = 'Label15'
-            Caption = '2'
+            Caption = '3'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Name = 'Lucida Sans'
@@ -2309,7 +2312,7 @@ object Report: TppReport
           end
           object ppLabel32: TppLabel
             UserName = 'Label30'
-            Caption = '4'
+            Caption = '5'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Name = 'Lucida Sans'
@@ -2325,7 +2328,7 @@ object Report: TppReport
           end
           object ppLabel34: TppLabel
             UserName = 'Label31'
-            Caption = '(4)'
+            Caption = '5'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Name = 'Lucida Sans'
@@ -2335,13 +2338,13 @@ object Report: TppReport
             mmHeight = 3704
             mmLeft = 165100
             mmTop = 43392
-            mmWidth = 3440
+            mmWidth = 1852
             BandType = 4
             LayerName = Foreground1
           end
           object ppLabel41: TppLabel
             UserName = 'Label22'
-            Caption = '4'
+            Caption = '5'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Name = 'Lucida Sans'
@@ -2357,7 +2360,7 @@ object Report: TppReport
           end
           object ppLabel44: TppLabel
             UserName = 'Label34'
-            Caption = '3'
+            Caption = '4'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Name = 'Lucida Sans'
@@ -2551,8 +2554,8 @@ object Report: TppReport
               '\fnil Lucida Sans;}}'#13#10'{\colortbl ;\red0\green0\blue0;}'#13#10'\viewkin' +
               'd4\uc1\pard\cf1\f0\fs22 In der Konferenz am \b <dbtext datapipel' +
               'ine='#39'plLernabschnitte'#39'>Konferenzdatum</dbtext>\b0  sind folgende' +
-              ' \cf0\f1\fs24 Leistungen\super 1\cf1\nosupersub\f0\fs16  \fs22 f' +
-              'estgestellt worden.\f2\par'#13#10'}'#13#10#0
+              ' \cf0\f1\fs24 Leistungen\super 1, 2\cf1\nosupersub\f0\fs16  \fs2' +
+              '2 festgestellt worden.\f2\par'#13#10'}'#13#10#0
             RemoveEmptyLines = False
             Stretch = True
             Transparent = True
