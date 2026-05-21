@@ -15,9 +15,8 @@ object Report: TppReport
   PrinterSetup.mmPaperWidth = 210000
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
-  Template.FileName = 
-    'C:\progs\schild-nrw\SchILD-Reports\Schild-NRW-BK-Zeugnisse\Anlag' +
-    'e E\Zeugnisanlage Sozialwesen (E5b-1,2).rtm'
+  Template.FileName =
+    'C:\SchILD-NRW\SchILD-Reports\BK-Zeugnisse-v1.0.76-27.03.2026\Anlage E\Zeugnisanlage Sozialwesen 2026.1 (E5b-1,2).rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -915,13 +914,13 @@ object Report: TppReport
               'gnisses Widerspruch eingelegt werden. Der Widerspruch ist beim <' +
               'dbtext datapipeline='#39'EigeneSchule'#39'>Bezeichnung1</dbtext>, <dbtex' +
               't datapipeline='#39'EigeneSchule'#39'>Strasse</dbtext>, <dbtext datapipe' +
-              'line='#39'EigeneSchule'#39'>PlzOrt</dbtext>  schriftlich oder zur Nieder' +
-              'schrift zu erheben. Falls die Frist durch das Verschulden einer/' +
-              'eines Bevollm\'#39'e4chtigten vers\'#39'e4umt wird, wird dieses Verschul' +
-              'den der Widerspruchsf\'#39'fchrerin/dem Widerspruchsf\'#39'fchrer zugere' +
-              'chnet.\f1\fs20\par'#13#10'\pard\qr\fs18\tab\tab\tab\tab\tab\tab\tab\ta' +
-              'b\tab\f0\fs22 Schulnummer: <dbtext datapipeline='#39'EigeneSchule'#39'>S' +
-              'chulNr</dbtext>\f1\fs18\par'#13#10'\pard\qj\fs20\par'#13#10'}'#13#10#0
+              'line='#39'EigeneSchule'#39'>PlzOrt</dbtext> zu erheben. Falls die Frist ' +
+              'durch das Verschulden einer/eines Bevollm\'#39'e4chtigten vers\'#39'e4um' +
+              't wird, wird dieses Verschulden der Widerspruchsf\'#39'fchrerin/dem ' +
+              'Widerspruchsf\'#39'fchrer zugerechnet.\f1\fs20\par'#13#10'\pard\qr\fs18\ta' +
+              'b\tab\tab\tab\tab\tab\tab\tab\tab\f0\fs22 Schulnummer: <dbtext d' +
+              'atapipeline='#39'EigeneSchule'#39'>SchulNr</dbtext>\f1\fs18\par'#13#10'\pard\q' +
+              'j\fs20\par'#13#10'}'#13#10#0
             RemoveEmptyLines = False
             ShiftRelativeTo = ppSubReport7
             Stretch = True

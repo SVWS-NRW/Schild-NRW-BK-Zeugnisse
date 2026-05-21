@@ -2,7 +2,7 @@ object Report: TppReport
   AutoStop = False
   DataPipeline = dmPipelines.Schueler
   PrinterSetup.BinName = 'Default'
-  PrinterSetup.DocumentName = 'Z-2016- FS Sozialwesen Extern ohne Praxis.rtm'
+  PrinterSetup.DocumentName = 'Z-2026.1- FS Sozialwesen Extern nach Theoriepr'#252'fung.rtm'
   PrinterSetup.Duplex = dpHorizontal
   PrinterSetup.PaperName = 'A4 210 x 297 mm'
   PrinterSetup.PrinterName = 'Screen'
@@ -16,8 +16,8 @@ object Report: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\progs\schild-nrw\SchILD-Reports\Schild-NRW-BK-Zeugnisse\Anlag' +
-    'e E\Z-2016- FS Sozialwesen Extern ohne Praxis.rtm'
+    'C:\SchILD-NRW\SchILD-Reports\BK-Zeugnisse-v1.0.76-27.03.2026\Anl' +
+    'age E\Z-2026.1- FS Sozialwesen Extern nach Theoriepr'#252'fung.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -173,17 +173,16 @@ object Report: TppReport
               ' Bekanntgabe des Zeugnisses Widerspruch eingelegt werden. Der Wi' +
               'derspruch ist beim <dbtext datapipeline='#39'EigeneSchule'#39'>Bezeichnu' +
               'ng1</dbtext>, <dbtext datapipeline='#39'EigeneSchule'#39'>Strasse</dbtex' +
-              't>, <dbtext datapipeline='#39'EigeneSchule'#39'>PlzOrt</dbtext>  schrift' +
-              'lich oder zur Niederschrift zu erheben. \par'#13#10'Falls die Frist du' +
-              'rch das Verschulden einer/eines Bevollm\'#39'e4chtigten vers\'#39'e4umt ' +
-              'wird, wird dieses Verschulden der Widerspruchsf\'#39'fchrerin/dem Wi' +
-              'derspruchsf\'#39'fchrer zugerechnet.\f1\par'#13#10'\pard\nowidctlpar\fi-22' +
-              '7\li227\qr\tab\tab\tab\tab\tab\tab\tab\f0 Schulnummer: <dbtext d' +
-              'atapipeline='#39'EigeneSchule'#39'>SchulNr</dbtext>\par'#13#10'\pard\nowidctlp' +
-              'ar\qj\super\fs8\par'#13#10'\fs16 1)\nosupersub  Notenstufen gem\'#39'e4\'#39'd' +
-              'f \'#39'a7 48 Abs. 3 SchulG: \par'#13#10'   sehr gut (1), gut (2), befried' +
-              'igend (3), ausreichend (4), mangelhaft (5), ungen\'#39'fcgend (6)\cf' +
-              '1\par'#13#10'}'#13#10#0
+              't>, <dbtext datapipeline='#39'EigeneSchule'#39'>PlzOrt</dbtext> zu erheb' +
+              'en. \par'#13#10'Falls die Frist durch das Verschulden einer/eines Bevo' +
+              'llm\'#39'e4chtigten vers\'#39'e4umt wird, wird dieses Verschulden der Wi' +
+              'derspruchsf\'#39'fchrerin/dem Widerspruchsf\'#39'fchrer zugerechnet.\f1\' +
+              'par'#13#10'\pard\nowidctlpar\fi-227\li227\qr\tab\tab\tab\tab\tab\tab\t' +
+              'ab\f0 Schulnummer: <dbtext datapipeline='#39'EigeneSchule'#39'>SchulNr</' +
+              'dbtext>\par'#13#10'\pard\nowidctlpar\qj\super\fs8\par'#13#10'\fs16 1)\nosupe' +
+              'rsub  Notenstufen gem\'#39'e4\'#39'df \'#39'a7 48 Abs. 3 SchulG: \par'#13#10'   se' +
+              'hr gut (1), gut (2), befriedigend (3), ausreichend (4), mangelha' +
+              'ft (5), ungen\'#39'fcgend (6)\cf1\par'#13#10'}'#13#10#0
             RemoveEmptyLines = False
             Stretch = True
             Transparent = True
