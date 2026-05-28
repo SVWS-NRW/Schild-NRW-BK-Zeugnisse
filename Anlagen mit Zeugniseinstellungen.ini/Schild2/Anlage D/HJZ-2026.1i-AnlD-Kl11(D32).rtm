@@ -2,7 +2,7 @@ object Report: TppReport
   AutoStop = False
   DataPipeline = dmPipelines.Schueler
   PrinterSetup.BinName = 'Default'
-  PrinterSetup.DocumentName = 'JAZ-2024i-AnlD-Kl11(D32).rtm'
+  PrinterSetup.DocumentName = 'HJZ-2026.1i-AnlD-Kl11(D32).rtm'
   PrinterSetup.Duplex = dpVertical
   PrinterSetup.PaperName = 'A4 210 x 297 mm'
   PrinterSetup.PrinterName = 'Screen'
@@ -16,9 +16,9 @@ object Report: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\progs\SVWS\SchILD-Reports\Schild-NRW-BK-Zeugnisse\Anlagen mit' +
-    ' Zeugniseinstellungen.ini\Schild2\Anlage D\JAZ-2024i-AnlD-Kl11(D' +
-    '32).rtm'
+    'C:\progs\schild-nrw\SchILD-Reports\GIT\Schild-NRW-BK-Zeugnisse\A' +
+    'nlagen mit Zeugniseinstellungen.ini\Schild2\Anlage D\HJZ-2026.1i' +
+    '-AnlD-Kl11(D32).rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -2092,12 +2092,11 @@ object Report: TppReport
               'sses Widerspruch eingelegt werden. Der Widerspruch ist beim <dbt' +
               'ext datapipeline='#39'EigeneSchule'#39'>Bezeichnung1</dbtext>, <dbtext d' +
               'atapipeline='#39'EigeneSchule'#39'>Strasse</dbtext>, <dbtext datapipelin' +
-              'e='#39'EigeneSchule'#39'>PlzOrt</dbtext> schriftlich oder zur Niederschr' +
-              'ift zu erheben. Falls die Frist durch das Verschulden einer/eine' +
-              's Bevollm\'#39'e4chtigten vers\'#39'e4umt wird, wird dieses Verschulden ' +
-              'der Widerspruchsf\'#39'fchrerin/dem Widerspruchsf\'#39'fchrer zugerechne' +
-              't.\par'#13#10'\pard\qr Schulnummer: <dbtext datapipeline='#39'EigeneSchule' +
-              #39'>SchulNr</dbtext>\par'#13#10'}'#13#10#0
+              'e='#39'EigeneSchule'#39'>PlzOrt</dbtext> zu erheben. Falls die Frist dur' +
+              'ch das Verschulden einer/eines Bevollm\'#39'e4chtigten vers\'#39'e4umt w' +
+              'ird, wird dieses Verschulden der Widerspruchsf\'#39'fchrerin/dem Wid' +
+              'erspruchsf\'#39'fchrer zugerechnet.\par'#13#10'\pard\qr Schulnummer: <dbte' +
+              'xt datapipeline='#39'EigeneSchule'#39'>SchulNr</dbtext>\par'#13#10'}'#13#10#0
             RemoveEmptyLines = False
             Stretch = True
             Transparent = True
@@ -2959,11 +2958,11 @@ object Report: TppReport
     object ppParameter1: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = 'False'
+      AutoSearchSettings.SearchExpression = 'True'
       DataType = dtBoolean
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = False
+      Value = True
       UserName = 'Halbjahreszeugnis'
     end
     object ppParameter2: TppParameter

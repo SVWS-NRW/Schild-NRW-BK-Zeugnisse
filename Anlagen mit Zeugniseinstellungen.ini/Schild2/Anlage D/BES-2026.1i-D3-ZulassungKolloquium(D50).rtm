@@ -2,7 +2,7 @@ object Report: TppReport
   AutoStop = False
   DataPipeline = dmPipelines.Schueler
   PrinterSetup.BinName = 'Default'
-  PrinterSetup.DocumentName = 'D3-2024i-ZulassungKolloquium(D50).rtm'
+  PrinterSetup.DocumentName = 'D3-2026.1i-ZulassungKolloquium(D50).rtm'
   PrinterSetup.Duplex = dpVertical
   PrinterSetup.PaperName = 'A4 210 x 297 mm'
   PrinterSetup.PrinterName = 'Screen'
@@ -16,9 +16,9 @@ object Report: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\progs\SVWS\SchILD-Reports\Schild-NRW-BK-Zeugnisse\Anlagen mit' +
-    ' Zeugniseinstellungen.ini\Schild2\Anlage D\D3-2024i-ZulassungKol' +
-    'loquium(D50).rtm'
+    'C:\progs\schild-nrw\SchILD-Reports\GIT\Schild-NRW-BK-Zeugnisse\A' +
+    'nlagen mit Zeugniseinstellungen.ini\Schild2\Anlage D\D3-2026.1i-' +
+    'ZulassungKolloquium(D50).rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -119,7 +119,7 @@ object Report: TppReport
       mmMinHeight = 0
       object ppChildReport13: TppChildReport
         PrinterSetup.BinName = 'Default'
-        PrinterSetup.DocumentName = 'D3-2024i-ZulassungKolloquium(D50).rtm'
+        PrinterSetup.DocumentName = 'D3-2026.1i-ZulassungKolloquium(D50).rtm'
         PrinterSetup.Duplex = dpVertical
         PrinterSetup.PaperName = 'A4 210 x 297 mm'
         PrinterSetup.PrinterName = 'Screen'
@@ -161,7 +161,7 @@ object Report: TppReport
             mmMinHeight = 0
             object ppChildReport3: TppChildReport
               PrinterSetup.BinName = 'Default'
-              PrinterSetup.DocumentName = 'D3-2024i-ZulassungKolloquium(D50).rtm'
+              PrinterSetup.DocumentName = 'D3-2026.1i-ZulassungKolloquium(D50).rtm'
               PrinterSetup.Duplex = dpVertical
               PrinterSetup.PaperName = 'A4 210 x 297 mm'
               PrinterSetup.PrinterName = 'Screen'
@@ -2003,10 +2003,10 @@ object Report: TppReport
               'en\f0 . Der Widerspruch ist beim <dbtext datapipeline='#39'EigeneSch' +
               'ule'#39'>Bezeichnung1</dbtext>, <dbtext datapipeline='#39'EigeneSchule'#39'>' +
               'Strasse</dbtext>, <dbtext datapipeline='#39'EigeneSchule'#39'>PlzOrt</db' +
-              'text> schriftlich oder zur Niederschrift zu erheben. \f1 Falls d' +
-              'ie Frist durch das Verschulden einer/eines Bevollm\'#39'e4chtigten v' +
-              'ers\'#39'e4umt wird, wird dieses Verschulden der Widerspruchs-f\'#39'fch' +
-              'rerin/dem Widerspruchsf\'#39'fchrer zugerechnet.\b\f0\fs22\par'#13#10'}'#13#10#0
+              'text> zu erheben. \f1 Falls die Frist durch das Verschulden eine' +
+              'r/eines Bevollm\'#39'e4chtigten vers\'#39'e4umt wird, wird dieses Versch' +
+              'ulden der Widerspruchs-f\'#39'fchrerin/dem Widerspruchsf\'#39'fchrer zug' +
+              'erechnet.\b\f0\fs22\par'#13#10'}'#13#10#0
             RemoveEmptyLines = False
             Stretch = True
             Transparent = True

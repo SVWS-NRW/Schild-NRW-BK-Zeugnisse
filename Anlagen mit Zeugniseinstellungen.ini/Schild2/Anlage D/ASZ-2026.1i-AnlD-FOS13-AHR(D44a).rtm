@@ -2,7 +2,7 @@ object Report: TppReport
   AutoStop = False
   DataPipeline = dmPipelines.Schueler
   PrinterSetup.BinName = 'Default'
-  PrinterSetup.DocumentName = 'ASZ-2024i-AnlD-FOS13-AHR(D44a).rtm'
+  PrinterSetup.DocumentName = 'ASZ-2026.1i-AnlD-FOS13-AHR(D44a).rtm'
   PrinterSetup.Duplex = dpHorizontal
   PrinterSetup.Orientation = poLandscape
   PrinterSetup.PaperName = 'Custom'
@@ -17,9 +17,9 @@ object Report: TppReport
   PrinterSetup.PaperSize = 256
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\progs\SVWS\SchILD-Reports\Schild-NRW-BK-Zeugnisse\Anlagen mit' +
-    ' Zeugniseinstellungen.ini\Schild2\Anlage D\ASZ-2024i-AnlD-FOS13-' +
-    'AHR(D44a).rtm'
+    'C:\progs\schild-nrw\SchILD-Reports\GIT\Schild-NRW-BK-Zeugnisse\A' +
+    'nlagen mit Zeugniseinstellungen.ini\Schild2\Anlage D\ASZ-2026.1i' +
+    '-AnlD-FOS13-AHR(D44a).rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -2402,13 +2402,12 @@ object Report: TppReport
               'erspruch erhoben werden.\f1  Der Widerspruch ist beim <dbtext da' +
               'tapipeline='#39'EigeneSchule'#39'>Bezeichnung1</dbtext>, <dbtext datapip' +
               'eline='#39'EigeneSchule'#39'>Strasse</dbtext>, <dbtext datapipeline='#39'Eig' +
-              'eneSchule'#39'>PlzOrt</dbtext> schriftlich oder zur Niederschrift zu' +
-              ' erheben. \par'#13#10'\f0 Falls die Frist durch das Verschulden einer/' +
-              'eines Bevollm\'#39'e4chtigten vers\'#39'e4umt wird, wird dieses Verschul' +
-              'den der Widerspruchs-f\'#39'fchrerin/dem Widerspruchsf\'#39'fchrer zuger' +
-              'echnet.\f1\par'#13#10'\super\fs18\par'#13#10'\pard\qr\nosupersub\fs22 Schuln' +
-              'ummer:<dbtext datapipeline='#39'EigeneSchule'#39'>SchulNr</dbtext>\fs18\' +
-              'par'#13#10'}'#13#10#0
+              'eneSchule'#39'>PlzOrt</dbtext> zu erheben. \f0 Falls die Frist durch' +
+              ' das Verschulden einer/eines Bevollm\'#39'e4chtigten vers\'#39'e4umt wir' +
+              'd, wird dieses Verschulden der Widerspruchs-f\'#39'fchrerin/dem Wide' +
+              'rspruchsf\'#39'fchrer zugerechnet.\f1\par'#13#10'\super\fs18\par'#13#10'\pard\qr' +
+              '\nosupersub\fs22 Schulnummer:<dbtext datapipeline='#39'EigeneSchule'#39 +
+              '>SchulNr</dbtext>\fs18\par'#13#10'}'#13#10#0
             RemoveEmptyLines = False
             Stretch = True
             Transparent = True

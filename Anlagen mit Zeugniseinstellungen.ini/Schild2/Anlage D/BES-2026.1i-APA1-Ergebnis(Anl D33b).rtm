@@ -3,7 +3,7 @@ object Report: TppReport
   DataPipeline = dmPipelines.Schueler
   PrinterSetup.BinName = 'Default'
   PrinterSetup.Collation = False
-  PrinterSetup.DocumentName = 'ZAA1-2024i-AnlD-Ergebnis(Anl D33b).rtm'
+  PrinterSetup.DocumentName = 'ZAA1-2026.1i-AnlD-Ergebnis(Anl D33b).rtm'
   PrinterSetup.PaperName = 'A4'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
@@ -16,9 +16,9 @@ object Report: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\progs\SVWS\SchILD-Reports\Schild-NRW-BK-Zeugnisse\Anlagen mit' +
-    ' Zeugniseinstellungen.ini\Schild2\Anlage D\ZAA1-2024i-AnlD-Ergeb' +
-    'nis(Anl D33b).rtm'
+    'C:\progs\schild-nrw\SchILD-Reports\GIT\Schild-NRW-BK-Zeugnisse\A' +
+    'nlagen mit Zeugniseinstellungen.ini\Schild2\Anlage D\ZAA1-2026.1' +
+    'i-AnlD-Ergebnis(Anl D33b).rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -94,7 +94,7 @@ object Report: TppReport
       object ppChildReport2: TppChildReport
         PrinterSetup.BinName = 'Default'
         PrinterSetup.Collation = False
-        PrinterSetup.DocumentName = 'ZAA1-2024i-AnlD-Ergebnis(Anl D33b).rtm'
+        PrinterSetup.DocumentName = 'ZAA1-2026.1i-AnlD-Ergebnis(Anl D33b).rtm'
         PrinterSetup.PaperName = 'A4'
         PrinterSetup.PrinterName = 'Default'
         PrinterSetup.SaveDeviceSettings = False
@@ -1296,7 +1296,7 @@ object Report: TppReport
         DataPipeline = dmPipelines.plAbi
         PrinterSetup.BinName = 'Default'
         PrinterSetup.Collation = False
-        PrinterSetup.DocumentName = 'ZAA1-2024i-AnlD-Ergebnis(Anl D33b).rtm'
+        PrinterSetup.DocumentName = 'ZAA1-2026.1i-AnlD-Ergebnis(Anl D33b).rtm'
         PrinterSetup.PaperName = 'A4'
         PrinterSetup.PrinterName = 'Default'
         PrinterSetup.SaveDeviceSettings = False
@@ -1979,15 +1979,14 @@ object Report: TppReport
         'reen0\blue0;}'#13#10'\viewkind4\uc1\pard\qj\cf1\b\f0\fs16 Rechtsbehelf' +
         'sbelehrung\b0 : \par'#13#10'Gegen diese Bescheinigung kann innerhalb e' +
         'ines Monats nach Bekanntgabe der Bescheinigung Widerspruch erhob' +
-        'en werden. Der Widerspruch ist schriftlich oder zur Niederschrif' +
-        't beim <dbtext datapipeline='#39'EigeneSchule'#39'>Bezeichnung1</dbtext>' +
-        ', <dbtext datapipeline='#39'EigeneSchule'#39'>Strasse</dbtext>, <dbtext ' +
-        'datapipeline='#39'EigeneSchule'#39'>PlzOrt</dbtext> zu erheben. \par'#13#10'Fa' +
-        'lls die Frist durch das Verschulden einer/eines Bevollm\'#39'e4chtig' +
-        'ten vers\'#39'e4umt wird, so wird dieses Verschulden der Widerspruch' +
-        'sf\'#39'fchrerin/dem Widerspruchsf\'#39'fchrer zugerechnet. \f1\tab\tab\' +
-        'tab\tab\par'#13#10'\pard\qr Schulnummer: <dbtext datapipeline='#39'EigeneS' +
-        'chule'#39'>SchulNr</dbtext>\par'#13#10'}'#13#10#0
+        'en werden. Der Widerspruch ist beim <dbtext datapipeline='#39'Eigene' +
+        'Schule'#39'>Bezeichnung1</dbtext>, <dbtext datapipeline='#39'EigeneSchul' +
+        'e'#39'>Strasse</dbtext>, <dbtext datapipeline='#39'EigeneSchule'#39'>PlzOrt<' +
+        '/dbtext> zu erheben. Falls die Frist durch das Verschulden einer' +
+        '/eines Bevollm\'#39'e4chtigten vers\'#39'e4umt wird, so wird dieses Vers' +
+        'chulden der Widerspruchsf\'#39'fchrerin/dem Widerspruchsf\'#39'fchrer zu' +
+        'gerechnet. \f1\tab\tab\tab\tab\par'#13#10'\pard\qr Schulnummer: <dbtex' +
+        't datapipeline='#39'EigeneSchule'#39'>SchulNr</dbtext>\par'#13#10'}'#13#10#0
       RemoveEmptyLines = False
       Stretch = True
       Transparent = True

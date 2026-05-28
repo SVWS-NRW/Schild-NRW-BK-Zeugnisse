@@ -2,10 +2,10 @@ object Report: TppReport
   AutoStop = False
   DataPipeline = dmPipelines.Schueler
   PrinterSetup.BinName = 'Default'
-  PrinterSetup.DocumentName = 'D3-2024i-AGZ(D53).rtm'
+  PrinterSetup.DocumentName = 'D3-2026.1i-AGZ(D53).rtm'
   PrinterSetup.Duplex = dpHorizontal
   PrinterSetup.Orientation = poLandscape
-  PrinterSetup.PaperName = 'A3'
+  PrinterSetup.PaperName = 'Custom'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
   PrinterSetup.mmMarginBottom = 0
@@ -17,8 +17,9 @@ object Report: TppReport
   PrinterSetup.PaperSize = 256
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\progs\SVWS\SchILD-Reports\Schild-NRW-BK-Zeugnisse\Anlagen mit' +
-    ' Zeugniseinstellungen.ini\Schild2\Anlage D\D3-2024i-AGZ(D53).rtm'
+    'C:\progs\schild-nrw\SchILD-Reports\GIT\Schild-NRW-BK-Zeugnisse\A' +
+    'nlagen mit Zeugniseinstellungen.ini\Schild2\Anlage D\D3-2026.1i-' +
+    'AGZ(D53).rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -96,7 +97,7 @@ object Report: TppReport
         PrinterSetup.DocumentName = 'AHR-2018_AnlD-Abitur (Anl D41).rtm'
         PrinterSetup.Duplex = dpHorizontal
         PrinterSetup.Orientation = poLandscape
-        PrinterSetup.PaperName = 'A3'
+        PrinterSetup.PaperName = 'Custom'
         PrinterSetup.PrinterName = 'Default'
         PrinterSetup.SaveDeviceSettings = False
         PrinterSetup.mmMarginBottom = 0
@@ -482,7 +483,7 @@ object Report: TppReport
         PrinterSetup.DocumentName = 'AHR-2018_AnlD-Abitur (Anl D41).rtm'
         PrinterSetup.Duplex = dpHorizontal
         PrinterSetup.Orientation = poLandscape
-        PrinterSetup.PaperName = 'A3'
+        PrinterSetup.PaperName = 'Custom'
         PrinterSetup.PrinterName = 'Default'
         PrinterSetup.SaveDeviceSettings = False
         PrinterSetup.mmMarginBottom = 10000
@@ -1974,13 +1975,12 @@ object Report: TppReport
               'ach Bekanntgabe des Zeugnisses Widerspruch eingelegt werden. Der' +
               ' Widerspruch ist beim <dbtext datapipeline='#39'EigeneSchule'#39'>Bezeic' +
               'hnung1</dbtext>, <dbtext datapipeline='#39'EigeneSchule'#39'>Strasse</db' +
-              'text>, <dbtext datapipeline='#39'EigeneSchule'#39'>PlzOrt</dbtext> schri' +
-              'ftlich oder zur Niederschrift zu erheben. \par'#13#10'\f0 Falls die Fr' +
-              'ist durch das Verschulden einer/eines Bevollm\'#39'e4chtigten vers\'#39 +
-              'e4umt wird, wird dieses Verschulden der Widerspruchs-f\'#39'fchrerin' +
-              '/dem Widerspruchsf\'#39'fchrer zugerechnet.\f1\par'#13#10'\super\fs18\par'#13 +
-              #10'\pard\qr\nosupersub\fs22 Schulnummer:<dbtext datapipeline='#39'Eige' +
-              'neSchule'#39'>SchulNr</dbtext>\fs18\par'#13#10'}'#13#10#0
+              'text>, <dbtext datapipeline='#39'EigeneSchule'#39'>PlzOrt</dbtext> zu er' +
+              'heben. \f0 Falls die Frist durch das Verschulden einer/eines Bev' +
+              'ollm\'#39'e4chtigten vers\'#39'e4umt wird, wird dieses Verschulden der W' +
+              'iderspruchs-f\'#39'fchrerin/dem Widerspruchsf\'#39'fchrer zugerechnet.\f' +
+              '1\par'#13#10'\super\fs18\par'#13#10'\pard\qr\nosupersub\fs22 Schulnummer:<db' +
+              'text datapipeline='#39'EigeneSchule'#39'>SchulNr</dbtext>\fs18\par'#13#10'}'#13#10#0
             RemoveEmptyLines = False
             Stretch = True
             Transparent = True
