@@ -15,8 +15,8 @@ object Report: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    'D:\SchILD-NRW\SchILD-Reports\Zeugnisse 2026\Anlage C\Nichtzulass' +
-    'ung FHR 2026.1 (Anl C11) ohne Auswahl.rtm'
+    'C:\progs\schild-nrw\SchILD-Reports\GIT\Schild-NRW-BK-Zeugnisse\A' +
+    'nlage C\Nichtzulassung FHR 2026.1 (Anl C11) ohne Auswahl.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -213,15 +213,15 @@ object Report: TppReport
         '{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcha' +
         'rset0 Lucida Sans;}}'#13#10'{\colortbl ;\red0\green0\blue0;}'#13#10'\viewkin' +
         'd4\uc1\pard\cf1\b\f0\fs20 Rechtbehelfsbelehrung:\par'#13#10'\pard\qj\b' +
-        '0 Gegen diese Entscheidung, die Sch\'#39'fclerin/denSch\'#39'fcler nicht' +
-        ' zuzulassen, sowie gegen die Festsetzung der Noten kann innerhal' +
-        'b eines Monats nach Bekanntgabe Widerspruch erhoben werden. Der ' +
-        'Widerspruch ist beim <dbtext datapipeline='#39'EigeneSchule'#39'>Bezeich' +
-        'nung1</dbtext>, <dbtext datapipeline='#39'EigeneSchule'#39'>Strasse</dbt' +
-        'ext>, <dbtext datapipeline='#39'EigeneSchule'#39'>PlzOrt</dbtext> zu erh' +
-        'eben. \par'#13#10'Falls die Frist durch das Verschulden einer/eines Be' +
-        'vollm\'#39'e4chtigten vers\'#39'e4umt wird, so wird dieses Verschulden d' +
-        'er Widerspruchsf\'#39'fchrerin/ dem Widerspruchsf\'#39'fchrer zugerechne' +
+        '0 Gegen diese Entscheidung, die Sch\'#39'fclerin/den Sch\'#39'fcler nich' +
+        't zuzulassen, sowie gegen die Festsetzung der Noten kann innerha' +
+        'lb eines Monats nach Bekanntgabe Widerspruch erhoben werden. Der' +
+        ' Widerspruch ist beim <dbtext datapipeline='#39'EigeneSchule'#39'>Bezeic' +
+        'hnung1</dbtext>, <dbtext datapipeline='#39'EigeneSchule'#39'>Strasse</db' +
+        'text>, <dbtext datapipeline='#39'EigeneSchule'#39'>PlzOrt</dbtext> zu er' +
+        'heben. \par'#13#10'Falls die Frist durch das Verschulden einer/eines B' +
+        'evollm\'#39'e4chtigten vers\'#39'e4umt wird, so wird dieses Verschulden ' +
+        'der Widerspruchsf\'#39'fchrerin/dem Widerspruchsf\'#39'fchrer zugerechne' +
         't.\fs18\par'#13#10'}'#13#10#0
       RemoveEmptyLines = False
       Transparent = True
