@@ -2,7 +2,7 @@ object Report: TppReport
   AutoStop = False
   DataPipeline = dmPipelines.Schueler
   PrinterSetup.BinName = 'Default'
-  PrinterSetup.DocumentName = 'ASZ-2026.1i-AnlD-FOS13-AHR(D44a).rtm'
+  PrinterSetup.DocumentName = 'ASZ-2026.1i-AnlD-FOS13-Fachabi(D44b).rtm'
   PrinterSetup.Duplex = dpHorizontal
   PrinterSetup.Orientation = poLandscape
   PrinterSetup.PaperName = 'Custom'
@@ -19,7 +19,7 @@ object Report: TppReport
   Template.FileName = 
     'C:\progs\schild-nrw\SchILD-Reports\GIT\Schild-NRW-BK-Zeugnisse\A' +
     'nlagen mit Zeugniseinstellungen.ini\Schild2\Anlage D\ASZ-2026.1i' +
-    '-AnlD-FOS13-AHR(D44a).rtm'
+    '-AnlD-FOS13-Fachabi(D44b).rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -823,8 +823,8 @@ object Report: TppReport
             TraverseAllData = False
             DataPipelineName = 'ppBKAbschlussFaecher'
             mmHeight = 5000
-            mmLeft = 25500
-            mmTop = 39000
+            mmLeft = 25400
+            mmTop = 38894
             mmWidth = 164500
             BandType = 4
             LayerName = Foreground1
@@ -888,23 +888,44 @@ object Report: TppReport
                   mmMinHeight = 0
                 end
                 object ppDBText10: TppDBText
-                  UserName = 'DBT_Note'
+                  UserName = 'DBT_NoteSchriftlich'
                   Color = clSilver
-                  DataField = 'NoteSchriftlich'
+                  DataField = 'NoteMuendlich'
                   DataPipeline = dmPipelines.ppBKAbschlussFaecher
                   Font.Charset = ANSI_CHARSET
                   Font.Color = clBlack
                   Font.Name = 'Calibri'
-                  Font.Size = 12
+                  Font.Size = 10
                   Font.Style = [fsBold]
                   ParentDataPipeline = False
                   TextAlignment = taCentered
                   VerticalAlignment = avCenter
                   DataPipelineName = 'ppBKAbschlussFaecher'
                   mmHeight = 5000
-                  mmLeft = 124500
+                  mmLeft = 139500
                   mmTop = 500
-                  mmWidth = 40000
+                  mmWidth = 25000
+                  BandType = 4
+                  LayerName = PageLayer4
+                end
+                object ppDBText14: TppDBText
+                  UserName = 'DBT_NoteMuendlich'
+                  Color = clSilver
+                  DataField = 'NoteSchriftlich'
+                  DataPipeline = dmPipelines.ppBKAbschlussFaecher
+                  Font.Charset = ANSI_CHARSET
+                  Font.Color = clBlack
+                  Font.Name = 'Calibri'
+                  Font.Size = 10
+                  Font.Style = [fsBold]
+                  ParentDataPipeline = False
+                  TextAlignment = taCentered
+                  VerticalAlignment = avCenter
+                  DataPipelineName = 'ppBKAbschlussFaecher'
+                  mmHeight = 5000
+                  mmLeft = 114000
+                  mmTop = 500
+                  mmWidth = 25000
                   BandType = 4
                   LayerName = PageLayer4
                 end
@@ -927,21 +948,41 @@ object Report: TppReport
                   684241275D203D20272B27293B0D0A656E643B0D0A0D436F6D706F6E656E744E
                   616D65060644657461696C094576656E744E616D65060B4265666F7265507269
                   6E74074576656E7449440218084361726574506F730102010203000001060F54
-                  72614576656E7448616E646C65720B50726F6772616D4E616D65060F4442545F
-                  4E6F74654F6E5072696E740B50726F6772616D54797065070B747450726F6365
-                  6475726506536F75726365065270726F636564757265204442545F4E6F74654F
-                  6E5072696E743B0D0A626567696E0D0A20204442545F4E6F74652E436F6C6F72
-                  203A3D205A50475F46617262654E6F74656E46656C643B0D0A656E643B0D0A0D
-                  436F6D706F6E656E744E616D6506084442545F4E6F7465094576656E744E616D
-                  6506074F6E5072696E74074576656E7449440220084361726574506F73010201
-                  0204000001060F5472614576656E7448616E646C65720B50726F6772616D4E61
-                  6D6506114442545F4E6F74654F6E476574546578740B50726F6772616D547970
-                  65070B747450726F63656475726506536F75726365065F70726F636564757265
-                  204442545F4E6F74654F6E476574546578742876617220546578743A20537472
-                  696E67293B0D0A626567696E0D0A0D0A202054657874203A3D205A656E737572
-                  546F5374722854657874293B0D0A0D0A656E643B0D0A0D436F6D706F6E656E74
-                  4E616D6506084442545F4E6F7465094576656E744E616D6506094F6E47657454
-                  657874074576656E7449440235084361726574506F730102420206000000}
+                  72614576656E7448616E646C65720B50726F6772616D4E616D65061A4442545F
+                  4E6F7465536368726966746C6963684F6E5072696E740B50726F6772616D5479
+                  7065070B747450726F63656475726506536F75726365066870726F6365647572
+                  65204442545F4E6F7465536368726966746C6963684F6E5072696E743B0D0A62
+                  6567696E0D0A20204442545F4E6F7465536368726966746C6963682E436F6C6F
+                  72203A3D205A50475F46617262654E6F74656E46656C643B0D0A656E643B0D0A
+                  0D436F6D706F6E656E744E616D6506134442545F4E6F7465536368726966746C
+                  696368094576656E744E616D6506074F6E5072696E74074576656E7449440220
+                  084361726574506F730102010203000001060F5472614576656E7448616E646C
+                  65720B50726F6772616D4E616D65061C4442545F4E6F7465536368726966746C
+                  6963684F6E476574546578740B50726F6772616D54797065070B747450726F63
+                  656475726506536F75726365066A70726F636564757265204442545F4E6F7465
+                  536368726966746C6963684F6E476574546578742876617220546578743A2053
+                  7472696E67293B0D0A626567696E0D0A0D0A202054657874203A3D205A656E73
+                  7572546F5374722854657874293B0D0A0D0A656E643B0D0A0D436F6D706F6E65
+                  6E744E616D6506134442545F4E6F7465536368726966746C696368094576656E
+                  744E616D6506094F6E47657454657874074576656E7449440235084361726574
+                  506F730102010204000001060F5472614576656E7448616E646C65720B50726F
+                  6772616D4E616D6506184442545F4E6F74654D75656E646C6963684F6E507269
+                  6E740B50726F6772616D54797065070B747450726F63656475726506536F7572
+                  6365066470726F636564757265204442545F4E6F74654D75656E646C6963684F
+                  6E5072696E743B0D0A626567696E0D0A20204442545F4E6F74654D75656E646C
+                  6963682E436F6C6F72203A3D205A50475F46617262654E6F74656E46656C643B
+                  0D0A656E643B0D0A0D436F6D706F6E656E744E616D6506114442545F4E6F7465
+                  4D75656E646C696368094576656E744E616D6506074F6E5072696E7407457665
+                  6E7449440220084361726574506F730102140203000001060F5472614576656E
+                  7448616E646C65720B50726F6772616D4E616D65061A4442545F4E6F74654D75
+                  656E646C6963684F6E476574546578740B50726F6772616D54797065070B7474
+                  50726F63656475726506536F75726365066870726F636564757265204442545F
+                  4E6F74654D75656E646C6963684F6E476574546578742876617220546578743A
+                  20537472696E67293B0D0A626567696E0D0A0D0A202054657874203A3D205A65
+                  6E737572546F5374722854657874293B0D0A0D0A656E643B0D0A0D436F6D706F
+                  6E656E744E616D6506114442545F4E6F74654D75656E646C696368094576656E
+                  744E616D6506094F6E47657454657874074576656E7449440235084361726574
+                  506F7301021D0204000000}
               end
               object ppDesignLayers10: TppDesignLayers
                 object ppDesignLayer10: TppDesignLayer
@@ -3436,11 +3477,11 @@ object Report: TppReport
     object ppParameter1: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = 'False'
+      AutoSearchSettings.SearchExpression = 'True'
       DataType = dtBoolean
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = False
+      Value = True
       UserName = 'fachgebunden'
     end
     object ppParameter2: TppParameter
@@ -3456,11 +3497,11 @@ object Report: TppReport
     object ppParameter3: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = 'AnlageD44a'
+      AutoSearchSettings.SearchExpression = 'AnlageD44b'
       DataType = dtString
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = 'AnlageD44a'
+      Value = 'AnlageD44b'
       UserName = 'Formular'
     end
   end

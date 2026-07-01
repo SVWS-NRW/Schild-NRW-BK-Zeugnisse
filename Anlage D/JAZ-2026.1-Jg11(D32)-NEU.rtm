@@ -15,9 +15,8 @@ object Report: TppReport
   PrinterSetup.mmPaperWidth = 210000
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
-  Template.FileName = 
-    'C:\progs\schild-nrw\SchILD-Reports\GIT\Schild-NRW-BK-Zeugnisse\A' +
-    'nlage D\JAZ-2026.1-Anl D- Kl 11(Anl D32)-NEU.rtm'
+  Template.FileName =
+    'C:\Progs\SchILD-NRW\SchILD-Reports\GIT\Schild-NRW-BK-Zeugnisse\Anlage D\JAZ-2026.1-Jg11 (Anl D32)-NEU.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
