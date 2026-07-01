@@ -2,7 +2,7 @@ object Report: TppReport
   AutoStop = False
   DataPipeline = dmPipelines.Schueler
   PrinterSetup.BinName = 'Default'
-  PrinterSetup.DocumentName = 'ASZ-2026.1-FOS13-AHR (Anl D44-a).rtm'
+  PrinterSetup.DocumentName = 'ASZ-2026.1-FOS13-AHR(D44a).rtm'
   PrinterSetup.Duplex = dpHorizontal
   PrinterSetup.Orientation = poLandscape
   PrinterSetup.PaperName = 'A3 297 x 420 mm'
@@ -16,8 +16,9 @@ object Report: TppReport
   PrinterSetup.mmPaperWidth = 420000
   PrinterSetup.PaperSize = 8
   SaveAsTemplate = True
-  Template.FileName =
-    'C:\progs\schild-nrw\SchILD-Reports\GIT\Schild-NRW-BK-Zeugnisse\Anlage D\ASZ-2026.1-FOS13-AHR(D44a).rtm'
+  Template.FileName = 
+    'C:\progs\schild-nrw\SchILD-Reports\GIT\Schild-NRW-BK-Zeugnisse\A' +
+    'nlage D\ASZ-2026.1-FOS13-AHR(D44a).rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -118,7 +119,7 @@ object Report: TppReport
       mmMinHeight = 0
       object ppChildReport1: TppChildReport
         PrinterSetup.BinName = 'Default'
-        PrinterSetup.DocumentName = 'ASZ-2026.1-FOS13-AHR (Anl D44-a).rtm'
+        PrinterSetup.DocumentName = 'ASZ-2026.1-FOS13-AHR(D44a).rtm'
         PrinterSetup.Duplex = dpHorizontal
         PrinterSetup.Orientation = poLandscape
         PrinterSetup.PaperName = 'A3 297 x 420 mm'
@@ -1912,6 +1913,7 @@ object Report: TppReport
               PrinterSetup.mmPaperHeight = 297000
               PrinterSetup.mmPaperWidth = 420000
               PrinterSetup.PaperSize = 8
+              Template.Offset = 284
               Template.Format = ftASCII
               Units = utMillimeters
               Version = '15.05'
@@ -1967,6 +1969,7 @@ object Report: TppReport
                 end
                 object ppLabel17: TppLabel
                   UserName = 'L_Schriftlich'
+                  AutoSize = False
                   Caption = 'schriftlich'
                   Font.Charset = ANSI_CHARSET
                   Font.Color = clBlack
@@ -1976,14 +1979,15 @@ object Report: TppReport
                   TextAlignment = taCentered
                   Transparent = True
                   mmHeight = 3969
-                  mmLeft = 123561
+                  mmLeft = 119063
                   mmTop = 9525
-                  mmWidth = 15875
+                  mmWidth = 25135
                   BandType = 1
                   LayerName = Foreground6
                 end
                 object ppLabel20: TppLabel
                   UserName = 'L_M'#252'ndlich'
+                  AutoSize = False
                   Caption = 'm'#252'ndlich'
                   Font.Charset = ANSI_CHARSET
                   Font.Color = clBlack
@@ -1993,9 +1997,9 @@ object Report: TppReport
                   TextAlignment = taCentered
                   Transparent = True
                   mmHeight = 3969
-                  mmLeft = 149754
+                  mmLeft = 144992
                   mmTop = 9525
-                  mmWidth = 14817
+                  mmWidth = 25135
                   BandType = 1
                   LayerName = Foreground6
                 end
